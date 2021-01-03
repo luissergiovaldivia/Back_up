@@ -1,0 +1,64 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: 3.60.00.00
+## FORMAT:  v2.00.01
+## DEVICE:  PIC18F4520
+
+## PINREGACTIONS
+cyc
+No Repeat
+--
+&
+## ADVPINREGACTIONS
+--
+1
+COND1
+
+
+
+--
+&
+--
+COND1
+SFR
+PORTB
+=
+01
+
+
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+&
+## RESPONSEFILE
+&
+## ASYNCH
+Pin
+RB0
+Pulse High
+1 ms
+
+3
+--
+Pin
+RB1
+Pulse High
+1 cyc
+
+-1
+--
+Pin
+RB2
+Pulse High
+1 cyc
+
+-1
+--
+&
+## ADVANCEDSCL
+
+1
+&

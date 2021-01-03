@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Collecteur>
+   <ErreurExportXml ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">1) Refaire un export avec ODIL</Expression>
+   </ErreurExportXml>
+   <AssembliesErreur ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">
+        1) Refaire un export avec ODIL.
+        2) Réinstaller ihmp.
+        3) Réinstaller le collecteur.
+      </Expression>
+   </AssembliesErreur>
+   <SourceDeconnecte ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="">
+        1) Reconnecter la source avec l'outil de Diagnostic du collecteur
+        2) Test
+        </Expression>      
+   </SourceDeconnecte>
+</Collecteur>

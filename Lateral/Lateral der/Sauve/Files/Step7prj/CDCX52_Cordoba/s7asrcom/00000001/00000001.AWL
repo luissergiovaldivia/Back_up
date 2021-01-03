@@ -1,0 +1,1205 @@
+FUNCTION_BLOCK "BF_DIAG_PROFINET"
+TITLE =
+//**********************************************************************
+//*                        BF_DIAG_PROFINET                            *
+//*     Assure le traitement du diagnostic des IOdevices Profinet      *
+//*         Processes the diagnostic of Profinet IODevices             *
+//**********************************************************************
+//(in english further below)
+//DESCRIPTION:
+//************
+//Ce FB assure le traitement du diagnostic des IOdevices Profinet
+//
+//Version 1.3 Compatible avec le FW 2.7 des CPU 319F
+//version 1.4 ??
+//Version 1.5 #Fm_Dpn pour execution BF avec D_pn  
+//
+//MISE EN OEUVRE:
+//***************
+//1) Blocs associes :
+//- 1 DB d'instance ( DB 2036 ) DB_PN pour la BF_Diag_Profinet
+//- 1 DB Global (DB78) Conf_PN ( topologie reseau)uniquement si pupitre sans IHMP
+//  - Si le pupitre contient IHMP :
+//     Il faut mettre a 1 l'entree P_Ihmp, et le DB CONF_PN n'est pas necessaire.
+//  - Si le pupitre ne contient pas IHMP :
+//     Il faut mettre a 0 l'entree P_Ihmp, et le DB CONF_PN est necessaire sur
+//     l'entree DB_Config de la BF.
+//Pour la mise en oeuvre du DB78 voir detail dans la documentation
+//BF_Diag_Profinet
+//
+//2) SFM :
+//Voir detail dans documentation BF_Diag_profinet
+//
+//3) Appels dans la structure programme pour la fonction Diag_Profinet
+//3.1)Dans OB1 :
+//- Faire un Call du FB20 "SFM_FB" avec le DB75 "SFM_DB" pour instance
+//  avant l'appel du FC1 (FC Ilot)
+//- Dans FC1 : Faire un Call du FB1 (Gestion ilot) avec le DB1 "I01" pour instance
+//- Dans FB1 mettre en oeuvre la BF_Diag_Profinet FB2026 avec le DB 2036 "DB_PN"
+//  pour instance
+//
+//3.2) Dans OB100 :
+//- Mettre en oeuvre la BF_Diag_Profinet FB2026 avec le DB 2036 "DB_PN" pour
+// instance (Seul les entrees DB_SFM et DB_Config sont a mettre en oeuvre)
+//3.3) Dans OB86 :
+//- Faire un Call du FB20 "SFM_FB" avec le DB75 "SFM_DB" pour instance
+//  avant de mettre en oeuvre la BF_Diag_Profinet FB2026 avec le DB 2036 "DB_PN"
+//
+//  pour instance (Seul les entrees DB_SFM et DB_Config sont a mettre en oeuvre)
+//
+//CODE DEFAUT :
+//*************
+//Valeur de Diag.codedef :
+//1 = Defaut module I/O
+//257 = I/O configure present avec alarme
+//
+//----------------------English information-------------------------------
+//DESCRIPTION:
+//************
+//This FB processes the diagnostic of Profinet IODevices.
+//
+//Version 1.3 compatible with FW 2.7 of CPU319F
+//
+//OPERATING :
+//***********
+//1) Blocks associate:
+//- 1 DB of instance(DB 2036) "DB_PN" for the BF_Diag_Profinet
+//- 1 Global DB (DB78) "Conf_PN" (Profinet network topology) only if panel without
+//
+//  IHMP
+// - If panel contains IHMP :
+//     It is necessary to put to 1 the P_Ihmp input, and the DB CONF_PN
+//     is not necessary.
+//  - If panel does not contain IHMP:
+//     It is necessary to put to 0 P_Ihmp input, and the DB CONF_PN
+//is necessary on the DB_Config imput of the BF.
+//For the implementation of the DB78 see detail in the documentation
+//BF_Diag_Profinet
+//
+//2) SFM:
+//See detail in documentation BF_Diag_profinet
+//
+//3) Calls in the structure progra) for the function Diag_Profinet
+//3.1) In OB1:
+//- Make Call of FB20 " SFM_FB " with the DB75 " SFM_DB " for instance before the
+//  call of the FC1 (Facility FC)
+//- In FC1: Make Call ofFB1 (Facility Management) with the DB1 "I01" for instance
+//- In FB1 operate the BF_Diag_Profinet FB2026 with the DB 2036 "DB_PN" for
+// instance
+//
+//3.2) In OB100:
+//- Operate the BF_Diag_Profinet FB2026 with the DB 2036 "DB_PN" for Instance
+//(  Warning : Only DB_SFM and DB_config Input must be used)
+//3.3) In OB86:
+//- Make Call du FB20 " SFM_FB " with the DB75 " SFM_DB " for instance before
+//operating BF_Diag_Profinet FB2026 with the DB 2036 "DB_PN" for instance
+//  (Warning : Only DB_SFM and DB_config Input must be used)
+//
+//FAULT CODE :
+//************
+//Values of Diag.codedef :
+//1 = Profinet I/O module in fault
+//257 = Profinet I/O module configured is present with an alarm
+//
+//****************************** ODIL_ID *************************************
+//NB Reseaux BF 1er Version / Network Number in 1ft version : 41
+//Dernier ID mis en oeuvre / Last ID implemented : 2036_41
+//Liste des ID supprimes (Num de reseau seul) / ID deleted list ( only network
+//number)  : ....
+//
+{ S7_language := '12(1) French (France)  22.01.2015  17:59:53' }
+AUTHOR : SIEMENS
+FAMILY : RENAULT
+NAME : DIAG_PN
+VERSION : 1.5
+
+
+VAR_INPUT
+  D_pn : BOOL ;	//PROFINET start, fault reset / Demarrage de bus, d'acquittement des defauts
+  P_IHMP : BOOL ;	//IHMP presence (1=yes,0=no) / Presence IHMP (1=oui,0=non)
+  DB_SFM : BLOCK_DB ;	//SFM DB / DB SFM
+  DB_CONFIG : BLOCK_DB ;	//DB of Profinet Network config/DB configuration reseau
+END_VAR
+VAR_OUTPUT
+  Pn_run : BOOL ;	//Bus in operation / Bus en fonctionnement
+  Defaut : BOOL ;	//SMPLOC fault bit / Bit de defaut SMPLOC
+  Alarme : BOOL ;	//SMPLOC alarm bit / Bit d'alarme SMPLOC
+  Diag : STRUCT 	//IHMP diagnostic structure / Structure de diagnostic IHMP
+   Def : BOOL ;	//Fault bit / Bit de defaut
+   Ala : BOOL ;	//Alarm bit / Bit d'alarme
+   Numliste : INT  := 52;	//SMP fault list number / N° de liste defaut SMP
+   Codedef : INT ;	//Fault or alarm number / N° de defaut ou d'alarme
+   Info_def_iodevice : INT ;	//Number of first faulty IODevice / Numero du 1er I/O device en defaut
+   Info_ala_iodevice : INT ;	//Number of first IODevice with alarm / Numero du 1er I/O device en alarme
+   Info_def_iodevice1 : INT ;	//I/O associated with code 1 / I/O associe au code 1
+   Info_def_iodevice2 : INT ;	//I/O associated with code 2 / I/O associe au code 2
+   Info_def_iodevice3 : INT ;	//I/O associated with code 3 / I/O associe au code 3
+   Info_def_iodevice4 : INT ;	//I/O associated with code 4 / I/O associe au code 4
+   Info_def_iodevice5 : INT ;	//I/O associated with code 5 / I/O associe au code 5
+   Info_def_iodevice6 : INT ;	//I/O associated with code 6 / I/O associe au code 6
+   Info_def_iodevice7 : INT ;	//I/O associated with code 7 / I/O associe au code 7
+   Info_def_iodevice8 : INT ;	//I/O associated with code 8 / I/O associe au code 8
+   Info_def_iodevice9 : INT ;	//I/O associated with code 9 / I/O associe au code 9
+   Info_def_iodevice10 : INT ;	//I/O associated with code 10 / I/O associe au code 10
+   Info_codedef_iodevice1 : INT ;	//History of fault code 1 / Historique code defaut1
+   Info_codedef_iodevice2 : INT ;	//History of fault code 2 / Historique code defaut2
+   Info_codedef_iodevice3 : INT ;	//History of fault code 3 / Historique code defaut3
+   Info_codedef_iodevice4 : INT ;	//History of fault code 4 / Historique code defaut4
+   Info_codedef_iodevice5 : INT ;	//History of fault code 5 / Historique code defaut5
+   Info_codedef_iodevice6 : INT ;	//History of fault code 6 / Historique code defaut6
+   Info_codedef_iodevice7 : INT ;	//History of fault code 7 / Historique code defaut7
+   Info_codedef_iodevice8 : INT ;	//History of fault code 8 / Historique code defaut8
+   Info_codedef_iodevice9 : INT ;	//History of fault code 9 / Historique code defaut9
+   Info_codedef_iodevice10 : INT ;	//History of fault code 10 / Historique code defaut10
+  END_STRUCT ;	
+END_VAR
+VAR
+  RESERVE : ARRAY  [1 .. 21 ] OF //SPARE for begining Hystory at DIX 100.0
+  WORD ;	
+  History : STRUCT 	//History
+   DateTime : ARRAY  [1 .. 100 ] OF //Date and Time
+   DATE_AND_TIME ;	
+   EventClass : ARRAY  [1 .. 100 ] OF //Event class B#16#38 Event gone, B#16#39 Event come
+   BYTE ;	
+   Fault_ID : ARRAY  [1 .. 100 ] OF //Fault ID OB86 C1 - C8
+   BYTE ;	
+   Mastersystem : ARRAY  [1 .. 100 ] OF //Mastersystem ID
+   BYTE ;	
+   Slave : ARRAY  [1 .. 100 ] OF //Slave address
+   BYTE ;	
+  END_STRUCT ;	
+  Affichage : STRUCT 	//Screen
+   DateTime : ARRAY  [1 .. 10 ] OF //Date and Time
+   DATE_AND_TIME ;	
+   EventClass : ARRAY  [1 .. 10 ] OF //Event class B#16#38 Event gone, B#16#39 Event come
+   BYTE ;	
+   Fault_ID : ARRAY  [1 .. 10 ] OF //Fault ID OB86 C1 - C8
+   BYTE ;	
+   Mastersystem : ARRAY  [1 .. 10 ] OF //Mastersystem ID
+   BYTE ;	
+   Device : ARRAY  [1 .. 10 ] OF //Slave address
+   BYTE ;	
+   NumEvenement : ARRAY  [1 .. 10 ] OF //Numero evenement page history
+   INT ;	
+  END_STRUCT ;	
+  Devices_Affected : INT ;	//Number of IO device affected
+  IO_Device : ARRAY  [1 .. 256 ] OF //IO devices state ARRAY
+  BYTE ;	
+  Count_IO_Device : ARRAY  [1 .. 256 ] OF //Counter IO Device
+  BYTE ;	
+  HistoryPageNo : BYTE ;	//History page number
+  PageNo_Max : BYTE  := B#16#9;	//Max Page number
+  RAZ_Date_Time : DATE_AND_TIME ;	
+  HistoryActiv : BOOL ;	//Screen History activ
+  PageAdd : BOOL ;	//History > Next page
+  PageSub : BOOL ;	//History > Previous page
+  FM_HistoryActiv : BOOL ;	//Front Montant Page History Active
+  RAZ_Count : BOOL ;	
+  LMI : INT ;	//Last Module Index
+  TON_Act : "TON";	
+  ConfDevCnt : INT ;	//Configured Device Count
+  ConfDevList : ARRAY  [1 .. 256 ] OF //Configured Device List
+  BYTE ;	
+  ProbDevCnt : INT ;	//Problematic Device Count
+  ProbDevInd : INT ;	
+  ProbDevList : ARRAY  [1 .. 256 ] OF //Problematic Device List
+  BYTE ;	
+  StatNr : INT ;	
+  StatAdd : WORD ;	
+  Disp : BYTE  := B#16#FF;	//Dispatch
+  Def : BOOL ;	
+  Ala : BOOL ;	
+  Act : BOOL ;	
+  Fm_Dpn : BOOL ;	//Flanco Ascendente D_pn
+END_VAR
+VAR_TEMP
+  Calc : STRUCT 	//DONT MOVE BECAUSE USED WITH LW0 AND L0.x
+   X0 : BOOL ;	
+   X1 : BOOL ;	
+  END_STRUCT ;	
+  Tmp_PLC_Time : STRUCT 	//SPS Uhrzeit & Datum
+   Fault : INT ;	//Return value SFC01
+   DateTime : DATE_AND_TIME ;	//PLC Date and Time
+   Test : DATE_AND_TIME ;	
+  END_STRUCT ;	
+  Tmp_SFC6 : STRUCT 	//Read local data
+   Top_SI : STRUCT 	
+    EV_Class : BYTE ;	//Event class
+    EV_No : BYTE ;	//Event number
+    Priority : BYTE ;	
+    OB_No : BYTE ;	//OB Number
+    Tpy2_3 : BYTE ;	
+    Typ1 : BYTE ;	
+    ZI_1 : WORD ;	
+    ZI_2_3 : DWORD ;	
+   END_STRUCT ;	
+   Start_Up : STRUCT 	
+    EV_Class : BYTE ;	
+    EV_Num : BYTE ;	
+    Priority : BYTE ;	
+    Num : BYTE ;	
+    Tpy2_3 : BYTE ;	
+    Typ1 : BYTE ;	
+    ZI_1 : WORD ;	
+    ZI_2_3 : DWORD ;	
+   END_STRUCT ;	
+   Fault : INT ;	//Return value
+  END_STRUCT ;	
+  BK_AR1 : DWORD ;	//Backup AR1
+  BK_AR2_OB1 : DWORD ;	//Backup AR2
+  BK_AR2_OB86 : DWORD ;	//Backup AR2
+  Ret_Val_Code : INT ;	
+  Index_Datetime : INT ;	//index Date-Time
+  Index_EventClass : INT ;	//index EventClass
+  Index_Fault_ID : INT ;	//index Fault_ID
+  Index_MasterSystem : INT ;	//index MasterSystem
+  Index_Slave : INT ;	//index Slave
+  Resul_Mult_NumEvenement : INT ;	//Resultat multiplication NumEvenement et index
+  IOD_No : INT ;	//Number IO Device
+  T_SRC_any : ANY ;	//Pointer
+  Insert_Value : BOOL ;	//Insert new value
+  Ba1i : BOOL ;	//Bit always at 1
+  Boucle : WORD ;	
+  Fill : BYTE ;	
+  Ret : INT ;	
+  Busy : BOOL ;	
+  SZL_Header : STRUCT 	
+   DRLen : WORD ;	
+   DRCnt : WORD ;	
+  END_STRUCT ;	
+  DR_SSI : STRUCT 	//Station Status Information
+   INDEX : WORD ;	
+   Status : ARRAY  [0 .. 2047 ] OF BOOL ;	
+  END_STRUCT ;	
+  DR_MSI : STRUCT 	//Module Status Information
+   adr1 : WORD ;	
+   adr2 : WORD ;	
+   logadr : WORD ;	
+   Solltyp : WORD ;	
+   Isttyp : WORD ;	
+   reserved : WORD ;	
+   Eastat : STRUCT 	
+    ID : BYTE ;	
+    B0 : BOOL ;	
+    B1 : BOOL ;	//Present
+    B2 : BOOL ;	//Unreachable
+    B3 : BOOL ;	//Deactivated
+    B4 : BOOL ;	//Default
+    B5 : BOOL ;	
+    B6 : BOOL ;	
+    B7 : BOOL ;	
+   END_STRUCT ;	
+   Ber_bgbr : WORD ;	
+  END_STRUCT ;	
+  DevNum : BYTE ;	
+  ConfDevInd : INT ;	
+  SavAR2 : DINT ;	
+  AR1 : DINT ;	
+  AR2 : DINT ;	
+  TON_ReaQ : BOOL ;	
+  Deactivated : BOOL ;	
+  Activating : BOOL ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//*ODIL_ID:2036_1*
+      CALL "RD_SINFO" (
+           RET_VAL                  := #Tmp_SFC6.Fault,
+           TOP_SI                   := #Tmp_SFC6.Top_SI,
+           START_UP_SI              := #Tmp_SFC6.Start_Up);
+      A     #D_pn; 
+      FP    #Fm_Dpn; 
+      JC    O100; 
+      L     #Tmp_SFC6.Top_SI.OB_No; //Test OB1
+      L     1; 
+      ==D   ; 
+      JC    O1; 
+      L     #Tmp_SFC6.Top_SI.OB_No; //Test OB100
+      L     100; 
+      ==D   ; 
+      JC    O100; 
+      BEU   ; //Jump END
+NETWORK
+TITLE =OB100 - Creation de la liste des IODevices configures
+//- Initialisation du Tableau "IO_Device" avec la valeur 3 (Non Configure)
+//- Acquisition de la liste des IODevices Configures
+//- Initialisaion du tableau "ConvDevList".
+//ConvDevList[1] = Numero du dernier IODevice configure -1
+//De fait pour l'IODevice 256 (100Hex) la valeur 255 (FFHex) est rangee dans le
+//tableau.
+//*ODIL_ID:2036_2*
+//
+O100: L     B#16#FF; 
+      T     #Disp; 
+      L     B#16#3; 
+      T     #Fill; 
+      CALL "FILL" (
+           BVAL                     := #Fill,
+           RET_VAL                  := #Ret,
+           BLK                      := #IO_Device);
+B100: CALL "RDSYSST" (
+           REQ                      := TRUE,
+           SZL_ID                   := W#16#94,
+           INDEX                    := W#16#64,
+           RET_VAL                  := #Ret,
+           BUSY                     := #Busy,
+           SZL_HEADER               := #SZL_Header,
+           DR                       := #DR_SSI);
+      L     #Ret; 
+      L     B#16#0; 
+      <>D   ; 
+      JC    B100; 
+//Creates the list of IO devices
+      L     B#16#0; 
+      T     #ConfDevCnt; 
+      L     256; 
+L100: T     #ConfDevInd; 
+      LAR1  P##DR_SSI; 
+      +AR1  ; 
+      AN    L [AR1,P#2.0]; //ConfDevDevice does'nt exist
+      JC    l100; 
+      L     #ConfDevCnt; 
+      SLW   3; //Make bit Ptr
+      LAR1  P##ConfDevList; 
+      +AR1  ; 
+      L     #ConfDevInd; 
+      +     -1; 
+      T     DIB [AR1,P#0.0]; //ConvDevList[ConfDevInd] = NumIOdev - 1
+      L     #ConfDevCnt; 
+      +     1; 
+      T     #ConfDevCnt; //ConfDevCnt += 1
+l100: L     #ConfDevInd; 
+      LOOP  L100; 
+      L     #ConfDevCnt; 
+      L     B#16#0; 
+      ==D   ; 
+      BEC   ; 
+      T     #Disp; 
+      BEU   ; 
+NETWORK
+TITLE =OB1 -
+//*ODIL_ID:2036_3*
+O1:   L     #Disp; 
+      JL    Disp; 
+      JU    Dis0; //Get Active device list
+      JU    Dis1; //Get Device status
+Disp: BEU   ; 
+Dis0: CALL "RDSYSST" (
+           REQ                      := TRUE,
+           SZL_ID                   := W#16#694,
+           INDEX                    := W#16#64,
+           RET_VAL                  := #Ret,
+           BUSY                     := #Busy,
+           SZL_HEADER               := #SZL_Header,
+           DR                       := #DR_SSI);
+      L     #Ret; 
+      L     B#16#0; 
+      <>D   ; 
+      JC    E1; 
+      T     #ProbDevCnt; 
+      L     #ConfDevCnt; 
+Loop: T     #ConfDevInd; 
+      +     -1; 
+      SLW   3; //Make bit Ptr
+      LAR1  P##ConfDevList; 
+      +AR1  ; 
+      L     DIB [AR1,P#0.0]; //ConfDef[ConfDevInd] (DevNum)
+      LAR1  P##DR_SSI; 
+      +AR1  ; 
+      AN    L [AR1,P#2.1]; //Device NOK
+      JC    Dok; 
+      LAR1  P##ProbDevList; 
+      L     #ProbDevCnt; 
+      SLW   3; 
+      +AR1  ; 
+      POP   ; 
+      T     DIB [AR1,P#0.0]; //ProbDevList[ProbDevCnt]
+      L     #ProbDevCnt; 
+      +     1; 
+      T     #ProbDevCnt; //ProbDevCnt +=1
+      JU    LEnd; 
+Dok:  LAR1  P##IO_Device; 
+      SLW   3; //Make Bit Ptr
+      +AR1  ; 
+      L     B#16#0; //Device Ok
+      T     DIB [AR1,P#0.0]; //IO_Device[ConfDevInd]
+LEnd: L     #ConfDevInd; 
+      LOOP  Loop; 
+      L     #ProbDevCnt; 
+      L     B#16#0; 
+      ==D   ; 
+      R     #Defaut; 
+      R     #Alarme; 
+      JC    E1; 
+      R     #Act; 
+      R     #Ala; 
+      R     #Def; 
+      T     #ProbDevInd; 
+P:    LAR1  P##ProbDevList; 
+      L     #ProbDevInd; 
+      SLW   3; //Make BitPtr
+      +AR1  ; 
+      L     DIB [AR1,P#0.0]; //ProbDevList[ProbDevInd]
+      +     1; 
+      T     #StatNr; //DevNum
+      CALL "GEO_LOG" (
+           MASTER                   := 100,
+           STATION                  := #StatNr,
+           SLOT                     := 0,
+           SUBSLOT                  := 0,
+           RET_VAL                  := #Ret,
+           LADDR                    := #StatAdd);
+      L     B#16#1; 
+      T     #Disp; 
+Dis1: CALL "RDSYSST" (
+           REQ                      := TRUE,
+           SZL_ID                   := W#16#C91,
+           INDEX                    := #StatAdd,
+           RET_VAL                  := #Ret,
+           BUSY                     := #Busy,
+           SZL_HEADER               := #SZL_Header,
+           DR                       := #DR_MSI);
+      L     #Ret; 
+      L     B#16#0; 
+      <>D   ; 
+      BEC   ; 
+      LAR1  P##IO_Device; 
+      L     #StatNr; 
+      +     -1; 
+      SLW   3; //Make BitPtr
+      +AR1  ; 
+      L     DIB [AR1,P#0.0]; //IO_Device[StatNr]
+      L     B#16#4; 
+      ==D   ; 
+      =     #Deactivated; //Desactive
+      POP   ; 
+      L     B#16#5; 
+      ==D   ; 
+      =     #Activating; //En cours d'activation
+//----------
+      A     #DR_MSI.Eastat.B3; //Deactivated
+      L     B#16#4; 
+      JC    T; 
+//----------
+      A     #Deactivated; 
+      AN    #DR_MSI.Eastat.B3; //Deactivated
+      S     #Act; //Restart Timer
+//----------
+      A     #Activating; 
+      A     #DR_MSI.Eastat.B1; //Present
+      L     B#16#0; 
+      JC    T; 
+//----------
+      A     #Activating; 
+      AN    #TON_Act.Q; 
+      O     #Act; 
+      A     #DR_MSI.Eastat.B2; //Unreachable
+      L     B#16#5; //Activating
+      JC    T; 
+//----------
+      A     #DR_MSI.Eastat.B2; //Unreachable
+      S     #Def; 
+      L     B#16#2; //Default
+      JC    T; 
+//----------
+      A     #DR_MSI.Eastat.B1; //Present
+      S     #Ala; 
+      L     B#16#1; //Alarm
+      JC    T; 
+//----------
+      L     B#16#0; 
+T:    T     DIB [AR1,P#0.0]; //IO_Device[StatNr]
+      L     #ProbDevInd; 
+      +     1; 
+      T     #ProbDevInd; 
+      L     #ProbDevCnt; 
+      <D    ; 
+      JC    P; 
+      L     B#16#0; 
+      T     #Disp; 
+      A     #Def; 
+      =     #Defaut; 
+      R     #Ala; 
+      A     #Ala; 
+      =     #Alarme; 
+E1:   AN    #Act; 
+      =     #TON_Act.IN; 
+      CALL #TON_Act (
+           PT                       := T#15S);
+
+      A     #Defaut; 
+      =     #Diag.Def; 
+      A     #Alarme; 
+      =     #Diag.Ala; 
+      O     #Pn_run; 
+      O     #D_pn; 
+      AN    #Defaut; 
+      =     #Pn_run; 
+      BEU   ; 
+NETWORK
+TITLE =Bit used intern FB
+//*ODIL_ID:2036_4*
+      O     #Ba1i; 
+      ON    #Ba1i; 
+      =     #Ba1i; 
+NETWORK
+TITLE =Read PLC Time
+//*ODIL_ID:2036_5*
+      CALL "READ_CLK" (
+           RET_VAL                  := #Tmp_PLC_Time.Fault,
+           CDT                      := #Tmp_PLC_Time.DateTime);
+NETWORK
+TITLE =Wich is the calling OB
+//*ODIL_ID:2036_6*
+      CALL "RD_SINFO" (
+           RET_VAL                  := #Tmp_SFC6.Fault,
+           TOP_SI                   := #Tmp_SFC6.Top_SI,
+           START_UP_SI              := #Tmp_SFC6.Start_Up);
+      L     #Tmp_SFC6.Top_SI.OB_No; //Test OB1
+      L     1; 
+      ==I   ; 
+      JC    OB1; 
+      L     #Tmp_SFC6.Top_SI.OB_No; //Test OB86
+      L     86; 
+      ==I   ; 
+      JC    OB86; 
+      L     #Tmp_SFC6.Top_SI.OB_No; //Test OB100
+      L     100; 
+      ==I   ; 
+      JC    OB10; 
+      JU    END; //Jump END
+NETWORK
+TITLE =OB1
+//********************  OB 1  ********************
+//*ODIL_ID:2036_7*
+//
+
+
+NETWORK
+TITLE =Backup AR2
+//*ODIL_ID:2036_8*
+OB1:  TAR1  #BK_AR1; 
+      TAR2  #BK_AR2_OB1; 
+NETWORK
+TITLE =Update state of PROFINET IO DEVICES
+//*ODIL_ID:2036_9*
+      OPN   #DB_SFM; //Writing nbr IO Devices affected
+      L     DBW   50; 
+      T     #Devices_Affected; 
+      L     1442; 
+      SLD   3; 
+      +AR2  ; //Multi Instance
+      CAR   ; //AR1 = AR2 & AR2 = AR1
+      L     DBW   48; //Offset
+      SLD   3; 
+      LAR2  ; 
+      L     DBW   46; 
+LOOP: A     DBX [AR2,P#0.0]; 
+      =     DIX [AR1,P#0.0]; 
+      A     DBX [AR2,P#0.1]; 
+      =     DIX [AR1,P#0.1]; 
+      +AR1  P#1.0; //DIX Ptr
+      +AR2  P#0.2; //DBX Ptr
+      LOOP  LOOP; 
+      LAR2  #BK_AR2_OB1; //Restore AR2
+NETWORK
+TITLE =Screen Hystory
+//*ODIL_ID:2036_10*
+      AN    #HistoryActiv; // Selection screen history
+      JC    NoHi; 
+NETWORK
+TITLE =Screen Hystory Page +/-
+//*ODIL_ID:2036_11*
+      A     #PageAdd; // Function next page '+'
+      JC    P_Pl; 
+      A     #PageSub; // Function last page '-'
+      JC    P_Mi; 
+      JU    P_Hi; 
+P_Pl: R     #PageAdd; 
+      L     #HistoryPageNo; 
+      L     1; 
+      +I    ; 
+      T     #HistoryPageNo; 
+      L     #PageNo_Max; 
+      <=I   ; 
+      JC    P_Hi; 
+      L     0; 
+      T     #HistoryPageNo; 
+      JU    P_Hi; 
+P_Mi: R     #PageSub; 
+      L     #HistoryPageNo; 
+      L     1; 
+      -I    ; 
+      T     #HistoryPageNo; 
+      L     0; 
+      >=I   ; 
+      JC    P_Hi; 
+      T     #HistoryPageNo; 
+NETWORK
+TITLE =Initialisation by opening screen History
+//*ODIL_ID:2036_12*
+P_Hi: A     #HistoryActiv; 
+      FP    #FM_HistoryActiv; 
+      JNB   NoIn; 
+      L     0; 
+      T     #HistoryPageNo; 
+      L     9; 
+      T     #PageNo_Max; 
+NETWORK
+TITLE =Update number Event
+//*ODIL_ID:2036_13*
+NoIn: L     #HistoryPageNo; 
+      L     10; 
+      *I    ; 
+      T     #Affichage.NumEvenement[1]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[2]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[3]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[4]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[5]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[6]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[7]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[8]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[9]; 
+      L     1; 
+      +I    ; 
+      T     #Affichage.NumEvenement[10]; 
+NETWORK
+TITLE =Update Date&Time
+//*ODIL_ID:2036_14*
+      L     #HistoryPageNo; 
+      L     80; 
+      *I    ; 
+      L     100; 
+      +I    ; 
+      T     #Index_Datetime; 
+      LAR1  P##T_SRC_any; 
+      L     DW#16#10020050; 
+      T     D [AR1,P#0.0]; 
+      L     DW#16#85000000; 
+      L     #Index_Datetime; 
+      SLD   3; 
+      OD    ; 
+      T     D [AR1,P#6.0]; 
+      CALL "BLKMOV" (
+           SRCBLK                   := #T_SRC_any,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DIX 1300.0 WORD 80);
+NETWORK
+TITLE =Update EventClass
+//*ODIL_ID:2036_15*
+      L     #HistoryPageNo; 
+      L     5; 
+      *I    ; 
+      L     900; 
+      +I    ; 
+      T     #Index_EventClass; 
+      LAR1  P##T_SRC_any; 
+      L     DW#16#1002000A; 
+      T     D [AR1,P#0.0]; 
+      L     DW#16#85000000; 
+      L     #Index_EventClass; 
+      SLD   3; 
+      OD    ; 
+      T     D [AR1,P#6.0]; 
+      CALL "BLKMOV" (
+           SRCBLK                   := #T_SRC_any,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DIX 1380.0 WORD 10);
+NETWORK
+TITLE =Update Fault_ID
+//*ODIL_ID:2036_16*
+      L     #HistoryPageNo; 
+      L     5; 
+      *I    ; 
+      L     1000; 
+      +I    ; 
+      T     #Index_Fault_ID; 
+      LAR1  P##T_SRC_any; 
+      L     DW#16#1002000A; 
+      T     D [AR1,P#0.0]; 
+      L     DW#16#85000000; 
+      L     #Index_Fault_ID; 
+      SLD   3; 
+      OD    ; 
+      T     D [AR1,P#6.0]; 
+      CALL "BLKMOV" (
+           SRCBLK                   := #T_SRC_any,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DIX 1390.0 WORD 10);
+NETWORK
+TITLE =Update MasterSystem
+//*ODIL_ID:2036_17*
+      L     #HistoryPageNo; 
+      L     5; 
+      *I    ; 
+      L     1100; 
+      +I    ; 
+      T     #Index_MasterSystem; 
+      LAR1  P##T_SRC_any; 
+      L     DW#16#1002000A; 
+      T     D [AR1,P#0.0]; 
+      L     DW#16#85000000; 
+      L     #Index_MasterSystem; 
+      SLD   3; 
+      OD    ; 
+      T     D [AR1,P#6.0]; 
+      CALL "BLKMOV" (
+           SRCBLK                   := #T_SRC_any,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DIX 1400.0 WORD 10);
+NETWORK
+TITLE =Update IO Device
+//*ODIL_ID:2036_18*
+      L     #HistoryPageNo; 
+      L     5; 
+      *I    ; 
+      L     1200; 
+      +I    ; 
+      T     #Index_Slave; 
+      LAR1  P##T_SRC_any; 
+      L     DW#16#1002000A; 
+      T     D [AR1,P#0.0]; 
+      L     DW#16#85000000; 
+      L     #Index_Slave; 
+      SLD   3; 
+      OD    ; 
+      T     D [AR1,P#6.0]; 
+      CALL "BLKMOV" (
+           SRCBLK                   := #T_SRC_any,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DIX 1410.0 WORD 10);
+NETWORK
+TITLE =Delay in zero counters
+//*ODIL_ID:2036_19*
+NoHi: AN    #RAZ_Count; 
+      JC    NoRa; 
+      L     0; 
+      T     LW     0; 
+      CALL "FILL" (
+           BVAL                     := LB     0,
+           RET_VAL                  := #Ret_Val_Code,
+           BLK                      := P#DBX 1698.0 BYTE 256);
+      CALL "BLKMOV" (
+           SRCBLK                   := #Tmp_PLC_Time.DateTime,
+           RET_VAL                  := #Ret_Val_Code,
+           DSTBLK                   := P#DBX 1956.0 WORD 4);
+      SET   ; 
+      R     #RAZ_Count; 
+NETWORK
+TITLE =Initialisation output Def and Ala
+//*ODIL_ID:2036_20*
+NoRa: SET   ; 
+      R     #Defaut; 
+      R     #Diag.Def; 
+      R     #Alarme; 
+      R     #Diag.Ala; 
+      L     0; 
+      T     #Diag.Codedef; 
+      T     #Diag.Info_def_iodevice; 
+      T     #Diag.Info_ala_iodevice; 
+NETWORK
+TITLE =Devices affected ?
+//*ODIL_ID:2036_21*
+      L     #Devices_Affected; 
+      L     0; 
+      ==I   ; 
+      JC    End1; 
+NETWORK
+TITLE =
+//*ODIL_ID:2036_22*
+      A     #P_IHMP; 
+      JC    Ihmp; 
+NETWORK
+TITLE =Search of first IO device affected LOP
+//IO Device Failed Code 2
+//*ODIL_ID:2036_23*
+//
+      L     0; 
+      SLD   3; 
+      LAR1  ; 
+      CAR   ; //Multi Instance
+      OPN   #DB_CONFIG; 
+DebU: L     0; 
+      L     DBW [AR2,P#0.0]; 
+      ==I   ; 
+      JC    NoDe; 
+      L     1441; // 1441 = 1442 - 1
+      +I    ; 
+      SLD   3; 
+      LAR1  ; 
+      L     2; 
+      L     DIB [AR1,P#0.0]; 
+      ==I   ; 
+      JC    EndU; 
+      +AR2  P#2.0; //DBX Ptr
+      JU    DebU; 
+EndU: L     DBW [AR2,P#0.0]; 
+      LAR1  #BK_AR1; 
+      LAR2  #BK_AR2_OB1; 
+      T     #Diag.Info_def_iodevice; 
+      T     #Diag.Info_def_iodevice1; 
+      SET   ; 
+      S     #Defaut; 
+      S     #Diag.Def; 
+      R     #Alarme; 
+      R     #Diag.Ala; 
+      JU    End1; 
+NETWORK
+TITLE =Search of first IO device affected LOP
+//IO Device Fault Code 1
+//*ODIL_ID:2036_24*
+//
+NoDe: LAR1  #BK_AR1; 
+      LAR2  #BK_AR2_OB1; 
+      L     0; 
+      SLD   3; 
+      LAR1  ; 
+      CAR   ; //Multi Instance
+      OPN   #DB_CONFIG; 
+DebV: L     0; 
+      L     DBW [AR2,P#0.0]; 
+      ==I   ; 
+      JC    End1; 
+      L     1441; // 1441 = 1442 - 1
+      +I    ; 
+      SLD   3; 
+      LAR1  ; 
+      L     1; 
+      L     DIB [AR1,P#0.0]; 
+      ==I   ; 
+      JC    EndV; 
+      +AR2  P#2.0; //DBX Ptr
+      JU    DebV; 
+EndV: L     DBW [AR2,P#0.0]; 
+      LAR1  #BK_AR1; 
+      LAR2  #BK_AR2_OB1; 
+      T     #Diag.Info_ala_iodevice; 
+      SET   ; 
+      R     #Defaut; 
+      R     #Diag.Def; 
+      S     #Alarme; 
+      S     #Diag.Ala; 
+      JU    End1; 
+NETWORK
+TITLE =Ecriture Defaut ou alarme pour MOP
+//*ODIL_ID:2036_25*
+Ihmp: L     1442; 
+      SLD   3; 
+      LAR1  ; 
+      OPN   #DB_SFM; 
+      L     DBW   46; 
+MOOP: T     #Boucle; 
+      L     B#16#2; 
+      L     DIB [AR1,P#0.0]; 
+      ==D   ; 
+      S     #Defaut; 
+      S     #Diag.Def; 
+      L     B#16#1; 
+      ==D   ; 
+      S     #Alarme; 
+      S     #Diag.Ala; 
+      +AR1  P#1.0; //DIX Ptr
+      L     #Boucle; 
+      LOOP  MOOP; 
+NETWORK
+TITLE =
+//*ODIL_ID:2036_26*
+End1: LAR1  #BK_AR1; 
+      LAR2  #BK_AR2_OB1; 
+      A     #Defaut; 
+      R     #Alarme; 
+      R     #Diag.Ala; 
+NETWORK
+TITLE =Writing Pn_run
+//Specifique RSA
+//*ODIL_ID:2036_27*
+//
+      A     #D_pn; 
+      S     #Pn_run; 
+      A     #Defaut; 
+      R     #Pn_run; 
+      NOP   0; 
+NETWORK
+TITLE =Writing default code
+//Specifique RSA
+//*ODIL_ID:2036_28*
+//
+      A     #Ba1i; 
+      =     L     88.0; 
+      A     L     88.0; 
+      A     #Alarme; 
+      JNB   _001; 
+      L     257; 
+      T     #Diag.Codedef; 
+_001: NOP   0; 
+      A     L     88.0; 
+      A     #Defaut; 
+      JNB   _002; 
+      L     1; 
+      T     #Diag.Codedef; 
+_002: NOP   0; 
+      A     L     88.0; 
+      AN    #Alarme; 
+      AN    #Defaut; 
+      JNB   _003; 
+      L     0; 
+      T     #Diag.Codedef; 
+_003: NOP   0; 
+NETWORK
+TITLE =Writing Numliste for IHMP
+//Specifique RSA
+//*ODIL_ID:2036_29*
+//
+      L     52; 
+      T     #Diag.Numliste; 
+      NOP   0; 
+NETWORK
+TITLE =End of OB1
+//*ODIL_ID:2036_30*
+      JU    END; 
+
+NETWORK
+TITLE =OB86
+//********************  OB 86  ********************
+//*ODIL_ID:2036_31*
+//
+
+
+NETWORK
+TITLE =Backup AR2
+//*ODIL_ID:2036_32*
+      TAR2  #BK_AR2_OB86; 
+
+NETWORK
+TITLE =Controle parametres OB86
+//*ODIL_ID:2036_33*
+OB86: A(    ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_Class; 
+      L     B#16#39; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_Class; 
+      L     B#16#38; 
+      ==I   ; 
+      )     ; 
+      )     ; 
+      A(    ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CB; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CC; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CD; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CE; 
+      ==I   ; 
+      )     ; 
+      )     ; 
+      =     #Insert_Value; 
+NETWORK
+TITLE =Insertion donnees de diagnostic dans le buffer
+//*ODIL_ID:2036_34*
+      AN    #Insert_Value; 
+      JC    EndI; 
+      L     P#884.0; // Startadress timestamp
+      LAR1  ; 
+Copy: L     DID [AR1,P#0.0]; // Move PLC timestamp
+      T     DID [AR1,P#8.0]; 
+      L     DID [AR1,P#4.0]; 
+      T     DID [AR1,P#12.0]; 
+      TAR1  ; 
+      L     P#8.0; 
+      -D    ; 
+      LAR1  ; 
+      TAR1  ; 
+      L     P#100.0; 
+      >=D   ; 
+      JC    Copy; 
+      L     P#998.0; // Startadress diagnostic info
+      LAR1  ; 
+Cop1: L     DIB [AR1,P#0.0]; // Move Event class
+      T     DIB [AR1,P#1.0]; 
+      L     DIB [AR1,P#100.0]; // Move Event number
+      T     DIB [AR1,P#101.0]; 
+      L     DIB [AR1,P#200.0]; // Move Mastersystem ID
+      T     DIB [AR1,P#201.0]; 
+      L     DIB [AR1,P#300.0]; // Move DP-Station adress
+      T     DIB [AR1,P#301.0]; 
+      TAR1  ; 
+      L     P#1.0; 
+      -D    ; 
+      LAR1  ; 
+      TAR1  ; 
+      L     P#900.0; 
+      >=D   ; 
+      JC    Cop1; 
+      L     P##Tmp_PLC_Time; 
+      LAR1  ; 
+      L     LD [AR1,P#2.0]; // Date & Time
+      T     DID  100; 
+      L     LD [AR1,P#6.0]; // Date & Time
+      T     DID  104; 
+      L     P##Tmp_SFC6; // Pointer OB86 info
+      LAR1  ; 
+      L     LB [AR1,P#0.0]; // Event class
+      T     #History.EventClass[1]; 
+      L     LB [AR1,P#1.0]; // Event number(C0,C1,....)
+      T     #History.Fault_ID[1]; 
+      L     LB [AR1,P#10.0]; //Mastersytem ID
+      SRD   3; 
+      AW    W#16#F; 
+      T     #History.Mastersystem[1]; 
+      L     LB [AR1,P#11.0]; // IO Device
+      T     #History.Slave[1]; 
+NETWORK
+TITLE =Controle parametres OB86
+//*ODIL_ID:2036_35*
+EndI: A(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_Class; 
+      L     B#16#39; 
+      ==I   ; 
+      )     ; 
+      A(    ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CB; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CC; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CD; 
+      ==I   ; 
+      )     ; 
+      O(    ; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      L     B#16#CE; 
+      ==I   ; 
+      )     ; 
+      )     ; 
+      =     #Insert_Value; 
+NETWORK
+TITLE =Incrementation counter IO Device
+//*ODIL_ID:2036_36*
+      AN    #Insert_Value; 
+      JC    END; 
+      L     #Tmp_SFC6.Top_SI.ZI_2_3; 
+      SLD   22; 
+      SRD   22; 
+      T     #IOD_No; 
+      L     1698; 
+      +I    ; 
+      L     1; 
+      -I    ; 
+      SLW   3; 
+      LAR1  ; 
+      L     DIB [AR1,P#0.0]; 
+      L     1; 
+      +I    ; 
+      T     DIB [AR1,P#0.0]; 
+NETWORK
+TITLE =Insertion diagnostic info for IHMP
+//Specifique RSA
+//*ODIL_ID:2036_37*
+//
+      AN    #Insert_Value; 
+      JC    END; 
+      L     #Diag.Info_codedef_iodevice9; 
+      T     #Diag.Info_codedef_iodevice10; 
+      L     #Diag.Info_codedef_iodevice8; 
+      T     #Diag.Info_codedef_iodevice9; 
+      L     #Diag.Info_codedef_iodevice7; 
+      T     #Diag.Info_codedef_iodevice8; 
+      L     #Diag.Info_codedef_iodevice6; 
+      T     #Diag.Info_codedef_iodevice7; 
+      L     #Diag.Info_codedef_iodevice5; 
+      T     #Diag.Info_codedef_iodevice6; 
+      L     #Diag.Info_codedef_iodevice4; 
+      T     #Diag.Info_codedef_iodevice5; 
+      L     #Diag.Info_codedef_iodevice3; 
+      T     #Diag.Info_codedef_iodevice4; 
+      L     #Diag.Info_codedef_iodevice2; 
+      T     #Diag.Info_codedef_iodevice3; 
+      L     #Diag.Info_codedef_iodevice1; 
+      T     #Diag.Info_codedef_iodevice2; 
+      L     #Diag.Info_def_iodevice9; 
+      T     #Diag.Info_def_iodevice10; 
+      L     #Diag.Info_def_iodevice8; 
+      T     #Diag.Info_def_iodevice9; 
+      L     #Diag.Info_def_iodevice7; 
+      T     #Diag.Info_def_iodevice8; 
+      L     #Diag.Info_def_iodevice6; 
+      T     #Diag.Info_def_iodevice7; 
+      L     #Diag.Info_def_iodevice5; 
+      T     #Diag.Info_def_iodevice6; 
+      L     #Diag.Info_def_iodevice4; 
+      T     #Diag.Info_def_iodevice5; 
+      L     #Diag.Info_def_iodevice3; 
+      T     #Diag.Info_def_iodevice4; 
+      L     #Diag.Info_def_iodevice2; 
+      T     #Diag.Info_def_iodevice3; 
+      L     #Diag.Info_def_iodevice1; 
+      T     #Diag.Info_def_iodevice2; 
+      L     #Tmp_SFC6.Top_SI.EV_No; 
+      T     #Diag.Info_codedef_iodevice1; 
+NETWORK
+TITLE =
+//*ODIL_ID:2036_38*
+      LAR2  #BK_AR2_OB86; 
+      JU    END; 
+NETWORK
+TITLE =OB100
+//********************  OB 100  ********************
+//*ODIL_ID:2036_39*
+//
+
+
+NETWORK
+TITLE =Initialisation state IO Devices
+//*ODIL_ID:2036_40*
+OB10: L     3; 
+      T     LB     0; 
+      CALL "FILL" (
+           BVAL                     := LB     0,
+           RET_VAL                  := #Ret_Val_Code,
+           BLK                      := P#DIX 1442.0 BYTE 256);
+NETWORK
+TITLE =End of block
+//*ODIL_ID:2036_41*
+END:  NOP   0; 
+
+END_FUNCTION_BLOCK
+

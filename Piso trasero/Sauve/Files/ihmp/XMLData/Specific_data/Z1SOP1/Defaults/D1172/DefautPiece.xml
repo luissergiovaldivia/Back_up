@@ -1,0 +1,114 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DefautPiece>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">ISOFIX</Expression>
+    </Text>
+    <Image>SpecificData:\Images\</Image>
+  </DefautPiece>
+  <TypesPieces />
+  <CapteursPieces>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP1</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP1">K0DPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP2</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP2">K0DPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP3</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP3">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP3">K0DPP3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP4</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP4">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP4">K0DPP4&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP5</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP5">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP5">K0DPP5&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K0DPP6</Expression>
+      </Etiquette>
+      <EtatAttendu />
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="K0DPP6">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="K0DPP6">K0DPP6&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+  </CapteursPieces>
+  <Labels>
+    <Label>
+      <Nom>LBL_TitreCapteur</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sensores</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatActuel</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado actual :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatAttendu</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado esperado :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitrePgCR</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pagina Causas/Remedios</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>Msg_Actif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Activo</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_Inactif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Inactivo</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">REPARACIÓN</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

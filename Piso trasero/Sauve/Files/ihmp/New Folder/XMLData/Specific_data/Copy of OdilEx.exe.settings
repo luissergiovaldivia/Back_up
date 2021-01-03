@@ -1,0 +1,156 @@
+<Settings>
+  <User Name=".Default" />
+  <User Name="OdilExUser">
+    <Key Name="General">
+      <Value Name="LangueParDefaut">pt-BR</Value>
+      <Value Name="RecentFile">C:\Ihmp\BDD\ARF1.sli4;C:\Ihmp\BDD\ARF1_bu.sli4;C:\Ihmp\BDD\test\ARF1_110814.sli4;C:\Ihmp\BDD\test\velho ARF1.sli4;C:\Ihmp\BDD\Copy of ARF1.sli4</Value>
+      <Value Name="LangueExploitation">pt-BR</Value>
+    </Key>
+    <Key Name="Configuration">
+      <Value Name="ModeExploitation">non</Value>
+      <Value Name="SynchroAutoSmpLoc">non</Value>
+    </Key>
+    <Key Name="Général">
+      <Value Name="PosX">3</Value>
+      <Value Name="PosY">24</Value>
+      <Value Name="Visible">1</Value>
+    </Key>
+    <Key Name="SplitImagesApercu">
+      <Value Name="Height">150</Value>
+      <Value Name="SplitterDistance">51</Value>
+    </Key>
+    <Key Name="SplitImages">
+      <Value Name="Height">54</Value>
+      <Value Name="SplitterDistance">25</Value>
+    </Key>
+    <Key Name="SplitApercuReference">
+      <Value Name="Width">150</Value>
+      <Value Name="SplitterDistance">75</Value>
+    </Key>
+    <Key Name="Métier">
+      <Value Name="PosX">134</Value>
+      <Value Name="PosY">24</Value>
+      <Value Name="Visible">1</Value>
+    </Key>
+    <Key Name="ListChildView">
+      <Value Name="CollecteurDonnees$Sources du collecteur de données$DisplayName">319</Value>
+      <Value Name="CollecteurDonnees$Sources du collecteur de données$ParentDisplayName">100</Value>
+      <Value Name="SystemesCommandes$Systèmes de commande$DisplayName">150</Value>
+      <Value Name="SystemesCommandes$Systèmes de commande$ParentDisplayName">100</Value>
+      <Value Name="SystemesCommandes$Objets déclarés$ObjetAutomateIhmp">150</Value>
+      <Value Name="SystemesCommandes$Objets déclarés$ObjetAutomate">150</Value>
+      <Value Name="SystemesCommandes$Objets déclarés$DisplayName">200</Value>
+      <Value Name="SystemesCommandes$Objets déclarés$ParentDisplayName">150</Value>
+      <Value Name="PO$RzoNiv0$DisplayName">350</Value>
+      <Value Name="PO$Défauts IHMP$TexteIhmp">350</Value>
+      <Value Name="PO$Défauts IHMP$ObjetAutomate">150</Value>
+      <Value Name="PO$Défauts IHMP$MotCle">40</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$MotCle">90</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$AdresseSmploc">70</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$NumBitAutomateScreen">30</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$Mnemo">160</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$Libelle">300</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$RefZone">69</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$RefModule">30</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$RefCycle">30</Value>
+      <Value Name="Decoupage$Evénements SMPLOC$ValeurSuivi">70</Value>
+      <Value Name="Defauts$ID_DEFAUTS$TexteIhmp">350</Value>
+      <Value Name="Defauts$ID_DEFAUTS$ObjetAutomate">185</Value>
+      <Value Name="Defauts$ID_DEFAUTS$ParentDisplayName">195</Value>
+      <Value Name="Diagnostic$Diagnostic$DisplayName">120</Value>
+      <Value Name="Diagnostic$Diagnostic$ParentDisplayName">350</Value>
+      <Value Name="Consignes$Consignes IHMP$TexteIhmp">350</Value>
+      <Value Name="Consignes$Consignes IHMP$ObjetAutomate">150</Value>
+      <Value Name="Consignes$Consignes IHMP$ParentDisplayName">100</Value>
+      <Value Name="PO$Consignes IHMP$TexteIhmp">309</Value>
+      <Value Name="PO$Consignes IHMP$ObjetAutomate">265</Value>
+      <Value Name="PO$Informations IHMP$TexteIhmp">350</Value>
+      <Value Name="PO$Informations IHMP$ObjetAutomate">150</Value>
+      <Value Name="PO$Informations IHMP$MotCle">40</Value>
+      <Value Name="PO$Page de Mvt$DisplayName">350</Value>
+      <Value Name="PO$Page de Mvt$ParentDisplayName">120</Value>
+      <Value Name="ReseauN0Step7$Défauts IHMP$TexteIhmp">350</Value>
+      <Value Name="ReseauN0Step7$Défauts IHMP$ObjetAutomate">150</Value>
+      <Value Name="ReseauN0Step7$Défauts IHMP$MotCle">40</Value>
+      <Value Name="CommandesManuelles$Mouvement manuel IHMP$DisplayName">350</Value>
+      <Value Name="CommandesManuelles$Mouvement manuel IHMP$ParentDisplayName">100</Value>
+      <Value Name="Informations$Informations IHMP$TexteIhmp">350</Value>
+      <Value Name="Informations$Informations IHMP$ObjetAutomate">198</Value>
+      <Value Name="Informations$Informations IHMP$ParentDisplayName">100</Value>
+      <Value Name="PO$Pages de mouvements manuels IHMP$DisplayName">350</Value>
+      <Value Name="Evenement$Evénements SMPLOC$MotCle">70</Value>
+      <Value Name="Evenement$Evénements SMPLOC$AdresseSmploc">70</Value>
+      <Value Name="Evenement$Evénements SMPLOC$NumBitAutomateScreen">30</Value>
+      <Value Name="Evenement$Evénements SMPLOC$Mnemo">160</Value>
+      <Value Name="Evenement$Evénements SMPLOC$Libelle">300</Value>
+      <Value Name="Evenement$Evénements SMPLOC$RefZone">40</Value>
+      <Value Name="Evenement$Evénements SMPLOC$RefModule">30</Value>
+      <Value Name="Evenement$Evénements SMPLOC$RefCycle">30</Value>
+      <Value Name="Evenement$Evénements SMPLOC$ValeurSuivi">70</Value>
+      <Value Name="Configuration$Défauts IHMP$TexteIhmp">350</Value>
+      <Value Name="Configuration$Défauts IHMP$ObjetAutomate">150</Value>
+      <Value Name="Configuration$Défauts IHMP$MotCle">40</Value>
+      <Value Name="Configuration$Informations IHMP$TexteIhmp">350</Value>
+      <Value Name="Configuration$Informations IHMP$ObjetAutomate">150</Value>
+      <Value Name="Configuration$Consignes IHMP$TexteIhmp">350</Value>
+      <Value Name="Configuration$Consignes IHMP$ObjetAutomate">150</Value>
+      <Value Name="Configuration$Consignes IHMP$MotCle">40</Value>
+      <Value Name="Configuration$Pages de mouvements manuels IHMP$DisplayName">350</Value>
+      <Value Name="Configuration$Pages de mouvements manuels IHMP$NumPage">150</Value>
+      <Value Name="Configuration$Bandeau haut IHMP$DisplayName">350</Value>
+      <Value Name="Configuration$Bandeau haut IHMP$ObjetAutomate">150</Value>
+      <Value Name="Configuration$Modes de marche$DisplayName">350</Value>
+      <Value Name="Configuration$Ecrans exploitation$DisplayName">350</Value>
+      <Value Name="Diversites$Evénements SMPLOC/Cycle$DisplayName">350</Value>
+      <Value Name="Diversites$Evénements SMPLOC/Cycle$ObjetAutomate">150</Value>
+      <Value Name="Diversites$Evénements SMPLOC/Cycle$ParentDisplayName">100</Value>
+      <Value Name="Configuration$Mot de vie$DisplayName">350</Value>
+      <Value Name="Configuration$Mot de vie$ObjetAutomate">150</Value>
+      <Value Name="Configuration$Mot de vie$MotCle">40</Value>
+      <Value Name="ConfigurationProcess$TypeCritere$NumeroColonne">150</Value>
+      <Value Name="ConfigurationProcess$TypeCritere$Mnemo">150</Value>
+    </Key>
+    <Key Name="ConteneurExplorateurWnd">
+      <Value Name="CollecteurDonnees">392</Value>
+      <Value Name="PO">318</Value>
+      <Value Name="Decoupage">245</Value>
+      <Value Name="ReseauN1">185</Value>
+      <Value Name="EcransExploitation">302</Value>
+      <Value Name="EcransMaintenance">252</Value>
+      <Value Name="ReseauN0Step7">363</Value>
+      <Value Name="ModeDeMarche">302</Value>
+      <Value Name="Diversites">365</Value>
+      <Value Name="Configuration">192</Value>
+      <Value Name="RepartionEcransExploitation">206</Value>
+      <Value Name="RepartionEcransMaintenance">293</Value>
+    </Key>
+    <Key Name="Export">
+      <Value Name="ExportSmploc">non</Value>
+      <Value Name="ExportIhmpGif">oui</Value>
+      <Value Name="ExportIhmpXml">non</Value>
+      <Value Name="DirIhmp">C:\ihmp\XmlData\</Value>
+      <Value Name="FileSmploc">C:\Smploc\GecLoc\predis_53.xls</Value>
+      <Value Name="ModifierChemin">non</Value>
+    </Key>
+    <Key Name="GetParamPcSmploc">
+      <Value Name="NumPc">53</Value>
+      <Value Name="MnemoPc">MOP_ARF1</Value>
+      <Value Name="LibellePc">PC ARF1</Value>
+      <Value Name="AdresseIp">10.187.6.165</Value>
+    </Key>
+    <Key Name="ToolBarVisioView">
+      <Value Name="Visio">oui</Value>
+    </Key>
+    <Key Name="Workspace">
+      <Value Name="TSP_ExplorateurMetier">oui</Value>
+    </Key>
+    <Key Name="Os intercâmbios entre Odil e Visio">
+      <Value Name="PosX">3</Value>
+      <Value Name="PosY">49</Value>
+    </Key>
+    <Key Name="amplo">
+      <Value Name="PosX">3</Value>
+      <Value Name="PosY">24</Value>
+    </Key>
+  </User>
+</Settings>

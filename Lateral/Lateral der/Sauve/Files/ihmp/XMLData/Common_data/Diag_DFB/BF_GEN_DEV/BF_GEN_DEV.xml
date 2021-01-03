@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>BF_GENDEV_COD_DEF_1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>BF_GENDEV_COD_DEF_2</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>BF_GENDEV_COD_DEF_256</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>BF_GENDEV_COD_DEF_512</Text>
+    </Doc>
+    <Doc Num="16384">
+      <Text>BF_GENDEV_COD_DEF_16384</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

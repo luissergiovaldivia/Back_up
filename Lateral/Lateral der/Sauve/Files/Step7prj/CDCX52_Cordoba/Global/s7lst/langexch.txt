@@ -1,0 +1,15 @@
+
+LR2 - C:\Step7prj\LR2
+
+Fichier-journal : C:\Step7prj\LR2\global\s7lst\langexch.txt
+Date : 26/02/2015  Heure : 07:24:36
+
+Options : Langue cible : '10(1) Espagnol (traditionnel)'
+
+Changement de langue pour : FB1
+     Changé : BlockTitle
+     Changé : NetworkTitle
+     Changé : NetworkComment
+     Changé : InterfaceComment
+
+Changement de langue terminé : 0 erreur(s), 0 avertissement(s)

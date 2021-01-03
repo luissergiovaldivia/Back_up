@@ -1,0 +1,1001 @@
+<EcranUser Echelle="None">
+  <GroupeDC>117341_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="35" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="320" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="3" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - DRIVEBOX E0VAR117523" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">DRIVEBOX E0VAR</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="1 - FB Defecto117512" Line="3" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">FB Defecto</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="None" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - FB Defecto" Color="-65536" Row="1" Height="Auto" Width="100" PosX="10" PosY="10" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FB Defecto</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Codedef">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Codedef">Z2E0.E0_G120D_S.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Codedef">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Codedef" Filtre="2000">Z2E0.E0_G120D_S.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <TextList Name="2 - Visualizador de lista" Row="1" Height="Auto" Width="480" PosX="120" PosY="10">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Codedef">Z2E0.E0_G120D_S.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Défaut BF" />
+    </TextList>
+  </Cadre>
+  <Cadre Name="1 - Control del variador y diagnostico117343" Line="2" AlignY="Auto" Height="Full" Width="220" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Control del variador y diagnostico</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="210" AlignY="None" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - Retornar" Color="-16711936" Row="1" Height="Auto" Width="60" PosX="10" PosY="0" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Retornar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.OAR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.OAR">Z2E0.E0_G120D_S.Pilotage.OAR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.OAR">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.OAR" Filtre="2000">Z2E0.E0_G120D_S.Pilotage.OAR&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="2 - EJE 1" Color="-4144960" Row="1" Height="Auto" Width="60" PosX="75" PosY="0" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE 1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="BA1" Filtre="2000">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - Avanzar" Color="-256" Row="1" Height="Auto" Width="60" PosX="140" PosY="0" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Avanzar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.OAV">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.OAV">Z2E0.E0_G120D_S.Pilotage.OAV&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.OAV">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.OAV" Filtre="2000">Z2E0.E0_G120D_S.Pilotage.OAV&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="4 - MESA" Row="1" Height="45" Width="95" PosX="10" PosY="30" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MESA</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="1" NumBit="-1" Description="Z2E0.Selection1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="5 - FORZADO DE FRENO" Row="1" Height="45" Width="95" PosX="105" PosY="30" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FORZADO DE FRENO</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="2" NumBit="-1" Description="Z2E0.Selection1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="6 - Retornar" Color="-16711936" Row="1" Height="Auto" Width="60" PosX="10" PosY="80" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Retornar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AR1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AR1">Z2E0.E0_G120D_S.Pilotage.AR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AR1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AR1" Filtre="2000">Z2E0.E0_G120D_S.Pilotage.AR1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="7 - EJE 2" Color="-4144960" Row="1" Height="Auto" Width="60" PosX="75" PosY="80" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE 2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AXE2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AXE2">Z2E0.E0_G120D_S.Pilotage.AXE2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AXE2">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AXE2" Filtre="2000">Z2E0.E0_G120D_S.Pilotage.AXE2&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="8 - Avanzar" Color="-256" Row="1" Height="Auto" Width="60" PosX="140" PosY="80" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Avanzar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AV1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AV1">Z2E0.E0_G120D_S.Pilotage.AV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AV1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AV1" Filtre="2000">Z2E0.E0_G120D_S.Pilotage.AV1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="9 - MOVIMIENTO 1" Row="1" Height="45" Width="95" PosX="10" PosY="110" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MOVIMIENTO 1</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="3" NumBit="-1" Description="Z2E0.Selection1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Pilotage.AXE2">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Pilotage.AXE2">Z2E0.E0_G120D_S.Pilotage.AXE2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="10 - MOVIMIENTO 2" Row="1" Height="45" Width="0" PosX="105" PosY="110" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MOVIMIENTO 2</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="4" NumBit="-1" Description="Z2E0.Selection1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Text Name="11 - F act :" Color="-16777216" Row="1" Height="Auto" Width="90" PosX="10" PosY="160">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">F act :</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="95" PosX="105" PosY="160" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Actual_frequency">Z2E0.E0_G120D_S.Diag.Actual_frequency&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="13 - I act :" Color="-16777216" Row="1" Height="Auto" Width="90" PosX="10" PosY="190">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">I act :</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="95" PosX="105" PosY="190" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Actual_current">Z2E0.E0_G120D_S.Diag.Actual_current&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Voyant Name="15 - Defecto" Color="-65536" Row="1" Height="Auto" Width="90" PosX="10" PosY="220" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <ReadVal Row="1" Height="Auto" Width="95" PosX="105" PosY="220" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Drive_error_number">Z2E0.E0_G120D_S.Diag.Drive_error_number&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Voyant Name="17 - Alarma" Color="-256" Row="1" Height="Auto" Width="90" PosX="10" PosY="250" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Alarma</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <ReadVal Row="1" Height="Auto" Width="40" PosX="Right" PosY="250" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="2 - Estado del Variador117409" Line="2" AlignY="Auto" Height="Full" Width="220" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Estado del Variador</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="15" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="173" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Variador Listo                      " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Variador Listo                      </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="1 - " Color="-16711936" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="2 - " Color="-16711936" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_ready_to_run&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="2 - Variador Listo para correr             " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Variador Listo para correr             </Expression>
+      </Text>
+    </Text>
+    <Text Name="3 - Variador funcionando                   " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Variador funcionando                   </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="3 - " Color="-16711936" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_running&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="4 - " Color="-65536" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_fault_active&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="4 - Defecto de Variador activo              " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto de Variador activo              </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="5 - " Color="-256" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Drive_warning_active&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="5 - Advertencia Variador" Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Advertencia Variador</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="6 - " Color="-256" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit">Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.W_motor_current_limit&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="6 - limite Corriente / torque" Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">limite Corriente / torque</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="7 - " Color="-16711936" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_holding_brake_act&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="7 - Freno abierto                         " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Freno abierto                         </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="8 - " Color="-256" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_overload&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="8 - Sobrecarga de motor                    " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sobrecarga de motor                    </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="9 - " Color="-16711936" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Motor_runs_right&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="9 - Motor funciona bien                    " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Motor funciona bien                    </Expression>
+      </Text>
+    </Text>
+    <Text Name="10 - Sobrecarga de variador                    " Color="-8388608" Row="2" Height="Auto" Width="175" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sobrecarga de variador                    </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="10 - " Color="-256" Row="1" Height="25" Width="10" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload">Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload" Filtre="2000">Z2E0.E0_G120D_S.Diag.ZSW1.Inverter_overload&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+  </Cadre>
+  <Cadre Name="3 - Entradas Digitales117472" Line="2" AlignY="Auto" Height="Full" Width="300" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Entradas Digitales</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="80" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - DI_0 : E0DPOS180" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_0 : E0DPOS180</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVA1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="1 - CU_X7: DI0                    " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X7: DI0                    </Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - CU_X7: DI1               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X7: DI1               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="2 - DI_1 : " Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_1 : </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAA1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - DI_2 : E0DPOS0" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_2 : E0DPOS0</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DCGVR1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="3 - CU_X8: DI2               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X8: DI2               </Expression>
+      </Text>
+    </Text>
+    <Text Name="4 - CU_X8: DI3               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X8: DI3               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="4 - DI_3 : E0DPOS90" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_3 : E0DPOS90</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DAR1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="5 - CU_X9: DI4               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X9: DI4               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="5 - DI_4 : " Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_4 : </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_4&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="6 - CU_X9: DI5               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X9: DI5               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="6 - DI_5" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5" Filtre="2000">Z2E0.E0_G120D_S.Diag.Status_binary_inputs.DI_5&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="7 - CU_X16: DI6               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X16: DI6               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="7 - DI_6 E0DPVR" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_6 E0DPVR</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DPVR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="E0DPVR">E0DPVR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DPVR">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="E0DPVR" Filtre="2000">E0DPVR&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="8 - CU_X16: DI7               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X16: DI7               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="8 - DI_7 E0DPVA" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_7 E0DPVA</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DPVA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="E0DPVA">E0DPVA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DPVA">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="E0DPVA" Filtre="2000">E0DPVA&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="9 - CU_X17: DI8               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X17: DI8               </Expression>
+      </Text>
+    </Text>
+    <Voyant Name="9 - DI_8" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_8</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="BA0" Filtre="2000">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="10 - DI_9 E0DDP1 SOBREPASO OK" Color="-16711936" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DI_9 E0DDP1 SOBREPASO OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DDP1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="E0DDP1">E0DDP1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <Clignotant>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="E0DDP1">
+          <VariableDC Source="Source SimaticNet CmdClignotant.API Siemens 1" ItemOpc="E0DDP1" Filtre="2000">E0DDP1&lt;&lt;Source&gt;&gt;Source SimaticNet CmdClignotant.API Siemens 1</VariableDC>
+        </Condition>
+      </Clignotant>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="10 - CU_X17: DI9               " Color="-16744448" Row="1" Height="Auto" Width="80" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CU_X17: DI9               </Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Listes>
+    <Liste Id="Défaut BF">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto de fcia. Min/Max / Defecto fcia. mini maxi</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto Rele linea variador / Defecto RLV</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto de freno / Defecto fenado</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto rele de linea / Defecto RL</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="16">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto rele termico / Defecto RT</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="32">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto parametraje tiempo de caida demasiado largo / Defecto recaida </Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="256">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Alarma rele linea variador / Alarma RLV</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id7" Value="512">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Alarma rele linea  / Alarma RL</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id8" Value="1024">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto variador  / Defecto var.</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id9" Value="2048">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto int. TM  / Defecto disjuntor</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id10" Value="4096">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Opcion seleccion flujo adelante / reset flujo atras </Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id11" Value="8192">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Defecto variador no disponible  / Defecto variador reservado </Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id12" Value="16384">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Frecuencia fuera de rango  / Frecuencia fuera de limite </Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+  </Listes>
+  <Closing>
+    <Enable>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Enable>
+    <Actions>
+      <Action Value="0" Id="1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2E0.Selection1">Z2E0.Selection1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Action>
+    </Actions>
+    <AlgoIO />
+  </Closing>
+</EcranUser>

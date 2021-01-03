@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>Tab_stock1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>Tab_stock2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>Tab_stock4</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>Tab_stock8</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>Tab_stock16</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

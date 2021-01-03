@@ -1,0 +1,43 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>AppelMaintenance_N12</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>AppelMaintenance_N12</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>DefSilhouette_N12</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>DefVirageChargement_N12</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>DefVirageDechargement_N12</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>DefChargementAmont_N12</Text>
+      </Doc>
+   </DocsWord12>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>DefLimiteurEffort_N34</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>DefDisjonct_N34</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>DefSilhouette_N34</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>DefVirageChargement_N34</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>DefVirageDechargement_N34</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>DefChargementAmont_N34</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

@@ -1,0 +1,6 @@
+<ihmpPupitre>
+  <GroupeDC>Pupitres</GroupeDC>
+  <Pupitre>
+    <VariableDC Source="DossierIPPupitre" FileName="Z1SOP.txt">Z1SOP</VariableDC>
+  </Pupitre>
+</ihmpPupitre>

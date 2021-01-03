@@ -1,0 +1,23 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>BF_RFID_COD_DEF_1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>BF_RFID_COD_DEF_2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>BF_RFID_COD_DEF_4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>BF_RFID_COD_DEF_8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>BF_RFID_COD_DEF_16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>BF_RFID_COD_DEF_32</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

@@ -1,0 +1,112 @@
+<EcranUser Echelle="None">
+  <GroupeDC>35798_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - SELECCION DEL PUESTO35800" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">SELECCION DEL PUESTO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="200" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="300" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 -  ZONA 1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES"> ZONA 1</Expression>
+      </Text>
+    </Text>
+    <FormImage Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Image="SpecificData:\Images\Ilot_synoptique.gif">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Ilot_synoptique.gif</Expression>
+      </Text>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+      <Actions />
+    </FormImage>
+    <ButtonNav Name="2 - A0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">A0</Expression>
+      </Text>
+      <ClickNav CodeEcran="35815_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="3 - D0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">D0</Expression>
+      </Text>
+      <ClickNav CodeEcran="35859_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="4 - F0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">F0</Expression>
+      </Text>
+      <ClickNav CodeEcran="35900_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <Text Name="5 -  ZONA 2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES"> ZONA 2</Expression>
+      </Text>
+    </Text>
+    <ButtonNav Name="6 - C0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C0</Expression>
+      </Text>
+      <ClickNav CodeEcran="56652_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="7 - E0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">E0</Expression>
+      </Text>
+      <ClickNav CodeEcran="56129_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="8 - G0" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">G0</Expression>
+      </Text>
+      <ClickNav CodeEcran="56170_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+  <Listes />
+</EcranUser>

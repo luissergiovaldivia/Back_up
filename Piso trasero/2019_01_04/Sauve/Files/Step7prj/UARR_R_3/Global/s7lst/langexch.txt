@@ -1,0 +1,9 @@
+
+ARF1 - C:\Step7prj\ARF1
+
+Archivo de informe: C:\Step7prj\ARF1\global\s7lst\langexch.txt
+Fecha: 30/06/2013  Hora: 14:51:58
+
+Configuración: Idioma de destino: '9(1) English (United States)'
+
+Cambio de idioma finalizado: 0 errores, 0 advertencia(s)

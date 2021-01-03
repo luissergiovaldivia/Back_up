@@ -1,0 +1,41 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>TabAvalSC1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>TabAvalSC2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>TabAvalSC3</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>TabAvalSC4</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>TabAvalSC5</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>TabAvalSC6</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>TabAvalSC7</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>TabAvalSC8</Text>
+      </Doc>
+      <Doc Num="256">
+         <Text>TabAvalSC9</Text>
+      </Doc>
+      <Doc Num="512">
+         <Text>TabAvalSC10</Text>
+      </Doc>
+      <Doc Num="1024">
+         <Text>TabAvalSC11</Text>
+      </Doc>
+      <Doc Num="2048">
+         <Text>TabAvalSC12</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

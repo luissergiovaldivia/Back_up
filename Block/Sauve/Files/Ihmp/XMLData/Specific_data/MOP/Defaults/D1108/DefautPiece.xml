@@ -1,0 +1,97 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DefautPiece>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">DEFECTO CARGA DE PIEZA LG</Expression>
+    </Text>
+    <Image>SpecificData:\Images\LG.gif</Image>
+  </DefautPiece>
+  <TypesPieces>
+    <TypePiece NumPiece="1">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2LG.S2LGDIV">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z2LG.S2LGDIV">Z2LG.S2LGDIV&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </TypePiece>
+  </TypesPieces>
+  <CapteursPieces>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">LGDPP1</Expression>
+      </Etiquette>
+      <EtatAttendu>
+        <TypePiece Valeur="0">1</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="LGDPP1">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="LGDPP1">LGDPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+      </EtatAttendu>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="LGDPP1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="LGDPP1">LGDPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">LGDPP2</Expression>
+      </Etiquette>
+      <EtatAttendu>
+        <TypePiece Valeur="0">1</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="LGDPP2">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="LGDPP2">LGDPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+      </EtatAttendu>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="LGDPP2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="LGDPP2">LGDPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+  </CapteursPieces>
+  <Labels>
+    <Label>
+      <Nom>LBL_TitreCapteur</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sensores</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatActuel</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado actual :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatAttendu</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado esperado :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitrePgCR</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pagina Causas/Remedios</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>Msg_Actif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Activo</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_Inactif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Inactivo</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">REPARACIÓN</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

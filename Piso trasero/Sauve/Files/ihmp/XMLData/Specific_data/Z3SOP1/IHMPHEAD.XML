@@ -1,0 +1,35 @@
+<IhmpHeader>
+  <GroupeDC>Voyants</GroupeDC>
+  <IhmpLight Index="0" ColorActif="-65536">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Defecto a tratar</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Pilot.ihm1def">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z3.Z3MODES.Pilot.ihm1def">Z3.Z3MODES.Pilot.ihm1def&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="1" ColorActif="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Consigna a leer</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Pilot.ihm1cns">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z3.Z3MODES.Pilot.ihm1cns">Z3.Z3MODES.Pilot.ihm1cns&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="2" ColorActif="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Información a leer</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Pilot.ihm1inf">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z3.Z3MODES.Pilot.ihm1inf">Z3.Z3MODES.Pilot.ihm1inf&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="3" ColorActif="-256">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Modo específico</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Diag.Ihmmes1">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z3.Z3MODES.Diag.Ihmmes1">Z3.Z3MODES.Diag.Ihmmes1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+</IhmpHeader>

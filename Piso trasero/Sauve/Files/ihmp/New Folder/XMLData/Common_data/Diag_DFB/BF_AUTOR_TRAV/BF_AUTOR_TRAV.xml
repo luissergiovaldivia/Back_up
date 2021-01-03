@@ -1,0 +1,11 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>BF_autotrav_COD_DEF_1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>BF_autotrav_COD_DEF_2</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

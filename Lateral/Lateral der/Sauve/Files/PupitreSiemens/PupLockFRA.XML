@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<CONFIG_APPLICATIONS>
+	<IdentFile HMACode="06011968"> </IdentFile>
+	<Application>
+		<Description Name="SIMATIC Manager - HMALogon_Configuration" ExeName="S7tgtopx.exe" ClassName="s7tgtopx">
+			<Menu UserIndexList="" MenuText="&amp;Fichier">
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Nouveau...	Ctrl+N">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Assis&amp;tant &apos;Nouveau Projet&apos;...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="F&amp;ermer">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Mu&amp;ltiprojet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Insérer dans le &amp;multiprojet..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Créer dans le multiprojet..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Supprimer du multiprojet"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Réinsérer après édition..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="S&amp;upprimer pour édition..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Définir comme &amp;bibliothèque principale"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Synchronis&amp;er les projets..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Carte &amp;mémoire S7">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Ou&amp;vrir"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Calcul du total de contrôle"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="E&amp;ffacer..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Fichier carte mémoire">
+					<SousSousMenu UserIndexList="1" SousSousMenuText="&amp;Nouveau..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="1" SousSousMenuText="O&amp;uvrir..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Enregistrer so&amp;us...	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Effa&amp;cer...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Réorgan&amp;iser...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Gérer...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Archiver...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Désarchiver...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Im&amp;primer">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Liste d&apos;objets...	Ctrl+P"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Objet	Ctrl+Alt+P"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Messages..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Mi&amp;se en page...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 HMALogon_Configuration (Projet) -- C:\...\S7Pro">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;2 mise (Projet) -- C:\Program Files\Siemens\Step7">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;3 bibi (Projet) -- C:\Program Files\Siemens\Step7">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;4 PCS 7 Library V61 (Bibliothèque) -- C:\...\PCS_">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Couper	Ctrl+X">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;pier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Effacer	Suppr">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Sélectionner tout	Ctrl+A">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;nnuler la sélection">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Renommer	F2">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés de l&apos;o&amp;bjet...	Alt+Entrée">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés spéci&amp;fiques de l&apos;objet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Contrôle-commande..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Signalisation..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Numéros de message..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Supprimer &amp;messages groupés de conduite de process"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ouvr&amp;ir un objet	Ctrl+Alt+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Vérifier la cohérence des blocs...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Compi&amp;ler	Ctrl+B">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;xporter source...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Station">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Station SIMATIC 400 "> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Station SIMATIC 300  "> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Station SIMATIC H"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 Station SIMATIC PC"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;5 Autre station"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;6 SIMATIC S5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;7 PG/PC"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;8 SIMATIC 200 Station"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Sous-&amp;réseau">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 MPI "> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 PROFIBUS"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Industrial Ethernet"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 PtP"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Programme">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Programme S7 "> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Programme M7 "> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Programme"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 SINAMICS"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Logiciel S7">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Dossier Sources"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Dossier Blocs hors ligne"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Dossier Blocs en ligne"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 Source LIST"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;5 Source SCL"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;6 Fichier d&apos;informations compilation SCL"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;7 Source GRAPH"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Blo&amp;c S7">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Bloc d&apos;organisation"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Bloc fonctionnel"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Fonction"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 Bloc de données"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;5 Type de données"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;6 Table des variables"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Logiciel &amp;M7">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Dossier Blocs hors ligne"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="T&amp;able des mnémoniques">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Bibliothèque de te&amp;xte">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 Dossier Bibliothèque de texte"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Bibliothèque de texte utilisateur"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="S&amp;ource externe...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Objet WinCC">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;1 OS"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;2 Vue"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;3 Journal"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;4 OS (Client)"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;5 OS Standby"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;6 CAS"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;7 Réf. OS"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;8 CAS(Stby)"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;9 Connectivity_Station"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;A Client_Ref."> </SousSousMenu>
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Système cible">
+				<SousMenu UserIndexList="" SousMenuText="D&amp;roit d&apos;accès">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Créer"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Annuler"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;harger	Ctrl+L">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Configurer...	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Compiler et charger les &amp;objets...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger dans &amp;PG">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger statio&amp;n dans la PG...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Sauvegarder de RAM en ROM...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger le programme &amp;utilisateur sur carte mémoir">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer sur la carte mémoire...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Récupérer &amp;de la carte mémoire...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Gérer le système cible M&amp;7...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Par&amp;tenaires accessibles">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Modifier l&apos;identification du module...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Messa&amp;ges de CPU...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aff&amp;icher valeurs forçage permanent">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Visualiser/forcer des variables">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Diagnostic/Rég&amp;lage">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Diagnostic du matériel"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Etat du module...	Ctrl+D"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Etat de &amp;fonctionnement...	Ctrl+I"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Effacement généra&amp;l..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mettre à l&apos;&amp;heure..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Test du clignotement sur la station..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="PROFI&amp;BUS">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Attribuer adresse PROFIBUS..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Diagnostic partenaires, Visualisation/forçage"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Préparer le diagnostic de câble..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Afficher la &amp;topologie de réseau"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Editer station Ethernet...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Affectation PG/PC">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Annuler l&apos;a&amp;ffectation PG/PC">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Mise à jour du &amp;firmware">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Actualiser le système d&apos;e&amp;xploitation de l&apos;AP...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Enregistrer les données de &amp;maintenance...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Hors ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;En ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Grandes icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Petites icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Liste">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Détails">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="F&amp;iltrer...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Affi&amp;cher tous les niveaux	Num*">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="M&amp;asquer tous les niveaux	Num-">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Barre d&apos;o&amp;utils">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Ba&amp;rre d&apos;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ac&amp;tualiser	F5">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Protection &amp;d&apos;accès">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Activer"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Désactiver"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Gérer..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Synchroniser dans le multiprojet"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="S&amp;upprimer la protection d&apos;accès et le journal des"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Journal des modifications">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Activer"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Désactiver"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="A&amp;fficher..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="B&amp;ibliothèques de textes">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Bibliothèque de textes &amp;utilisateur"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Bibliothèque de textes &amp;système"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Langue de visuel...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Gestion multilingu&amp;e des textes">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Exporter..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Importer..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="C&amp;hangement de langue..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Effacer &amp;langue..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Réorganiser"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Configurer les commentaires..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réassignation...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés d&apos;e&amp;xécution...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Comparaison de blocs...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Données de ré&amp;férence">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Afficher	Ctrl+Alt+R"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Filtrer..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Générer"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Effacer"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Définir les données glo&amp;bales">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;onfiguration du réseau">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Simulation de modules">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;nfigurer le diagnostic de processus">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="OS">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Afficher le journal de compilation..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Afficher le journal du chargement..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Générer les données serveur"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Affecter le serveur OS..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Lancer la simulation OS"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Importer objets WinCC"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Importation de l&apos;OS...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Assistant &apos;Compiler plusieurs OS&apos;">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Démarrer..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Afficher le journal..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Mode de compilation..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Données C&amp;Ax">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Exporter..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Importer..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Paramétrage de l&apos;interface P&amp;G/PC...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="Fe&amp;nêtre">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Nouvelle fenêtre">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Disposition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ré&amp;organiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réduire tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Fermer &amp;tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 HMALogon_Configuration -- C:\Program Files\Siem">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide con&amp;textuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="" ButtonTextYes=""> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+		<Description Name="HW Config - [SIMATIC 300 (Configuration)" ExeName="S7HWCNFX.EXE" ClassName="Afx:400000:8:10011:0:1fa065b">
+			<Menu UserIndexList="" MenuText="S&amp;tation">
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Nouvelle...	Ctrl+N">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ouvrir en &amp;ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="En&amp;registrer">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Enregistrer et compiler	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Propriétés...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="I&amp;mporter...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="E&amp;xporter...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Vérifier la cohérence	Ctrl+Alt+K">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Vérifier fon&amp;ctionnalité CiR	Ctrl+Alt+F">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Imprimer...	Ctrl+P">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Aperçu avant impression...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Mi&amp;se en page...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 HMALogon_Configuration\SIMATIC 300">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;2 HMALogon_Configuration\SIMATIC">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;3 mise\SIMATIC 400(1)">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;4 HF3_ACC\api_accus_hf3">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Copier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Insertion re&amp;dondante">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Effacer	Suppr.">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Sélectionner tout	Ctrl+A">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;ller à">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Châssis...	Ctrl+E"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Partenaire PROFIBUS..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Partenaire Et&amp;hernet"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mnémoniques...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réseau maître">
+					<SousSousMenu UserIndexList="" SousSousMenuText="C&amp;oller"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Couper"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Activer CiR"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Désactiver CiR"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;PROFINET IO">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Rése&amp;au PROFINET IO"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Gérer le domaine..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="To&amp;pologie..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="S&amp;ynchronisme d&apos;horloge">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés de l&apos;o&amp;bjet...	Alt+Entrée">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir l&apos;objet avec...	Ctrl+tAlt+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Attribuer l&apos;ASSET-ID...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Lancer Device Tool">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Objet...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="R&amp;emplacer l&apos;objet...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réseau maître">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ré&amp;seau PROFINET IO">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Système cible">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Charger dans module...	Ctrl+L">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger dans &amp;PG...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Char&amp;ger l&apos;identification de module...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger &amp;l&apos;identification de module dans la PG...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Modules défaillants...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Etat du m&amp;odule...	Ctrl+D">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Etat de fonctionnement...	Ctrl+I">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Effaceme&amp;nt général...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Mettre à l&apos;&amp;heure...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Vi&amp;sualiser/Forcer">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Act&amp;ualiser le firmware...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="En&amp;registrer les noms d&apos;appareils sur carte mémoir">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;thernet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Editer les partenaires Ethernet..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Vérifier les noms d&apos;appareil..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Affecter des noms d&apos;appareil..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="PROF&amp;IBUS">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Att&amp;ribuer une adresse PROFIBUS..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Diagnostic des par&amp;tenaires, Visualisation/forçage"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Préparer le diagnostic de câble..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Afficher la topologie de réseau"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="E&amp;nregistrer la configuration PROFIBUS en ligne so"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Aff&amp;ecter le maître..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Enregistrer les données de ser&amp;vice...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="" SousMenuText="Cata&amp;logue	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Vue synoptique des adresses...	Ctrl+U">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Filtre">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Aucun filtre"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Modules de CPU &amp;1"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Modules de CPU &amp;2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Modules de CPU &amp;3"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Modules de CPU &amp;4"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Barre d&apos;o&amp;utils">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Barre d&apos;é&amp;tat">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Actualiser	F5">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réorganisation auto&amp;matique	F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Spécifier le module...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Configurer le réseau">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Table des mnémoniques	Ctrl+Alt+T">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Sig&amp;nalisation d&apos;erreurs système...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Pro&amp;fils du catalogue">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Actualiser le catalogue">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Installer mises à jour matérie&amp;lles...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Installer des fichiers &amp;GSD...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Rechercher dans Se&amp;rvice &amp;&amp; Support...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Créer le fichier GSD pour I-Device...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Fenêtre">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Nouvelle fenêtre">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Disposition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réorganiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 SIMATIC 300 (Configuration) -- HMALogon_Configu">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide conte&amp;xtuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="I&amp;nformations support produit	Ctrl+F2">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="1" ButtonTextYes="&amp;OUI"> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+		<Description Name="NetPro - [HMALogon_Configuration (Réseau" ExeName="S7NNAPPX.EXE" ClassName="Afx:400000:8:10011:0:16e06b7">
+			<Menu UserIndexList="" MenuText="&amp;Réseau">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="E&amp;nregistrer">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Enregistrer et compiler...	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Vérifier la cohérence	Ctrl+Alt+K">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Vérifier &amp;la cohérence du projet	Ctrl+Alt+M">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Imprimer...	Ctrl+P">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Ape&amp;rçu avant impression...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Mi&amp;se en page...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;pier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Importer...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;xporter...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Effacer	Suppr.">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Séle&amp;ctionner">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Tout	Ctrl+A"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="St&amp;ations"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Sous-réseaux"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Réseau maître &amp;DP"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Rés&amp;eau PROFINET IO"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="D&amp;omaine Sync PROFINET IO"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Stations du sous-&amp;réseau"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Annule&amp;r la sélection">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Aller à...	Ctrl+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aller a&amp;u partenaire de liaison">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés de l&apos;o&amp;bjet...	Alt+Entrée">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Partenaire de &amp;liaison...	Alt+R">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Table des liaisons...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réseau &amp;maître...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="PROFI&amp;NET IO">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Réseau PROFINET IO"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Gestion du domaine..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Topologie..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ou&amp;vrir l&apos;objet	Ctrl+Alt+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;grouper les liaisons...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Regrouper/couper &amp;sous-réseaux">
+					<SousSousMenu UserIndexList="" SousSousMenuText="Sous-réseaux &amp;Ethernet..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Sous-réseaux &amp;MPI..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Sous-réseaux &amp;PROFIBUS..."> </SousSousMenu>
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Objets de réseau	Ctrl+G">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Nouvelle &amp;liaison...	Ctrl+N">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réseau maître &amp;DP">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réseau PROFINET IO">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Système cible">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Charger dans le projet en cours">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Stations sélectionnées	Ctrl+L"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Stations sélectionnées et &amp;partenaires"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="S&amp;tations du sous-réseau"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Liaisons sélectionnées"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Liaisons et &amp;routeurs"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Charger dans la &amp;PG...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Acti&amp;ver l&apos;état de liaison">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Act&amp;ualiser l&apos;état de la liaison	F5">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;tat du module...	Ctrl+D">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Etat de &amp;fonctionnement...	Ctrl+I">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Effacement &amp;général...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mettre à l&apos;heure...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Enreg&amp;istrer les noms d&apos;appareils sur carte mémoir">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ethernet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Editer les partenaires Ethernet..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Vérifier les noms d&apos;appareil..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Affecter des noms d&apos;appareil..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="PROFIBU&amp;S">
+					<SousSousMenu UserIndexList="" SousSousMenuText="P&amp;réparer le diagnostic de câble..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Afficher la &amp;topologie de réseau"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Affectation PG/PC">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;nnuler affectation PG/PC">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="" SousMenuText="Cata&amp;logue	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Mult&amp;iprojet	Ctrl+M">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Erreurs et avertissements">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Avec esclaves D&amp;P / appareils IO">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Longueur&amp;s de sous-réseaux réduites">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Vue de réseau globale">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en valeur">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Partenaire de liaison"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Réseau maître &amp;DP"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Rés&amp;eau PROFINET IO"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="D&amp;omaine Sync PROFINET IO"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;nnuler mise en valeur">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Agrandir	Ctrl+Num+">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ré&amp;duire	Ctrl+Num-">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Facteur d&apos;agrandissement...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Barre d&apos;o&amp;utils">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ba&amp;rre d&apos;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Largeur &amp;optimale">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Afficher &amp;colonnes...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réor&amp;ganiser">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ac&amp;tualiser	F5">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Définir les données globales">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Paramétrage de l&apos;interface PG/P&amp;C...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="Fe&amp;nêtre">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Nouvelle fenêtre">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Disposition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réorganiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réduire en &amp;icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Déplacer la &amp;barre de fractionnement">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition dans le projet">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 HMALogon_Configuration (Réseau) -- C:\Program F">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide conte&amp;xtuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="1" ButtonTextYes="&amp;OUI"> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+		<Description Name="Editeur de mnémoniques - Programme S7(2)" ExeName="S7Symapx.exe" ClassName="Afx:400000:8:10011:0:34068f">
+			<Menu UserIndexList="" MenuText="&amp;Table">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer	Ctrl+F4">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Enregistrer	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Propriétés...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="I&amp;mporter...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="E&amp;xporter...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Imprimer...	Ctrl+P">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Ape&amp;rçu avant impression...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Mise en p&amp;age...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 mise\SIMATIC 400(1)\CPU 416-3 DP\...\Mnémonique">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;2 Libray1\SIMATIC\WinLC RTX\...\Mnémoniques">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;3 graph\Programme S7(1)\Mnémoniques">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;4 DMS_Carnaghi\SIMATIC 300(1)\PLC 317-2DP\...\Mné">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Annuler	Ctrl+Z">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rétablir	Ctrl+Y">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Couper	Ctrl+X">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;pier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Effacer	Suppr.">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Sélectionner">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Tout	Ctrl+A"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Colonne	Ctrl+Espace"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Ligne	Maj+Espace"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;nnuler la sélection">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Rec&amp;hercher/Remplacer...	Ctrl+F">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Poursui&amp;vre	Ctrl+W">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;ller à la ligne...	Ctrl+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Compléter &amp;mnémonique">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Générer SDB">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés spécifiques de l&apos;o&amp;bjet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Diagnostic..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="C&amp;ontrôle-commande..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Signalisation..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Communication..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Commande via co&amp;ntact"> </SousSousMenu>
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mnémonique	Ctrl+J">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="" SousMenuText="A&amp;grandir	Ctrl+Num+">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réduire	Ctrl+Num-">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Fa&amp;cteur d&apos;agrandissement...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="F&amp;iltre...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Tri...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;olonnes D, O, S, C, N	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Barre d&apos;o&amp;utils">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Barre d&apos;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Actualiser	F5">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="Fe&amp;nêtre">
+				<SousMenu UserIndexList="" SousMenuText="Disp&amp;osition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réorganiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Fermer &amp;tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 Programme S7(2) (Mnémoniques) -- HMALogon_Confi">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide conte&amp;xtuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="1" ButtonTextYes="&amp;OUI,&amp;TOUS"> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+		<Description Name="CONT/LIST/LOG - [OB1 -- HMALogon_Configu" ExeName="S7KAFAPX.EXE" ClassName="AfxMDIFrame42">
+			<Menu UserIndexList="" MenuText="&amp;Fichier">
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Nouveau...	Ctrl+N">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ouvrir en &amp;ligne	Ctrl+F3">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer	Ctrl+F4">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Enregistrer	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Enregistrer &amp;sous...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Sa&amp;uvegarder en lecture seule...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Propriétés...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Vérifier e&amp;t actualiser les accès">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Vérifier la cohérence	Ctrl+Alt+K">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Compiler	Ctrl+B">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Générer source...	Ctrl+T">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Imprimer...	Ctrl+P">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Aperçu avant impression...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Mise en page...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 mise\SIMATIC 400(1)\CPU 416-3 DP\...\OB20-Off">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;2 mise\SIMATIC 400(1)\CPU 416-3 DP\...\OB1-Off">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;3 bibi\Programme S70\...\OB10-Off">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;4 bibi\Programme S7(1)\...\FC275-Off">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Annuler	Ctrl+Z">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rétablir	Ctrl+Y">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Couper	Ctrl+X">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;pier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;ffacer	Suppr.">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Sélectionner &amp;tout	Ctrl+A">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Rec&amp;hercher/Remplacer...	Ctrl+F">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;ller à">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Réseau/Ligne...	Ctrl+E"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Occurrence...	Ctrl+Alt+Q"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Adresse de bloc..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Erreur précé&amp;dente	Alt+F7"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Erreur &amp;suivante	Alt+F8"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="O&amp;ccurrence locale &lt;&lt;	Ctrl+Maj+B"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Occ&amp;urrence locale &gt;&gt;	Ctrl+Maj+F"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés de l&apos;o&amp;bjet...	Alt+Entrée">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Propriétés &amp;spécifiques de l&apos;objet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Signalisation..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Sur&amp;veillance..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Couper définition d&apos;erreur	Ctrl+Alt+X"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="C&amp;opier définition d&apos;erreur	Ctrl+Alt+C"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Coll&amp;er définition d&apos;erreur	Ctrl+Alt+V"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="C&amp;réer nouvelle définition d&apos;erreur	Ctrl+Alt+N"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="E&amp;ffacer définition d&apos;erreur	Ctrl+Alt+D"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="L&amp;iaisons...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ou&amp;vrir le bloc	Ctrl+Alt+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="App&amp;el">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Actualiser..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Changer en appel de &amp;multiinstance..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Changer en appel de &amp;FB,DB"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Réi&amp;nitialiser bloc de données">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Créer &amp;un modèle de réseau...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Objet">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Bloc..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Fichier..."> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Source..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Modèle de bloc">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;OB"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;FB"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="F&amp;C"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;DB"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;IDB"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="D&amp;B à partir de UDT"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;UDT"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ligne de déclaration	Alt+Ins">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réseau	Ctrl+R">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="M&amp;némonique	Ctrl+J">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Eléments de programme	Ctrl+G">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Système cible">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Charger	Ctrl+L">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Choisir CP&amp;U en ligne...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;tablir la liaison à la CPU configurée">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Me&amp;ssages de la CPU...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Valeurs de forçage permanent...	Ctrl+Alt+F">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Visualiser/f&amp;orcer des variables">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Etat du &amp;module...	Ctrl+D">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Etat de fonctionnement...	Ctrl+I">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="E&amp;ffacement général...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Mettre à l&apos;&amp;heure...">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Test">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Visualiser	Ctrl+F7">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="V&amp;isualiser la zone sélectionnée">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Conditions d&apos;appel...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Mode...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Fo&amp;rcer l&apos;opérande...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Forcer l&apos;opérande à &amp;0">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Forcer l&apos;opérande à &amp;1">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="C&amp;ommande au contact">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Définir point d&apos;arrêt	Ctrl+H">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="E&amp;ffacer tous les points d&apos;arrêt	Ctrl+Maj+H">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Activer les points d&apos;arrêt	F4">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Affic&amp;her point d&apos;arrêt suivant">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Poursuivre	Ctrl+F8">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Instruction &amp;suivante	Ctrl+F9">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="E&amp;xécuter l&apos;appel	Ctrl+F12">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="1" SousMenuText="Vues d&apos;ense&amp;mble	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Détail&amp;s">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="R&amp;egistres AP">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="CO&amp;NT	Ctrl+1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;LIST	Ctrl+2">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="LO&amp;G	Ctrl+3">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Vue des d&amp;onnées	Ctrl+4">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Vue des &amp;déclarations	Ctrl+5">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Affic&amp;her avec">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;mnémoniques	Ctrl+Q"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;informations mnémonique	Ctrl+Maj+Q"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="sélection de mnémoni&amp;ques	Ctrl+7"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;commentaires	Ctrl+Maj+K"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="i&amp;dentificateurs d&apos;opérandes"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Agrandir	Ctrl+Num+">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réduire	Ctrl+Num-">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Facteur d&apos;agrandissement...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Barre d&apos;o&amp;utils">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Barre de &amp;points d&apos;arrêt">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Barre d&apos;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Largeur de &amp;colonne...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aff&amp;icher colonnes...	F11">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ac&amp;tualiser	F5">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Comparer partenaire en ligne/hors ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Données de référence">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Afficher	Ctrl+Alt+R"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Filtrer..."> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Table des mnémoniques	Ctrl+Alt+T">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="Fe&amp;nêtre">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Disposition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réorganiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Déplacer &amp;barre de fractionnement">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 OB1 -- HMALogon_Configuration\SIMATIC 300\CPU 3">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide conte&amp;xtuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide pour &amp;CONT">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide pour &amp;LIST">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide pour LO&amp;G">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="1" ButtonTextYes="&amp;OUI,&amp;TOUS"> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+		<Description Name="Var - VAT_1" ExeName="S7USSAPX.EXE" ClassName="Afx:400000:8:10011:0:1a9074f">
+			<Menu UserIndexList="" MenuText="&amp;Table">
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Nouvelle	Ctrl+N">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ouvrir...	Ctrl+O">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Fermer	Ctrl+F4">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Enregistrer	Ctrl+S">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="En&amp;registrer sous...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Propriétés...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Imprimer...	Ctrl+P">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Aperçu avant impression...">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Mise en page...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 Libray1\SIMATIC\WinLC RTX\Programme S7(1)\...\v">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;2 Essai\SIMATIC 400(1)\CPU 416-3 DP\Programme S7(">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;3 Essai\SIMATIC 400(1)\CPU 416-3 DP\Programme S7(">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Quitter	Alt+F4">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Edition">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Annuler	Ctrl+Z">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rétablir	Ctrl+Y">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Couper	Ctrl+X">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Co&amp;pier	Ctrl+C">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;oller	Ctrl+V">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Effacer 	Suppr.">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Sélectionner &amp;tout	Ctrl+A">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;nnuler la sélection">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Rec&amp;hercher/Remplacer	Ctrl+F">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Désactiver ligne	Ctrl+B">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Insertion">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Ligne de &amp;commentaire">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Table des variables...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Plage...	Ctrl+K">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mnémonique	Ctrl+J">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Système cible">
+				<SousMenu UserIndexList="" SousMenuText="Etablir la &amp;liaison à">
+					<SousSousMenu UserIndexList="" SousSousMenuText="une CPU &amp;configurée	Ctrl+L"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="une CPU &amp;directement raccordée	Ctrl+G"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="une CPU &amp;accessible...	Ctrl+E"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="dernière liaison"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Suspendre la liaison	Ctrl+U">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Messages de CPU...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Etat du module...	Ctrl+D">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Etat de &amp;fonctionnement...	Ctrl+I">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Variable">
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Déclenchement...	Ctrl+R">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Visualiser	Ctrl+F7">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Forcer  	Ctrl+F9">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Actualiser valeurs d&apos;état	F7">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Ac&amp;tiver valeurs de forçage	F9">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Forcer à &amp;1	Ctrl+1">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Forcer à &amp;0	Ctrl+0">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Débloquer &amp;sorties périphériques	Maj+F9">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Affic&amp;her valeurs forçage permanent	Alt+F2">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Forçage &amp;permanent">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="A&amp;nnuler forçage permanent">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Mise en commentaire	F3">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;Affichage">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Numéro de ligne">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Icône">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Opérande">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="No&amp;m">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Mnémoni&amp;que">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Comm&amp;entaire de mnémonique">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Format d&apos;affichage">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Valeur d&apos;&amp;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Valeur &amp;de forçage">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="C&amp;hoisir le format d&apos;affichage">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Format par défaut"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Ré&amp;gler le format par défaut"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Format &amp;précédent	Maj+F4"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="F&amp;ormat suivant	F4"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Binaire"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Boo&amp;léen"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Décimal"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="He&amp;xadécimal"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Virgule flottante"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Caractère"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="D&amp;ate"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="D&amp;urée"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Durée &amp;SIMATIC"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Heure du jour"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Co&amp;mpteur"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Pointeu&amp;r"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Largeur optimale	Ctrl+Maj+Num+">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Sélection de mnémoniques	Ctrl+7 ">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Zoom a&amp;vant	Ctrl+Num+">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réduire	Ctrl+Num-">
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="Barres d&apos;o&amp;utils">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Standard"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Affichage"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Variable"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="1" SousMenuText="&amp;Barre d&apos;état">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="A&amp;ctualiser la sélection de mnémoniques">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Actualiser mnémoniques	F5">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Toujours visible">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="1" MenuText="&amp;Outils">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Paramètres...	Ctrl+Alt+E">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Table des mnémoniques	Ctrl+Alt+T">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="Fe&amp;nêtre">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Disposition">
+					<SousSousMenu UserIndexList="" SousSousMenuText="&amp;Cascade	Maj+F5"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;horizontale	Maj+F2"> </SousSousMenu>
+					<SousSousMenu UserIndexList="" SousSousMenuText="Mosaïque &amp;verticale	Maj+F3"> </SousSousMenu>
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Réorganiser les icônes">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Enregistrer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Re&amp;staurer la disposition">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Fermer &amp;tout">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;1 VAT_1 -- HMALogon_Configuration\SIMATIC 300\CPU">
+				</SousMenu>
+			</Menu>
+			<Menu UserIndexList="" MenuText="&amp;?">
+				<SousMenu UserIndexList="" SousMenuText="&amp;Rubriques d&apos;aide...">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="Aide conte&amp;xtuelle	F1">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Introduction">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Mise en route">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;Utiliser l&apos;aide">
+				</SousMenu>
+				<SousMenu UserIndexList="" SousMenuText="&amp;A propos de...">
+				</SousMenu>
+			</Menu>
+			<RightClick UserIndexList="1"> </RightClick>
+			<CtrlKey UserIndexList="1"> </CtrlKey>
+			<LockYesBox UserIndexList="1" ButtonTextYes="&amp;OUI,&amp;TOUS"> </LockYesBox>
+			<LockKeys UserIndexList="1"> </LockKeys>
+		</Description>
+	</Application>
+	<ListOfUSerLock>
+		<User Index="1" Name="exploitation" GroupsName="" FullName="exploitation"/>
+	</ListOfUSerLock>
+</CONFIG_APPLICATIONS>

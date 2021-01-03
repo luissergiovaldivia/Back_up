@@ -1,0 +1,62 @@
+<IhmpActiveXDefault>
+  <GroupeDC>GrpCommentaires</GroupeDC>
+  <IhmpDefaults>
+    <IhmpDefault>
+      <VariableDC Source="FichiersCommentaires" FileName="DefCollecteur.txt">DCol</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="DefIHMP.txt">DIHMP</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1047.txt">D1047</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1048.txt">D1048</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1049.txt">D1049</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1050.txt">D1050</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1051.txt">D1051</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1017.txt">D1017</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1039.txt">D1039</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1038.txt">D1038</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1040.txt">D1040</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1054.txt">D1054</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1055.txt">D1055</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1044.txt">D1044</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1000.txt">D1000</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1001.txt">D1001</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1002.txt">D1002</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1003.txt">D1003</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1004.txt">D1004</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1006.txt">D1006</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1005.txt">D1005</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1007.txt">D1007</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1008.txt">D1008</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1009.txt">D1009</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1010.txt">D1010</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1042.txt">D1042</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1041.txt">D1041</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1045.txt">D1045</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1043.txt">D1043</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1037.txt">D1037</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1026.txt">D1026</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1027.txt">D1027</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1028.txt">D1028</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1029.txt">D1029</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1030.txt">D1030</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1031.txt">D1031</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1032.txt">D1032</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1033.txt">D1033</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1034.txt">D1034</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1035.txt">D1035</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1036.txt">D1036</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1025.txt">D1025</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1024.txt">D1024</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1016.txt">D1016</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1012.txt">D1012</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1011.txt">D1011</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1013.txt">D1013</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1014.txt">D1014</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1015.txt">D1015</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1018.txt">D1018</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1019.txt">D1019</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1020.txt">D1020</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1021.txt">D1021</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1022.txt">D1022</VariableDC>
+      <VariableDC Source="FichiersCommentaires" FileName="D1023.txt">D1023</VariableDC>
+    </IhmpDefault>
+  </IhmpDefaults>
+</IhmpActiveXDefault>

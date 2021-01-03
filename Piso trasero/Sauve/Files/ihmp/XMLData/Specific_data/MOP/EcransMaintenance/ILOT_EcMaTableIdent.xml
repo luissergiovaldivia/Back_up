@@ -1,0 +1,60 @@
+<EcranTableIdent>
+  <GroupeDC>1575_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="35" AlignX="Auto" />
+    <Line ID="2" Height="Auto" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="1 - TITRE" Line="1" AlignY="Auto" Height="20" Width="Auto" PosX="0" PosY="0" AutoScroll="True">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Mesa identificación</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="1 - TEXTE" Line="2" AlignY="Auto" Height="Full" Width="110" PosX="0" PosY="0" Title="">
+    <Rows />
+    <Table LineHeight="40">
+      <Columns>
+        <Column Width="100" AlignX="Auto" Color="">
+          <Controls>
+            <Text Name="1 -  " Color="-2368549" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Text="" />
+            <Text Name="2 - MSP" Color="-16777216" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Text="MSP" />
+            <Text Name="3 - MPP" Color="-16777216" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Text="MPP" />
+            <Text Name="4 - N° SUPPORT" Color="-16777216" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">N° soporte</Expression>
+              </Text>
+            </Text>
+            <Text Name="5 - N° FILM" Color="-16777216" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">N° film</Expression>
+              </Text>
+            </Text>
+            <Text Name="6 - N° ORDRE" Color="-16777216" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">N° orden</Expression>
+              </Text>
+            </Text>
+            <ButtonNav Name="7 - PROCESS CODE" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="False">
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1" Value="">
+                  <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+              <ClickNav CodeEcran="ILOT_EcMaDiversite" TypeEcran="EcransMaintenance" />
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Código proceso</Expression>
+              </Text>
+            </ButtonNav>
+          </Controls>
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+  <Cadre Name="1 - VALEUR" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Title="" Autoscroll="True">
+    <Rows />
+    <Table LineHeight="40">
+      <Columns />
+    </Table>
+  </Cadre>
+  <Listes />
+</EcranTableIdent>

@@ -1,0 +1,194 @@
+<IhmpActiveXMvt TimeOut="3000">
+  <GroupeDC>GRPMvtZ3SOP1</GroupeDC>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">L0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Zona 3 - L0 - Montaje</Expression>
+    </Headline>
+    <NumPage>323</NumPage>
+    <LocalisationFine>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">PS1 - PIN SHIFT</Expression>
+      </Text>
+      <NumMvt>1</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0PS1.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0PS1.Diag.Ihmvrmv">Z3L0.L0PS1.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0PS1.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0PS1.Diag.Ihmvamv">Z3L0.L0PS1.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">SR1 - CLAMP 1</Expression>
+      </Text>
+      <NumMvt>2</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR1.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR1.Diag.Ihmvrmv">Z3L0.L0SR1.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR1.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR1.Diag.Ihmvamv">Z3L0.L0SR1.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">VU2 - PINGYI</Expression>
+      </Text>
+      <NumMvt>3</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0VU2.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0VU2.Diag.Ihmvrmv">Z3L0.L0VU2.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0VU2.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0VU2.Diag.Ihmvamv">Z3L0.L0VU2.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">SR2 - CLAMP 2</Expression>
+      </Text>
+      <NumMvt>4</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR2.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR2.Diag.Ihmvrmv">Z3L0.L0SR2.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR2.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR2.Diag.Ihmvamv">Z3L0.L0SR2.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">SR3 - HAND CLAMP</Expression>
+      </Text>
+      <NumMvt>5</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR3.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR3.Diag.Ihmvrmv">Z3L0.L0SR3.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0SR3.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0SR3.Diag.Ihmvamv">Z3L0.L0SR3.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">VU1 - EJECTOR</Expression>
+      </Text>
+      <NumMvt>6</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retroceso</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0VU1.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0VU1.Diag.Ihmvrmv">Z3L0.L0VU1.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Avance</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3L0.L0VU1.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z3L0.L0VU1.Diag.Ihmvamv">Z3L0.L0VU1.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <NumMvt>
+    <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ValeurInit="-1" ItemOpc="Z3.Z3MODES.Pilot.Ihmnmvt">Z3.Z3MODES.Pilot.Ihmnmvt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+  </NumMvt>
+  <NumPage>
+    <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ValeurInit="-1" ItemOpc="Z3.Z3MODES.Pilot.Ihmnpage">Z3.Z3MODES.Pilot.Ihmnpage&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+  </NumPage>
+  <Activation>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Diag.IhmZ_manu">
+      <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z3.Z3MODES.Diag.IhmZ_manu">Z3.Z3MODES.Diag.IhmZ_manu&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+    </Condition>
+  </Activation>
+  <SelectionPupitre>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z3.Z3MODES.Pilot.Ihm1pm">
+      <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z3.Z3MODES.Pilot.Ihm1pm">Z3.Z3MODES.Pilot.Ihm1pm&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+    </Condition>
+  </SelectionPupitre>
+  <AvertissementMDM ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="es-ES">Seleccione el modo MANUAL</Expression>
+  </AvertissementMDM>
+</IhmpActiveXMvt>

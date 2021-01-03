@@ -1,0 +1,244 @@
+<html>
+<title>Step7 HSP Viewer</title>
+<meta name="description" content="language independet S7 HSP lister">
+<meta name="author" content="Claus Hochstetter">
+<meta name="organization" content="SIEMENS">
+<meta name="keywords" content="STEP 7, HSP">
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.hspTab { font-family:Arial,sans-serif,verdana; font-size:14px; color:darkblue; }
+.lngSwitch { font-family:Arial,sans-serif,verdana; font-size:12px; background-color:#EFEFEF; color:black; }
+-->
+</style>
+<script type="text/javascript">
+var xmlDoc=null;
+var x;
+var ListOrder;
+
+function chgLanguage(id, ListOrder) {
+//const LANGUAGE = "HWK:COMMENT"
+  var iCell;
+  var language = "HWK:COMMENT_" + id;
+  
+  switch(id) {
+	  	case "A": document.getElementsByTagName("th")[0].firstChild.nodeValue ="Nummer";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Baugruppe";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="HSP Version";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="Bestellnummer";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Step 7 Version";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Kommentar";
+			      break;
+			      
+		case "C": document.getElementsByTagName("th")[0].firstChild.nodeValue ="Numéro";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Module";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="Version HSP";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="Référence";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Version Step 7";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Commentaire";
+			      break;
+			      
+	  	case "D": document.getElementsByTagName("th")[0].firstChild.nodeValue ="Número";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Nombre";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="Versión HSP";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="Referencia";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Versión Step 7";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Comentario";
+			      break;
+			      
+		case "E": document.getElementsByTagName("th")[0].firstChild.nodeValue ="Numero";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Nome";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="Versione HSP";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="N. di ordinazione";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Versione Step 7";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Commento";
+			      break;
+
+		case "J": document.getElementsByTagName("th")[0].firstChild.nodeValue ="Number";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Name";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="HSP version";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="Part No.";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Step 7 version";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Comment";
+			      break;
+			      
+		default:  document.getElementsByTagName("th")[0].firstChild.nodeValue ="Number";
+	  			  document.getElementsByTagName("th")[1].firstChild.nodeValue ="Name";
+	  			  document.getElementsByTagName("th")[2].firstChild.nodeValue ="HSP version";
+	  			  document.getElementsByTagName("th")[3].firstChild.nodeValue ="Part No.";
+	  			  document.getElementsByTagName("th")[4].firstChild.nodeValue ="Firmware";
+	  			  document.getElementsByTagName("th")[5].firstChild.nodeValue ="Step 7 version";
+	  			  document.getElementsByTagName("th")[6].firstChild.nodeValue ="Comment";	  
+  }   
+
+  for (var z=0;z<ListOrder.length;z++) {
+  var i = ListOrder[z];
+    iCell = z*7+6; // i Tabellenzeilen, 7 Tabellenspalten, 6 offset
+    if (x[i].getElementsByTagName(language)[0]){
+		if (x[i].getElementsByTagName(language)[0].childNodes[0]) {		
+			  document.getElementsByTagName("td")[iCell].firstChild.nodeValue = x[i].getElementsByTagName(language)[0].childNodes[0].nodeValue;
+		}
+	}
+    }
+  return;
+}
+
+function hspView() {
+    
+  document.write("<table border='0'cellpadding='4' bgcolor='#000000' class='hspTab'>");
+  document.write("<thead bgcolor='#CCCCCC'>");
+  document.write("<tr><th>Number</th><th>Name</th><th>HSP version</th><th width='170'>Part No.</th><th>Firmware</th><th width='112'>Step 7 version</th><th>Comment</th></tr>");
+  document.write("</thead>");
+
+  x=xmlDoc.getElementsByTagName("HWK:HSPELEMENT");
+  var td = "<td>";
+  var tde = "</td>";
+  var tData = "";
+  var tempVal1, tempVal2 = "";
+  var tempArray1 = new Array (x.length);
+  var tempArray2 = new Array (x.length);
+
+  for (var i=0;i<x.length;i++) {
+	  if (x[i].nodeType !=3 ){
+	  	if (x[i].getElementsByTagName("HWK:OBJECTID")[0]){
+		  	if (x[i].getElementsByTagName("HWK:OBJECTID")[0].childNodes[0]) {
+		  	}
+			 tempArray1[i] = x[i].getElementsByTagName("HWK:OBJECTID")[0].childNodes[0].nodeValue; 
+			 tempArray2[i] = i;
+		}
+	}
+  }
+
+  //Nach Objektnummer sortieren
+  for (var i=0;i<tempArray1.length - 1;i++) {
+  		for (var k=0;k<tempArray1.length - 1;k++) {
+  			if (tempArray1[i] > tempArray1[k]) {
+  				tempVal1 = tempArray1[i];
+				tempArray1[i] = tempArray1[k];
+				tempArray1[k] = tempVal1;
+	  			tempVal2 = tempArray2[i];
+				tempArray2[i] = tempArray2[k];
+				tempArray2[k] = tempVal2;
+			}
+  		}
+  } 
+		    
+  for (var z=0;z<tempArray2.length;z++) {
+  var i = tempArray2[z];
+  var tr = "<tr bgcolor='#";
+  tr += (z % 2) ? "FFFFCC'>" : "FFFFFF'>";
+  document.write(tr);
+  for (var k=0;k<7;k++) {
+	    switch(k) { 
+	   		case 0: if (x[i].getElementsByTagName("HWK:OBJECTID")[0]){
+			  				if (x[i].getElementsByTagName("HWK:OBJECTID")[0].childNodes[0]) {
+			  		  			tData = x[i].getElementsByTagName("HWK:OBJECTID")[0].childNodes[0].nodeValue;  		  			
+			  		  			for (var m=0;m<tData.length - 1; m++) {
+				  		  			if (tData.indexOf("0",0)==1) {
+				  		  				tData = tData.replace (/(0)/,"");						  		  					  		  				
+				  		  				}
+					  		  		else break;		  		  					  		  			
+			  		  			}
+			  		  		}
+			  		  }	 
+			  		  break;
+			  case 1: if (x[i].getElementsByTagName("HWK:OBJECTNAME")[0]){
+			  				if (x[i].getElementsByTagName("HWK:OBJECTNAME")[0].childNodes[0]) {
+			  					tData = x[i].getElementsByTagName("HWK:OBJECTNAME")[0].childNodes[0].nodeValue;
+			  				}
+			  		  }
+			  		  break;
+			  case 2: if (x[i].getElementsByTagName("HWK:HSPVERSION")[0]){
+							if (x[i].getElementsByTagName("HWK:HSPVERSION")[0].childNodes[0]) {
+							    tData = x[i].getElementsByTagName("HWK:HSPVERSION")[0].childNodes[0].nodeValue;
+							}
+					  }
+			  		  break;
+			  case 3: if (x[i].getElementsByTagName("HWK:MLFB")[0]){
+							if (x[i].getElementsByTagName("HWK:MLFB")[0].childNodes[0]) {
+			  					tData = x[i].getElementsByTagName("HWK:MLFB")[0].childNodes[0].nodeValue;
+			  				}
+			  		  }
+			   		  break;
+			  case 4: if (x[i].getElementsByTagName("HWK:FIRMWARE")[0]){
+			  				if (x[i].getElementsByTagName("HWK:FIRMWARE")[0].childNodes[0]) {
+					  			tData = x[i].getElementsByTagName("HWK:FIRMWARE")[0].childNodes[0].nodeValue;
+					  		}
+					  }
+			   		  break;
+			  case 5: if (x[i].getElementsByTagName("HWK:STEP7VERSION")[0]){
+			  				if (x[i].getElementsByTagName("HWK:STEP7VERSION")[0].childNodes[0]) {		  
+			  					tempVal1= x[i].getElementsByTagName("HWK:STEP7VERSION")[0].childNodes[0].nodeValue;
+			  					if (tempVal1.charAt(1)=="K") {
+			  						tempVal1 = tempVal1.replace (/K/,"V");
+			  					}
+			  					tData = tempVal1.substring(0,5)
+			  					tempVal2 = tempVal1.split (".");
+			  					if (tempVal2[2] != null && tempVal2[2] != 0) {
+				  					tData = tData + " " + "SP" + tempVal2 [2];
+				  					}
+				  				if (tempVal2[3] != null && tempVal2[3] != 0) {  
+				  					tData = tData + " " + "HF" + tempVal2 [3];
+				  				}
+			  				}
+			  		  }
+			  		  break;
+			  case 6: 
+			  if (x[i].getElementsByTagName("HWK:COMMENT")[0]){
+			  				if (x[i].getElementsByTagName("HWK:COMMENT")[0].childNodes[0]) {		
+			  					tData = x[i].getElementsByTagName("HWK:COMMENT")[0].childNodes[0].nodeValue;
+			  				}
+			  		  }
+			   		  break;
+			  default: tData = ""; 		     }	   
+		document.write(td + tData + tde);
+		tData  = "";		
+	    }
+	    document.write("</tr>");
+   }
+  document.write("</table>");
+  return tempArray2;
+}
+
+function hspLoad(fName) {
+  if (window.ActiveXObject) {  // code for IE
+     xmlDoc=new ActiveXObject("Microsoft.XMLDOM");  
+  }
+  else if (document.implementation.createDocument) {    // code for Mozilla, Firefox, Opera, etc.       
+     xmlDoc=document.implementation.createDocument("","",null);    
+     }
+  else {
+    alert('Your browser cannot handle this script');
+    }
+    if (xmlDoc!=null) {
+  	xmlDoc.async=false;
+     	xmlDoc.load(fName);
+    }
+  return;
+}
+
+
+</script>
+<noscript>Please activate JavaScript !</noscript>
+<body>
+<font face="Arial">
+<div align="right" class="lngSwitch">&nbsp;
+ 	<a href="javascript:chgLanguage('A', ListOrder);">Deutsch</a> |
+ 	<a href="javascript:chgLanguage('J', ListOrder);">English</a> |
+ 	<a href="javascript:chgLanguage('C', ListOrder);">Francis</a> |
+ 	<a href="javascript:chgLanguage('D', ListOrder);">Espanol</a> |
+ 	<a href="javascript:chgLanguage('E', ListOrder);">Italiano</a>&nbsp;
+</div>
+<div align="center"><h3>STEP7 Hardware Support Package Viewer</h3></div>
+<script type="text/javascript">
+hspLoad("hspcontents.xml");
+ListOrder=hspView();
+</script>
+</font>
+</body>
+</html>

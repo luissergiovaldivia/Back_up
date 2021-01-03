@@ -1,0 +1,239 @@
+<IhmpScreenClass>
+  <TestSize Width="1024" Height="768" />
+  <IhmpScreen>
+    <EcranMenu ClassName="Prosyst.Ihmp.Screen.EcranMenu" Assembly="IhmpEcrans.dll" CodeEcran="">
+      <Footer>
+        <!--Bouton 1-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Ayuda al reinicio</Expression>
+          </Text>
+          <Command>4000</Command>
+        </Button>
+        <!--Bouton 2-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Modos de Marcha</Expression>
+          </Text>
+          <Command>-9</Command>
+        </Button>
+        <!--Bouton 3-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Comandos manuales</Expression>
+          </Text>
+          <Command>6000</Command>
+        </Button>
+        <!--Bouton 4-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">SMPLOC</Expression>
+          </Text>
+          <Command>Smploc</Command>
+        </Button>
+        <!--Bouton 5-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Sinóptico de isla</Expression>
+          </Text>
+          <Command>-11</Command>
+        </Button>
+        <!--Bouton 6-->
+        <Button Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Button>
+        <!--Bouton 7-->
+        <Button Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Explotación Mantenimiento</Expression>
+          </Text>
+          <Command>EcransExploitation|Sommaire</Command>
+        </Button>
+        <!--Bouton 8-->
+        <Button Type="Url">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Procedimiento</Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Button>
+      </Footer>
+      <IhmpScreen>
+        <EcranMessages ClassName="Prosyst.Ihmp.Screen.EcranMessages" Assembly="IhmpEcrans.dll" CodeEcran="4000" Page="Messages.aspx" />
+        <EcranWeb ClassName="Prosyst.Ihmp.Screen.EcranWeb" Assembly="IhmpEcrans.dll" CodeEcran="-2" />
+        <EcranAide ClassName="Prosyst.Ihmp.Screen.EcranAide" Assembly="IhmpEcrans.dll" CodeEcran="-1">
+          <IhmpScreen>
+            <EcranDefautIhmp ClassName="Prosyst.Ihmp.Screen.EcranDefautIhmp" Assembly="IhmpEcrans.dll" CodeEcran="EcranDefautIhmp" />
+            <EcranDiagIhmp ClassName="Prosyst.Ihmp.Screen.EcranDiagIhmp" Assembly="IhmpEcrans.dll" />
+            <EcranWeb ClassName="Prosyst.Ihmp.Screen.EcranWeb" Assembly="IhmpEcrans.dll" CodeEcran="-2" />
+            <EcranLocalisation ClassName="Prosyst.Ihmp.Screen.EcranLocalisation" Assembly="IhmpEcrans.dll" CodeEcran="-6" Page="LocalisationDefaut.aspx" />
+            <EcranLocalisationFine ClassName="Prosyst.Ihmp.Screen.EcranLocalisationFine" Assembly="IhmpEcrans.dll" Page="EcDiagMouv2p.aspx" />
+            <EcranDiagCollecteur ClassName="Prosyst.Ihmp.Screen.EcranDiagCollecteur" Assembly="IhmpEcrans.dll" />
+            <EcranDefautCollecteur ClassName="Prosyst.Ihmp.Screen.EcranDefautCollecteur" Assembly="IhmpEcrans.dll" CodeEcran="EcranDefautCollecteur" />
+            <EcranMouv2p ClassName="Renault.Ihmp.EcranDiag.EcranMouv2p" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagMouv2p" Page="EcDiagMouv2p.aspx" />
+            <EcranMouvse2p ClassName="Renault.Ihmp.EcranDiag.EcranMouvse2p" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagMouvse2p" Page="EcDiagMouvse2p.aspx" />
+            <EcranZoneAir12 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautZoneAir12" Page="EcDiagAir.aspx" />
+            <EcranZoneAir34 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautZoneAir34" Page="EcDiagAir.aspx" />
+            <EcranDefautPiece ClassName="Renault.Ihmp.EcranDiag.DefautPiece" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautPiece" Page="EcDiagDefautPiece.aspx" />
+            <EcranMouvmp ClassName="Renault.Ihmp.EcranDiag.EcranMouvmp" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagMouvmp" />
+            <EcranDefautCarteSecu ClassName="Renault.Ihmp.EcranDiag.EcranDiagLocEtLienWinCC" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautCarteSecu" />
+            <EcranDefautRzoNiv1 ClassName="Renault.Ihmp.EcranDiag.EcranDiagRzoNiv1" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautRzoNiv1" />
+            <EcranDefautProfinet ClassName="Renault.Ihmp.EcranDiag.EcranDiagProfinet" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautProfinet" />
+            <EcranCauseRemedeBasic ClassName="Renault.Ihmp.EcranDiag.EcranCausesRemedesBasic" Assembly="IhmpEcranDiag.dll" CodeEcran="EcranCauseRemedeBasic" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBSEC ClassName="Renault.Ihmp.EcranDiag.EcranDiagBSEC" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautBSEC" Page="EcDiagBSEC.aspx" />
+            <EcranDefautBsecGene ClassName="Renault.Ihmp.EcranDiag.EcranDiagBSEC" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBsecGene34" Page="EcDiagBSEC.aspx" />
+            <EcranDefautCRM ClassName="Renault.Ihmp.EcranDiag.EcranDiagCRM" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautCRM" Page="EcDiagCRM.aspx" />
+            <EcranDefautCameRobot ClassName="Renault.Ihmp.EcranDiag.EcranDiagCameRobot" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautCameRobot" Page="EcDiagCameRobot.aspx" />
+            <EcranDefautMB_butee ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautMb_butee12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranMouvpl4m_34 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautMouvpl4m34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranMouvpl2m_34 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautMouvpl2m34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautMB_chaine112 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautMb_Chaine112" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautMB_chaine134 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautMb_Chaine134" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautDatabase3 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautDatabase334" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautTab_stock2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautTab_Stock212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautButee_Convoyeur2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautButee_conv212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautTab_pas ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautTab_pas12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautCR ClassName="Renault.Ihmp.EcranDiag.EcranDiagCRM" Assembly="IhmpEcranDiag.dll" CodeEcran="DiagDefautCR" Page="EcDiagCR.aspx" />
+            <EcranDefautG120D ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautG120D34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautG120 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautG12034" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranRobot12 ClassName="Renault.Ihmp.EcranDiag.EcranDiagRobot" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautRobot12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranRobotABB12 ClassName="Renault.Ihmp.EcranDiag.EcranDiagRobot" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautRobotABB12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautTabAvalAC ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautTabAvalAC12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautTabAvalSC ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautTabAvalSC12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautRF300 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautRF30034" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautTabAvalNissan ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautTabAvalNissan12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautElevateur ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautElevateur12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautIhmmut ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautIhmmut34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautConfMachine ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautConfMachine34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautCodeProcess ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautCodeProcess34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautLancement ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautLancement34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautPnPnMesg ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautPnPn_Mesg34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_IHMCR1 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_IHMCR134" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_IHMCRM1 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_IHMCRM134" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_IHMAIR1 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_IHMAIR134" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_IHMCAME_ROBOT1 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_IHMCAME_ROBOT134" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautS120 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautS12034" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_MANUT_2POSH ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_MANUT_2POSH12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_MULTIPOS ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_MULTIPOS12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautPiece34 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautPiece34" Page="DefautPiece34.aspx" />
+            <EcranDiagAvecControles ClassName="EcransExploitation.EcranExploitationAutoConfig" Assembly="EcransExploitation.dll" CodeEcran="EcransDiagAvecControles" />
+            <EcranDefautBF_NC_LOCATOR ClassName="Renault.Ihmp.EcranDiag.EcranDiagNCLoc" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_NC_LOCATOR34" Page="EcDiagBF_NC_LOCATOR.aspx" />
+            <EcranDefautBF_DP_LOCATOR ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_DP_LOCATOR34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_VISION_ISRA ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_VISION_ISRA34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_TRANS_VECT ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_TRANS_VECT34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_TAB_PAS2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_TAB_PAS212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_ELEVAT2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_ELEVAT212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_MANUT_2POSH2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_MANUT_2POSH212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_MULTIPOS2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_MULTIPOS212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_Tab_Aval_AC2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_Tab_Aval_AC212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_Tab_Aval_SC2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_Tab_Aval_SC212" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautZoneRsec ClassName="Renault.Ihmp.EcranDiag.EcranDiagZoneRsec1" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautZoneRsec134" Page="EcDiagZoneRsec1.aspx" />
+            <EcranDefautDFB_TAB_PAS2 ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautDFB_TAB_PAS212" Page="EcDiagDFB_TAB_PAS2.aspx" />
+            <EcranDefautAGV ClassName="Renault.Ihmp.EcranDiag.EcranDiagRobot" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautAGV12" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_SOPAPIND_SEW ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_SOPAPIND_SEW34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautBF_SOPAPPOS_SEW ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautBF_SOPAPPOS_SEW34" Page="EcDiagCausesRemedesSurValeur.aspx" />
+            <EcranDefautDFB_Elevat ClassName="Renault.Ihmp.EcranDiag.EcranDiag_CausesRemedes_12_34_SurValeur" Assembly="IhmpEcranDiag.dll" CodeEcran="DefautDFB_Elevat12" Page="EcDiagDFB_Elevat.aspx" />
+          </IhmpScreen>
+        </EcranAide>
+        <EcranCmdManu ClassName="Prosyst.Ihmp.Screen.EcranCmdManu" Assembly="IhmpEcrans.dll" CodeEcran="6000" Page="PageMvt.aspx" />
+        <EcranMenuWeb ClassName="Prosyst.Ihmp.Screen.EcranMenuWeb" Assembly="IhmpEcrans.dll" CodeEcran="-4">
+          <MenuWeb>
+            <Button Type="Ecran">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Isla</Expression>
+              </Text>
+              <Command>Synoptique</Command>
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+            <Button Type="Empty">
+              <Text />
+              <Command />
+            </Button>
+          </MenuWeb>
+        </EcranMenuWeb>
+        <MenuSynoptique ClassName="Prosyst.Ihmp.Screen.EcranMenu" Assembly="IhmpEcrans.dll" CodeEcran="-11" Page="SynoptiqueIlot.aspx">
+          <Footer>
+            <Button Type="Ecran">
+              <Text>INSTALACION</Text>
+              <Command>INSTALACION_158</Command>
+            </Button>
+            <Button Type="Ecran">
+              <Text>ZONA 3 - HU60</Text>
+              <Command>ZONA 3 - HU60_83667</Command>
+            </Button>
+          </Footer>
+          <IhmpScreen>
+            <EcranWeb ClassName="Prosyst.Ihmp.Screen.EcranWeb" Assembly="IhmpEcrans.dll" CodeEcran="-12" />
+            <EcranSynoptique ClassName="Prosyst.Ihmp.Screen.EcranImage" Assembly="IhmpEcrans.dll" CodeEcran="INSTALACION_158">
+              <Picture>SpecificData:\Images\Ilot_synoptique.gif</Picture>
+            </EcranSynoptique>
+            <EcranSynoptique ClassName="Prosyst.Ihmp.Screen.EcranImage" Assembly="IhmpEcrans.dll" CodeEcran="ZONA 2 - X67_77571">
+              <Picture>SpecificData:\Images\Page2_synoptique.gif</Picture>
+            </EcranSynoptique>
+            <EcranSynoptique ClassName="Prosyst.Ihmp.Screen.EcranImage" Assembly="IhmpEcrans.dll" CodeEcran="ZONA 3 - HU60_83667">
+              <Picture>SpecificData:\Images\Page3_synoptique.gif</Picture>
+            </EcranSynoptique>
+          </IhmpScreen>
+        </MenuSynoptique>
+        <EcranMDM ClassName="Prosyst.Ihmp.Screen.EcranMDM" Assembly="IhmpEcrans.dll" CodeEcran="-9" Page="EcExMa.aspx" />
+        <EcranDiagIhmp ClassName="Prosyst.Ihmp.Screen.EcranDiagIhmp" Assembly="IhmpEcrans.dll" />
+        <EcranDiagCollecteur ClassName="Prosyst.Ihmp.Screen.EcranDiagCollecteur" Assembly="IhmpEcrans.dll" />
+        <EcranLocalisationFine ClassName="Prosyst.Ihmp.Screen.EcranLocalisationFine" Assembly="IhmpEcrans.dll" />
+        <EcranExploitation ClassName="EcransExploitation.EcranExploitationAutoConfig" Assembly="EcransExploitation.dll" CodeEcran="EcransExploitation" Page="EcExMa.aspx" />
+        <EcranMaintenance ClassName="EcransExploitation.EcranExploitationAutoConfig" Assembly="EcransExploitation.dll" CodeEcran="EcransMaintenance" Page="EcExMa.aspx" />
+        <EcranImage ClassName="Prosyst.Ihmp.Screen.EcranImage" Assembly="IhmpEcrans.dll" CodeEcran="Image" />
+        <EcranCommentaire CodeEcran="-3" Page="CommentaireDefaut.aspx" />
+      </IhmpScreen>
+    </EcranMenu>
+  </IhmpScreen>
+  <ExternScreen>
+    <pl7pro CmdShow="9">
+      <!--SHOWNORMAL(1), SHOWMINIMIZED(2), SHOWMAXIMIZED(3), SHOWNOACTIVATE(4), SHOW(5), SHOWMINNOACTIVE(7), SHOWNA(8), RESTORE(9),SHOWDEFAULT(10)-->
+      <ModuleName>pl7pro.exe</ModuleName>
+      <ClassName>pl7MicroOrJunior</ClassName>
+    </pl7pro>
+    <Smploc CmdShow="9">
+      <!--SHOWNORMAL(1), SHOWMINIMIZED(2), SHOWMAXIMIZED(3), SHOWNOACTIVATE(4), SHOW(5), SHOWMINNOACTIVE(7), SHOWNA(8), RESTORE(9),SHOWDEFAULT(10)-->
+      <ModuleName>IHMSMPLOC.exe</ModuleName>
+      <ClassName>ThunderRt6MDIForm</ClassName>
+    </Smploc>
+    <Notepad CmdShow="9">
+      <!--SHOWNORMAL(1), SHOWMINIMIZED(2), SHOWMAXIMIZED(3), SHOWNOACTIVATE(4), SHOW(5), SHOWMINNOACTIVE(7), SHOWNA(8), RESTORE(9),SHOWDEFAULT(10)-->
+      <ModuleName>notepad.exe</ModuleName>
+      <ClassName>Notepad</ClassName>
+    </Notepad>
+    <WINCC CmdShow="3">
+      <!--SHOWNORMAL(1), SHOWMINIMIZED(2), SHOWMAXIMIZED(3), SHOWNOACTIVATE(4), SHOW(5), SHOWMINNOACTIVE(7), SHOWNA(8), RESTORE(9),SHOWDEFAULT(10)-->
+      <ModuleName>Hmirtm.exe</ModuleName>
+      <ClassName>HmiRTm</ClassName>
+    </WINCC>
+  </ExternScreen>
+</IhmpScreenClass>

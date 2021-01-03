@@ -1,0 +1,25 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="0">
+         <Text>Air_N12_p1_r0_m0</Text>
+      </Doc>
+      <Doc Num="1">
+         <Text>Air_N12_p1_r0_m1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Air_N12_p0_r1</Text>
+      </Doc>
+   </DocsWord12>
+   <DocsWord34>
+      <Doc Num="0">
+         <Text>Air_N34_p1_r0_m0</Text>
+      </Doc>
+      <Doc Num="1">
+         <Text>Air_N34_p1_r0_m1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Air_N34_p0_r1</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

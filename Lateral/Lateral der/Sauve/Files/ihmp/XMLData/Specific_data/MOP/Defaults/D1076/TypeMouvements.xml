@@ -1,0 +1,175 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <Mouvement>
+    <Nom ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Serrage B</Expression>
+    </Nom>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\B02_SRB.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+  </Mouvement>
+  <ActionneursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Avance</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02EESRB</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02EESRB">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02EESRB">B02EESRB&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursAvance>
+  <ActionneursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Retroceso</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02EDSRB</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02EDSRB">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02EDSRB">B02EDSRB&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursRecul>
+  <CapteursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Avance</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02DESRB1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02DESRB1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02DESRB1">B02DESRB1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02DESRB2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02DESRB2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02DESRB2">B02DESRB2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursAvance>
+  <CapteursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Retroceso</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02DDSRB1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02DDSRB1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02DDSRB1">B02DDSRB1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B02DDSRB2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B02DDSRB2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B02DDSRB2">B02DDSRB2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursRecul>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Características del movimiento en defecto </Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroSens</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">El movimiento es comandado en el sentido</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroCapteurs</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">El autómata detecta el movimiento en las posiciones siguientes</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Lien</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Haga clic en el enlace AZUL, para localizar el componente</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Avance</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">AVANCE</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Recul</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">RETROCESO</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_NomMvtTitre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Nombre del movimiento</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>MsgNoDepannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Ninguna solución de reparación encontrada</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_BALISE_ABSENTE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">La baliza &lt;{0}&gt; no está presente en el fichero &lt;{1}&gt;.</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_ERROR_FILE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Problemas en el fichero &lt;{0}&gt;</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Reparación</Expression>
+      </text>
+    </Button>
+    <Button>
+      <Nom>BTN_Localisation</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Localización</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

@@ -1,0 +1,29 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Code_Process1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Code_Process2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Code_Process4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Code_Process8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Code_Process16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Code_Process32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>Code_Process64</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>Code_Process128</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

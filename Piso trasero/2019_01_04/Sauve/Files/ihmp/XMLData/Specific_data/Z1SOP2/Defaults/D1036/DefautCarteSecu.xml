@@ -1,0 +1,33 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <HelpAction Type="URL">
+    <Command>http://172.25.214.1/Portal/Portal.mwsl?PriNav=Alarm</Command>
+  </HelpAction>
+  <PagesWinCC>
+    <PageWinCC Code="52">
+      <VariableDC ItemOpc="DB_IHM_WINCC.Num_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Num_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </PageWinCC>
+    <SetAvPlanPageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Pilot.ihmavplan" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Pilot.ihmavplan&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </SetAvPlanPageWinCC>
+    <EnablePageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Val_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Val_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </EnablePageWinCC>
+  </PagesWinCC>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dirección API</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Buttons>
+    <Button>
+      <Nom>BTN_WINCC</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Mas detalles</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

@@ -1,0 +1,51 @@
+<IhmpHeader>
+  <GroupeDC>Voyants</GroupeDC>
+  <IhmpLight Index="0" ColorActif="-65536">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Defecto a tratar</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2def">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2def">Z1.Z1MODES.Pilot.ihm2def&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="1" ColorActif="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Consigna a leer</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2cns">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2cns">Z1.Z1MODES.Pilot.ihm2cns&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="2" ColorActif="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Información a leer</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2inf">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2inf">Z1.Z1MODES.Pilot.ihm2inf&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="3" ColorActif="-256">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Modo específico</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihmmes1">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihmmes1">Z1.Z1MODES.Diag.Ihmmes1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="4" ColorActif="-16711936">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Z1 - Automatico</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.IhmZ_vmauto">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.IhmZ_vmauto">Z1.Z1MODES.Diag.IhmZ_vmauto&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="5" ColorActif="-256">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Z1 - Manual</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.MANU">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1G.MANU">Z1G.MANU&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+</IhmpHeader>

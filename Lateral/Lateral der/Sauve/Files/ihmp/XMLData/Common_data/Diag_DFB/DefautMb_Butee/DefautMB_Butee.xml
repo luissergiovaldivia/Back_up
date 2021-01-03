@@ -1,0 +1,32 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>TableauDefDetectSupDet1Mem0</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>TableauDefDetectSupDet0Mem1</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>TableauDefDetectSupButeeFermee</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>TableauDefMvtButee</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>TableauDefMvtButeeOuverture</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>TableauDefMvtButeeFermeture</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>TableauDefEvacuationSupportCoince</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>TableauDefEvacuationControleSupport</Text>
+      </Doc>
+      <Doc Num="512">
+         <Text>TableauDefParam</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

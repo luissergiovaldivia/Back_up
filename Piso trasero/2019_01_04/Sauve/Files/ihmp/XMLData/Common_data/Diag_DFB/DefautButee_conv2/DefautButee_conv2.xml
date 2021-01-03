@@ -1,0 +1,11 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>Butee_Convoyeur1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Butee_Convoyeur2</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

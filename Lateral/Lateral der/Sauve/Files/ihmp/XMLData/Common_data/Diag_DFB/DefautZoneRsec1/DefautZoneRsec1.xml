@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12/>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed0</Text>
+      </Doc>
+      <Doc Num="3">
+         <Text>Rsec1_R0_Cp0_Cr1</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Rsec1_R1_Cr0_Ed1</Text>
+      </Doc>
+      <Doc Num="5">
+         <Text>Rsec1_R1_Cr0_Ed0</Text>
+      </Doc>
+      <Doc Num="6">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed1</Text>
+      </Doc>
+      <Doc Num="7">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed0</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Rsec1_R0_Cp0_Cr1</Text>
+      </Doc>
+      <Doc Num="9">
+         <Text>Rsec1_R1_Cr0_Ed1</Text>
+      </Doc>
+      <Doc Num="10">
+         <Text>Rsec1_R1_Cr0_Ed0</Text>
+      </Doc>
+      <Doc Num="11">
+         <Text>Rsec1_ES0_Cr1</Text>
+      </Doc>
+      <Doc Num="12">
+         <Text>Rsec1_ES0_Cr0</Text>
+      </Doc>
+      <Doc Num="13">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed1</Text>
+      </Doc>
+      <Doc Num="14">
+         <Text>Rsec1_R0_Cf0_Cr1_Ed0</Text>
+      </Doc>
+      <Doc Num="15">
+         <Text>Rsec1_R0_Cp0_Cr1</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Rsec1_R1_Cr0_Ed1</Text>
+      </Doc>
+      <Doc Num="17">
+         <Text>Rsec1_R1_Cr0_Ed0</Text>
+      </Doc>
+      <Doc Num="18">
+         <Text>Rsec1_Par_KMSTR</Text>
+      </Doc>
+      <Doc Num="19">
+         <Text>Rsec1_Def_info_fil</Text>
+      </Doc>
+      <Doc Num="20">
+         <Text>Rsec1_Def_info_fil</Text>
+      </Doc>
+      <Doc Num="21">
+         <Text>Rsec1_Def_info_fil</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

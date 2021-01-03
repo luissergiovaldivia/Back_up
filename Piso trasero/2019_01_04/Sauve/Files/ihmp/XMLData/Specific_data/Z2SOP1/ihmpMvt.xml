@@ -1,0 +1,579 @@
+<IhmpActiveXMvt TimeOut="3000">
+  <GroupeDC>GRPMvtZ2SOP1</GroupeDC>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">E0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Zona 2 - E0 - Dispositivo</Expression>
+    </Headline>
+    <NumPage>5</NumPage>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\E0_DISPOSITIVO.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">PILOTO A</Expression>
+      </Text>
+      <NumMvt>41</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0PLA.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2E0.E0PLA.Diag.Ihmvrmv">Z2E0.E0PLA.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0PLA.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2E0.E0PLA.Diag.Ihmvamv">Z2E0.E0PLA.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE B</Expression>
+      </Text>
+      <NumMvt>42</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0SRB.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2E0.E0SRB.Diag.Ihmvrmv">Z2E0.E0SRB.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2E0.E0SRB.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2E0.E0SRB.Diag.Ihmvamv">Z2E0.E0SRB.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">F0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Zona 2 - F0 - Dispositivo</Expression>
+    </Headline>
+    <NumPage>6</NumPage>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\F0_DISPOSITIVO.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">PILOTO A</Expression>
+      </Text>
+      <NumMvt>51</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0PLA.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0PLA.Diag.Ihmvrmv">Z2F0.F0PLA.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0PLA.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0PLA.Diag.Ihmvamv">Z2F0.F0PLA.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE B</Expression>
+      </Text>
+      <NumMvt>52</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0SRB.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0SRB.Diag.Ihmvrmv">Z2F0.F0SRB.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0SRB.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0SRB.Diag.Ihmvamv">Z2F0.F0SRB.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE D</Expression>
+      </Text>
+      <NumMvt>53</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0SRD.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0SRD.Diag.Ihmvrmv">Z2F0.F0SRD.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0SRD.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0SRD.Diag.Ihmvamv">Z2F0.F0SRD.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">RETACAGE E</Expression>
+      </Text>
+      <NumMvt>54</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0RCE.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0RCE.Diag.Ihmvrmv">Z2F0.F0RCE.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0RCE.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0RCE.Diag.Ihmvamv">Z2F0.F0RCE.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">CARRO FA</Expression>
+      </Text>
+      <NumMvt>55</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0CAFA.Diag.Ihmvpmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0CAFA.Diag.Ihmvpmv">Z2F0.F0CAFA.Diag.Ihmvpmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">CARRO FI</Expression>
+      </Text>
+      <NumMvt>56</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0CAFI.Diag.Ihmvpmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0CAFI.Diag.Ihmvpmv">Z2F0.F0CAFI.Diag.Ihmvpmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">CARRO FR</Expression>
+      </Text>
+      <NumMvt>57</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2F0.F0CAFR.Diag.Ihmvpmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2F0.F0CAFR.Diag.Ihmvpmv">Z2F0.F0CAFR.Diag.Ihmvpmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">G0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Zona 2 - G0 - Dispositivo</Expression>
+    </Headline>
+    <NumPage>7</NumPage>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\G0_DISPOSITIVO.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">PILOTO A</Expression>
+      </Text>
+      <NumMvt>61</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2G0.G0PLA.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2G0.G0PLA.Diag.Ihmvrmv">Z2G0.G0PLA.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2G0.G0PLA.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2G0.G0PLA.Diag.Ihmvamv">Z2G0.G0PLA.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE B</Expression>
+      </Text>
+      <NumMvt>62</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2G0.G0SRB.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2G0.G0SRB.Diag.Ihmvrmv">Z2G0.G0SRB.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2G0.G0SRB.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2G0.G0SRB.Diag.Ihmvamv">Z2G0.G0SRB.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">H0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Zona 2 - H0 - Dispositivo</Expression>
+    </Headline>
+    <NumPage>8</NumPage>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\H0_DISPOSITIVO.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE A</Expression>
+      </Text>
+      <NumMvt>71</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0SRA.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0SRA.Diag.Ihmvrmv">Z2H0.H0SRA.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0SRA.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0SRA.Diag.Ihmvamv">Z2H0.H0SRA.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">SERRAGE B</Expression>
+      </Text>
+      <NumMvt>72</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0SRB.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0SRB.Diag.Ihmvrmv">Z2H0.H0SRB.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0SRB.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0SRB.Diag.Ihmvamv">Z2H0.H0SRB.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">MOTOR 1</Expression>
+      </Text>
+      <NumMvt>74</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0M1.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0M1.Diag.Ihmvrmv">Z2H0.H0M1.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0M1.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z2H0.H0M1.Diag.Ihmvamv">Z2H0.H0M1.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <IhmpPageMvt>
+    <BottomText ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">W0</Expression>
+    </BottomText>
+    <Headline ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Zona 8 - W0 - Dispositivo</Expression>
+    </Headline>
+    <NumPage>817</NumPage>
+    <LocalisationFine>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+    <!--Mouvements de commandes manuelles-->
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">B1</Expression>
+      </Text>
+      <NumMvt>1</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B1.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B1.Diag.Ihmvrmv">Z8W0.W0B1.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B1.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B1.Diag.Ihmvamv">Z8W0.W0B1.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">B2</Expression>
+      </Text>
+      <NumMvt>2</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B2.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B2.Diag.Ihmvrmv">Z8W0.W0B2.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B2.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B2.Diag.Ihmvamv">Z8W0.W0B2.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <IhmpMvt>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">B3</Expression>
+      </Text>
+      <NumMvt>3</NumMvt>
+      <Verrouillable>1</Verrouillable>
+      <BackMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Recuo</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B3.Diag.Ihmvrmv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B3.Diag.Ihmvrmv">Z8W0.W0B3.Diag.Ihmvrmv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </BackMvt>
+      <GoMvt>
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="pt-BR">Avanço</Expression>
+        </Text>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z8W0.W0B3.Diag.Ihmvamv">
+          <VariableDC Source="Source SimaticNet CmdManu.API Siemens 1" ItemOpc="Z8W0.W0B3.Diag.Ihmvamv">Z8W0.W0B3.Diag.Ihmvamv&lt;&lt;Source&gt;&gt;Source SimaticNet CmdManu.API Siemens 1</VariableDC>
+        </Condition>
+      </GoMvt>
+    </IhmpMvt>
+    <!--Spécificités de la page de sélection des Groupes Locator-->
+    <!--Spécificités de la page de sélection des Groupes Locator sur préhenseur-->
+  </IhmpPageMvt>
+  <NumMvt>
+    <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ValeurInit="-1" ItemOpc="Z2.Z2MODES.Pilot.Ihmnmvt">Z2.Z2MODES.Pilot.Ihmnmvt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+  </NumMvt>
+  <NumPage>
+    <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ValeurInit="-1" ItemOpc="Z2.Z2MODES.Pilot.Ihmnpage">Z2.Z2MODES.Pilot.Ihmnpage&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+  </NumPage>
+  <Activation>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_manu">
+      <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_manu">Z2.Z2MODES.Diag.IhmZ_manu&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+    </Condition>
+  </Activation>
+  <SelectionPupitre>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Pilot.Ihm1pm">
+      <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.Ihm1pm">Z2.Z2MODES.Pilot.Ihm1pm&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+    </Condition>
+  </SelectionPupitre>
+  <AvertissementMDM ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="pt-BR">Selecione o modo MANUAL</Expression>
+  </AvertissementMDM>
+</IhmpActiveXMvt>

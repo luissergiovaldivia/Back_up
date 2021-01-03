@@ -1,0 +1,8 @@
+<MotsDeVie>
+  <GroupeDC>MotsDeVie</GroupeDC>
+  <Frequence>1000</Frequence>
+  <!--en ms-->
+  <MotDeVie>
+    <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.Ihm1vie">Z1.Z1MODES.Pilot.Ihm1vie&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+  </MotDeVie>
+</MotsDeVie>

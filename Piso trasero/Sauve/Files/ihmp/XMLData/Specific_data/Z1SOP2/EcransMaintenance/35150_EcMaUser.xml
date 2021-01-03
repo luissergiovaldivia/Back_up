@@ -1,0 +1,367 @@
+<EcranUser>
+  <GroupeDC>35150_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="35" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="1" Height="110" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="3" Height="100" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - Seleccion modo de marcha35198" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Seleccion modo de marcha</Expression>
+    </Title>
+    <Rows />
+    <Button Name="1 - Con Siptol" Row="None" Height="25" Width="100" PosX="10" PosY="30" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Con Siptol</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS">Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="2 - Seleccion" Color="-256" Row="None" Height="25" Width="70" PosX="120" PosY="30" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Seleccion</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL">Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - Activo" Color="-16711936" Row="None" Height="25" Width="50" PosX="195" PosY="30" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Activo</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMIPOF">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMIPOF">Z1A0L.A0_LANCEMENT.DIAG.IHMIPOF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="7 - Sin Siptol" Row="None" Height="25" Width="100" PosX="10" PosY="60" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sin Siptol</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="1" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS">Z1A0L.A0_LANCEMENT.PILOT.IHMSELMHS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMAUTMHS">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMAUTMHS">Z1A0L.A0_LANCEMENT.DIAG.IHMAUTMHS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="8 - Seleccionar" Color="-256" Row="None" Height="25" Width="70" PosX="120" PosY="60" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Seleccionar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL">Z1A0L.A0_LANCEMENT.DIAG.IHMMHSSEL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="9 - Activo" Color="-16711936" Row="None" Height="25" Width="50" PosX="195" PosY="60" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Activo</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMMAP">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMMAP">Z1A0L.A0_LANCEMENT.DIAG.IHMMAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+  </Cadre>
+  <Cadre Name="1 - 03.01 A0 Lanzamiento Fuera de  SIPTOL35184" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">03.01 A0 Lanzamiento Fuera de  SIPTOL</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="1 - Diversidad35152" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Diversidad</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="5" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - CDIVx (Reserva)" Color="-16777216" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CDIVx (Reserva)</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - Modelo" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modelo</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - Empattement" Color="-16777216" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Empattement</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - Fase" Color="-16777216" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Fase</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - FAMILIA" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FAMILIA</Expression>
+      </Text>
+    </Text>
+    <CBX Name="2 - Lista desplegable" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMSELCDIV1">Z1A0L.IHMSELCDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Familia" />
+    </CBX>
+    <CBX Name="3 - Lista desplegable" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMSELCDIV3">Z1A0L.IHMSELCDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Modelo" />
+    </CBX>
+    <CBX Name="3 - Lista desplegable" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMSELCDIV5">Z1A0L.IHMSELCDIV5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="CDIVx" />
+    </CBX>
+    <CBX Name="3 - Lista desplegable" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMSELCDIV2">Z1A0L.IHMSELCDIV2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Fase" />
+    </CBX>
+    <CBX Name="3 - Lista desplegable" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMSELCDIV6">Z1A0L.IHMSELCDIV6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Empattement" />
+    </CBX>
+  </Cadre>
+  <Cadre Name="2 - Lanzamiento piezas a fabricar35219" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Lanzamiento piezas a fabricar</Expression>
+    </Title>
+    <Rows />
+    <Text Name="1 - N Piezas a fabricar" Color="-16777216" Row="None" Height="25" Width="140" PosX="0" PosY="30">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N Piezas a fabricar</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - N Piezas restantes" Color="-16777216" Row="None" Height="25" Width="140" PosX="0" PosY="60">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N Piezas restantes</Expression>
+      </Text>
+    </Text>
+    <WriteVal Row="None" Height="30" Width="80" PosX="150" PosY="30" Min="None" Max="None" Pwd="">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IHMSELNBPF">Z1A0L.A0_LANCEMENT.PILOT.IHMSELNBPF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </WriteVal>
+    <ReadVal Row="None" Height="30" Width="80" PosX="150" PosY="60" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMSELNBPR">Z1A0L.A0_LANCEMENT.DIAG.IHMSELNBPR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="2 - Validacion35186" Line="3" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Validacion</Expression>
+    </Title>
+    <Rows />
+    <Button Name="1 - Validar" Row="None" Height="25" Width="100" PosX="250" PosY="45" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.PILOT.IhmSelVal">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IhmSelVal">Z1A0L.A0_LANCEMENT.PILOT.IhmSelVal&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IhmAutVal">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmAutVal">Z1A0L.A0_LANCEMENT.DIAG.IhmAutVal&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Text Name="2 - Cambio divsersidad" Color="-16777216" Row="None" Height="25" Width="150" PosX="80" PosY="20">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Cambio divsersidad</Expression>
+      </Text>
+    </Text>
+    <Button Name="3 - Confirmacion" Row="None" Height="25" Width="100" PosX="100" PosY="45" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Confirmacion</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.IHMVALSEL">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.IHMVALSEL">Z1A0L.IHMVALSEL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z1A0L.A0LFRCD">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0LFRCD">Z1A0L.A0LFRCD&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="3 - Modo de lanzamiento35231" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Modo de lanzamiento</Expression>
+    </Title>
+    <Rows />
+    <RDB Name="1 - Con Pieza" Row="None" Height="25" Width="200" PosX="10" PosY="30" IdGroupe="1">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Con Pieza</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="0" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP">Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="Lt" Value="3" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp">Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </RDB>
+    <RDB Name="2 - Sin Pieza" Row="None" Height="25" Width="200" PosX="10" PosY="60" IdGroupe="1">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sin Pieza</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="Eq" Value="1" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP">Z1A0L.A0_LANCEMENT.PILOT.IHMSELFAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="Lt" Value="3" NumBit="-1" Description="Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp">Z1A0L.A0_LANCEMENT.DIAG.IHMLTyp&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </RDB>
+  </Cadre>
+  <Listes>
+    <Liste Id="Empattement">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Normal</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">BAN</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="Familia">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">X52</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="CDIVx" />
+    <Liste Id="Fase">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Ph1</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="Modelo">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">L</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">B</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">B CROSS</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+  </Listes>
+</EcranUser>

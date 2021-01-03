@@ -1,0 +1,600 @@
+FUNCTION_BLOCK "1_A0_ROBOT"
+TITLE =ROBOT A0 MANAGEMENT
+//GESTION DU ROBOT A0
+VERSION : 0.1
+
+
+VAR
+  A0ROBOT : "BF_ROBOT";	//A0: ROBOT MANAGEMENT FONCTION BLOC / FB DE GESTION DU ROBOT
+  A0SUIVI : "BF_TCY_SUIV";	//A0: CYCLE TIME MONITORING / SUIVI DU TEMPS DE CYCLE ROBOT
+  A0CODE : WORD ;	//A0: ROBOT CYCLE CODE / CODE CYCLE DU ROBOT
+  ST1 : INT ;	//A0: T1 THRESHOLD (1/10S) / SEUIL DE T1 (BASE 1/10S)
+  ST2 : INT ;	//A0: T2 THRESHOLD (1/10S) / SEUIL DE T2 (BASE 1/10S)
+  S1A0DIV : INT ;	//A0: ROBOT DIVERSITY IN PROGRESS / DIVERSITE EN COURS DE TRAVAIL
+  S1A0TCP : INT ;	//A0: OWN CYCLE TIME (1/10S) / TEMPS DE CYCLE PROPRE (BASE 1/10S)
+  S1A0TCT : INT ;	//A0: TOTAL CYCLE TIME (1/10S) / TEMP DE CYCLE TOTAL (BASE 1/10S)
+  S1A0NCY : INT ;	//A0: ROBOT CYCLE NUMBER / NUMERO DE CYCLE ROBOT
+  S1A0NDR : WORD ;	//A0: ROBOT FAULT NUMBER / NUMERO DE DEFAUT ROBOT
+  S1A0APP : BOOL ;	//A0: ROBOT GENERAL FAULT / DEFAUT GENERAL ROBOT
+  S1A0APE : BOOL ;	//A0: EXPLOITATION OWN STOPPAGE / ARRET PROPRE EXPLOITATION
+  S1A0APF : BOOL ;	//A0: FUNCTIONNAL OWN STOPPAGE / ARRET PROPRE FONCTIONNEL
+  S1A0ALR : BOOL ;	//A0: OPERATOR CALL / APPEL OPERATEUR
+  S1A0AR : BOOL ;	//A0: STOP ROBOT / ARRET ROBOT
+  S1A0ATT : BOOL ;	//A0: ROBOT WAITING / ROBOT EN ATTENTE
+  S1A0TOPCY : BOOL ;	//A0: ROBOT TOP CYCLE / TOP CYCLE ROBOT
+  S1A0AIA : BOOL ;	//A0: WAIT FOR EVENT / ATTENTE CODE EVENEMENT
+  S1A0HPR : BOOL ;	//A0: NOT IN SERVICE / HORS PRODUCTION
+  S1A0DER : BOOL ;	//A0: ROBOT DERIVE / DERIVE ROBOT
+  S1A0DTC : BOOL ;	//A0: CYCLE TIME OVERRUN / DEPASSEMENT TEMPS T1
+  S1A0DT2 : BOOL ;	//A0: CYCLE TIME OUT / DEPASSEMENT TEMPS T2
+  A0XCODE : BOOL ;	//A0: ROBOT CYCLE CODE AUXILLIARY / AUXILLIAIRE CODE CYCLE ROBOT
+  A0CHGELEC : "BF_RB_SERVICE";	//A0: TIP CHANGE CONTROL / GESTION CHANGEMENT ELECTRODE
+  A0RODAGE : "BF_RB_SERVICE";	//A0: TIP DRESS CONTROL / GESTION RODAGE ELECTRODE
+  A0RAZROD : BOOL ;	//A0: RESET TIP DRESS COUNTER / RAZ COMPTEUR RODAGE
+  A0NBCHE : WORD ;	//A0: TIP CHANGE COUNTER / COMPTEUR DE CHANGEMENT ELECTRODE
+  A0MROD : WORD ;	//A0: MAXIMUM TIP DRESS NUMBER / NOMBRE RODAGE MAX
+  A0MROD2 : WORD ;	//A0: MAXIMUM TIP DRESS NUMBER / NOMBRE RODAGE MAX
+  A0NBROD : WORD ;	//A0: TIP DRESS COUNTER / COMPTEUR DE RODAGE ELECTRODE
+  A0ALRCF : WORD ;	//A0: TIP DRESSER CHANGE ALARM THRESHOLD VALUE / VALEUR SEUIL ALARM CHGT FRAISE
+  A0DEMCF : WORD ;	//A0: TIP DRESSER CHANGE FAULT THRESHOLD VALUE / VALEUR SEUIL DEFAUT CHGT FRAISE
+  A0DROD : BOOL ;	//A0: TIP DRESS REQUEST / DEMANDE RODAGE
+  A0ALROD : BOOL ;	//A0: TIP DRESS ALARM / ALARME RODAGE
+  S1A0ACFR : BOOL ;	//A0: TIP DRESSER CHANGE ALARM / ALARME CHANGEMENT DE FRAISE
+  S1A0DCFR : BOOL ;	//A0: TIP DRESSER CHANGE REQUEST / DEMANDE CHANGEMENT DE FRAISE
+  S1A0AACE : BOOL ;	//A0: TIP CHANGE WARNING BEFORE ALARM / ALARME AVANT CHANGEMENT ELECTRODE
+  S1A0ACE : BOOL ;	//A0: TIP CHANGE ALARM / ALARME CHANGEMENT ELECTRODE
+  S1A0DCE : BOOL ;	//A0: TIP CHANGE REQUEST / DEMANDE CHANGEMENT ELECTRODE
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              HARDWARE HMI                                 **
+//*******************************************************************************
+//*ODIL_ID:745_309*
+//
+
+
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                           SAFETY PROGRAM HMI                              **
+//*******************************************************************************
+//*ODIL_ID:745_312*
+//
+
+
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         MONITORING / SUIVI                                **
+//*******************************************************************************
+//*ODIL_ID:745_1001*
+//
+
+
+NETWORK
+TITLE =MONITORING: DIVERSITY VALUE
+//INFORMATION DIVERSITE EN COURS
+//*ODIL_ID:745_1025*
+//
+      U     #S1A0TOPCY; 
+      U     "IIT".A01.MP.MPP; 
+      SPBNB _001; 
+      L     1; 
+      T     #S1A0DIV; 
+_001: NOP   0; 
+NETWORK
+TITLE =MONITORING: ROBOT CYCLE TIME CHECK
+//SUIVI: CONTROLE DU TEMPS DE CYCLE ROBOT
+//*ODIL_ID:745_1026*
+//
+      U     #S1A0AR; 
+      =     L      0.0; 
+      BLD   103; 
+      U     #S1A0ATT; 
+      =     L      0.1; 
+      BLD   103; 
+      U     #S1A0TOPCY; 
+      =     L      0.2; 
+      BLD   103; 
+      CALL #A0SUIVI (
+           E_appape                 := L      0.0,
+           E_aiapf                  := L      0.1,
+           E_topcyc                 := L      0.2,
+           E_numcyc                 := #S1A0DIV,
+           E_seu_t1                 := #ST1,
+           E_seu_t2                 := #ST2,
+           S_tcp                    := #S1A0TCP,
+           S_tct                    := #S1A0TCT,
+           S_numcyc                 := #S1A0NCY,
+           S_dtc                    := #S1A0DTC,
+           S_fint2                  := #S1A0DT2);
+
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                       EXCHANGES STAGE B0                                  **
+//*******************************************************************************
+//*ODIL_ID:3095_1004*
+//
+
+
+NETWORK
+TITLE =END OF WORK
+//FIN DE TRAVAIL/ Position de dépose
+//*ODIL_ID:3095_1005*
+//
+      U     "A0OR3"; 
+      =     "Z1G".A0.ECHG_B0.PD; 
+NETWORK
+TITLE =END OF WORK
+//FIN DE TRAVAIL/ fin de soudure
+      U     "A0OR5"; 
+      =     "Z1G".A0.ECHG_B0.FS; 
+      S     "IIT".B0_TT.MFT.MFS; 
+NETWORK
+TITLE =END OF WORK
+//FIN DE TRAVAIL/ position de prise
+      U     "A0OR6"; 
+      =     "PERSO"; 
+NETWORK
+TITLE =ROBOT NOT IN ZONE
+//SECURITE ARRIERE DU ROBOT / SOUS ENSEMBLE B0
+//*ODIL_ID:3095_1006*
+//
+      O     "A0OR4"; 
+      O     "A0REPLI"; 
+      =     "Z1G".A0.ECHG_B0.SA; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                       EXCHANGES STAGE C0C                                  **
+//*******************************************************************************
+//*ODIL_ID:6856_1004*
+//
+
+
+NETWORK
+TITLE =END OF WORK
+//FIN DE TRAVAIL/ position de dépose
+//*ODIL_ID:6856_1005*
+//
+      U     "A0OR7"; 
+      =     "Z1G".A0.ECHG_C0C.PD; 
+NETWORK
+TITLE =ROBOT NOT IN ZONE
+//SECURITE ARRIERE DU ROBOT / SOUS ENSEMBLE C0C
+//*ODIL_ID:6856_1006*
+//
+      O     "PERSO"; 
+      O     "A0REPLI"; 
+      =     "Z1G".A0.ECHG_C0C.SA; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                       EXCHANGES STAGE H0D                                  **
+//*******************************************************************************
+//*ODIL_ID:5277_1004*
+//
+
+
+NETWORK
+TITLE =END OF WORK
+//FIN DE TRAVAIL
+//*ODIL_ID:5277_1005*
+//
+      U     "A0OR1"; 
+      =     "Z1G".A0.ECHG_H0D.PP; 
+NETWORK
+TITLE =ROBOT NOT IN ZONE
+//SECURITE ARRIERE DU ROBOT / SOUS ENSEMBLE D0D
+//*ODIL_ID:5277_1006*
+//
+      O     "A0OR2"; 
+      O     "A0REPLI"; 
+      =     "Z1G".A0.ECHG_H0D.SA; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              CYCLES ROBOT                                 **
+//*******************************************************************************
+//*ODIL_ID:745_1008*
+//
+
+
+NETWORK
+TITLE =CYCLE CODE RESET
+//INITIALISATION DU NUMERO DE CODE CYCLE
+//*ODIL_ID:745_1009*
+//
+      L     0; 
+      T     #A0CODE; 
+      NOP   0; 
+NETWORK
+TITLE =MAIN CYCLE AUXILLIARY
+//AUX. CYCLE PRINCIPAL
+//*ODIL_ID:745_1010*
+//
+      U     "Z1G".MCYRB; 
+      UN    "IG".LIEN_ILOT.MAFJ; 
+      UN    "Z1G".LIEN_PUP.Z_macy; 
+      =     #A0XCODE; 
+NETWORK
+TITLE =CYCLE NUMBER 1
+//CYCLE ROBOT NUMERO 1
+//*ODIL_ID:3095_1011_1*
+//
+      U     #A0XCODE; 
+      U     "PERSO"; 
+      SPBNB _002; 
+      L     1; 
+      T     #A0CODE; 
+_002: NOP   0; 
+NETWORK
+TITLE =CYCLE NUMBER 2
+//CYCLE ROBOT NUMERO 2
+//
+//
+      U     #A0XCODE; 
+      U     "Z1G".H0D.IPP2; 
+      SPBNB _003; 
+      L     2; 
+      T     #A0CODE; 
+_003: NOP   0; 
+NETWORK
+TITLE =
+//---------------------------- MAINTENANCE CYCLE  -------------------------------
+//*ODIL_ID:745_1014*
+//
+
+
+NETWORK
+TITLE =REQUEST FOR TIP DRESSING (WELDING ROBOT)
+//DEMANDE DE RODAGE DISTANT (ROBOT SOUDURE)
+//*ODIL_ID:745_1015*
+//
+      U     "Z1G".MCYRB; 
+      U     #A0DROD; 
+      SPBNB _004; 
+      L     253; 
+      T     #A0CODE; 
+_004: NOP   0; 
+NETWORK
+TITLE =REQUEST FOR TIP REPLACEMENT (WELDING ROBOT)
+//DEMANDE DE CHANGEMENT D'ELECTRODE DISTANT (ROBOT SOUDURE)
+//*ODIL_ID:745_1016*
+//
+      U     "Z1G".MCYRB; 
+      U     "Z1G".DCHEG; 
+      SPBNB _005; 
+      L     254; 
+      T     #A0CODE; 
+_005: NOP   0; 
+NETWORK
+TITLE =REQUEST FOR MAIN FALLBACK POSITION
+//DEMANDE DE REPLI DISTANT
+//*ODIL_ID:745_1017*
+//
+      U     "Z1G".DRRB; 
+      SPBNB _006; 
+      L     255; 
+      T     #A0CODE; 
+_006: NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              ROBOT STANDARD BF                            **
+//*******************************************************************************
+//*ODIL_ID:745_1018*
+//
+
+
+NETWORK
+TITLE =DRY RUN MODE IN PROGRESS
+//MARCHE DEVERMINAGE AU FILM OU LOCAL
+//*ODIL_ID:745_1019*
+//
+      O     "Z1G".MDV; 
+      O     "Z1G".B0.MDV; 
+      O     "Z1G".A01.MDV; 
+      O     "Z1G".H0D.MDV; 
+      O     "Z1G".C0C.MDV; 
+      =     #A0ROBOT.Dever; 
+NETWORK
+TITLE =ROBOT A0
+//ROBOT A0
+//*ODIL_ID:745_1020*
+//
+      U     "Z1IR"; 
+      =     L      0.0; 
+      BLD   103; 
+      U     "PERSO"; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "PERSO"; 
+      =     L      0.2; 
+      BLD   103; 
+      U     "BA1LIEN"; 
+      =     L      0.3; 
+      BLD   103; 
+      U     "BA1"; 
+      =     L      0.4; 
+      BLD   103; 
+      U     "BA1LIEN"; 
+      =     L      0.6; 
+      BLD   103; 
+      UN    "Z1G".PMAZ; 
+      UN    "Z1G".PMCY; 
+      =     L      0.7; 
+      BLD   103; 
+      CALL #A0ROBOT (
+           Rearm                    := L      0.0,
+           Z_es                     := L      0.1,
+           Z_fz                     := L      0.2,
+           Aevr                     := L      0.3,
+           Stop                     := L      0.4,
+           Enpro                    := L      0.6,
+           S_prodok                 := L      0.7,
+           Cod                      := #A0CODE,
+           S_cod_mx                 := W#16#250,
+           Iw_rbe1                  := "A0RBMS1",
+           Iw_rbe2                  := "A0RBMS2",
+           Iw_rbe3                  := "A0RBMS3",
+           Iw_rbe4                  := "A0RBMS4",
+           Iw_rbe5                  := "A0RBMS5",
+           Iw_rbe6                  := "A0RBMS6",
+           Def_rb                   := #S1A0APP,
+           Appel_op                 := #S1A0ALR,
+           S_ar_rb                  := #S1A0AR,
+           S_att_rb                 := #S1A0ATT,
+           S_top_cy                 := #S1A0TOPCY,
+           S_hpr                    := #S1A0HPR,
+           S_de                     := #S1A0DER,
+           S_ai                     := #S1A0AIA,
+           S_ape                    := #S1A0APE,
+           S_apf                    := #S1A0APF,
+           S_com                    := #S1A0NDR,
+           Qw_rbs1                  := "A0RBME1",
+           Qw_rbs2                  := "A0RBME2",
+           Qw_rbs3                  := "A0RBME3",
+           Qw_rbs4                  := "A0RBME4",
+           Qw_rbs5                  := "A0RBME5",
+           Qw_rbs6                  := "A0RBME6");
+
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                                 ROBOT EVENTS                              **
+//*******************************************************************************
+//*ODIL_ID:745_1021*
+//
+
+
+NETWORK
+TITLE =RESET ROBOTS EVENTS
+//INITIALISATION EVENEMENTS ROBOTS
+//*ODIL_ID:745_1022*
+//
+      L     0; 
+      T     "A0RBME2"; 
+      NOP   0; 
+NETWORK
+TITLE =ROBOT EVENTS
+//EVENEMENTS ROBOT
+//*ODIL_ID:745_1023*
+//
+      U     "Z1G".LIEN_PUP.Z_mauto; 
+      UN    "Z1G".LIEN_PUP.Z_macy; 
+      O     "A0MANU"; 
+      =     L      0.0; 
+      U     L      0.0; 
+      U     "Z1G".H0D.ECHG_A0.AP; 
+      =     "A0EV1"; 
+      U     L      0.0; 
+      U     "Z1G".H0D.ECHG_A0.AR; 
+      =     "A0EV2"; 
+      U     L      0.0; 
+      U     "PERSO"; 
+      =     "A0EV3"; 
+      U     L      0.0; 
+      U     "Z1G".B0.ECHG_A0.ARD; 
+      =     "A0EV4"; 
+      U     L      0.0; 
+      U     "Z1G".B0.ECHG_A0.AS; 
+      =     "A0EV5"; 
+      U     L      0.0; 
+      U     "PERSO"; 
+      =     "A0EV6"; 
+      U     L      0.0; 
+      U     "Z1G".B0.ECHG_A0.AP; 
+      =     "A0EV7"; 
+      U     L      0.0; 
+      U     "Z1G".B0.ECHG_A0.ARP; 
+      =     "A0EV8"; 
+      U     L      0.0; 
+      U     "Z1G".C0C.ECHG_A0.AD; 
+      =     "A0EV9"; 
+      U     L      0.0; 
+      U     "Z1G".C0C.ECHG_A0.AR; 
+      =     "A0EV10"; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                  RODAGE ET CHANGEMENT ELECTRODES                          **
+//*******************************************************************************
+//*ODIL_ID:745_1030*
+//
+
+
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              RODAGE  CENTRALISE                           **
+//*******************************************************************************
+//*ODIL_ID:745_1031*
+//
+
+
+NETWORK
+TITLE =MONITORING: TIP DRESSER CHANGE ALARM / REQUEST
+//SUIVI: ALARME / DEMANDE CHANGEMENT DE FRAISE
+//(valeurs de seuil paramétrable sur page écran)
+//*ODIL_ID:745_1032*
+//
+      L     #A0NBROD; 
+      L     #A0ALRCF; 
+      >I    ; 
+      =     #S1A0ACFR; 
+NETWORK
+TITLE =MONITORING: TIP DRESSER CHANGE ALARM / REQUEST
+//SUIVI: ALARME / DEMANDE CHANGEMENT DE FRAISE
+//*ODIL_ID:745_1033*
+//
+      L     #A0NBROD; 
+      L     #A0DEMCF; 
+      >I    ; 
+      =     #S1A0DCFR; 
+      =     "Z1G".A0.DCFR; 
+NETWORK
+TITLE =RESET TIP DRESS COUNTER
+//RAZ NOMBRE DE RODAGE
+//*ODIL_ID:745_1034*
+//
+      U     #A0RAZROD; 
+      =     L      0.0; 
+      U     L      0.0; 
+      SPBNB _007; 
+      L     0; 
+      T     #A0NBROD; 
+_007: NOP   0; 
+      U     L      0.0; 
+      BLD   102; 
+      R     #A0RAZROD; 
+NETWORK
+TITLE =ROBOT TIP DRESS CONTROL (FROM PLC)
+//GESTION DU RODAGE ROBOT PAR L'AUTOMATE
+//*ODIL_ID:745_1035*
+//
+      U     "BA1LIEN"; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #A0RODAGE (
+           Iw_rbe6                  := "A0RBME6",
+           Rd_che                   := L      0.0,
+           Num_rb                   := 2,
+           GR1                      := "Z1G".ROD.GR1,
+           GR2                      := "Z1G".ROD.GR2,
+           GR3                      := "Z1G".ROD.GR3,
+           GR4                      := "Z1G".ROD.GR4,
+           Dtsr                     := #A0DROD,
+           Alarm                    := #A0ALROD,
+           Mdsv                     := "Z1G".RODM.RBMDR,
+           Mfsv                     := "Z1G".RODM.RBMFR,
+           Nbrs                     := #A0NBROD);
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                  CHANGEMENT ELECTRODES CENTRALISE                         **
+//*******************************************************************************
+//*ODIL_ID:745_1036*
+//
+
+
+NETWORK
+TITLE =MONITORING: TIP CHANGE ALARM
+//SUIVI: ALARME AVANT CHANGEMENT ELECTRODES
+//*ODIL_ID:745_1037*
+//
+      U(    ; 
+      L     #A0MROD; 
+      L     "Z1G".CHELM.EALR; 
+      -I    ; 
+      T     #A0MROD2; 
+      UN    OV; 
+      SAVE  ; 
+      CLR   ; 
+      U     BIE; 
+      )     ; 
+      U(    ; 
+      L     "Z1G".A0.NBCHE; 
+      L     #A0MROD2; 
+      >=I   ; 
+      )     ; 
+      =     #S1A0AACE; 
+NETWORK
+TITLE =ROBOT TIP CHANGE CONTROL (FROM PLC)
+//GESTION DU CHANGEMENT ELECTRODES PAR L'AUTOMATE
+//*ODIL_ID:745_1038*
+//
+      U     "BA0"; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #A0CHGELEC (
+           Iw_rbe6                  := "A0RBME6",
+           Rd_che                   := L      0.0,
+           Num_rb                   := 2,
+           GR1                      := "Z1G".CHELA.GR1,
+           GR2                      := "Z1G".CHELA.GR2,
+           GR3                      := "Z1G".CHELA.GR3,
+           GR4                      := "Z1G".CHELA.GR4,
+           Dtsr                     := #S1A0DCE,
+           Alarm                    := #S1A0ACE,
+           Mdsv                     := "Z1G".CHELM.RBMDC,
+           Mfsv                     := "Z1G".CHELM.RBMFC,
+           Nbrs                     := #A0NBCHE);
+      NOP   0; 
+NETWORK
+TITLE =MONITORING: TIP CHANGE REQUEST
+//SUIVI: DEMANDE CHANGEMENT ELECTRODES
+//*ODIL_ID:745_1039*
+//
+      U     #S1A0DCE; 
+      =     "Z1G".A0.DCHE; 
+NETWORK
+TITLE =ROBOT SERVO OFF CHECK
+//CONTROLE COUPURE ASSERVISSEMENT DU ROBOT
+//*ODIL_ID:745_1040*
+//
+      U(    ; 
+      O     "Z1G".A0.DCHE; 
+      O     "Z1G".A0.DCHEL; 
+      O     "Z1G".CHELM.DCHE; 
+      )     ; 
+      U     "Z1G".A0.PCHE; 
+      S     "Z1G".A0.CCAS; 
+      U     "Z1G".A0.CCAS; 
+      UN    "Z1G".A0.PCHE; 
+      R     "Z1G".A0.CCAS; 
+      NOP   0; 
+NETWORK
+TITLE =
+//********************************************************************************
+//**                  DEMANDE DE CHANGEMENT D'ELECTRODES LOCAL                  **
+//********************************************************************************
+//*ODIL_ID:745_1041*
+//
+
+
+NETWORK
+TITLE =TIP CHANGE LOCAL REQUEST
+//DEMANDE LOCALE DE CHANGEMENT ELECTRODES
+//*ODIL_ID:745_1042*
+//
+      U     "Z1G".A0.PCHE; 
+      UN    "Z1G".CHELM.DCHE; 
+      =     "Z1G".A0.DCHEL; 
+NETWORK
+TITLE =END OF TIP CHANGE (LOCAL REQUEST)
+//FIN DE CHANGEMENT ELECTRODES (DEMANDE LOCALE)
+//*ODIL_ID:745_1043*
+//
+      U     "Z1G".A0.PCHE; 
+      UN    "Z1G".CHELM.DCHE; 
+      U     "Z1G".A0.CCAS; 
+      =     "Z1G".A0.FCHEL; 
+END_FUNCTION_BLOCK
+

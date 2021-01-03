@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord34>
+    <Doc Num="1">
+      <Text>BF_TRANS_VECT1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>BF_TRANS_VECT2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>BF_TRANS_VECT4</Text>
+    </Doc>
+    <Doc Num="16384">
+      <Text>BF_TRANS_VECT16384</Text>
+    </Doc>
+  </DocsWord34>
+</Root_Element>

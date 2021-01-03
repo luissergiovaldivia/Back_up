@@ -1,0 +1,46 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <Defauts>
+      <Defaut Num="0">
+         <Text> AU</Text>
+      </Defaut>
+      <Defaut Num="1">
+         <Text> ES</Text>
+      </Defaut>
+      <Defaut Num="2">
+         <Text> FZ</Text>
+      </Defaut>
+      <Defaut Num="3">
+         <Text> ESTR</Text>
+      </Defaut>
+      <Defaut Num="4">
+         <Text> AIR</Text>
+      </Defaut>
+      <Defaut Num="5">
+         <Text> RLV</Text>
+      </Defaut>
+      <Defaut Num="6">
+         <Text> SOP</Text>
+      </Defaut>
+   </Defauts>
+   <DocsWord>
+      <Doc Num="0">
+         <Text>page1_def_boucle_secu0_ccom1</Text>
+      </Doc>
+      <Doc Num="1">
+         <Text>page2_def_boucle_secu0_ck1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>page3_def_boucle_secu0_cfro1</Text>
+      </Doc>
+      <Doc Num="3">
+         <Text>page4_def_boucle_secu1_ccom0</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>page5_def_boucle_secu1_ck0</Text>
+      </Doc>
+      <Doc Num="5">
+         <Text>page6_def_boucle_secu1_cfro0</Text>
+      </Doc>
+   </DocsWord>
+</Root_Element>

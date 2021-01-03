@@ -1,0 +1,191 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <HelpAction Type="URL">
+    <Command>http://172.25.214.1/Portal/Portal.mwsl?PriNav=Alarm</Command>
+  </HelpAction>
+  <PagesWinCC>
+    <PageWinCC Code="52">
+      <VariableDC ItemOpc="DB_IHM_WINCC.Num_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Num_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </PageWinCC>
+    <SetAvPlanPageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Pilot.ihmavplan" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Pilot.ihmavplan&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </SetAvPlanPageWinCC>
+    <EnablePageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Val_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Val_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </EnablePageWinCC>
+  </PagesWinCC>
+  <Switchs>
+    <Switch>
+      <Id>SWITCH-MOP</Id>
+      <IdSwParent>none</IdSwParent>
+      <!--none (sw du PUI),ou Id -->
+      <Image>SpecificData:\Images\MOP.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[2]">DB_PN.IO_DEVICE[2]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Switch>
+    <Switch>
+      <Id>SW2</Id>
+      <IdSwParent>Z1ZB</IdSwParent>
+      <!--none (sw du PUI),ou Id -->
+      <Image>SpecificData:\Images\Z1ZB.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[11]">DB_PN.IO_DEVICE[11]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Switch>
+  </Switchs>
+  <Stations>
+    <Station>
+      <Id>Z1ZB</Id>
+      <IdSwParent>SWITCH-MOP</IdSwParent>
+      <Image>SpecificData:\Images\Z1ZB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[10]">DB_PN.IO_DEVICE[10]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>MOP-IM</Id>
+      <IdSwParent>SWITCH-MOP</IdSwParent>
+      <Image>SpecificData:\Images\MOP.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[3]">DB_PN.IO_DEVICE[3]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B01SB</Id>
+      <IdSwParent>SW2</IdSwParent>
+      <Image>SpecificData:\Images\B01SB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[21]">DB_PN.IO_DEVICE[21]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B01IM1</Id>
+      <IdSwParent>B01SB</IdSwParent>
+      <Image>SpecificData:\Images\B01IM1.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[120]">DB_PN.IO_DEVICE[120]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B01IM2</Id>
+      <IdSwParent>B01IM1</IdSwParent>
+      <Image>SpecificData:\Images\B01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[130]">DB_PN.IO_DEVICE[130]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B01IM3</Id>
+      <IdSwParent>B01IM2</IdSwParent>
+      <Image>SpecificData:\Images\B01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[131]">DB_PN.IO_DEVICE[131]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>A01SB</Id>
+      <IdSwParent>SW2</IdSwParent>
+      <Image>SpecificData:\Images\A01SB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[20]">DB_PN.IO_DEVICE[20]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>A01IM1</Id>
+      <IdSwParent>A01SB</IdSwParent>
+      <Image>SpecificData:\Images\A01IM1.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[100]">DB_PN.IO_DEVICE[100]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>A01IM2</Id>
+      <IdSwParent>A01IM1</IdSwParent>
+      <Image>SpecificData:\Images\A01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[110]">DB_PN.IO_DEVICE[110]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>A01IM3</Id>
+      <IdSwParent>A01IM2</IdSwParent>
+      <Image>SpecificData:\Images\A01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[111]">DB_PN.IO_DEVICE[111]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B02SB</Id>
+      <IdSwParent>SW2</IdSwParent>
+      <Image>SpecificData:\Images\B02SB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[23]">DB_PN.IO_DEVICE[23]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B02IM1</Id>
+      <IdSwParent>B02SB</IdSwParent>
+      <Image>SpecificData:\Images\B02IM1.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[160]">DB_PN.IO_DEVICE[160]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B02IM2</Id>
+      <IdSwParent>B02IM1</IdSwParent>
+      <Image>SpecificData:\Images\B02.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[170]">DB_PN.IO_DEVICE[170]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>B02IM3</Id>
+      <IdSwParent>B02IM2</IdSwParent>
+      <Image>SpecificData:\Images\B02.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[171]">DB_PN.IO_DEVICE[171]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C01SB</Id>
+      <IdSwParent>SW2</IdSwParent>
+      <Image>SpecificData:\Images\C01SB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[22]">DB_PN.IO_DEVICE[22]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C01IM1</Id>
+      <IdSwParent>C01SB</IdSwParent>
+      <Image>SpecificData:\Images\C01IM1.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[140]">DB_PN.IO_DEVICE[140]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C01IM2</Id>
+      <IdSwParent>C01IM1</IdSwParent>
+      <Image>SpecificData:\Images\C01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[150]">DB_PN.IO_DEVICE[150]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C01IM3</Id>
+      <IdSwParent>C01IM2</IdSwParent>
+      <Image>SpecificData:\Images\C01.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[151]">DB_PN.IO_DEVICE[151]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C02SB</Id>
+      <IdSwParent>SW2</IdSwParent>
+      <Image>SpecificData:\Images\C02SB.GIF</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[24]">DB_PN.IO_DEVICE[24]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C02IM1</Id>
+      <IdSwParent>C02SB</IdSwParent>
+      <Image>SpecificData:\Images\C02IM1.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[180]">DB_PN.IO_DEVICE[180]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C02IM2</Id>
+      <IdSwParent>C02IM1</IdSwParent>
+      <Image>SpecificData:\Images\C02.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[190]">DB_PN.IO_DEVICE[190]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+    <Station>
+      <Id>C02IM3</Id>
+      <IdSwParent>C02IM2</IdSwParent>
+      <Image>SpecificData:\Images\C02.gif</Image>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="DB_PN.IO_DEVICE[191]">DB_PN.IO_DEVICE[191]&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Station>
+  </Stations>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Diagnóstico red PROFINET</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>Msg_Localisation_Impossible</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Localización imposible</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_WINCC</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Mas detalles</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

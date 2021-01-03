@@ -1,0 +1,1736 @@
+//Nota: Este archivo de exportación en formato CSV no se debe abrir con un doble clic en el archivo.;;;;
+//Por favor, abra este archivo con el comando Archivo > Abrir de MS-Excel;;;;
+$_Languages;;;;
+7(5) Allemand (Liechtenstein);10(1) Espagnol (traditionnel);9(1) Anglais (États-Unis);12(1) Français (France);
+$_Typ(OtherText);$_Attrib(MultiLanguage);$_Attrib(MultiLanguage);$_Attrib(MultiLanguage);
+//$_Exportación el 04/07/2015 10:27:06;;;;
+7648;Hay demasiadas informaciones de diagnóstico;Too much diagnostic information generated;Trop d'informations de diagnostic;
+24032;El bloque de datos de imágenes de diagnóstico HMI para PROFINET IO está concebid;The HMI diagnostic picture data block for PROFINET IO is intended for maximum di;Le bloc de données des vues de diagnotic IHM pour PROFINET IO est prévu pour un ;
+7649;Error al llamar el SFB 52;Error calling SFB 52;Erreur à l'appel du SFB 52;
+24033;Al actualizar el bloque de datos de imágenes de diagnóstico HMI para PROFINET IO;An error occurred calling SFB 52 during the updating of the HMI diagnostic pictu;Une erreur s'est produite lors de l'actualisation du bloc de données pour vues d;
+8496;Módulo no insertado;Module is not plugged in;Module non enfiché;
+24880;Compruebe si el módulo está enchufado correctamente.;Check whether or not the module is correctly plugged in.;Vérifiez si le module est correctement enfiché.;
+8497;Módulo enchufado incorrecto;Wrong module plugged in;Module incorrect enfiché;
+24881;Compruebe el módulo.;Check the module.;Contrôlez le module.;
+8498;El módulo es correcto pero hay como mínimo un submódulo incorrecto;The module is correct but at least one submodule is incorrect;Le module est correct mais une cartouche au moins est incorrecte.;
+24882;Compruebe los submódulos del módulo.;Check the submodules of the module.;Contrôlez les cartouches du module.;
+8499;Módulo incorrecto, pero compatible con la configuración;Wrong module but it is compatible with the configuration;Module incorrect, mais compatible avec la configuration.;
+24883;Como el módulo es compatible con la configuración, no se requiere ninguna acción;The module is compatible with the configuration so no action is necessary.;Comme le module est compatible avec le configuration, aucune action n'est requis;
+10192;Submódulo no insertado;Submodule is not plugged in;Cartouche non enfichée;
+26576;Compruebe si el submódulo está enchufado correctamente.;Check whether or not the submodule is correctly plugged in.;Vérifiez si la cartouche est correctement enfichée;
+10193;Submódulo compatible con la configuración;Submodule is compatible to the configuration;Cartouche compatible avec la configuration;
+26577;Como el submódulo es compatible con la configuración, no se requiere ninguna acc;The submodule is compatible with the configuration so no action is necessary.;Comme la cartouche est compatible avec la configuration, aucune action n'est req;
+10194;Submódulo bloqueado por el controlador;Submodule is block by the controller;Cartouche bloquée par le contrôleur.;
+26578;;;;
+10196;Una aplicación está accediendo al submódulo;An application is accessing the submodule;Une application accède à la cartouche.;
+26580;;;;
+10199;Submódulo incorrecto, pero compatible con la configuración;Wrong submodule but it is compatible with the configuration;Cartouche incorrecte, mais compatible avec la configuration;
+26583;Como el submódulo es compatible con la configuración, no se requiere ninguna acc;The submodule is compatible with the configuration so no action is necessary.;Comme la cartouche est compatible avec la configuration, aucune action n'est req;
+1960;;;;
+18344;;;;
+5352;Cortocircuito;Short circuit;Court-circuit;
+21736;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+8744;Baja tensión;Low voltage;Sous-tension;
+25128;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+12136;Sobretensión;Overvoltage;Surtension;
+28520;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+15528;Sobrecarga;Overload;Surcharge;
+31912;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+2608;Sobretemperatura;Overtemperature;Surchauffe;
+18992;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+6000;Rotura de hilo;Wire break;Rupture de fil;
+22384;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+9392;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+25776;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+12784;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+29168;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+16176;Fallo;Error;Erreur;
+32560;;;;
+3256;Simulación activa;Simulation active;Simulation active;
+19640;;;;
+6648;Reservado;Reserved;réservé;
+23032;;;;
+10040;Reservado;Reserved;réservé;
+26424;;;;
+13432;Reservado;Reserved;réservé;
+29816;;;;
+512;Reservado;Reserved;réservé;
+16896;;;;
+3904;Falta el parámetro;Parameter missing;Paramètre manquant;
+20288;;;;
+7296;Error de parametrización;Parameter assignment error;Erreur de paramétrage;
+23680;Causa: Parámetros de módulo incorrectos. Solución: Comprobar parámetros y correg;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les par;
+10688;Falta tensión de sensores o de carga;Power supply fault;Absence de tension capteur ou de charge;
+27072;Causa: Falta tensión de carga. Solución: Comprobar el cableado o conectar la ali;Cause: No power supply. Remedy: Check wiring or turn on power supply.;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou bra;
+14080;Fusible defectuoso;Fuse blown / open;Fusible defectueux;
+30464;Causa: Sobrecarga. Solución: Eliminar la causa de la sobrecarga. Seguidamente su;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensu;
+1160;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+17544;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+4552;Defecto a masa;Ground fault;Défaut à la masse;
+20936;Causa: Tensión en modo común rebasada o rotura del cable de masa. Solución: Comp;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wirin;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : ;
+7944;Error del canal de referencia;Reference point list;Erreur de voie de référence;
+24328;Causa: Error en el canal de referencia. Solución: Véase el manual.;Cause: Error on reference channel. Remedy: See manual.;Cause : erreur de voie de référence. Solution : voir le manuel.;
+11336;Alarma de proceso perdida;Process event lost / sampling error;Alarme de processus perdue;
+27720;Causa: Alarma de proceso. Solución: Cambiar el procesamiento de alarmas de la CP;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or chang;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par l;
+14728;Advertencia de actuador;Threshold warning;Avertissement actionneur;
+31112;Causa: El actuador notifica el rebase de un valor límite. Solución: Comprobar la;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of ;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifi;
+1808;Desconexión de actuador;Output disabled;Coupure actionneur;
+18192;Causa: Se ha detectado un problema con el actuador. Solución: Eliminar la causa.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème;
+5200;Desconexión orientada a seguridad;Safety event;Arrêt de sécurité;
+21584;Causa: Se ha detectado un fallo en el canal. Solución: Comprobar el canal y elim;Cause: Error detected on channel. Remedy: Check channel and correct problem..;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erre;
+8592;Error externo;External fault;Défaut externe;
+24976;Causa: Se ha detectado un fallo en el sensor/actuador. Solución: Sustituir el se;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or c;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/a;
+11984;Error no definido;Unidentified error;Défaut non spécifié;
+28368;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+15376;Reservado;Reserved;réservé;
+31760;;;;
+2456;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+18840;;;;
+5848;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+22232;;;;
+9240;Fallo temporal;Temporary error;Erreur temporaire;
+25624;;;;
+12024;Linkup no permitido;Illegal linkup;Linkup illicite;
+28408;Estado de link distinto del predeterminado en el registro de datos de parametriz;Link status different from setting in parameter data record 200;Etat de connexion différent des spécifications de l'enregistrement de paramétrag;
+15416;Linkdown no permitido;Illegal linkdown;Linkdown illicite;
+31800;Estado de link distinto del predeterminado en el registro de datos de parametriz;Link status different from setting in parameter data record 200;Etat de connexion différent des spécifications de l'enregistrement de paramétrag;
+2496;Velocidad de transmisión no permitida;Illegal transmission rate;Vitesse de transmission illicite;
+18880;Velocidad de transmisión distinta de la predeterminada en el registro de datos d;Transmission rate different from setting in parameter data record 3;Vitesse de transmission différente des spécifications de l'enregistrement de par;
+5888;Duplexity no permitida;Illegal duplexity;Duplexity illicite;
+22272;Duplexity ditinta de la predeterminada en el registro de datos de parametrizació;Duplexity different from setting in parameter data record 3;Duplexity différente des spécifications de l'enregistrement de paramétrage 3;
+9280;Sobrecarga de frame;Frame overload;Surcharge de trames;
+25664;Los telegramas rechazados sobrepasan o no alcanzan el valor umbral ajustado en e;More or less discarded frames than set as threshold value in parameter data reco;Les télégrammes rejetés dépassent le seuil spécifié dans l'enregistrement de par;
+5776;Transferencia de datos imposible; @5W%t#A02A-SCALANCE_X200-20100120@;Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20100120@;Transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20100120@;
+22160;Ayuda: Transferencia de datos imposible; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20100120@;
+7472;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+23856;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+7473;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+23857;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+7474;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+23858;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+9168;Error en el partner; @5W%t#A02A-SCALANCE_X200-20100120@;Remote mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur partenaire; @5W%t#A02A-SCALANCE_X200-20100120@;
+25552;Ayuda: Error en el partner; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Remote mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur partenaire; @5W%t#A02A-SCALANCE_X200-20100120@;
+10864;Partner incorrecto;Wrong partner;Partenaire incorrect;
+27248;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+10865;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+27249;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+10866;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+27250;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+10867;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+27251;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+10868;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+27252;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+10869;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+27253;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+10870;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+27254;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+10871;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+27255;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+11288;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+27672;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+12560;Error de redundancia de medios; @5W%t#A02A-SCALANCE_X200-20100120@;Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X200-20100120@;
+28944;Ayuda: Redundancia de medios; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X20;
+14256;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+30640;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+14257;Anillo abierto;Ring opened;Anneau ouvert;
+30641;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+14258;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+30642;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+14259;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+30643;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+15952;Pérdida de sincronización; @5W%t#A02A-SCALANCE_X200-20100120@;Sync mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20100120@;
+32336;Ayuda: Pérdida de sincronización; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Sync mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20100120@;
+1336;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+17720;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+1339;Equipo no síncrono;Station not synchronized;Station non synchrone;
+17723;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+3032;Error de modo isócrono; @5W%t#A02A-SCALANCE_X200-20100120@;Isochronous mode mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20100120@;
+19416;Ayuda: Error de modo isócrono; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Isochronous mode mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20100120@;
+6424;Error CR multicast; @5W%t#A02A-SCALANCE_X200-20100120@;Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur Multicast CR; @5W%t#A02A-SCALANCE_X200-20100120@;
+22808;Ayuda: Error CR multicast; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : Erreur CR Multicast; @5W%t#A02A-SCALANCE_X200-20100120@;
+9816;Reservado; @5W%t#A02A-SCALANCE_X200-20100120@;Reserved; @5W%t#A02A-SCALANCE_X200-20100120@;réservé; @5W%t#A02A-SCALANCE_X200-20100120@;
+26200;Ayuda: Ayuda; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Reserved; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : réservée; @5W%t#A02A-SCALANCE_X200-20100120@;
+13208;Error fibra óptica; @5W%t#A02A-SCALANCE_X200-20100120@;Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20100120@;
+29592;Ayuda: Error fibra óptica; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20100120@;
+14904;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+31288;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+288;Error de función del componente de red; @5W%t#A02A-SCALANCE_X200-20100120@;Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20100120@;
+16672;Ayuda: Error de función del componente de red; @5W%t#A02A-SCALANCE_X200-20100120;Help: Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20;
+1984;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+18368;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+3680;Error de tiempo; @5W%t#A02A-SCALANCE_X200-20100120@;Time mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Erreur d'horloge; @5W%t#A02A-SCALANCE_X200-20100120@;
+20064;Ayuda: Error de tiempo; @5W%t#A02A-SCALANCE_X200-20100120@;Help: Time mismatch; @5W%t#A02A-SCALANCE_X200-20100120@;Aide : erreur de temporisation; @5W%t#A02A-SCALANCE_X200-20100120@;
+2632;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+19016;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+2633;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+19017;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+2634;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+19018;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+14928;sin alimentación el. redundante;No redundant PS;Pas d'alimentation redondante;
+31312;Alarma entrante, si no existe alimentación el. redundante;Alarm entering state when there is no redundant PS;Alarme arrivante en l'absence d'alimentation redondante;
+14930;No existe C-PLUG;C-PLUG not found;C-PLUG introuvable;
+31314;Alarma entrante, si no se ha enchufado C-PLUG;Alarm entering state when no C-PLUG was inserted;Alarme arrivante en l'absence de C-PLUG;
+14932;C-PLUG defectuoso;C-PLUG defective;C-PLUG défectueux;
+31316;Alarma entrante, si el C-PLUG está defectuoso;Alarm entering state when C-PLUG is defective;Alarme arrivante lorsque le C-PLUG est défectueux;
+14934;erróneo C-PLUG;wrong C-PLUG;Le C-PLUG est incorrect;
+31318;Alarma entrante si se ha enchufado erróneo C-PLUG;Incoming alarm when wrong C-PLUG is plugged in;Alarme apparaissante si aucun C-PLUG n'a incorrect;
+8256;;;;
+24640;;;;
+11648;Cortocircuito;Short circuit;Court-circuit;
+28032;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+15040;Baja tensión;Low voltage;Sous-tension;
+31424;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+2120;Sobretensión;Overvoltage;Surtension;
+18504;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+5512;Sobrecarga;Overload;Surcharge;
+21896;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+8904;Sobretemperatura;Overtemperature;Surchauffe;
+25288;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+12296;Rotura de hilo;Wire break;Rupture de fil;
+28680;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+15688;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+32072;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+2768;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+19152;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+6160;Fallo;Error;Erreur;
+22544;;;;
+9552;Simulación activa;Simulation active;Simulation active;
+25936;;;;
+12944;Reservado;Reserved;réservé;
+29328;;;;
+24;Reservado;Reserved;réservé;
+16408;;;;
+3416;Reservado;Reserved;réservé;
+19800;;;;
+6808;Reservado;Reserved;réservé;
+23192;;;;
+10200;Falta el parámetro;Parameter missing;Paramètre manquant;
+26584;;;;
+13592;Error parametrización;Parameter assignment error;Erreur de paramétrage;
+29976;Causa posible: módulo defectuoso o parametrizado incorrectamente. Remedio: corre;Possible Cause: Module either not at all or incorrectly assigned parameters.  Er;Cause possible : Le module n'est pas paramétré ou est mal paramétré.  Solution :;
+672;Falta el conector flontal o la alimentación del sensor o la tensión de carga.;Front connector missing, sensor or load voltage missing;Le connecteur frontal, la tension de capteur ou de charge manque.;
+17056;Causa posible: falta tensión de alimentación o es insuficiente. Solución: correg;Possible cause: Supply voltage missing or too low.  Remedy: Check front connecto;Cause possible : La tension d'alimentation manque ou est trop basse.  Solution :;
+4064;Fusible defectuoso.;Fuse defective;Fusible défectueux.;
+20448;Causa posible: fallo del fusible repuesto por el operario. Remedio: cambiar fusi;Possible Cause: User's replaceable fuse fallen.  Error remedy: Exchange the fuse;Cause possible : Le fusible échangeable par l'utilisateur est tombé.  Solution :;
+7456;Fallo de comunicación;Communication error;Erreur de communication;
+23840;Causa posible: interrupción de la comunicación con el módulo. Remedio: comprobar;Possible Cause: Communication to the module interrupted. Error remedy: Check the;Cause possible : Communication au module perturbée.  Solution : vérifiez le para;
+10848;Error de masa;Ground error;Erreur de masse;
+27232;Causa posible: se ha excedido el modo Common en canales sin separación galvánica;Possible Cause: Exceeding the allowable common mode at non-isolated channels or ;Cause possible : Dépassement du Common Mode admissible pour les voies liées à la;
+14240;Error canal referencia;Reference channel error;Erreur sur voie de référence;
+30624;Causa posible error en el canal de referencia.  Remedio: comprobar módulo de ref;Possible Cause: Error on the reference channel. Error remedy: Check the referenc;Cause possible : Erreur sur voie de référence.  Solution : vérifiez le module de;
+1320;Pérdida alarma de proceso o error de aviso;Process interrupt lost or message error;Alarme de processus perdue ou erreur de message;
+17704;Causa posible: error de marco, error de paridad. Remedio: comprobar ajustes de c;Possible Cause: Frame error, parity error. Error remedy: Check the communication;Cause possible : Erreur de cadre, erreur de parité.  Solution : vérifiez les opt;
+4712;Advertencia;Warning;Avertissement;
+21096;Causa posible: se han excedido los valores límites de actuador (velocidad, inten;Possible Cause: Exceeding the actuator limit value (rotational speed, load curre;Cause possible : Dépassement des seuils d'actionneur (vitesse, courant de charge;
+8104;Desconexión;Shutoff;Arrêt;
+24488;Causa posible: liberación del interruptor automático por cortocircuito, asimetrí;Possible Cause: Trigger a line switch due to short circuit, or asymmetry or grou;Cause possible : Déclenchement d'un disjoncteur à cause d'un court-circuit, d'un;
+11496;Desconexión de seguridad;Fail-safe shutoff;Arrêt de sécurité;
+27880;Causa posible: liberación de desconexión de seguridad.  Remedio: solucionar caus;Possible Cause: Trigger for fail-safe shutoff is present.  Error remedy: Elimina;Cause possible : Présence d'un déclencheur d'arrêt de sécurité.  Solution : corr;
+14888;Fallo externo;external error;Erreur externe;
+31272;Causa posible: rotura de cable o cortocircuito de la señales de sensor o bien el;Possible Cause: Wire break or short circuit of the  encoder signal or encoder ca;Cause possible : Rupture de fil ou court-circuit des signaux du capteur ou câble;
+1968;Fallo indefinido;ambiguous error;Erreur indéfinie;
+18352;Causa posible: proceso de aprendizaje en curso. Ayuda de ajuste activa (en 4 IQ-;Possible Cause: Teach-in process running. Alignment tool is active (for 4 IQ-SEN;Cause possible : Une procédure d'apprentissage est en cours. Une aide à l'ajusta;
+5360;Reservado;Reserved;réservé;
+21744;;;;
+8752;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+25136;;;;
+12144;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+28528;;;;
+15536;Canal no disponible temporalmente;Channel temporarily not available;Voie temporairement indisponible;
+31920;Causa posible: calibración, actualización del firmware, modo manual, ...;Possible cause: Calibration, firmware update, manual operation, ...;Cause possible : Calibrage, mise à jour du firmware, mode manuel ...;
+12072;Transferencia de datos imposible; @5W%t#ET200S-20110429@;Data transmission impossible; @5W%t#ET200S-20110429@;Transmission de données impossible; @5W%t#ET200S-20110429@;
+28456;Ayuda: Transferencia de datos imposible; @5W%t#ET200S-20110429@;Help: Data transmission impossible; @5W%t#ET200S-20110429@;Aide : transmission de données impossible; @5W%t#ET200S-20110429@;
+13768;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+30152;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+13769;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+30153;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+13770;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+30154;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+15464;Error en el partner; @5W%t#ET200S-20110429@;Remote mismatch; @5W%t#ET200S-20110429@;Erreur partenaire; @5W%t#ET200S-20110429@;
+31848;Ayuda: Error en el partner; @5W%t#ET200S-20110429@;Help: Remote mismatch; @5W%t#ET200S-20110429@;Aide : erreur partenaire; @5W%t#ET200S-20110429@;
+848;Partner incorrecto;Wrong partner;Partenaire incorrect;
+17232;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+849;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+17233;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+850;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+17234;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+851;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+17235;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+852;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+17236;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+853;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+17237;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+854;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+17238;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+855;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+17239;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+1272;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+17656;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+2544;Error de redundancia de medios; @5W%t#ET200S-20110429@;Media redundancy mismatch; @5W%t#ET200S-20110429@;Erreur de redondance de supports de transmission; @5W%t#ET200S-20110429@;
+18928;Ayuda: Redundancia de medios; @5W%t#ET200S-20110429@;Help: Media redundancy mismatch; @5W%t#ET200S-20110429@;Aide : erreur de redondance de supports de transmission; @5W%t#ET200S-20110429@;
+4240;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+20624;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+4241;Anillo abierto;Ring opened;Anneau ouvert;
+20625;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+4242;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+20626;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+4243;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+20627;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+5936;Pérdida de sincronización; @5W%t#ET200S-20110429@;Sync mismatch; @5W%t#ET200S-20110429@;Perte de synchronisation; @5W%t#ET200S-20110429@;
+22320;Ayuda: Pérdida de sincronización; @5W%t#ET200S-20110429@;Help: Sync mismatch; @5W%t#ET200S-20110429@;Aide : perte de synchronisation; @5W%t#ET200S-20110429@;
+7632;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+24016;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+7635;Equipo no síncrono;Station not synchronized;Station non synchrone;
+24019;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+9328;Error de modo isócrono; @5W%t#ET200S-20110429@;Isochronous mode mismatch; @5W%t#ET200S-20110429@;Erreur de synchronisme d'horloge; @5W%t#ET200S-20110429@;
+25712;Ayuda: Error de modo isócrono; @5W%t#ET200S-20110429@;Help: Isochronous mode mismatch; @5W%t#ET200S-20110429@;Aide : erreur de synchronisme d'horloge; @5W%t#ET200S-20110429@;
+12720;Error CR multicast; @5W%t#ET200S-20110429@;Multicast CR mismatch; @5W%t#ET200S-20110429@;Erreur Multicast CR; @5W%t#ET200S-20110429@;
+29104;Ayuda: Error CR multicast; @5W%t#ET200S-20110429@;Help: Multicast CR mismatch; @5W%t#ET200S-20110429@;Aide : Erreur CR Multicast; @5W%t#ET200S-20110429@;
+16112;Reservado; @5W%t#ET200S-20110429@;Reserved; @5W%t#ET200S-20110429@;réservé; @5W%t#ET200S-20110429@;
+32496;Ayuda: Ayuda; @5W%t#ET200S-20110429@;Help: Reserved; @5W%t#ET200S-20110429@;Aide : réservée; @5W%t#ET200S-20110429@;
+3192;Error fibra óptica; @5W%t#ET200S-20110429@;Fiber optics mismatch; @5W%t#ET200S-20110429@;Erreur fibre optique; @5W%t#ET200S-20110429@;
+19576;Ayuda: Error fibra óptica; @5W%t#ET200S-20110429@;Help: Fiber optics mismatch; @5W%t#ET200S-20110429@;Aide : erreur fibre optique; @5W%t#ET200S-20110429@;
+4888;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+21272;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+6584;Error de función del componente de red; @5W%t#ET200S-20110429@;Network component function mismatch; @5W%t#ET200S-20110429@;Erreur de fonctionnement du composant réseau; @5W%t#ET200S-20110429@;
+22968;Ayuda: Error de función del componente de red; @5W%t#ET200S-20110429@;Help: Network component function mismatch; @5W%t#ET200S-20110429@;Aide : erreur de fonctionnement du composant réseau; @5W%t#ET200S-20110429@;
+8280;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+24664;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+9976;Error de tiempo; @5W%t#ET200S-20110429@;Time mismatch; @5W%t#ET200S-20110429@;Erreur d'horloge; @5W%t#ET200S-20110429@;
+26360;Ayuda: Error de tiempo; @5W%t#ET200S-20110429@;Help: Time mismatch; @5W%t#ET200S-20110429@;Aide : erreur de temporisation; @5W%t#ET200S-20110429@;
+8928;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+25312;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+8929;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+25313;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+8930;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+25314;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+3968;;;;
+20352;;;;
+7360;Cortocircuito;Short circuit;Court-circuit;
+23744;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+10752;Baja tensión;Low voltage;Sous-tension;
+27136;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+14144;Sobretensión;Overvoltage;Surtension;
+30528;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+1224;Sobrecarga;Overload;Surcharge;
+17608;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+4616;Sobretemperatura;Overtemperature;Surchauffe;
+21000;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+8008;Rotura de hilo;Wire break;Rupture de fil;
+24392;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+11400;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+27784;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+14792;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+31176;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+1872;Fallo;Error;Erreur;
+18256;;;;
+5264;Simulación activa;Simulation active;Simulation active;
+21648;;;;
+8656;Reservado;Reserved;réservé;
+25040;;;;
+12048;Reservado;Reserved;réservé;
+28432;;;;
+15440;Reservado;Reserved;réservé;
+31824;;;;
+2520;Reservado;Reserved;réservé;
+18904;;;;
+5912;Falta el parámetro;Parameter missing;Paramètre manquant;
+22296;;;;
+9304;Error de parametrización;parameter assignment error;Erreur de paramétrage;
+25688;Error de parametrización;parameter assignment error;Erreur de paramétrage;
+12696;Error de alimentación;Power supply fault;Défaut d'alimentation;
+29080;Error de alimentación;Power supply fault;Défaut d'alimentation;
+16088;Fusible fundido;fuse blown;Défaut de fusible;
+32472;Fusible fundido;fuse blown;Défaut de fusible;
+3168;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+19552;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+6560;Error de masa;ground fault;Défaut de masse;
+22944;Error de masa;ground fault;Défaut de masse;
+9952;Punto de referencia perdido;reference point lost;Point de référence perdu;
+26336;Punto de referencia perdido;reference point lost;Point de référence perdu;
+13344;Evento de proceso perdido / error de exploración;process event lost / sampling error;Événement process perdu/erreur d'échantillonnage;
+29728;Evento de proceso perdido / error de muestreo;process event lost / sampling error;Événement process perdu/erreur d'échantillonnage;
+424;Advertencia de valor umbral;threshold warning;Avertissement valeur seuil;
+16808;Advertencia de valor umbral;threshold warning;Avertissement valeur seuil;
+3816;Salida desactivada;output disabled;Sortie désactivée;
+20200;Salida desactivada;output disabled;Sortie désactivée;
+7208;Evento de seguridad;safety-related event;Événement relatif à la sécurité;
+23592;Evento de seguridad;safety-related event;Événement relatif à la sécurité;
+10600;Error externo;external fault;Défaut externe;
+26984;Error externo;external fault;Défaut externe;
+13992;Error no definido;Unidentified error;Défaut non spécifié;
+30376;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+1072;Reservado;Reserved;réservé;
+17456;;;;
+4464;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+20848;;;;
+7856;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+24240;;;;
+11248;Fallo temporal;Temporary error;Erreur temporaire;
+27632;;;;
+9000;Error al comparar la direcciones de destino de PROFIsafe (F_Dest_Add);Mismatch of safety destination address (F_Dest_Add);L'adresse de destination Profisafe (F_Dest_Add) ne concorde pas;
+25384;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+12392;Dirección de destino de PROFIsafe no válida (F_Dest_Add);Safety destination address not valid (F_Dest_Add);Adresse de destination Profisafe (F_Dest_Add) non valide;
+28776;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+15784;Dirección de origen de PROFIsafe no válida (F_Source_Add);Safety source address not valid (F_Source_Add);Adresse de source Profisafe (F_Source_Add) non valide;
+32168;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+2864;El valor del control de tiempo de PROFIsafe es 0ms (F_WD_Time);Safety watchdog time value is 0 ms (F_WD_Time);La durée de surveillance de temps Profisafe est 0 ms (F_WD_Time);
+19248;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+6256;El parámetro F_SIL sobrepasa el nivel de seguridad SIL de la aplicación específica del dispositivo;Parameter F_SIL exceeds SIL from specific device application;Le paramètre F_SIL est supérieur au SIL de l'application spécifique à l'appareil;
+22640;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+9648;El parámetro F_CRC_Length no coincide con el valor generado;Parameter F_CRC_Length does not match the generated values;Le paramètre F_CRC_Length ne concorde pas avec la valeur générée;
+26032;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+13040;La versión del parámetro F no es correcta;Version of F-Parameter set incorrect;Version de paramètres F incorrecte;
+29424;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+120;Error CRC1;CRC1-Fault;Erreur CRC1;
+16504;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+3512;Información de diagnóstico específica del dispositivo (véase el manual);Device specific diagnosis information, see manual;Informations de diagnostic spécifiques à l'appareil (voir manuel);
+19896;Error de PROFIsafe;Profisafe Error;Défaut Profisafe;
+3056;Tiempo de discrepancia rebasado;Time difference exceeded;Différence de temps dépassée;
+19440;Se ha rebasado el tiempo de discrepancia;The time difference has been exceeded;La différence de temps a été dépassée;
+3057;-> Parada de emergencia;-> Emergency stop;-> Arrêt d'urgence;
+19441;Solucione la causa, accione el pulsador de parada de emergencia y confirme el er;Please rectify cause, press emergency stop and acknowledge;Éliminer la cause, appuyer sur l'arrêt d'urgence et acquitter le défaut;
+3058;-> Pulsador de validación;-> Enabling switch;-> Commande d’assentiment;
+19442;Solucione la causa, suelte el pulsador de validación y confirme el error;Please rectify cause, release enabling switch and acknowledge;Éliminer la cause, appuyer sur la commande d'assentiment et acquitter le défaut;
+3059;-> Señal puertas;-> Door signal;-> Signal porte;
+19443;Solucione la causa, abra las puertas y confirme el error;Please rectify cause, open door and acknowledge;Éliminer la cause, ouvrir la porte et acquitter le défaut;
+3060;-> Señal cerrojo;-> Bolt signal;-> Signal verrou;
+19444;Solucione la causa, abra las puertas y confirme el error;Please rectify cause, open door and acknowledge;Éliminer la cause, ouvrir la porte et acquitter le défaut;
+3061;-> Señal bloqueo;-> Guard locking signal;-> Signal interverrouillage;
+19445;Solucione la causa, abra las puertas y confirme el error;Please rectify cause, open door and acknowledge;Éliminer la cause, ouvrir la porte et acquitter le défaut;
+3062;-> Selector de modo de funcionamiento;-> Operating mode selector switch;-> Sélecteur de mode;
+19446;Solucione la causa y confirme el error del selector de modo de funcionamiento;Please rectify cause, acknowledge operating mode selector switch;Éliminer la cause et acquitter le défaut du sélecteur de mode;
+3063;Error interno;Internal fault;Défaut interne;
+19447;;;;
+3480;Error interno;Internal fault;Défaut interne;
+19864;;;;
+6448;Impulso de prueba erróneo;Fault test pulses;Impulsions de test erronées;
+22832;Se ha producido un error con los impulsos de prueba;A fault occurred with the test pulses;Un défaut est survenu au niveau des impulsions de test;
+6449;-> Parada de emergencia;-> Emergency stop;-> Arrêt d'urgence;
+22833;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6450;-> Pulsador de validación;-> Enabling switch;-> Commande d’assentiment;
+22834;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6451;-> Señal puertas;-> Door signal;-> Signal porte;
+22835;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6452;-> Señal cerrojo;-> Bolt signal;-> Signal verrou;
+22836;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6453;-> Señal bloqueo;-> Guard locking signal;-> Signal interverrouillage;
+22837;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6454;-> Selector de modo de funcionamiento;-> Operating mode selector switch;-> Sélecteur de mode;
+22838;Solucione la causa y confirme el error;Please rectify cause and acknowledge;Éliminer la cause et acquitter le défaut;
+6455;Error interno;Internal fault;Défaut interne;
+22839;;;;
+6872;Error interno;Internal fault;Défaut interne;
+23256;;;;
+9840;Error de módulo de bloqueo;Fault locking module;Défaut module d'interverrouillage;
+26224;Se ha producido un error en el módulo de bloqueo;A fault occurred in the locking module;Un défaut est survenu au niveau du module d'interverrouillage;
+9841;Vida de servicio del módulo de bloqueo;Locking module mechanical life;Module d'interverrouillage - durée de vie;
+26225;Se han detectado 1 millón de maniobras;1 million operating cycles have been detected;1 million de cycles ont été détectés;
+9842;Módulo de bloqueo interno;Locking module internal;Module d'interverrouillage interne;
+26226;Se ha detectado un error de procesamiento interno;An internal processing error has been detected;Une erreur de traitement interne a été détectée;
+9843;Módulo de bloqueo rotura de cerrojo;Locking module bolt fracture;Module d'interverrouillage - rupture du verrou;
+26227;Se ha detectado una rotura del cerrojo;A fracture in the bolt has been detected;Une rupture du verrou a été détectée;
+9844;Módulo de bloqueo plausibilidad;Locking module plausibility;Module d'interverrouillage - plausibilité;
+26228;La prueba de plausibilidad del cerrojo de las barreras de luz ha dado error;The bolt - light barrier plausibility test was erroneous;Le test de plausibilité verrou - barrière de sécurité était erroné;
+9845;Módulo de bloqueo modo de fallo;Locking module fault mode;Module d'interverrouillage - mode défaut;
+26229;El módulo de bloqueo funciona en modo de fallo, es decir, las salidas ya no se c;The locking module is operating in the fault mode, i.e. the outputs will no long;Le module de déverrouillage est en mode défaut, càd que les sorties ne sont plus;
+9846;Error interno;Internal fault;Défaut interne;
+26230;;;;
+9847;Error interno;Internal fault;Défaut interne;
+26231;;;;
+10264;Error interno;Internal fault;Défaut interne;
+26648;;;;
+13232;Error de selector de modo de funcionamiento;Fault operating mode selector switch;Défaut sélecteur de mode;
+29616;Se ha producido un error en el selector de modo de funcionamiento;A fault occurred in the operating mode selector switch;Un défaut est survenu au niveau du module sélecteur de mode;
+13233;La prueba de plausibilidad del selector de modo de funcionamiento ha dado error;The plausibility test on the operating mode selector switch was erroneous;Le contrôle de plausibilité du sélecteur de mode était erroné;
+29617;Solucione la causa y confirme;Please rectify cause and acknowledge;Éliminer la cause et acquitter;
+13234;Error interno;Internal fault;Défaut interne;
+29618;;;;
+13235;Error interno;Internal fault;Défaut interne;
+29619;;;;
+13236;Error interno;Internal fault;Défaut interne;
+29620;;;;
+13237;Error interno;Internal fault;Défaut interne;
+29621;;;;
+13238;Error interno;Internal fault;Défaut interne;
+29622;;;;
+13239;Error interno;Internal fault;Défaut interne;
+29623;;;;
+13656;Error interno;Internal fault;Défaut interne;
+30040;;;;
+312;Error de PROFIsafe;Fault PROFIsafe;Défaut PROFIsafe;
+16696;Se ha producido un error relevante para la seguridad;A safety-related fault has occurred;Un défaut relatif à la sécurité est survenu;
+313;Error de arranque de PROFIsafe;Starting error PROFIsafe;Erreur de démarrage PROFIsafe;
+16697;Se ha producido un error durante el arranque de la pila PROFIsafe;An error occurred on starting the PROFIsafe stack;Un défaut est survenu au démarrage de la pile PROFIsafe;
+314;Se ha detectado un error de memoria en RAM;Memory error found in the RAM;Erreur détectée dans la mémoire RAM;
+16698;Se ha detectado un error de memoria en RAM;A memory error was found in the RAM;Un défaut a été détecté dans la mémoire RAM;
+315;Se ha detectado un error de memoria en FLASH;Memory error found in the FLASH;Erreur détectée dans la mémoire FLASH;
+16699;Se ha detectado un error de memoria en FLASH;A memory error was found in the FLASH;Un défaut a été détecté dans la mémoire FLASH;
+316;Error de comunicación;communication error;Erreur de communication;
+16700;Se ha interrumpido la comunicación entre los 2 procesadores de seguridad;The communication between the 2 safety processors was disrupted;La communication entre les 2 processeurs de sécurité était perturbée;
+317;Error de sincronización;Synchronisation error;Erreur de synchronisation;
+16701;Se ha interrumpido la sincronización entre los 2 procesadores de seguridad;The synchronisation between the 2 safety processors was disrupted;La synchronisation entre les 2 processeurs de sécurité était perturbée;
+318;Error de control de tensión;Wrong voltage detected;Défaut de surveillance de tension;
+16702;La alimentación de tensión está fuera del rango permitido;The power supply is outside the permissible range;L'alimentation en tension se situe en dehors de la plage admissible;
+319;Error interno;Internal fault;Défaut interne;
+16703;Error interno de PROFIsafe;Internal PROFIsafe error;Défaut interne PROFIsafe;
+736;Error de hardware;Hardware error;Défaut matériel;
+17120;;;;
+3704;Error de MGB;Fault MGB;Défaut MGB;
+20088;Error interno;Internal fault;Défaut interne;
+3705;Error de arranque de MGB;Starting error MGB;Erreur de démarrage MGB;
+20089;El arranque de MGB no ha sido correcto;An error occurred on booting the MGB;Défaut lors du démarrage de la MGB;
+3706;Error de comunicación;Communication error;Erreur de communication;
+20090;Se ha interrumpido la comunicación entre los 2 procesadores de seguridad;The communication between the 2 safety processes was disrupted;La communication entre les 2 processeurs de sécurité était perturbée;
+3707;Error interno;Internal fault;Défaut interne;
+20091;;;;
+3708;Versión de software incorrecta;Wrong software version;Version de logiciel erronée;
+20092;;;;
+3709;Error interno;Internal fault;Défaut interne;
+20093;;;;
+3710;Error interno;Internal fault;Défaut interne;
+20094;;;;
+3711;Error interno;Internal fault;Défaut interne;
+20095;;;;
+4128;Error interno;Internal fault;Défaut interne;
+20512;;;;
+7096;Error interno;Internal fault;Défaut interne;
+23480;Error interno;Internal fault;Défaut interne;
+7097;Error interno;Internal fault;Défaut interne;
+23481;;;;
+7098;Error interno;Internal fault;Défaut interne;
+23482;;;;
+7099;Error interno;Internal fault;Défaut interne;
+23483;;;;
+7100;Error interno;Internal fault;Défaut interne;
+23484;;;;
+7101;Error interno;Internal fault;Défaut interne;
+23485;;;;
+7102;Error interno;Internal fault;Défaut interne;
+23486;;;;
+7103;Error interno;Internal fault;Défaut interne;
+23487;;;;
+7520;Error interno;Internal fault;Défaut interne;
+23904;;;;
+10488;Error interno;Internal fault;Défaut interne;
+26872;Error interno;Internal fault;Défaut interne;
+10489;Error interno;Internal fault;Défaut interne;
+26873;;;;
+10490;Error interno;Internal fault;Défaut interne;
+26874;;;;
+10491;Error interno;Internal fault;Défaut interne;
+26875;;;;
+10492;Error interno;Internal fault;Défaut interne;
+26876;;;;
+10493;Error interno;Internal fault;Défaut interne;
+26877;;;;
+10494;Error interno;Internal fault;Défaut interne;
+26878;;;;
+10495;Error interno;Internal fault;Défaut interne;
+26879;;;;
+10912;Error interno;Internal fault;Défaut interne;
+27296;;;;
+13880;Error interno;Internal fault;Défaut interne;
+30264;Error interno;Internal fault;Défaut interne;
+13881;Error interno;Internal fault;Défaut interne;
+30265;;;;
+13882;Error interno;Internal fault;Défaut interne;
+30266;;;;
+13883;Error interno;Internal fault;Défaut interne;
+30267;;;;
+13884;Error interno;Internal fault;Défaut interne;
+30268;;;;
+13885;Error interno;Internal fault;Défaut interne;
+30269;;;;
+13886;Error interno;Internal fault;Défaut interne;
+30270;;;;
+13887;Error interno;Internal fault;Défaut interne;
+30271;;;;
+14304;Error interno;Internal fault;Défaut interne;
+30688;;;;
+960;Error de módulo de bus;error bus modul;Défaut module de bus;
+17344;Error interno;Internal fault;Défaut interne;
+961;Error interno;Internal fault;Défaut interne;
+17345;Error interno;;;
+962;Error interno;Internal fault;Défaut interne;
+17346;Error interno;;;
+963;Error interno;Internal fault;Défaut interne;
+17347;Error interno;;;
+964;Error interno;Internal fault;Défaut interne;
+17348;Error interno;;;
+965;Error interno;Internal fault;Défaut interne;
+17349;Error interno;;;
+966;Error interno;Internal fault;Défaut interne;
+17350;Error interno;;;
+967;Error interno;Internal fault;Défaut interne;
+17351;Error interno;;;
+1384;Error interno;Internal fault;Défaut interne;
+17768;Error interno;;;
+4352;Error de módulo de teclas;error key modul;Défaut module de boutons;
+20736;Error interno;Internal fault;Défaut interne;
+4353;Error interno;Internal fault;Défaut interne;
+20737;;;;
+4354;Error interno;Internal fault;Défaut interne;
+20738;;;;
+4355;Error interno;Internal fault;Défaut interne;
+20739;;;;
+4356;Error interno;Internal fault;Défaut interne;
+20740;;;;
+4357;Error interno;Internal fault;Défaut interne;
+20741;;;;
+4358;Error interno;Internal fault;Défaut interne;
+20742;;;;
+4359;Error interno;Internal fault;Défaut interne;
+20743;;;;
+4776;Error interno;Internal fault;Défaut interne;
+21160;;;;
+7784;Transferencia de datos imposible; @5W%t#Euchner-MGB_110026-20120119@;Data transmission impossible; @5W%t#Euchner-MGB_110026-20120119@;Transmission de données impossible; @5W%t#Euchner-MGB_110026-20120119@;
+24168;Ayuda: Transferencia de datos imposible; @5W%t#Euchner-MGB_110026-20120119@;Help: Data transmission impossible; @5W%t#Euchner-MGB_110026-20120119@;Aide : transmission de données impossible; @5W%t#Euchner-MGB_110026-20120119@;
+9480;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+25864;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+9481;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+25865;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+9482;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+25866;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+11176;Error en el partner; @5W%t#Euchner-MGB_110026-20120119@;Remote mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur partenaire; @5W%t#Euchner-MGB_110026-20120119@;
+27560;Ayuda: Error en el partner; @5W%t#Euchner-MGB_110026-20120119@;Help: Remote mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur partenaire; @5W%t#Euchner-MGB_110026-20120119@;
+12872;Partner incorrecto;Wrong partner;Partenaire incorrect;
+29256;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+12873;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+29257;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+12874;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+29258;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+12875;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+29259;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+12876;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+29260;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+12877;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+29261;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+12878;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+29262;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+12879;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+29263;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+13296;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+29680;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+14568;Error de redundancia de medios; @5W%t#Euchner-MGB_110026-20120119@;Media redundancy mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur de redondance de supports de transmission; @5W%t#Euchner-MGB_110026-20120119@;
+30952;Ayuda: Redundancia de medios; @5W%t#Euchner-MGB_110026-20120119@;Help: Media redundancy mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur de redondance de supports de transmission; @5W%t#Euchner-MGB_11002;
+16264;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+32648;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+16265;Anillo abierto;Ring opened;Anneau ouvert;
+32649;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+16266;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+32650;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+16267;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+32651;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+1648;Pérdida de sincronización; @5W%t#Euchner-MGB_110026-20120119@;Sync mismatch; @5W%t#Euchner-MGB_110026-20120119@;Perte de synchronisation; @5W%t#Euchner-MGB_110026-20120119@;
+18032;Ayuda: Pérdida de sincronización; @5W%t#Euchner-MGB_110026-20120119@;Help: Sync mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : perte de synchronisation; @5W%t#Euchner-MGB_110026-20120119@;
+3344;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+19728;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+3347;Equipo no síncrono;Station not synchronized;Station non synchrone;
+19731;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+5040;Error de modo isócrono; @5W%t#Euchner-MGB_110026-20120119@;Isochronous mode mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur de synchronisme d'horloge; @5W%t#Euchner-MGB_110026-20120119@;
+21424;Ayuda: Error de modo isócrono; @5W%t#Euchner-MGB_110026-20120119@;Help: Isochronous mode mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur de synchronisme d'horloge; @5W%t#Euchner-MGB_110026-20120119@;
+8432;Error CR multicast; @5W%t#Euchner-MGB_110026-20120119@;Multicast CR mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur Multicast CR; @5W%t#Euchner-MGB_110026-20120119@;
+24816;Ayuda: Error CR multicast; @5W%t#Euchner-MGB_110026-20120119@;Help: Multicast CR mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : Erreur CR Multicast; @5W%t#Euchner-MGB_110026-20120119@;
+11824;Reservado; @5W%t#Euchner-MGB_110026-20120119@;Reserved; @5W%t#Euchner-MGB_110026-20120119@;réservé; @5W%t#Euchner-MGB_110026-20120119@;
+28208;Ayuda: Ayuda; @5W%t#Euchner-MGB_110026-20120119@;Help: Reserved; @5W%t#Euchner-MGB_110026-20120119@;Aide : réservée; @5W%t#Euchner-MGB_110026-20120119@;
+15216;Error fibra óptica; @5W%t#Euchner-MGB_110026-20120119@;Fiber optics mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur fibre optique; @5W%t#Euchner-MGB_110026-20120119@;
+31600;Ayuda: Error fibra óptica; @5W%t#Euchner-MGB_110026-20120119@;Help: Fiber optics mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur fibre optique; @5W%t#Euchner-MGB_110026-20120119@;
+600;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+16984;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+2296;Error de función del componente de red; @5W%t#Euchner-MGB_110026-20120119@;Network component function mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur de fonctionnement du composant réseau; @5W%t#Euchner-MGB_110026-20120119@;
+18680;Ayuda: Error de función del componente de red; @5W%t#Euchner-MGB_110026-20120119;Help: Network component function mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur de fonctionnement du composant réseau; @5W%t#Euchner-MGB_110026-20;
+3992;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+20376;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+5688;Error de tiempo; @5W%t#Euchner-MGB_110026-20120119@;Time mismatch; @5W%t#Euchner-MGB_110026-20120119@;Erreur d'horloge; @5W%t#Euchner-MGB_110026-20120119@;
+22072;Ayuda: Error de tiempo; @5W%t#Euchner-MGB_110026-20120119@;Help: Time mismatch; @5W%t#Euchner-MGB_110026-20120119@;Aide : erreur de temporisation; @5W%t#Euchner-MGB_110026-20120119@;
+4640;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+21024;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+4641;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+21025;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+4642;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+21026;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+12816;;;;
+29200;;;;
+16208;Cortocircuito;Short circuit;Court-circuit;
+32592;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+3288;Baja tensión;Low voltage;Sous-tension;
+19672;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+6680;Sobretensión;Overvoltage;Surtension;
+23064;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+10072;Sobrecarga;Overload;Surcharge;
+26456;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+13464;Sobretemperatura;Overtemperature;Surchauffe;
+29848;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+544;Rotura de hilo;Wire break;Rupture de fil;
+16928;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+3936;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+20320;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+7328;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+23712;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+10720;Fallo;Error;Erreur;
+27104;;;;
+14112;Simulación activa;Simulation active;Simulation active;
+30496;;;;
+1192;Reservado;Reserved;réservé;
+17576;;;;
+4584;Reservado;Reserved;réservé;
+20968;;;;
+7976;Reservado;Reserved;réservé;
+24360;;;;
+11368;Reservado;Reserved;réservé;
+27752;;;;
+14760;Falta el parámetro;Parameter missing;Paramètre manquant;
+31144;;;;
+1840;Error de parametrización;Parameter assignment error;Erreur de paramétrage;
+18224;Causa: Parámetros de módulo incorrectos. Solución: Comprobar parámetros y correg;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les par;
+5232;Falta tensión de sensores o de carga;Power supply fault;Absence de tension capteur ou de charge;
+21616;Causa: Falta tensión de carga. Solución: Comprobar el cableado o conectar la ali;Cause: No power supply. Remedy: Check wiring or turn on power supply.;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou bra;
+8624;Fusible defectuoso;Fuse blown / open;Fusible defectueux;
+25008;Causa: Sobrecarga. Solución: Eliminar la causa de la sobrecarga. Seguidamente su;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensu;
+12016;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+28400;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+15408;Defecto a masa;Ground fault;Défaut à la masse;
+31792;Causa: Tensión en modo común rebasada o rotura del cable de masa. Solución: Comp;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wirin;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : ;
+2488;Error del canal de referencia;Reference point list;Erreur de voie de référence;
+18872;Causa: Error en el canal de referencia. Solución: Véase el manual.;Cause: Error on reference channel. Remedy: See manual.;Cause : erreur de voie de référence. Solution : voir le manuel.;
+5880;Alarma de proceso perdida;Process event lost / sampling error;Alarme de processus perdue;
+22264;Causa: Alarma de proceso. Solución: Cambiar el procesamiento de alarmas de la CP;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or chang;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par l;
+9272;Advertencia de actuador;Threshold warning;Avertissement actionneur;
+25656;Causa: El actuador notifica el rebase de un valor límite. Solución: Comprobar la;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of ;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifi;
+12664;Desconexión de actuador;Output disabled;Coupure actionneur;
+29048;Causa: Se ha detectado un problema con el actuador. Solución: Eliminar la causa.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème;
+16056;Desconexión orientada a seguridad;Safety event;Arrêt de sécurité;
+32440;Causa: Se ha detectado un fallo en el canal. Solución: Comprobar el canal y elim;Cause: Error detected on channel. Remedy: Check channel and correct problem..;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erre;
+3136;Error externo;External fault;Défaut externe;
+19520;Causa: Se ha detectado un fallo en el sensor/actuador. Solución: Sustituir el se;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or c;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/a;
+6528;Error no definido;Unidentified error;Défaut non spécifié;
+22912;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+9920;Reservado;Reserved;réservé;
+26304;;;;
+13312;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+29696;;;;
+392;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+16776;;;;
+3784;Fallo temporal;Temporary error;Erreur temporaire;
+20168;;;;
+320;Transferencia de datos imposible; @5W%t#ML-V2.25-Festo-CPX-20110809@;Data transmission impossible; @5W%t#ML-V2.25-Festo-CPX-20110809@;Transmission de données impossible; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+16704;Ayuda: Transferencia de datos imposible; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Data transmission impossible; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : transmission de données impossible; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+2016;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+18400;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+2017;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+18401;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+2018;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+18402;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+3712;Error en el partner; @5W%t#ML-V2.25-Festo-CPX-20110809@;Remote mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur partenaire; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+20096;Ayuda: Error en el partner; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Remote mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur partenaire; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+5408;Partner incorrecto;Wrong partner;Partenaire incorrect;
+21792;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+5409;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+21793;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+5410;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+21794;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+5411;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+21795;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+5412;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+21796;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+5413;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+21797;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+5414;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+21798;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+5415;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+21799;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+5832;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+22216;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+7104;Error de redundancia de medios; @5W%t#ML-V2.25-Festo-CPX-20110809@;Media redundancy mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur de redondance de supports de transmission; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+23488;Ayuda: Redundancia de medios; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Media redundancy mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur de redondance de supports de transmission; @5W%t#ML-V2.25-Festo-CP;
+8800;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+25184;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+8801;Anillo abierto;Ring opened;Anneau ouvert;
+25185;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+8802;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+25186;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+8803;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+25187;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+10496;Pérdida de sincronización; @5W%t#ML-V2.25-Festo-CPX-20110809@;Sync mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Perte de synchronisation; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+26880;Ayuda: Pérdida de sincronización; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Sync mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : perte de synchronisation; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+12192;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+28576;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+12195;Equipo no síncrono;Station not synchronized;Station non synchrone;
+28579;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+13888;Error de modo isócrono; @5W%t#ML-V2.25-Festo-CPX-20110809@;Isochronous mode mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur de synchronisme d'horloge; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+30272;Ayuda: Error de modo isócrono; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Isochronous mode mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur de synchronisme d'horloge; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+968;Error CR multicast; @5W%t#ML-V2.25-Festo-CPX-20110809@;Multicast CR mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur Multicast CR; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+17352;Ayuda: Error CR multicast; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Multicast CR mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : Erreur CR Multicast; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+4360;Reservado; @5W%t#ML-V2.25-Festo-CPX-20110809@;Reserved; @5W%t#ML-V2.25-Festo-CPX-20110809@;réservé; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+20744;Ayuda: Ayuda; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Reserved; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : réservée; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+7752;Error fibra óptica; @5W%t#ML-V2.25-Festo-CPX-20110809@;Fiber optics mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur fibre optique; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+24136;Ayuda: Error fibra óptica; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Fiber optics mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur fibre optique; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+9448;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+25832;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+11144;Error de función del componente de red; @5W%t#ML-V2.25-Festo-CPX-20110809@;Network component function mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur de fonctionnement du composant réseau; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+27528;Ayuda: Error de función del componente de red; @5W%t#ML-V2.25-Festo-CPX-20110809;Help: Network component function mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur de fonctionnement du composant réseau; @5W%t#ML-V2.25-Festo-CPX-20;
+12840;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+29224;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+14536;Error de tiempo; @5W%t#ML-V2.25-Festo-CPX-20110809@;Time mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Erreur d'horloge; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+30920;Ayuda: Error de tiempo; @5W%t#ML-V2.25-Festo-CPX-20110809@;Help: Time mismatch; @5W%t#ML-V2.25-Festo-CPX-20110809@;Aide : erreur de temporisation; @5W%t#ML-V2.25-Festo-CPX-20110809@;
+13488;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+29872;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+13489;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+29873;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+13490;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+29874;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+12264;No error;No error;No error;
+28648;Help;Help;Help;
+12266;General diagnosis;General diagnosis;General diagnosis;
+28650;Help;Help;Help;
+12268;Short circuit;Short circuit;Short circuit;
+28652;Help;Help;Help;
+12270;Wire fracture/idling current I/O;Wire fracture/idling current I/O;Wire fracture/idling current I/O;
+28654;Help;Help;Help;
+12688;Short circuit in actuator supply;Short circuit in actuator supply;Short circuit in actuator supply;
+29072;Help;Help;Help;
+12690;Undervoltage in power supply;Undervoltage in power supply;Undervoltage in power supply;
+29074;Help;Help;Help;
+12692;Unknown CBUS error (6);Unknown CBUS error (6);Unknown CBUS error (6);
+29076;Help;Help;Help;
+12694;Unknown CBUS error (7);Unknown CBUS error (7);Unknown CBUS error (7);
+29078;Help;Help;Help;
+13112;Unknown CBUS error (8);Unknown CBUS error (8);Unknown CBUS error (8);
+29496;Help;Help;Help;
+13114;Lower limit exceeded;Lower limit exceeded;Lower limit exceeded;
+29498;Help;Help;Help;
+13116;Upper limit exceeded;Upper limit exceeded;Upper limit exceeded;
+29500;Help;Help;Help;
+13118;Short circuit valve;Short circuit valve;Short circuit valve;
+29502;Help;Help;Help;
+13536;Pilot valve function warning;Pilot valve function warning;Pilot valve function warning;
+29920;Help;Help;Help;
+13538;Wire fracture (open load);Wire fracture (open load);Wire fracture (open load);
+29922;Help;Help;Help;
+13540;Condition counter exceeded;Condition counter exceeded;Condition counter exceeded;
+29924;Help;Help;Help;
+13542;Module/channel failure;Module/channel failure;Module/channel failure;
+29926;Help;Help;Help;
+13960;Module code incorrect;Module code incorrect;Module code incorrect;
+30344;Help;Help;Help;
+13962;I/O length incorrect;I/O length incorrect;I/O length incorrect;
+30346;Help;Help;Help;
+13964;Address range exceeded;Address range exceeded;Address range exceeded;
+30348;Help;Help;Help;
+13966;Life cycle exceeded;Life cycle exceeded;Life cycle exceeded;
+30350;Help;Help;Help;
+14384;Fault in parametrizing signal range;Fault in parametrizing signal range;Fault in parametrizing signal range;
+30768;Help;Help;Help;
+14386;Fault in parametrizing data format;Fault in parametrizing data format;Fault in parametrizing data format;
+30770;Help;Help;Help;
+14388;Fault in parametrizing linear scaling;Fault in parametrizing linear scaling;Fault in parametrizing linear scaling;
+30772;Help;Help;Help;
+14390;Fault in filter meas.value;Fault in filter meas.value;Fault in filter meas.value;
+30774;Help;Help;Help;
+14808;Fault in parametrizing lower limit;Fault in parametrizing lower limit;Fault in parametrizing lower limit;
+31192;Help;Help;Help;
+14810;Fault in parametrizing upper limit;Fault in parametrizing upper limit;Fault in parametrizing upper limit;
+31194;Help;Help;Help;
+14812;Fault in actuator supply;Fault in actuator supply;Fault in actuator supply;
+31196;Help;Help;Help;
+14814;Wrong device type mounted;Wrong device type mounted;Wrong device type mounted;
+31198;Help;Help;Help;
+15232;Alarm value reached;Alarm value reached;Alarm value reached;
+31616;Help;Help;Help;
+15234;Fault in parametrizing;Fault in parametrizing;Fault in parametrizing;
+31618;Help;Help;Help;
+15236;No new output data (slave);No new output data (slave);No new output data (slave);
+31620;Help;Help;Help;
+15238;No bus connection (slave);No bus connection (slave);No bus connection (slave);
+31622;Help;Help;Help;
+15656;No STI read access (slave);No STI read access (slave);No STI read access (slave);
+32040;Help;Help;Help;
+15658;No parameter access (slave);No parameter access (slave);No parameter access (slave);
+32042;Help;Help;Help;
+15660;CP module lost / fault;CP module lost / fault;CP module lost / fault;
+32044;Help;Help;Help;
+15662;CP configuration failure;CP configuration failure;CP configuration failure;
+32046;Help;Help;Help;
+16080;Short circuit CP-line;Short circuit CP-line;Short circuit CP-line;
+32464;Help;Help;Help;
+16082;Fault in controlling;Fault in controlling;Fault in controlling;
+32466;Help;Help;Help;
+16084;Missing valve;Missing valve;Missing valve;
+32468;Help;Help;Help;
+16086;Maintanance required;Maintanance required;Maintanance required;
+32470;Help;Help;Help;
+192;Life Guard;Life Guard;Life Guard;
+16576;Help;Help;Help;
+194;Heart Beat;Heart Beat;Heart Beat;
+16578;Help;Help;Help;
+196;Com Cycle Period (Sync);Com Cycle Period (Sync);Com Cycle Period (Sync);
+16580;Help;Help;Help;
+198;CAN Overrun (Objects lost);CAN Overrun (Objects lost);CAN Overrun (Objects lost);
+16582;Help;Help;Help;
+616;Invalid PDO received;Invalid PDO received;Invalid PDO received;
+17000;Help;Help;Help;
+618;CAN WarnLimit reached;CAN WarnLimit reached;CAN WarnLimit reached;
+17002;Help;Help;Help;
+620;CAN recovered from BusOff;CAN recovered from BusOff;CAN recovered from BusOff;
+17004;Help;Help;Help;
+622;Bus Power lost;Bus Power lost;Bus Power lost;
+17006;Help;Help;Help;
+1040;Fault in Calibration;Fault in Calibration;Fault in Calibration;
+17424;Help;Help;Help;
+1042;Lower drop out signal;Lower drop out signal;Lower drop out signal;
+17426;Help;Help;Help;
+1044;Upper drop out signal;Upper drop out signal;Upper drop out signal;
+17428;Help;Help;Help;
+1046;Sensor limit exceeded;Sensor limit exceeded;Sensor limit exceeded;
+17430;Help;Help;Help;
+1464;Short circuit cold junction comp.;Short circuit cold junction comp.;Short circuit cold junction comp.;
+17848;Help;Help;Help;
+1466;Open load cold junction comp.;Open load cold junction comp.;Open load cold junction comp.;
+17850;Help;Help;Help;
+1468;Calibration data incorrect;Calibration data incorrect;Calibration data incorrect;
+17852;Help;Help;Help;
+1470;Invalid process value;Invalid process value;Invalid process value;
+17854;Help;Help;Help;
+1888;Short circuit I-Port;Short circuit I-Port;Short circuit I-Port;
+18272;Help;Help;Help;
+1890;Device missing / failure;Device missing / failure;Device missing / failure;
+18274;Help;Help;Help;
+1892;I-Port configuration error;I-Port configuration error;I-Port configuration error;
+18276;Help;Help;Help;
+1894;Input overload;Input overload;Input overload;
+18278;Help;Help;Help;
+2312;Signal underflow/overflow;Signal underflow/overflow;Signal underflow/overflow;
+18696;Help;Help;Help;
+2314;Overvoltage in power supply;Overvoltage in power supply;Overvoltage in power supply;
+18698;Help;Help;Help;
+2736;Number of Modules incorrect;Number of Modules incorrect;Number of Modules incorrect;
+19120;Help;Help;Help;
+2738;F_Dest_Add mismatch;F_Dest_Add mismatch;F_Dest_Add mismatch;
+19122;Help;Help;Help;
+2740;F-Communication fault;F-Communication fault;F-Communication fault;
+19124;Help;Help;Help;
+2742;F-Communication timeout;F-Communication timeout;F-Communication timeout;
+19126;Help;Help;Help;
+3160;Leakage current;Leakage current;Leakage current;
+19544;Help;Help;Help;
+3162;F-Parameter fault;F-Parameter fault;F-Parameter fault;
+19546;Help;Help;Help;
+3164;CC-L: Station equip.status incorrect;CC-L: Station equip.status incorrect;CC-L: Station equip.status incorrect;
+19548;Help;Help;Help;
+3166;CC-L: Bus connection lost;CC-L: Bus connection lost;CC-L: Bus connection lost;
+19550;Help;Help;Help;
+4012;Value out of range;Value out of range;Value out of range;
+20396;Help;Help;Help;
+4432;Function failure;Function failure;Function failure;
+20816;Help;Help;Help;
+6552;Configuration error;Configuration error;Configuration error;
+22936;Help;Help;Help;
+6554;Execution error;Execution error;Execution error;
+22938;Help;Help;Help;
+6556;Record error;Record error;Record error;
+22940;Help;Help;Help;
+6558;Control error;Control error;Control error;
+22942;Help;Help;Help;
+6976;System error A;System error A;System error A;
+23360;Help;Help;Help;
+6978;System error B;System error B;System error B;
+23362;Help;Help;Help;
+6980;Error in valve;Error in valve;Error in valve;
+23364;Help;Help;Help;
+6982;Controller error;Controller error;Controller error;
+23366;Help;Help;Help;
+7400;Encoder error;Encoder error;Encoder error;
+23784;Help;Help;Help;
+7402;Error motor or power stage;Error motor or power stage;Error motor or power stage;
+23786;Help;Help;Help;
+7830;Subsystem module/channel failure;Subsystem module/channel failure;Subsystem module/channel failure;
+24214;Help;Help;Help;
+9520;Switch unit defective;Switch unit defective;Switch unit defective;
+25904;Help;Help;Help;
+9522;CBUS asic not ready;CBUS asic not ready;CBUS asic not ready;
+25906;Help;Help;Help;
+9524;CPU Hardware Trap;CPU Hardware Trap;CPU Hardware Trap;
+25908;Help;Help;Help;
+9526;CBUS C-manager not ready;CBUS C-manager not ready;CBUS C-manager not ready;
+25910;Help;Help;Help;
+9944;Watchdog overflow;Watchdog overflow;Watchdog overflow;
+26328;Help;Help;Help;
+9946;Remanent memory defective;Remanent memory defective;Remanent memory defective;
+26330;Help;Help;Help;
+9948;Flash system memory defective;Flash system memory defective;Flash system memory defective;
+26332;Help;Help;Help;
+9950;Number of mod.params.more than 64;Number of mod.params.more than 64;Number of mod.params.more than 64;
+26334;Help;Help;Help;
+10368;Slave not ready;Slave not ready;Slave not ready;
+26752;Help;Help;Help;
+10370;CBUS diagnostic telegram;CBUS diagnostic telegram;CBUS diagnostic telegram;
+26754;Help;Help;Help;
+10372;CBUS init fault (gap);CBUS init fault (gap);CBUS init fault (gap);
+26756;Help;Help;Help;
+10374;Order queue full;Order queue full;Order queue full;
+26758;Help;Help;Help;
+10792;CBUS-EEPROM error;CBUS-EEPROM error;CBUS-EEPROM error;
+27176;Help;Help;Help;
+10794;CBUS C-timeout error;CBUS C-timeout error;CBUS C-timeout error;
+27178;Help;Help;Help;
+10796;CBUS telegram fault;CBUS telegram fault;CBUS telegram fault;
+27180;Help;Help;Help;
+10798;BIU access error;BIU access error;BIU access error;
+27182;Help;Help;Help;
+11216;Licence error;Licence error;Licence error;
+27600;Help;Help;Help;
+11218;Built-in self test failed;Built-in self test failed;Built-in self test failed;
+27602;Help;Help;Help;
+11644;NETOS fatal error;NETOS fatal error;NETOS fatal error;
+28028;Help;Help;Help;
+840;Fault param.transfer module n;Fault param.transfer module n;Fault param.transfer module n;
+17224;Help;Help;Help;
+842;Invalid field bus address;Invalid field bus address;Invalid field bus address;
+17226;Help;Help;Help;
+844;Protokoll Asic not ready;Protokoll Asic not ready;Protokoll Asic not ready;
+17228;Help;Help;Help;
+846;MMI serves CBUS module;MMI serves CBUS module;MMI serves CBUS module;
+17230;Help;Help;Help;
+1264;Invalid setting switch unit;Invalid setting switch unit;Invalid setting switch unit;
+17648;Help;Help;Help;
+1266;Module set to default values;Module set to default values;Module set to default values;
+17650;Help;Help;Help;
+6358;Unknown error (255);Unknown error (255);Unknown error (255);
+22742;Help;Help;Help;
+11442;CPX critical system error;CPX critical system error;CPX critical system error;
+27826;Help;Help;Help;
+5368;;;;
+21752;;;;
+8760;Cortocircuito;Short circuit;Court-circuit;
+25144;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+12152;Baja tensión;Low voltage;Sous-tension;
+28536;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+15544;Sobretensión;Overvoltage;Surtension;
+31928;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+2624;Sobrecarga;Overload;Surcharge;
+19008;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+6016;Sobretemperatura;Overtemperature;Surchauffe;
+22400;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+9408;Rotura de hilo;Wire break;Rupture de fil;
+25792;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+12800;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+29184;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+16192;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+32576;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+3272;Fallo;Error;Erreur;
+19656;;;;
+6664;Simulación activa;Simulation active;Simulation active;
+23048;;;;
+10056;Reservado;Reserved;réservé;
+26440;;;;
+13448;Reservado;Reserved;réservé;
+29832;;;;
+528;Reservado;Reserved;réservé;
+16912;;;;
+3920;Reservado;Reserved;réservé;
+20304;;;;
+7312;Falta el parámetro;Parameter missing;Paramètre manquant;
+23696;;;;
+10704;Error de parametrización;Parameter assignment error;Erreur de paramétrage;
+27088;Causa: Parámetros de módulo incorrectos. Solución: Comprobar parámetros y correg;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les par;
+14096;Falta tensión de sensores o de carga;Power supply fault;Absence de tension capteur ou de charge;
+30480;Causa: Falta tensión de carga. Solución: Comprobar el cableado o conectar la ali;Cause: No power supply. Remedy: Check wiring or turn on power supply.;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou bra;
+1176;Fusible defectuoso;Fuse blown / open;Fusible defectueux;
+17560;Causa: Sobrecarga. Solución: Eliminar la causa de la sobrecarga. Seguidamente su;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensu;
+4568;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+20952;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+7960;Defecto a masa;Ground fault;Défaut à la masse;
+24344;Causa: Tensión en modo común rebasada o rotura del cable de masa. Solución: Comp;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wirin;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : ;
+11352;Error del canal de referencia;Reference point list;Erreur de voie de référence;
+27736;Causa: Error en el canal de referencia. Solución: Véase el manual.;Cause: Error on reference channel. Remedy: See manual.;Cause : erreur de voie de référence. Solution : voir le manuel.;
+14744;Alarma de proceso perdida;Process event lost / sampling error;Alarme de processus perdue;
+31128;Causa: Alarma de proceso. Solución: Cambiar el procesamiento de alarmas de la CP;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or chang;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par l;
+1824;Advertencia de actuador;Threshold warning;Avertissement actionneur;
+18208;Causa: El actuador notifica el rebase de un valor límite. Solución: Comprobar la;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of ;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifi;
+5216;Desconexión de actuador;Output disabled;Coupure actionneur;
+21600;Causa: Se ha detectado un problema con el actuador. Solución: Eliminar la causa.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème;
+8608;Desconexión orientada a seguridad;Safety event;Arrêt de sécurité;
+24992;Causa: Se ha detectado un fallo en el canal. Solución: Comprobar el canal y elim;Cause: Error detected on channel. Remedy: Check channel and correct problem..;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erre;
+12000;Error externo;External fault;Défaut externe;
+28384;Causa: Se ha detectado un fallo en el sensor/actuador. Solución: Sustituir el se;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or c;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/a;
+15392;Error no definido;Unidentified error;Défaut non spécifié;
+31776;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+2472;Reservado;Reserved;réservé;
+18856;;;;
+5864;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+22248;;;;
+9256;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+25640;;;;
+12648;Fallo temporal;Temporary error;Erreur temporaire;
+29032;;;;
+9184;Transferencia de datos imposible; @5W%t#RF180C-20100329@;Data transmission impossible; @5W%t#RF180C-20100329@;Transmission de données impossible; @5W%t#RF180C-20100329@;
+25568;Ayuda: Transferencia de datos imposible; @5W%t#RF180C-20100329@;Help: Data transmission impossible; @5W%t#RF180C-20100329@;Aide : transmission de données impossible; @5W%t#RF180C-20100329@;
+10880;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+27264;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+10881;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+27265;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+10882;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+27266;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+12576;Error en el partner; @5W%t#RF180C-20100329@;Remote mismatch; @5W%t#RF180C-20100329@;Erreur partenaire; @5W%t#RF180C-20100329@;
+28960;Ayuda: Error en el partner; @5W%t#RF180C-20100329@;Help: Remote mismatch; @5W%t#RF180C-20100329@;Aide : erreur partenaire; @5W%t#RF180C-20100329@;
+14272;Partner incorrecto;Wrong partner;Partenaire incorrect;
+30656;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+14273;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+30657;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+14274;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+30658;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+14275;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+30659;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+14276;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+30660;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+14277;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+30661;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+14278;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+30662;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+14279;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+30663;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+14696;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+31080;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+15968;Error de redundancia de medios; @5W%t#RF180C-20100329@;Media redundancy mismatch; @5W%t#RF180C-20100329@;Erreur de redondance de supports de transmission; @5W%t#RF180C-20100329@;
+32352;Ayuda: Redundancia de medios; @5W%t#RF180C-20100329@;Help: Media redundancy mismatch; @5W%t#RF180C-20100329@;Aide : erreur de redondance de supports de transmission; @5W%t#RF180C-20100329@;
+1352;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+17736;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+1353;Anillo abierto;Ring opened;Anneau ouvert;
+17737;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+1354;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+17738;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+1355;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+17739;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+3048;Pérdida de sincronización; @5W%t#RF180C-20100329@;Sync mismatch; @5W%t#RF180C-20100329@;Perte de synchronisation; @5W%t#RF180C-20100329@;
+19432;Ayuda: Pérdida de sincronización; @5W%t#RF180C-20100329@;Help: Sync mismatch; @5W%t#RF180C-20100329@;Aide : perte de synchronisation; @5W%t#RF180C-20100329@;
+4744;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+21128;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+4747;Equipo no síncrono;Station not synchronized;Station non synchrone;
+21131;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+6440;Error de modo isócrono; @5W%t#RF180C-20100329@;Isochronous mode mismatch; @5W%t#RF180C-20100329@;Erreur de synchronisme d'horloge; @5W%t#RF180C-20100329@;
+22824;Ayuda: Error de modo isócrono; @5W%t#RF180C-20100329@;Help: Isochronous mode mismatch; @5W%t#RF180C-20100329@;Aide : erreur de synchronisme d'horloge; @5W%t#RF180C-20100329@;
+9832;Error CR multicast; @5W%t#RF180C-20100329@;Multicast CR mismatch; @5W%t#RF180C-20100329@;Erreur Multicast CR; @5W%t#RF180C-20100329@;
+26216;Ayuda: Error CR multicast; @5W%t#RF180C-20100329@;Help: Multicast CR mismatch; @5W%t#RF180C-20100329@;Aide : Erreur CR Multicast; @5W%t#RF180C-20100329@;
+13224;Reservado; @5W%t#RF180C-20100329@;Reserved; @5W%t#RF180C-20100329@;réservé; @5W%t#RF180C-20100329@;
+29608;Ayuda: Ayuda; @5W%t#RF180C-20100329@;Help: Reserved; @5W%t#RF180C-20100329@;Aide : réservée; @5W%t#RF180C-20100329@;
+304;Error fibra óptica; @5W%t#RF180C-20100329@;Fiber optics mismatch; @5W%t#RF180C-20100329@;Erreur fibre optique; @5W%t#RF180C-20100329@;
+16688;Ayuda: Error fibra óptica; @5W%t#RF180C-20100329@;Help: Fiber optics mismatch; @5W%t#RF180C-20100329@;Aide : erreur fibre optique; @5W%t#RF180C-20100329@;
+2000;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+18384;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+3696;Error de función del componente de red; @5W%t#RF180C-20100329@;Network component function mismatch; @5W%t#RF180C-20100329@;Erreur de fonctionnement du composant réseau; @5W%t#RF180C-20100329@;
+20080;Ayuda: Error de función del componente de red; @5W%t#RF180C-20100329@;Help: Network component function mismatch; @5W%t#RF180C-20100329@;Aide : erreur de fonctionnement du composant réseau; @5W%t#RF180C-20100329@;
+5392;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+21776;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+7088;Error de tiempo; @5W%t#RF180C-20100329@;Time mismatch; @5W%t#RF180C-20100329@;Erreur d'horloge; @5W%t#RF180C-20100329@;
+23472;Ayuda: Error de tiempo; @5W%t#RF180C-20100329@;Help: Time mismatch; @5W%t#RF180C-20100329@;Aide : erreur de temporisation; @5W%t#RF180C-20100329@;
+6040;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+22424;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+6041;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+22425;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+6042;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+22426;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+7066;diagnosis RF180C: Error de coneccion con el SLG;Diagnostic RF180C: Connection error to SLG;Diagnose RF180C: Erreur de liaison au SLG;
+23450;;;;
+7494;diagnosis RF180C: ASM iniciado;Diagnostic RF180C: ASM has started up;Diagnose RF180C: ASM est demarre;
+23878;;;;
+7912;diagnosis RF180C: Cortocirc. en la conec. del SLG;Diagnostic RF180C: Short circuit to SLG;Diagnose RF180C: Court-circuit sur SLG;
+24296;;;;
+7915;diagnosis RF180C: Error grave;Diagnostic RF180C: Fatal error;Diagnose RF180C: Erreur bloquante;
+24299;;;;
+8343;diagnosis RF180C: Error hardware;Diagnostic RF180C: Hardware error;Diagnose RF180C: Defaut materiel;
+24727;;;;
+0;diagnosis RF180C: Error cargador;Diagnostic RF180C: Loader error;Diagnose RF180C: Erreur du chargeur;
+16384;;;;
+13848;diagnosis RF180C: Descarga activada;Diagnostic RF180C: Download active;Diagnose RF180C: Chargement active;
+30232;;;;
+13849;diagnosis RF180C: Descarga terminada;Diagnostic RF180C: Download finished;Diagnose RF180C: Chargement termine;
+30233;;;;
+13852;diagnosis RF180C: Error descarga;Diagnostic RF180C: Download error;Diagnose RF180C: Erreur de chargement;
+30236;;;;
+9464;;;;
+25848;;;;
+12856;Cortocircuito;Short circuit;Court-circuit;
+29240;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+16248;Baja tensión;Low voltage;Sous-tension;
+32632;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+3328;Sobretensión;Overvoltage;Surtension;
+19712;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+6720;Sobrecarga;Overload;Surcharge;
+23104;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+10112;Sobretemperatura;Overtemperature;Surchauffe;
+26496;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+13504;Rotura de hilo;Wire break;Rupture de fil;
+29888;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+584;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+16968;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+3976;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+20360;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+7368;Fallo;Error;Erreur;
+23752;;;;
+10760;Simulación activa;Simulation active;Simulation active;
+27144;;;;
+14152;Reservado;Reserved;réservé;
+30536;;;;
+1232;Reservado;Reserved;réservé;
+17616;;;;
+4624;Reservado;Reserved;réservé;
+21008;;;;
+8016;Reservado;Reserved;réservé;
+24400;;;;
+11408;Falta el parámetro;Parameter missing;Paramètre manquant;
+27792;;;;
+14800;Error parametrizacion;Parameter assignment error;Erreur de parametrage;
+31184;;;;
+1880;Falta tension sensor o carga;Sensor or load voltage missing;Absence tension de capteur ou charge;
+18264;;;;
+5272;Fusible defectuoso;Fuse defective;Fusible defectueux;
+21656;;;;
+8664;Error de comunicacion;Slot not addressable;Erreur de communication;
+25048;;;;
+12056;Error de masa;Ground error;Erreur de masse;
+28440;;;;
+15448;Error canal referencia;Reference channel error;Erreur voie de reference;
+31832;;;;
+2528;Alarma de proceso perdida;Process interrupt lost;Alarme processus perdue;
+18912;;;;
+5920;Advertencia;Warning;Attention;
+22304;;;;
+9312;Desconexión;Shutoff;Arrêt;
+25696;;;;
+12704;Desconexión de seguridad;Fail-safe shutoff;Arrêt de sécurité;
+29088;;;;
+16096;Error externo;external error;Defaut externe;
+32480;;;;
+3176;Error indefinido;ambiguous error;Defaut non specifie;
+19560;;;;
+6568;Reservado;Reserved;réservé;
+22952;;;;
+9960;Errore 1 nell´attuat./trasdutt.;Actuator/sensor fault 1;Défaut 1 de l'actionn./du capt.;
+26344;;;;
+13352;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+29736;;;;
+432;Channel temporary error;Channel temporary error;Channel temporary error;
+16816;;;;
+13280;Transferencia de datos imposible; @5W%t#et200pro-20110525@;Data transmission impossible; @5W%t#et200pro-20110525@;Transmission de données impossible; @5W%t#et200pro-20110525@;
+29664;Ayuda: Transferencia de datos imposible; @5W%t#et200pro-20110525@;Help: Data transmission impossible; @5W%t#et200pro-20110525@;Aide : transmission de données impossible; @5W%t#et200pro-20110525@;
+14976;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+31360;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+14977;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+31361;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+14978;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+31362;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+360;Error en el partner; @5W%t#et200pro-20110525@;Remote mismatch; @5W%t#et200pro-20110525@;Erreur partenaire; @5W%t#et200pro-20110525@;
+16744;Ayuda: Error en el partner; @5W%t#et200pro-20110525@;Help: Remote mismatch; @5W%t#et200pro-20110525@;Aide : erreur partenaire; @5W%t#et200pro-20110525@;
+2056;Partner incorrecto;Wrong partner;Partenaire incorrect;
+18440;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+2057;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+18441;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+2058;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+18442;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+2059;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+18443;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+2060;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+18444;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+2061;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+18445;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+2062;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+18446;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+2063;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+18447;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+2480;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+18864;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+3752;Error de redundancia de medios; @5W%t#et200pro-20110525@;Media redundancy mismatch; @5W%t#et200pro-20110525@;Erreur de redondance de supports de transmission; @5W%t#et200pro-20110525@;
+20136;Ayuda: Redundancia de medios; @5W%t#et200pro-20110525@;Help: Media redundancy mismatch; @5W%t#et200pro-20110525@;Aide : erreur de redondance de supports de transmission; @5W%t#et200pro-20110525;
+5448;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+21832;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+5449;Anillo abierto;Ring opened;Anneau ouvert;
+21833;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+5450;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+21834;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+5451;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+21835;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+7144;Pérdida de sincronización; @5W%t#et200pro-20110525@;Sync mismatch; @5W%t#et200pro-20110525@;Perte de synchronisation; @5W%t#et200pro-20110525@;
+23528;Ayuda: Pérdida de sincronización; @5W%t#et200pro-20110525@;Help: Sync mismatch; @5W%t#et200pro-20110525@;Aide : perte de synchronisation; @5W%t#et200pro-20110525@;
+8840;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+25224;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+8843;Equipo no síncrono;Station not synchronized;Station non synchrone;
+25227;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+10536;Error de modo isócrono; @5W%t#et200pro-20110525@;Isochronous mode mismatch; @5W%t#et200pro-20110525@;Erreur de synchronisme d'horloge; @5W%t#et200pro-20110525@;
+26920;Ayuda: Error de modo isócrono; @5W%t#et200pro-20110525@;Help: Isochronous mode mismatch; @5W%t#et200pro-20110525@;Aide : erreur de synchronisme d'horloge; @5W%t#et200pro-20110525@;
+13928;Error CR multicast; @5W%t#et200pro-20110525@;Multicast CR mismatch; @5W%t#et200pro-20110525@;Erreur Multicast CR; @5W%t#et200pro-20110525@;
+30312;Ayuda: Error CR multicast; @5W%t#et200pro-20110525@;Help: Multicast CR mismatch; @5W%t#et200pro-20110525@;Aide : Erreur CR Multicast; @5W%t#et200pro-20110525@;
+1008;Reservado; @5W%t#et200pro-20110525@;Reserved; @5W%t#et200pro-20110525@;réservé; @5W%t#et200pro-20110525@;
+17392;Ayuda: Ayuda; @5W%t#et200pro-20110525@;Help: Reserved; @5W%t#et200pro-20110525@;Aide : réservée; @5W%t#et200pro-20110525@;
+4400;Error fibra óptica; @5W%t#et200pro-20110525@;Fiber optics mismatch; @5W%t#et200pro-20110525@;Erreur fibre optique; @5W%t#et200pro-20110525@;
+20784;Ayuda: Error fibra óptica; @5W%t#et200pro-20110525@;Help: Fiber optics mismatch; @5W%t#et200pro-20110525@;Aide : erreur fibre optique; @5W%t#et200pro-20110525@;
+6096;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+22480;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+7792;Error de función del componente de red; @5W%t#et200pro-20110525@;Network component function mismatch; @5W%t#et200pro-20110525@;Erreur de fonctionnement du composant réseau; @5W%t#et200pro-20110525@;
+24176;Ayuda: Error de función del componente de red; @5W%t#et200pro-20110525@;Help: Network component function mismatch; @5W%t#et200pro-20110525@;Aide : erreur de fonctionnement du composant réseau; @5W%t#et200pro-20110525@;
+9488;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+25872;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+11184;Error de tiempo; @5W%t#et200pro-20110525@;Time mismatch; @5W%t#et200pro-20110525@;Erreur d'horloge; @5W%t#et200pro-20110525@;
+27568;Ayuda: Error de tiempo; @5W%t#et200pro-20110525@;Help: Time mismatch; @5W%t#et200pro-20110525@;Aide : erreur de temporisation; @5W%t#et200pro-20110525@;
+10136;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+26520;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+10137;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+26521;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+10138;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+26522;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+1032;;;;
+17416;;;;
+4424;Cortocircuito;Short circuit;Court-circuit;
+20808;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+7816;Baja tensión;Low voltage;Sous-tension;
+24200;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+11208;Sobretensión;Overvoltage;Surtension;
+27592;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+14600;Sobrecarga;Overload;Surcharge;
+30984;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+1680;Sobretemperatura;Overtemperature;Surchauffe;
+18064;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+5072;Rotura de hilo;Wire break;Rupture de fil;
+21456;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+8464;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+24848;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+11856;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+28240;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+15248;Fallo;Error;Erreur;
+31632;;;;
+2328;Simulación activa;Simulation active;Simulation active;
+18712;;;;
+5720;Reservado;Reserved;réservé;
+22104;;;;
+9112;Reservado;Reserved;réservé;
+25496;;;;
+12504;Reservado;Reserved;réservé;
+28888;;;;
+15896;Reservado;Reserved;réservé;
+32280;;;;
+2976;Falta el parámetro;Parameter missing;Paramètre manquant;
+19360;;;;
+6368;Error de parametrización;Parameter assignment error;Erreur de paramétrage;
+22752;Causa: Parámetros de módulo incorrectos. Solución: Comprobar parámetros y correg;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les par;
+9760;Falta tensión de sensores o de carga;Power supply fault;Absence de tension capteur ou de charge;
+26144;Causa: Falta tensión de carga. Solución: Comprobar el cableado o conectar la ali;Cause: No power supply. Remedy: Check wiring or turn on power supply.;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou bra;
+13152;Fusible defectuoso;Fuse blown / open;Fusible defectueux;
+29536;Causa: Sobrecarga. Solución: Eliminar la causa de la sobrecarga. Seguidamente su;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensu;
+232;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+16616;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+3624;Defecto a masa;Ground fault;Défaut à la masse;
+20008;Causa: Tensión en modo común rebasada o rotura del cable de masa. Solución: Comp;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wirin;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : ;
+7016;Error del canal de referencia;Reference point list;Erreur de voie de référence;
+23400;Causa: Error en el canal de referencia. Solución: Véase el manual.;Cause: Error on reference channel. Remedy: See manual.;Cause : erreur de voie de référence. Solution : voir le manuel.;
+10408;Alarma de proceso perdida;Process event lost / sampling error;Alarme de processus perdue;
+26792;Causa: Alarma de proceso. Solución: Cambiar el procesamiento de alarmas de la CP;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or chang;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par l;
+13800;Advertencia de actuador;Threshold warning;Avertissement actionneur;
+30184;Causa: El actuador notifica el rebase de un valor límite. Solución: Comprobar la;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of ;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifi;
+880;Desconexión de actuador;Output disabled;Coupure actionneur;
+17264;Causa: Se ha detectado un problema con el actuador. Solución: Eliminar la causa.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème;
+4272;Desconexión orientada a seguridad;Safety event;Arrêt de sécurité;
+20656;Causa: Se ha detectado un fallo en el canal. Solución: Comprobar el canal y elim;Cause: Error detected on channel. Remedy: Check channel and correct problem..;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erre;
+7664;Error externo;External fault;Défaut externe;
+24048;Causa: Se ha detectado un fallo en el sensor/actuador. Solución: Sustituir el se;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or c;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/a;
+11056;Error no definido;Unidentified error;Défaut non spécifié;
+27440;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+14448;Reservado;Reserved;réservé;
+30832;;;;
+1528;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+17912;;;;
+4920;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+21304;;;;
+8312;Fallo temporal;Temporary error;Erreur temporaire;
+24696;;;;
+4848;Transferencia de datos imposible; @5W%t#ErrTextLibExPN@;Data transmission impossible; @5W%t#ErrTextLibExPN@;Transmission de données impossible; @5W%t#ErrTextLibExPN@;
+21232;Ayuda: Transferencia de datos imposible; @5W%t#ErrTextLibExPN@;Help: Data transmission impossible; @5W%t#ErrTextLibExPN@;Aide : transmission de données impossible; @5W%t#ErrTextLibExPN@;
+6544;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+22928;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+6545;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+22929;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+6546;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+22930;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+8240;Error en el partner; @5W%t#ErrTextLibExPN@;Remote mismatch; @5W%t#ErrTextLibExPN@;Erreur partenaire; @5W%t#ErrTextLibExPN@;
+24624;Ayuda: Error en el partner; @5W%t#ErrTextLibExPN@;Help: Remote mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur partenaire; @5W%t#ErrTextLibExPN@;
+9936;Partner incorrecto;Wrong partner;Partenaire incorrect;
+26320;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+9937;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+26321;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+9938;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+26322;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+9939;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+26323;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+9940;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+26324;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+9941;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+26325;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+9942;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+26326;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+9943;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+26327;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+10360;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+26744;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+11632;Error de redundancia de medios; @5W%t#ErrTextLibExPN@;Media redundancy mismatch; @5W%t#ErrTextLibExPN@;Erreur de redondance de supports de transmission; @5W%t#ErrTextLibExPN@;
+28016;Ayuda: Redundancia de medios; @5W%t#ErrTextLibExPN@;Help: Media redundancy mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur de redondance de supports de transmission; @5W%t#ErrTextLibExPN@;
+13328;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+29712;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+13329;Anillo abierto;Ring opened;Anneau ouvert;
+29713;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+13330;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+29714;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+13331;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+29715;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+15024;Pérdida de sincronización; @5W%t#ErrTextLibExPN@;Sync mismatch; @5W%t#ErrTextLibExPN@;Perte de synchronisation; @5W%t#ErrTextLibExPN@;
+31408;Ayuda: Pérdida de sincronización; @5W%t#ErrTextLibExPN@;Help: Sync mismatch; @5W%t#ErrTextLibExPN@;Aide : perte de synchronisation; @5W%t#ErrTextLibExPN@;
+408;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+16792;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+411;Equipo no síncrono;Station not synchronized;Station non synchrone;
+16795;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+2104;Error de modo isócrono; @5W%t#ErrTextLibExPN@;Isochronous mode mismatch; @5W%t#ErrTextLibExPN@;Erreur de synchronisme d'horloge; @5W%t#ErrTextLibExPN@;
+18488;Ayuda: Error de modo isócrono; @5W%t#ErrTextLibExPN@;Help: Isochronous mode mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur de synchronisme d'horloge; @5W%t#ErrTextLibExPN@;
+5496;Error CR multicast; @5W%t#ErrTextLibExPN@;Multicast CR mismatch; @5W%t#ErrTextLibExPN@;Erreur Multicast CR; @5W%t#ErrTextLibExPN@;
+21880;Ayuda: Error CR multicast; @5W%t#ErrTextLibExPN@;Help: Multicast CR mismatch; @5W%t#ErrTextLibExPN@;Aide : Erreur CR Multicast; @5W%t#ErrTextLibExPN@;
+8888;Reservado; @5W%t#ErrTextLibExPN@;Reserved; @5W%t#ErrTextLibExPN@;réservé; @5W%t#ErrTextLibExPN@;
+25272;Ayuda: Ayuda; @5W%t#ErrTextLibExPN@;Help: Reserved; @5W%t#ErrTextLibExPN@;Aide : réservée; @5W%t#ErrTextLibExPN@;
+12280;Error fibra óptica; @5W%t#ErrTextLibExPN@;Fiber optics mismatch; @5W%t#ErrTextLibExPN@;Erreur fibre optique; @5W%t#ErrTextLibExPN@;
+28664;Ayuda: Error fibra óptica; @5W%t#ErrTextLibExPN@;Help: Fiber optics mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur fibre optique; @5W%t#ErrTextLibExPN@;
+13976;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+30360;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+15672;Error de función del componente de red; @5W%t#ErrTextLibExPN@;Network component function mismatch; @5W%t#ErrTextLibExPN@;Erreur de fonctionnement du composant réseau; @5W%t#ErrTextLibExPN@;
+32056;Ayuda: Error de función del componente de red; @5W%t#ErrTextLibExPN@;Help: Network component function mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur de fonctionnement du composant réseau; @5W%t#ErrTextLibExPN@;
+1056;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+17440;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+2752;Error de tiempo; @5W%t#ErrTextLibExPN@;Time mismatch; @5W%t#ErrTextLibExPN@;Erreur d'horloge; @5W%t#ErrTextLibExPN@;
+19136;Ayuda: Error de tiempo; @5W%t#ErrTextLibExPN@;Help: Time mismatch; @5W%t#ErrTextLibExPN@;Aide : erreur de temporisation; @5W%t#ErrTextLibExPN@;
+1704;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+18088;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+1705;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+18089;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+1706;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+18090;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+8976;;;;
+25360;;;;
+12368;Cortocircuito;Short circuit;Court-circuit;
+28752;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+15760;Baja tensión;Low voltage;Sous-tension;
+32144;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+2840;Sobretensión;Overvoltage;Surtension;
+19224;Compruebe la fuente de alimentación.;Verify the power supply.;Contrôlez l'alimentation en tension.;
+6232;Sobrecarga;Overload;Surcharge;
+22616;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+9624;Sobretemperatura;Overtemperature;Surchauffe;
+26008;Compruebe los datos técnicos de los componentes conectados.;Check the technical specifications of the connected components.;Contrôlez les caractéristiques techniques des composants liés.;
+13016;Rotura de hilo;Wire break;Rupture de fil;
+29400;Compruebe el estado de las líneas de conexión.;Check the status of the connection lines.;Contrôlez l'état des câbles de liaison.;
+96;Límite superior excedido;High limit exceeded;Limite supérieure dépassée;
+16480;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+3488;Límite inferior excedido;Low limit exceeded;Limite inférieure sous-dépassée;
+19872;Compruebe los datos técnicos de los componentes conectados o la parametrización.;Check the technical specifications of the  connected components and the configur;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;
+6880;Fallo;Error;Erreur;
+23264;;;;
+10272;Simulación activa;Simulation active;Simulation active;
+26656;;;;
+13664;Reservado;Reserved;réservé;
+30048;;;;
+744;Reservado;Reserved;réservé;
+17128;;;;
+4136;Reservado;Reserved;réservé;
+20520;;;;
+7528;Reservado;Reserved;réservé;
+23912;;;;
+10920;Falta el parámetro;Parameter missing;Paramètre manquant;
+27304;;;;
+14312;Error de parametrización;Parameter assignment error;Erreur de paramétrage;
+30696;Causa: Parámetros de módulo incorrectos. Solución: Comprobar parámetros y correg;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les par;
+1392;Falta tensión de sensores o de carga;Power supply fault;Absence de tension capteur ou de charge;
+17776;Causa: Falta tensión de carga. Solución: Comprobar el cableado o conectar la ali;Cause: No power supply. Remedy: Check wiring or turn on power supply.;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou bra;
+4784;Fusible defectuoso;Fuse blown / open;Fusible defectueux;
+21168;Causa: Sobrecarga. Solución: Eliminar la causa de la sobrecarga. Seguidamente su;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensu;
+8176;El slot no responde;Slot cannot be addressed;Emplacement non accessible;
+24560;Causa: Error de comunicación de diferente origen. Solución: Depende de la causa.;Cause: Communication error with various possible causes. Remedy: Depends on caus;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;
+11568;Defecto a masa;Ground fault;Défaut à la masse;
+27952;Causa: Tensión en modo común rebasada o rotura del cable de masa. Solución: Comp;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wirin;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : ;
+14960;Error del canal de referencia;Reference point list;Erreur de voie de référence;
+31344;Causa: Error en el canal de referencia. Solución: Véase el manual.;Cause: Error on reference channel. Remedy: See manual.;Cause : erreur de voie de référence. Solution : voir le manuel.;
+2040;Alarma de proceso perdida;Process event lost / sampling error;Alarme de processus perdue;
+18424;Causa: Alarma de proceso. Solución: Cambiar el procesamiento de alarmas de la CP;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or chang;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par l;
+5432;Advertencia de actuador;Threshold warning;Avertissement actionneur;
+21816;Causa: El actuador notifica el rebase de un valor límite. Solución: Comprobar la;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of ;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifi;
+8824;Desconexión de actuador;Output disabled;Coupure actionneur;
+25208;Causa: Se ha detectado un problema con el actuador. Solución: Eliminar la causa.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème;
+12216;Desconexión orientada a seguridad;Safety event;Arrêt de sécurité;
+28600;Causa: Se ha detectado un fallo en el canal. Solución: Comprobar el canal y elim;Cause: Error detected on channel. Remedy: Check channel and correct problem..;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erre;
+15608;Error externo;External fault;Défaut externe;
+31992;Causa: Se ha detectado un fallo en el sensor/actuador. Solución: Sustituir el se;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or c;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/a;
+2688;Error no definido;Unidentified error;Défaut non spécifié;
+19072;Causa: No se puede especificar con detalle. Solución: Véase el manual.;Cause: Cannot be specified in greater detail. Remedy: See manual.;Cause : ne peut être spécifiée. Solution : voir le manuel.;
+6080;Reservado;Reserved;réservé;
+22464;;;;
+9472;Fallo 1 en actuador / sensor;Fault 1 in actuator/sensor;Erreur 1 dans actionneur / capteur;
+25856;;;;
+12864;Fallo 2 en actuador / sensor;Fault 2 in actuator/sensor;Erreur 2 dans actionneur / capteur;
+29248;;;;
+16256;Fallo temporal;Temporary error;Erreur temporaire;
+32640;;;;
+12792;Transferencia de datos imposible; @5W%t#PNPNIOC-20110429@;Data transmission impossible; @5W%t#PNPNIOC-20110429@;Transmission de données impossible; @5W%t#PNPNIOC-20110429@;
+29176;Ayuda: Transferencia de datos imposible; @5W%t#PNPNIOC-20110429@;Help: Data transmission impossible; @5W%t#PNPNIOC-20110429@;Aide : transmission de données impossible; @5W%t#PNPNIOC-20110429@;
+14488;No hay conexión física en el puerto;No physical connection on port;Pas de connexion physique au port;
+30872;Se ha configurado la vigilancia del puerto, pero no hay conexión física en el mi;Port monitoring was configured, there is however no physical connection on the p;Une surveillance de port a été configurée, mais il n'existe pas de connexion phy;
+14489;Error en "Soporte de transferencia/dúplex";Error with "Transfer medium/duplex";Erreur pour "Support de transmission/Duplex";
+30873;"Soporte de transferencia / dúplex" se ha configurado; la configuración de puert;"Transfer medium / duplex" was configured; the current port setting resulting fr;"Support de transmission / Duplex" a été configuré ; la sélection de port déterm;
+14490;Error al comprobar los datos de línea;Error during cable data check;Erreur à la vérification des données de câble;
+30874;Causas posibles:
+ - La longitud de línea determinada es superior al valor predet;Possible causes:
+ - The discovered cable length is longer than the one configure;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ ;
+16184;Error en el partner; @5W%t#PNPNIOC-20110429@;Remote mismatch; @5W%t#PNPNIOC-20110429@;Erreur partenaire; @5W%t#PNPNIOC-20110429@;
+32568;Ayuda: Error en el partner; @5W%t#PNPNIOC-20110429@;Help: Remote mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur partenaire; @5W%t#PNPNIOC-20110429@;
+1568;Partner incorrecto;Wrong partner;Partenaire incorrect;
+17952;Se ha configurado una conexión de puerto, pero en el puerto se ha detectado un p;A port interconnection was configured but a different partner was detected at th;Une connexion de port a été configurée, un autre partenaire a été déterminé pour;
+1569;Puerto partner erróneo;Wrong partner port;Port partenaire incorrect;
+17953;Se ha configurado una conexión de puerto, pero en el puerto se ha determinado un;A port interconnection was configured but a different partner port was detected ;Une connexion de port a été configurée, un autre port partenaire a été déterminé;
+1570;IRT (Top Performance) no es posible en este puerto;IRT (top performance) not possible at this port;IRT (Top Performance) impossible sur ce port;
+17954;Causas posibles:
+ - Otros errores de comunicación en este puerto o en el puerto ;Possible causes:
+ - Other communications errors on this or on the partner port a;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port;
+1571;Incoherencia en "Soporte de transferencia / dúplex";Inconsistency in "transmission medium / duplex";Incohérence pour "Support de transmission / Duplex";
+17955;Se ha configurado el "Medio de transmisión/dúplex"; el ajuste local del puerto n;"Transmission medium/duplex" was configured; the local setting of the port does ;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pou;
+1572;Incoherencia en la configuración MRP / cableado;Inconsistent MRP configuration / wiring;Incohérence de la configuration MRP / du câblage;
+17956;Se ha configurado un dominio MRP, pero la configuración del puerto local no conc;MRP domain was configured; the local setting of the port does not match the sett;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du;
+1573;Imposible detectar el vecino;The neighbor could not be identified;Le voisin n'a pas pu être détecté;
+17957;Se ha configurado una conexión de puerto, en el puerto no se ha detectado exacta;A port interconnection was configured but a single partner was not detected at t;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté;
+1574;Incoherencia en la configuración MRRT;Inconsistent MRRT configuration;Incohérence de la configuration MRRT;
+17958;Se ha configurado la característica MRRT; el ajuste local del puerto no es compa;The MRRT feature was configured; the local setting of the port does not match th;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont;
+1575;Diferencia al determinar la longitud del cable;Difference in cable length measurement;Différence à la détermination de longueur de câble;
+17959;Se ha configurado "Soporte de transferencia / dúplex". Ambos partner han detecta;"Transmission medium / Duplex" was configured. The two partners have cable lengt;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont dét;
+1992;El nombre del dominio Sync se utiliza repetidas veces;Sync domain name used more than once;Nom de domaine Sync utilisé plusieurs fois;
+18376;En la subred Ethernet se han configurado dos dominios Sync con el mismo nombre.
+;Two sync domains with the same name were configured in the Ethernet subnet.
+Reme;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solut;
+3264;Error de redundancia de medios; @5W%t#PNPNIOC-20110429@;Media redundancy mismatch; @5W%t#PNPNIOC-20110429@;Erreur de redondance de supports de transmission; @5W%t#PNPNIOC-20110429@;
+19648;Ayuda: Redundancia de medios; @5W%t#PNPNIOC-20110429@;Help: Media redundancy mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur de redondance de supports de transmission; @5W%t#PNPNIOC-20110429@;
+4960;El manager de redundancia no puede asumir la función configurada.;Redundancy manager cannot adopt the configured role;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;
+21344;Indica que el manager de redundancia asume la función de cliente y que otro mana;Indicates that the configured redundancy manager adopts the role of client, anot;Signifie que le gestionnaire de redondance configuré remplit le rôle de client e;
+4961;Anillo abierto;Ring opened;Anneau ouvert;
+21345;Indica que el anillo se ha interrumpido unilateralmente. No se garantiza la redu;Indicates that the ring has been interrupted. Redundancy is no longer effective.;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus ga;
+4962;Redundancia RT no garantizada;RT redundancy not effective;Redondance RT plus garantie;
+21346;Indica que el anillo para la comunicación RT no está cerrado. Causas posibles:
+ ;Indicates that the ring is not closed for RT communication. Possible causes:
+ - ;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles ;
+4963;En el anillo se encuentran varios administradores de redundancia;There is more than one redundancy manager in the ring;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;
+21347;Indica que en el anillo se encuentran varios dispositivos que asumen la función ;Indicates that more than one device in the ring adopts the redundancy manager ro;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance d;
+6656;Pérdida de sincronización; @5W%t#PNPNIOC-20110429@;Sync mismatch; @5W%t#PNPNIOC-20110429@;Perte de synchronisation; @5W%t#PNPNIOC-20110429@;
+23040;Ayuda: Pérdida de sincronización; @5W%t#PNPNIOC-20110429@;Help: Sync mismatch; @5W%t#PNPNIOC-20110429@;Aide : perte de synchronisation; @5W%t#PNPNIOC-20110429@;
+8352;No se sincroniza el SyncSlave;Sync slave will not be synchronized;L'esclave Sync ne sera pas synchronisé;
+24736;El equipo es un SyncSlave y no se sincroniza.
+Causas posibles:
+ - El SyncMaster ;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The ;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - ;
+8355;Equipo no síncrono;Station not synchronized;Station non synchrone;
+24739;La sincronización está fuera del rango de tolerancia; la señal de referencia no ;Synchronization is outside the range of tolerance; the reference signal is not a;La synchronisation se trouve hors de la plage de tolérance ; le signal de référe;
+10048;Error de modo isócrono; @5W%t#PNPNIOC-20110429@;Isochronous mode mismatch; @5W%t#PNPNIOC-20110429@;Erreur de synchronisme d'horloge; @5W%t#PNPNIOC-20110429@;
+26432;Ayuda: Error de modo isócrono; @5W%t#PNPNIOC-20110429@;Help: Isochronous mode mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur de synchronisme d'horloge; @5W%t#PNPNIOC-20110429@;
+13440;Error CR multicast; @5W%t#PNPNIOC-20110429@;Multicast CR mismatch; @5W%t#PNPNIOC-20110429@;Erreur Multicast CR; @5W%t#PNPNIOC-20110429@;
+29824;Ayuda: Error CR multicast; @5W%t#PNPNIOC-20110429@;Help: Multicast CR mismatch; @5W%t#PNPNIOC-20110429@;Aide : Erreur CR Multicast; @5W%t#PNPNIOC-20110429@;
+520;Reservado; @5W%t#PNPNIOC-20110429@;Reserved; @5W%t#PNPNIOC-20110429@;réservé; @5W%t#PNPNIOC-20110429@;
+16904;Ayuda: Ayuda; @5W%t#PNPNIOC-20110429@;Help: Reserved; @5W%t#PNPNIOC-20110429@;Aide : réservée; @5W%t#PNPNIOC-20110429@;
+3912;Error fibra óptica; @5W%t#PNPNIOC-20110429@;Fiber optics mismatch; @5W%t#PNPNIOC-20110429@;Erreur fibre optique; @5W%t#PNPNIOC-20110429@;
+20296;Ayuda: Error fibra óptica; @5W%t#PNPNIOC-20110429@;Help: Fiber optics mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur fibre optique; @5W%t#PNPNIOC-20110429@;
+5608;Reserva de sistema de fibra óptica crítica;FO link power margin critical;Réserve système FO critique;
+21992;La reserva de sistema FO se encuentra por debajo del umbral de @2D%1d@ dB
+Soluci;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or repl;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nett;
+7304;Error de función del componente de red; @5W%t#PNPNIOC-20110429@;Network component function mismatch; @5W%t#PNPNIOC-20110429@;Erreur de fonctionnement du composant réseau; @5W%t#PNPNIOC-20110429@;
+23688;Ayuda: Error de función del componente de red; @5W%t#PNPNIOC-20110429@;Help: Network component function mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur de fonctionnement du composant réseau; @5W%t#PNPNIOC-20110429@;
+8;Debido a sobrecarga se han rechazado paquetes de datos;Data packets discarded due to overload;Paquets de données rejetés pour surcharge;
+16392;Como mínimo @2D%1d@ paquetes de datos han sido rechazados por escasez de recurso;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possibl;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temp;
+10696;Error de tiempo; @5W%t#PNPNIOC-20110429@;Time mismatch; @5W%t#PNPNIOC-20110429@;Erreur d'horloge; @5W%t#PNPNIOC-20110429@;
+27080;Ayuda: Error de tiempo; @5W%t#PNPNIOC-20110429@;Help: Time mismatch; @5W%t#PNPNIOC-20110429@;Aide : erreur de temporisation; @5W%t#PNPNIOC-20110429@;
+16;Configuración incoherente/especificación del gateway predeterminado;Inconsistent configuration / specification of the standard gateway;Configuration incohérente/Spécification du routeur par défaut;
+16400;Se ha configurado un gateway predeterminado como mínimo para otro interface. Est;A standard gateway has been configured for at least one additional interface tha;Un autre routeur par défaut a été configuré pour au moins une autre interface. 
+;
+17;Configuración/especificación incoherente del nombre de dispositivo;Inconsistent configuration/specification of the NameOfStation;Configuration incohérente/Spécification du NameOfStation;
+16401;Para otra interfaz de este módulo ya se ha configurado/asignado un nombre de dis;A NameOfStation which is identical to the specification for this interface has a;Un NameOfStation a déjà été configuré /attribué pour une autre interface de ce m;
+18;Configuración/especificación incoherente de la dirección IP;Inconsistent configuration/specification of the IP address;Configuration incohérente/Spécification de l'adresse IP;
+16402;Para otra interfaz ya se ha configurado/asignado una dirección IP que se encuent;An IP address which is in the same subnet as the IP address of this interface ha;Une adresse IP a déjà été configurée/attribuée pour une autre interface. Elle se;
+16160;Fallo tensión de alimentación izquierda;Failure of power supply left;Défaillance de l'alimentation en tension gauche;
+32544;;;;
+16161;Fallo tensión de alimentación derecha;Failure of power supply right;Défaillance de l'alimentation en tension droit;
+32545;;;;
+13416;Error de configuración: Otra subred no configurada;Projection fault: Other subnet not projected;Erreur de paramétrage: Autre sous-réseau non configuré;
+29800;;;;
+13417;Error de configuración: Configuración divergente de las subredes;Projection fault: Difference between netsides;Erreur de paramétrage: Configuration divergente des sous-réseaux;
+29801;;;;
+13419;Error de configuración: DIA activo, pero no hay datos de entrada configurados;Projection fault: DIA set, but no Input data configured;Erreur de paramétrage: DIA activé, mais aucune donnée d'entrée n'est configurée;
+29803;;;;
+10672;Data  invalid;Data  invalid;Data  invalid;
+27056;;;;

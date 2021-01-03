@@ -1,0 +1,1008 @@
+//Nota : Ce fichier d'exportation au format CSV ne doit pas être ouvert par double clic sur le fichier !;;;
+//Veuillez ouvrir ce fichier via la commande de menu Fichier > Ouvrir de MS-Excel;;;
+$_Languages;;;
+7(5) Allemand (Liechtenstein);12(1) Français (France);9(1) Anglais (États-Unis);
+$_Typ(OtherText);$_Attrib(MultiLanguage);$_Attrib(MultiLanguage);
+//$_Exportation le 06/07/2012 13:00:45;;;
+6008;Trop d'informations de diagnostic;Too much diagnostic information generated;
+22392;Le bloc de données des vues de diagnotic IHM pour PROFINET IO est prévu pour un diagnostic maximal. Par PROFINET IO-Device il peut contenir les données de diagnostic de jusqu'à 8 modules en défaut. Il peut contenir les données de diagnostic de jusqu'à 14 c;The HMI diagnostic picture data block for PROFINET IO is intended for maximum diagnostics. Per PROFINET IO device, it can contain diagnostic data for up to 8 modules that have problems. Per module, it can contain diagnostic data for up to 14 submodules and;
+6009;Erreur à l'appel du SFB 52;Error calling SFB 52;
+22393;Une erreur s'est produite lors de l'actualisation du bloc de données pour vues de diagnostic IHM pour PROFINET IO à l'appel du SFB 52;An error occurred calling SFB 52 during the updating of the HMI diagnostic pictures data block for PROFINET IO.;
+6040;Module non enfiché;Module is not plugged in;
+22424;Vérifiez si le module est correctement enfiché.;Check whether or not the module is correctly plugged in.;
+6041;Module incorrect enfiché;Wrong module plugged in;
+22425;Contrôlez le module.;Check the module.;
+6042;Le module est correct mais une cartouche au moins est incorrecte.;The module is correct but at least one submodule is incorrect;
+22426;Contrôlez les cartouches du module.;Check the submodules of the module.;
+6043;Module incorrect, mais compatible avec la configuration.;Wrong module but it is compatible with the configuration;
+22427;Comme le module est compatible avec le configuration, aucune action n'est requise.;The module is compatible with the configuration so no action is necessary.;
+6104;Cartouche non enfichée;Submodule is not plugged in;
+22488;Vérifiez si la cartouche est correctement enfichée;Check whether or not the submodule is correctly plugged in.;
+6105;Cartouche compatible avec la configuration;Submodule is compatible to the configuration;
+22489;Comme la cartouche est compatible avec la configuration, aucune action n'est requise.;The submodule is compatible with the configuration so no action is necessary.;
+6106;Cartouche bloquée par le contrôleur.;Submodule is block by the controller;
+22490;;;
+6108;Une application accède à la cartouche.;An application is accessing the submodule;
+22492;;;
+6111;Cartouche incorrecte, mais compatible avec la configuration;Wrong submodule but it is compatible with the configuration;
+22495;Comme la cartouche est compatible avec la configuration, aucune action n'est requise.;The submodule is compatible with the configuration so no action is necessary.;
+8080;;;
+24464;;;
+8208;Court-circuit;Short circuit;
+24592;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+8336;Sous-tension;Low voltage;
+24720;Contrôlez l'alimentation en tension.;Verify the power supply.;
+8464;Surtension;Overvoltage;
+24848;Contrôlez l'alimentation en tension.;Verify the power supply.;
+8592;Surcharge;Overload;
+24976;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+8720;Surchauffe;Overtemperature;
+25104;Contrôlez les caractéristiques techniques des composants liés.;Check the technical specifications of the connected components.;
+8848;Rupture de fil;Wire break;
+25232;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+8976;Limite supérieure dépassée;High limit exceeded;
+25360;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+9104;Limite inférieure sous-dépassée;Low limit exceeded;
+25488;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+9232;Erreur;Error;
+25616;;;
+9360;Simulation active;Simulation active;
+25744;;;
+9488;réservé;Reserved;
+25872;;;
+9616;réservé;Reserved;
+26000;;;
+9744;réservé;Reserved;
+26128;;;
+9872;réservé;Reserved;
+26256;;;
+10000;Paramètre manquant;Parameter missing;
+26384;;;
+10128;Erreur de paramétrage;Parameter assignment error;
+26512;Cause possible : Le module n'est pas paramétré ou est mal paramétré.  Solution : corrigez le paramétrage.;Possible Cause: Module either not at all or incorrectly assigned parameters.  Error remedy: Correct the parameter assignment.;
+10256;Le connecteur frontal, la tension de capteur ou de charge manque.;Front connector missing, sensor or load voltage missing;
+26640;Cause possible : La tension d'alimentation manque ou est trop basse.  Solution : Vérifier le connecteur frontal. Corriger le câblage au processus. Vérifier la tension d'alimentation.;Possible cause: Supply voltage missing or too low.  Remedy: Check front connector. Correct the process wiring. Check the supply voltage.;
+10384;Fusible défectueux.;Fuse defective;
+26768;Cause possible : Le fusible échangeable par l'utilisateur est tombé.  Solution : Remplacement du fusible.;Possible Cause: User's replaceable fuse fallen.  Error remedy: Exchange the fuse.;
+10512;Erreur de communication;Communication error;
+26896;Cause possible : Communication au module perturbée.  Solution : vérifiez le paramètre de l'adresse.;Possible Cause: Communication to the module interrupted. Error remedy: Check the address parameter.;
+10640;Erreur de masse;Ground error;
+27024;Cause possible : Dépassement du Common Mode admissible pour les voies liées à la masse ou coupure de la ligne à la masse pour les voies avec séparation galvanique.  Solution : Correction du câblage au processus.;Possible Cause: Exceeding the allowable common mode at non-isolated channels or chopping the ground line for non-isolated channels. Error remedy: Correct the process wiring.;
+10768;Erreur sur voie de référence;Reference channel error;
+27152;Cause possible : Erreur sur voie de référence.  Solution : vérifiez le module de référence (2AI RTD ST).;Possible Cause: Error on the reference channel. Error remedy: Check the reference module (2AI RTD ST).;
+10896;Alarme de processus perdue ou erreur de message;Process interrupt lost or message error;
+27280;Cause possible : Erreur de cadre, erreur de parité.  Solution : vérifiez les options de communication.;Possible Cause: Frame error, parity error. Error remedy: Check the communication settings.;
+11024;Avertissement;Warning;
+27408;Cause possible : Dépassement des seuils d'actionneur (vitesse, courant de charge).  Solution : correction de la justesse des paramètres.;Possible Cause: Exceeding the actuator limit value (rotational speed, load current). Error remedy: Correct the tuning.;
+11152;Arrêt;Shutoff;
+27536;Cause possible : Déclenchement d'un disjoncteur à cause d'un court-circuit, d'une disymmétrie, d'un défaut à la terre ou déclenchement d'une thermistance ou Quick-Stop.  Solution : supprimez la cause de l'arrêt et acquittez.;Possible Cause: Trigger a line switch due to short circuit, or asymmetry or ground fault or trigger a Thermistor or Quick Stop. Error remedy: Eliminate the cause of the shutoff and acknowledge.;
+11280;Arrêt de sécurité;Fail-safe shutoff;
+27664;Cause possible : Présence d'un déclencheur d'arrêt de sécurité.  Solution : corrigez la cause de l'arrêt et acquittez.;Possible Cause: Trigger for fail-safe shutoff is present.  Error remedy: Eliminate the cause of the shutoff and acknowledge.;
+11408;Erreur externe;external error;
+27792;Cause possible : Rupture de fil ou court-circuit des signaux du capteur ou câble du capteur non raccordé ou capteurs programmables ne correspondent pas aux options sur le module.  Solution : Remplacement du capteur, correction du câblage au processus , cor;Possible Cause: Wire break or short circuit of the  encoder signal or encoder cable not connected or programmable encoders do not correspond to the settings on the module. Error remedy: exchange the encoder, correct the process wiring, correct the paramete;
+11536;Erreur indéfinie;ambiguous error;
+27920;Cause possible : Une procédure d'apprentissage est en cours. Une aide à l'ajustage est active (pour 4 IQ-SENSE). Erreur ne pouvant être spécifiée plus avant.  Solution : mettre fin à l'apprentissage. Mettre fin à l'aide à l'ajustage (pour 4 IQ-SENSE);Possible Cause: Teach-in process running. Alignment tool is active (for 4 IQ-SENSE). Otherwise, cannot be specified in more detail.  Error remedy: Terminate the Teach-in process. Terminate the alignment tool (for 4 IQ-SENSE);
+11664;réservé;Reserved;
+28048;;;
+11792;Erreur 1 dans actionneur / capteur;Fault 1 in actuator/sensor;
+28176;;;
+11920;Erreur 2 dans actionneur / capteur;Fault 2 in actuator/sensor;
+28304;;;
+12048;Voie temporairement indisponible;Channel temporarily not available;
+28432;Cause possible : Calibrage, mise à jour du firmware, mode manuel ...;Possible cause: Calibration, firmware update, manual operation, ...;
+8224;Transmission de données impossible; @5W%t#ET200S-20100709@;Data transmission impossible; @5W%t#ET200S-20100709@;
+24608;Aide : transmission de données impossible; @5W%t#ET200S-20100709@;Help: Data transmission impossible; @5W%t#ET200S-20100709@;
+8288;Pas de connexion physique au port;No physical connection on port;
+24672;Une surveillance de port a été configurée, mais il n'existe pas de connexion physique au port.
+ Causes possibles :
+ - pas de câble enfiché
+ - câble défectueux
+ - câble incorrect pour paramètres de port fixes
+ - appareil partenaire désactivé;Port monitoring was configured, there is however no physical connection on the port.
+ Possible causes:
+ - No cable plugged in
+ - Cable defective
+ - Wrong cable with fixed port settings
+ - Partner device turned off;
+8289;Erreur pour "Support de transmission/Duplex";Error with "Transfer medium/duplex";
+24673;"Support de transmission / Duplex" a été configuré ; la sélection de port déterminée par Autonegotiation ne correspond pas à la configuration.
+ Causes possibles :
+ - le partenaire fonctionne avec une présélection fixe de port
+ - le partenaire ne prend pas ;"Transfer medium / duplex" was configured; the current port setting resulting from autonegotiation does not match the configured setting.
+ Possible causes:
+ - The partner is operating with a fixed but different port setting
+ - The partner does not support ;
+8290;Erreur lors du test de longueur de câble;Error in cable length check;
+24674;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ - La longueur de câble spécifiée ne peut pas être testée, car le partenaire ne prend pas en charge la mesure de longueur de câble.
+
+ Solution : modifier la configuration ou rac;Possible causes:
+ - The detected cable length is longer than the configured length
+ - The configured cable length cannot be checked because the partner does not support measurement of the cable length.
+
+ Remedy: Adapt the configuration or shorten the cable;
+8352;Erreur partenaire; @5W%t#ET200S-20100709@;Remote mismatch; @5W%t#ET200S-20100709@;
+24736;Aide : erreur partenaire; @5W%t#ET200S-20100709@;Help: Remote mismatch; @5W%t#ET200S-20100709@;
+8416;Partenaire incorrect;Wrong partner;
+24800;Une connexion de port a été configurée, un autre partenaire a été déterminé pour le port.
+Solutions :
+ - modifier le câblage de la connexion de port
+ - écrire le nom du partenaire dans la connexion de port;A port interconnection was configured but a different partner was detected at the port.
+Remedies:
+ - Adapt the cabling of the configured port interconnection
+ - Adopt the device name of the partner in the port interconnection;
+8417;Port partenaire incorrect;Wrong partner port;
+24801;Une connexion de port a été configurée, un autre port partenaire a été déterminée pour le port.
+
+ Solutions :
+ - modifier le câblage de la connexion de port configurée
+ - modifier la connexion de port dans la configuration;A port interconnection was configured but a different partner port was detected at the port.
+
+ Remedy:
+ - Adapt the cabling of the configured port interconnection
+ - Adapt the port interconnection in the configuration;
+8418;IRT (Top Performance) impossible sur ce port;IRT (top performance) not possible at this port;
+24802;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port partenaire empêchent IRT (solution : voir autres diagnostics, remédier d'abord à ceux-ci)
+ - port partenaire configuré incorrect pour le mode IRT, c-à-d. configuration manquan;Possible causes:
+ - Other communications errors on this or on the partner port are preventing IRT (remedy: refer to other diagnostic information, eliminate these problems first)
+ - Partner port is not correctly configured for IRT mode, i.e. bad or old conf;
+8419;Incohérence pour "Support de transmission / Duplex";Inconsistency in "transmission medium / duplex";
+24803;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pour le port ne sont pas compatibles avec celles sélectionnées pour le port partenaire.
+ Causes possibles :
+ - Le partenaire fonctionne avec des options fixes prédéfinies différen;"Transmission medium/duplex" was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner is operating with fixed but different port settings
+ - Media converter, hub or non PNIO compliant de;
+8420;Incohérence de la configuration MRP / du câblage;Inconsistent MRP configuration / wiring;
+24804;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du port partenaire.
+ Causes possibles :
+ - les ports ne sont pas correctement connectés; un port anneau est connecté à un port non anneau
+ - le partenaire n'a pas de configuratio;MRP domain was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The ports are incorrectly connected; a ring port was connected to a non-ring port
+ - The partner has no or an unsuitable configura;
+8421;Le voisin n'a pas pu être détecté;The neighbor could not be identified;
+24805;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté pour le port.
+ Causes possibles :
+ - appareil non conforme PN-IO connecté à ce port
+ - connexion de port configurée, mais aucun appareil connecté ou appareil partenaire désact;A port interconnection was configured but a single partner was not detected at the port.
+ Possible causes:
+ - Non PNIO compliant device connected to this port
+ - Port interconnection configured but no device connected or partner device turned off, cable de;
+8422;Incohérence de la configuration MRRT;Inconsistent MRRT configuration;
+24806;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont pas compatibles avec celles du port partenaire.
+ Causes possibles :
+ - Le partenaire n'a pas de configuration ou a une configuration incompatible
+ - Le partenaire ne prend pas;The MRRT feature was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner has no or an unsuitable configuration
+ - The partner does not support the MRRT feature;
+8423;Différence à la détermination de longueur de câble;Difference in cable length measurement;
+24807;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont déterminé des longueurs de câble différentes de @2D%1d@ ns. Des causes possibles sont :
+ - Utilisation du convertisseur de supports de transmission
+ - Appareil non conforme à PN-I;"Transmission medium / Duplex" was configured. The two partners have cable lengths that differ by @2D%1d@ ns. Possible causes may be:
+ - Use of media converter
+ - Non PN-IO conform device connected to this port
+
+ Remedy: Adapt configuration and select "Aut;
+8432;Nom de domaine Sync utilisé plusieurs fois;Sync domain name used more than once;
+24816;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solution : modifier la configuration
+- séparer plusieurs domaines Sync par des fins de Boundaries (recommandation de principe pour limiter la propagation des télégrammes Multicastfr;Two sync domains with the same name were configured in the Ethernet subnet.
+Remedy: Adapt the configuration
+- Separate multiple sync domains with end of the sync domain boundaries (this is a basic recommendation to limit the propagation of the multicast fr;
+8480;Erreur de redondance de supports de transmission; @5W%t#ET200S-20100709@;Media redundancy mismatch; @5W%t#ET200S-20100709@;
+24864;Aide : erreur de redondance de supports de transmission; @5W%t#ET200S-20100709@;Help: Media redundancy mismatch; @5W%t#ET200S-20100709@;
+8544;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;Redundancy manager cannot adopt the configured role;
+24928;Signifie que le gestionnaire de redondance configuré remplit le rôle de client et qu'un gestionnaire de redondance ayant une plus haute priorité assume le rôle de gestionnaire et surveille l'anneau.
+Solution : Configurez pour tous les appareils ne devant p;Indicates that the configured redundancy manager adopts the role of client, another higher-priority redundancy manager has taken over the role of manager and is monitoring the ring.
+Remedy: Configure the client role on all devices that are not intended to ;
+8545;Anneau ouvert;Ring opened;
+24929;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus garantie.
+Causes possibles :
+ - un câble de liaison entre les deux ports anneau est défectueux.
+ Solution : remplacer le câble anneau défectueux;Indicates that the ring has been interrupted. Redundancy is no longer effective.
+Possible causes:
+ - A connecting cable between ring ports is defective.
+ Remedy: Replace defective ring cable;
+8546;Redondance RT plus garantie;RT redundancy not effective;
+24930;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles :
+ - une ou plusieurs stations dans l'anneau prennent en charge la redondance NRT mais pas la redondance RT de l'anneau
+ - une ou plusieurs stations prennent en charge la redon;Indicates that the ring is not closed for RT communication. Possible causes:
+ - There are one or more stations in the ring that support NRT ring redundancy but not RT redundancy
+ - One or more stations support RT redundancy however they were not enabled.
+ ;
+8547;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;There is more than one redundancy manager in the ring;
+24931;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance dans l'anneau. L'état de l'anneau est instable.
+Causes possibles :
+ au sein de l'anneau se trouve un appareil prenant en charge le rôle de gestionnaire de redondance et des appa;Indicates that more than one device in the ring adopts the redundancy manager role. The ring status is unstable.
+Possible causes:
+ There is a device in the ring that only supports the redundancy manager role along with devices with automatic manager/client;
+8608;Perte de synchronisation; @5W%t#ET200S-20100709@;Sync mismatch; @5W%t#ET200S-20100709@;
+24992;Aide : perte de synchronisation; @5W%t#ET200S-20100709@;Help: Sync mismatch; @5W%t#ET200S-20100709@;
+8672;L'esclave Sync ne sera pas synchronisé;Sync slave will not be synchronized;
+25056;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - le maître Sync n'est pas disponible (solution : activer le maître Sync, contrôler le câble)
+ - entre le maître Sync et cette station se trouvent des appareils ne prenant pas en;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The sync master is not available (Remedy: Turn on sync master, check cable)
+ - there are devices that are not sync-compliant between the sync master and this station (Remedy: Adapt;
+8675;Station non synchrone;Station not synchronized;
+25059;La synchronisation se trouve hors de la plage de tolérance ; le signal de référence ne possède pas la précision requise.
+Causes possibles :
+ - la station se synchronise de nouveau; ceci est un état temporaire
+ - le signal de référence perd sa précision req;Synchronization is outside the range of tolerance; the reference signal is not accurate enough.
+Possible causes:
+ - Station resynchronizes itself; this is a temporary status
+ - The reference signal loses its required accuracy on the transmission path (reme;
+8736;Erreur de synchronisme d'horloge; @5W%t#ET200S-20100709@;Isochrone mode mismatch; @5W%t#ET200S-20100709@;
+25120;Aide : erreur de synchronisme d'horloge; @5W%t#ET200S-20100709@;Help: Isochrone mode mismatch; @5W%t#ET200S-20100709@;
+8864;Erreur Multicast CR; @5W%t#ET200S-20100709@;Multicast CR mismatch; @5W%t#ET200S-20100709@;
+25248;Aide : Erreur CR Multicast; @5W%t#ET200S-20100709@;Help: Multicast CR mismatch; @5W%t#ET200S-20100709@;
+8992;réservé; @5W%t#ET200S-20100709@;Reserved; @5W%t#ET200S-20100709@;
+25376;Aide : réservée; @5W%t#ET200S-20100709@;Help: Reserved; @5W%t#ET200S-20100709@;
+9120;Erreur fibre optique; @5W%t#ET200S-20100709@;Fiber optics mismatch; @5W%t#ET200S-20100709@;
+25504;Aide : erreur fibre optique; @5W%t#ET200S-20100709@;Help: Fiber optics mismatch; @5W%t#ET200S-20100709@;
+9184;Réserve système FO critique;FO link power margin critical;
+25568;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nettoyer ou remplacer le câblage FO;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or replace the FO cabling immediately;
+9248;Erreur de fonctionnement du composant réseau; @5W%t#ET200S-20100709@;Network component function mismatch; @5W%t#ET200S-20100709@;
+25632;Aide : erreur de fonctionnement du composant réseau; @5W%t#ET200S-20100709@;Help: Network component function mismatch; @5W%t#ET200S-20100709@;
+9312;Paquets de données rejetés pour surcharge;Data packets discarded due to overload;
+25696;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temporaire de ressources.
+Causes possibles :
+ - réservation de largeur de bande pour IRT et charge supplémentaire NRT (solution : réserver une largeur de bande moins grande)
+ - reg;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possible causes:
+ - High bandwidth reservation for IRT and additional NRT load (Remedy: reduce bandwidth reservation)
+ - Bundling of small communication load from various sources on o;
+9376;Erreur d'horloge; @5W%t#ET200S-20100709@;Time mismatch; @5W%t#ET200S-20100709@;
+25760;Aide : erreur de temporisation; @5W%t#ET200S-20100709@;Help: Time mismatch; @5W%t#ET200S-20100709@;
+8888;;;
+25272;;;
+9016;Court-circuit;Short circuit;
+25400;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+9144;Sous-tension;Low voltage;
+25528;Contrôlez l'alimentation en tension.;Verify the power supply.;
+9272;Surtension;Overvoltage;
+25656;Contrôlez l'alimentation en tension.;Verify the power supply.;
+9400;Surcharge;Overload;
+25784;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+9528;Surchauffe;Overtemperature;
+25912;Contrôlez les caractéristiques techniques des composants liés.;Check the technical specifications of the connected components.;
+9656;Rupture de fil;Wire break;
+26040;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+9784;Limite supérieure dépassée;High limit exceeded;
+26168;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+9912;Limite inférieure sous-dépassée;Low limit exceeded;
+26296;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+10040;Erreur;Error;
+26424;;;
+10168;Simulation active;Simulation active;
+26552;;;
+10296;réservé;Reserved;
+26680;;;
+10424;réservé;Reserved;
+26808;;;
+10552;réservé;Reserved;
+26936;;;
+10680;réservé;Reserved;
+27064;;;
+10808;Paramètre manquant;Parameter missing;
+27192;;;
+10936;Erreur de parametrage;Parameter assignment error;
+27320;;;
+11064;Absence tension de capteur ou charge;Sensor or load voltage missing;
+27448;;;
+11192;Fusible defectueux;Fuse defective;
+27576;;;
+11320;Erreur de communication;Slot not addressable;
+27704;;;
+11448;Erreur de masse;Ground error;
+27832;;;
+11576;Erreur voie de reference;Reference channel error;
+27960;;;
+11704;Alarme processus perdue;Process interrupt lost;
+28088;;;
+11832;Attention;Warning;
+28216;;;
+11960;Arrêt;Shutoff;
+28344;;;
+12088;Arrêt de sécurité;Fail-safe shutoff;
+28472;;;
+12216;Defaut externe;external error;
+28600;;;
+12344;Defaut non specifie;ambiguous error;
+28728;;;
+12472;réservé;Reserved;
+28856;;;
+12600;Défaut 1 de l'actionn./du capt.;Actuator/sensor fault 1;
+28984;;;
+12728;Erreur 2 dans actionneur / capteur;Fault 2 in actuator/sensor;
+29112;;;
+12856;Channel temporary error;Channel temporary error;
+29240;;;
+9032;Transmission de données impossible; @5W%t#et200pro-20081113@;Data transmission impossible; @5W%t#et200pro-20081113@;
+25416;Aide : transmission de données impossible; @5W%t#et200pro-20081113@;Help: Data transmission impossible; @5W%t#et200pro-20081113@;
+9096;Pas de connexion physique au port;No physical connection on port;
+25480;Une surveillance de port a été configurée, mais il n'existe pas de connexion physique au port.
+ Causes possibles :
+ - pas de câble enfiché
+ - câble défectueux
+ - câble incorrect pour paramètres de port fixes
+ - appareil partenaire désactivé;Port monitoring was configured, there is however no physical connection on the port.
+ Possible causes:
+ - No cable plugged in
+ - Cable defective
+ - Wrong cable with fixed port settings
+ - Partner device turned off;
+9097;Erreur pour "Support de transmission/Duplex";Error with "Transfer medium/duplex";
+25481;"Support de transmission / Duplex" a été configuré ; la sélection de port déterminée par Autonegotiation ne correspond pas à la configuration.
+ Causes possibles :
+ - le partenaire fonctionne avec une présélection fixe de port
+ - le partenaire ne prend pas ;"Transfer medium / duplex" was configured; the current port setting resulting from autonegotiation does not match the configured setting.
+ Possible causes:
+ - The partner is operating with a fixed but different port setting
+ - The partner does not support ;
+9098;Erreur lors du test de longueur de câble;Error in cable length check;
+25482;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ - La longueur de câble spécifiée ne peut pas être testée, car le partenaire ne prend pas en charge la mesure de longueur de câble.
+
+ Solution : modifier la configuration ou rac;Possible causes:
+ - The detected cable length is longer than the configured length
+ - The configured cable length cannot be checked because the partner does not support measurement of the cable length.
+
+ Remedy: Adapt the configuration or shorten the cable;
+9160;Erreur partenaire; @5W%t#et200pro-20081113@;Remote mismatch; @5W%t#et200pro-20081113@;
+25544;Aide : erreur partenaire; @5W%t#et200pro-20081113@;Help: Remote mismatch; @5W%t#et200pro-20081113@;
+9224;Partenaire incorrect;Wrong partner;
+25608;Une connexion de port a été configurée, un autre partenaire a été déterminé pour le port.
+Solutions :
+ - modifier le câblage de la connexion de port
+ - écrire le nom du partenaire dans la connexion de port;A port interconnection was configured but a different partner was detected at the port.
+Remedies:
+ - Adapt the cabling of the configured port interconnection
+ - Adopt the device name of the partner in the port interconnection;
+9225;Port partenaire incorrect;Wrong partner port;
+25609;Une connexion de port a été configurée, un autre port partenaire a été déterminée pour le port.
+
+ Solutions :
+ - modifier le câblage de la connexion de port configurée
+ - modifier la connexion de port dans la configuration;A port interconnection was configured but a different partner port was detected at the port.
+
+ Remedy:
+ - Adapt the cabling of the configured port interconnection
+ - Adapt the port interconnection in the configuration;
+9226;IRT (Top Performance) impossible sur ce port;IRT (top performance) not possible at this port;
+25610;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port partenaire empêchent IRT (solution : voir autres diagnostics, remédier d'abord à ceux-ci)
+ - port partenaire configuré incorrect pour le mode IRT, c-à-d. configuration manquan;Possible causes:
+ - Other communications errors on this or on the partner port are preventing IRT (remedy: refer to other diagnostic information, eliminate these problems first)
+ - Partner port is not correctly configured for IRT mode, i.e. bad or old conf;
+9227;Incohérence pour "Support de transmission / Duplex";Inconsistency in "transmission medium / duplex";
+25611;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pour le port ne sont pas compatibles avec celles sélectionnées pour le port partenaire.
+ Causes possibles :
+ - Le partenaire fonctionne avec des options fixes prédéfinies différen;"Transmission medium/duplex" was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner is operating with fixed but different port settings
+ - Media converter, hub or non PNIO compliant de;
+9228;Incohérence de la configuration MRP / du câblage;Inconsistent MRP configuration / wiring;
+25612;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du port partenaire.
+ Causes possibles :
+ - les ports ne sont pas correctement connectés; un port anneau est connecté à un port non anneau
+ - le partenaire n'a pas de configuratio;MRP domain was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The ports are incorrectly connected; a ring port was connected to a non-ring port
+ - The partner has no or an unsuitable configura;
+9229;Le voisin n'a pas pu être détecté;The neighbor could not be identified;
+25613;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté pour le port.
+ Causes possibles :
+ - appareil non conforme PN-IO connecté à ce port
+ - connexion de port configurée, mais aucun appareil connecté ou appareil partenaire désact;A port interconnection was configured but a single partner was not detected at the port.
+ Possible causes:
+ - Non PNIO compliant device connected to this port
+ - Port interconnection configured but no device connected or partner device turned off, cable de;
+9230;Incohérence de la configuration MRRT;Inconsistent MRRT configuration;
+25614;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont pas compatibles avec celles du port partenaire.
+ Causes possibles :
+ - Le partenaire n'a pas de configuration ou a une configuration incompatible
+ - Le partenaire ne prend pas;The MRRT feature was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner has no or an unsuitable configuration
+ - The partner does not support the MRRT feature;
+9231;Différence à la détermination de longueur de câble;Difference in cable length measurement;
+25615;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont déterminé des longueurs de câble différentes de @2D%1d@ ns. Des causes possibles sont :
+ - Utilisation du convertisseur de supports de transmission
+ - Appareil non conforme à PN-I;"Transmission medium / Duplex" was configured. The two partners have cable lengths that differ by @2D%1d@ ns. Possible causes may be:
+ - Use of media converter
+ - Non PN-IO conform device connected to this port
+
+ Remedy: Adapt configuration and select "Aut;
+9240;Nom de domaine Sync utilisé plusieurs fois;Sync domain name used more than once;
+25624;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solution : modifier la configuration
+- séparer plusieurs domaines Sync par des fins de Boundaries (recommandation de principe pour limiter la propagation des télégrammes Multicastfr;Two sync domains with the same name were configured in the Ethernet subnet.
+Remedy: Adapt the configuration
+- Separate multiple sync domains with end of the sync domain boundaries (this is a basic recommendation to limit the propagation of the multicast fr;
+9288;Erreur de redondance de supports de transmission; @5W%t#et200pro-20081113@;Media redundancy mismatch; @5W%t#et200pro-20081113@;
+25672;Aide : erreur de redondance de supports de transmission; @5W%t#et200pro-20081113@;Help: Media redundancy mismatch; @5W%t#et200pro-20081113@;
+9352;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;Redundancy manager cannot adopt the configured role;
+25736;Signifie que le gestionnaire de redondance configuré remplit le rôle de client et qu'un gestionnaire de redondance ayant une plus haute priorité assume le rôle de gestionnaire et surveille l'anneau.
+Solution : Configurez pour tous les appareils ne devant p;Indicates that the configured redundancy manager adopts the role of client, another higher-priority redundancy manager has taken over the role of manager and is monitoring the ring.
+Remedy: Configure the client role on all devices that are not intended to ;
+9353;Anneau ouvert;Ring opened;
+25737;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus garantie.
+Causes possibles :
+ - un câble de liaison entre les deux ports anneau est défectueux.
+ Solution : remplacer le câble anneau défectueux;Indicates that the ring has been interrupted. Redundancy is no longer effective.
+Possible causes:
+ - A connecting cable between ring ports is defective.
+ Remedy: Replace defective ring cable;
+9354;Redondance RT plus garantie;RT redundancy not effective;
+25738;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles :
+ - une ou plusieurs stations dans l'anneau prennent en charge la redondance NRT mais pas la redondance RT de l'anneau
+ - une ou plusieurs stations prennent en charge la redon;Indicates that the ring is not closed for RT communication. Possible causes:
+ - There are one or more stations in the ring that support NRT ring redundancy but not RT redundancy
+ - One or more stations support RT redundancy however they were not enabled.
+ ;
+9355;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;There is more than one redundancy manager in the ring;
+25739;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance dans l'anneau. L'état de l'anneau est instable.
+Causes possibles :
+ au sein de l'anneau se trouve un appareil prenant en charge le rôle de gestionnaire de redondance et des appa;Indicates that more than one device in the ring adopts the redundancy manager role. The ring status is unstable.
+Possible causes:
+ There is a device in the ring that only supports the redundancy manager role along with devices with automatic manager/client;
+9416;Perte de synchronisation; @5W%t#et200pro-20081113@;Sync mismatch; @5W%t#et200pro-20081113@;
+25800;Aide : perte de synchronisation; @5W%t#et200pro-20081113@;Help: Sync mismatch; @5W%t#et200pro-20081113@;
+9480;L'esclave Sync ne sera pas synchronisé;Sync slave will not be synchronized;
+25864;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - le maître Sync n'est pas disponible (solution : activer le maître Sync, contrôler le câble)
+ - entre le maître Sync et cette station se trouvent des appareils ne prenant pas en;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The sync master is not available (Remedy: Turn on sync master, check cable)
+ - there are devices that are not sync-compliant between the sync master and this station (Remedy: Adapt;
+9483;Station non synchrone;Station not synchronized;
+25867;La synchronisation se trouve hors de la plage de tolérance ; le signal de référence ne possède pas la précision requise.
+Causes possibles :
+ - la station se synchronise de nouveau; ceci est un état temporaire
+ - le signal de référence perd sa précision req;Synchronization is outside the range of tolerance; the reference signal is not accurate enough.
+Possible causes:
+ - Station resynchronizes itself; this is a temporary status
+ - The reference signal loses its required accuracy on the transmission path (reme;
+9544;Erreur de synchronisme d'horloge; @5W%t#et200pro-20081113@;Isochrone mode mismatch; @5W%t#et200pro-20081113@;
+25928;Aide : erreur de synchronisme d'horloge; @5W%t#et200pro-20081113@;Help: Isochrone mode mismatch; @5W%t#et200pro-20081113@;
+9672;Erreur Multicast CR; @5W%t#et200pro-20081113@;Multicast CR mismatch; @5W%t#et200pro-20081113@;
+26056;Aide : Erreur CR Multicast; @5W%t#et200pro-20081113@;Help: Multicast CR mismatch; @5W%t#et200pro-20081113@;
+9800;réservé; @5W%t#et200pro-20081113@;Reserved; @5W%t#et200pro-20081113@;
+26184;Aide : réservée; @5W%t#et200pro-20081113@;Help: Reserved; @5W%t#et200pro-20081113@;
+9928;Erreur fibre optique; @5W%t#et200pro-20081113@;Fiber optics mismatch; @5W%t#et200pro-20081113@;
+26312;Aide : erreur fibre optique; @5W%t#et200pro-20081113@;Help: Fiber optics mismatch; @5W%t#et200pro-20081113@;
+9992;Réserve système FO critique;FO link power margin critical;
+26376;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nettoyer ou remplacer le câblage FO;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or replace the FO cabling immediately;
+10056;Erreur de fonctionnement du composant réseau; @5W%t#et200pro-20081113@;Network component function mismatch; @5W%t#et200pro-20081113@;
+26440;Aide : erreur de fonctionnement du composant réseau; @5W%t#et200pro-20081113@;Help: Network component function mismatch; @5W%t#et200pro-20081113@;
+10120;Paquets de données rejetés pour surcharge;Data packets discarded due to overload;
+26504;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temporaire de ressources.
+Causes possibles :
+ - réservation de largeur de bande pour IRT et charge supplémentaire NRT (solution : réserver une largeur de bande moins grande)
+ - reg;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possible causes:
+ - High bandwidth reservation for IRT and additional NRT load (Remedy: reduce bandwidth reservation)
+ - Bundling of small communication load from various sources on o;
+10184;Erreur d'horloge; @5W%t#et200pro-20081113@;Time mismatch; @5W%t#et200pro-20081113@;
+26568;Aide : erreur de temporisation; @5W%t#et200pro-20081113@;Help: Time mismatch; @5W%t#et200pro-20081113@;
+9696;;;
+26080;;;
+9824;Court-circuit;Short circuit;
+26208;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+9952;Sous-tension;Low voltage;
+26336;Contrôlez l'alimentation en tension.;Verify the power supply.;
+10080;Surtension;Overvoltage;
+26464;Contrôlez l'alimentation en tension.;Verify the power supply.;
+10208;Surcharge;Overload;
+26592;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+10336;Surchauffe;Overtemperature;
+26720;Contrôlez les caractéristiques techniques des composants liés.;Check the technical specifications of the connected components.;
+10464;Rupture de fil;Wire break;
+26848;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+10592;Limite supérieure dépassée;High limit exceeded;
+26976;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+10720;Limite inférieure sous-dépassée;Low limit exceeded;
+27104;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+10848;Erreur;Error;
+27232;;;
+10976;Simulation active;Simulation active;
+27360;;;
+11104;réservé;Reserved;
+27488;;;
+11232;réservé;Reserved;
+27616;;;
+11360;réservé;Reserved;
+27744;;;
+11488;réservé;Reserved;
+27872;;;
+11616;Paramètre manquant;Parameter missing;
+28000;;;
+11744;Erreur de paramétrage;Parameter assignment error;
+28128;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les paramètres. Rechargez ensuite les paramètres.;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;
+11872;Absence de tension capteur ou de charge;Power supply fault;
+28256;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou branchez l'alimentation.;Cause: No power supply. Remedy: Check wiring or turn on power supply.;
+12000;Fusible defectueux;Fuse blown / open;
+28384;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensuite le fusible.;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;
+12128;Emplacement non accessible;Slot cannot be addressed;
+28512;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;Cause: Communication error with various possible causes. Remedy: Depends on cause.;
+12256;Défaut à la masse;Ground fault;
+28640;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : vérifiez et corrigez le câblage.;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wiring and correct.;
+12384;Erreur de voie de référence;Reference point list;
+28768;Cause : erreur de voie de référence. Solution : voir le manuel.;Cause: Error on reference channel. Remedy: See manual.;
+12512;Alarme de processus perdue;Process event lost / sampling error;
+28896;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par la CPU ou modifiez le paramétrage du module.;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or change parameter assignment of  module.;
+12640;Avertissement actionneur;Threshold warning;
+29024;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifiez la compatibilité du module et de l'actionneur.;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of module and actuator.;
+12768;Coupure actionneur;Output disabled;
+29152;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;
+12896;Arrêt de sécurité;Safety event;
+29280;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erreur.;Cause: Error detected on channel. Remedy: Check channel and correct problem..;
+13024;Défaut externe;External fault;
+29408;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/actionneur ou vérifiez le câblage.;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or check wiring.;
+13152;Défaut non spécifié;Unidentified error;
+29536;Cause : ne peut être spécifiée. Solution : voir le manuel.;Cause: Cannot be specified in greater detail. Remedy: See manual.;
+13280;réservé;Reserved;
+29664;;;
+13408;Erreur 1 dans actionneur / capteur;Fault 1 in actuator/sensor;
+29792;;;
+13536;Erreur 2 dans actionneur / capteur;Fault 2 in actuator/sensor;
+29920;;;
+13664;Erreur temporaire;Temporary error;
+30048;;;
+9768;Linkup illicite;Illegal linkup;
+26152;Etat de connexion différent des spécifications de l'enregistrement de paramétrage 200;Link status different from setting in parameter data record 200;
+9896;Linkdown illicite;Illegal linkdown;
+26280;Etat de connexion différent des spécifications de l'enregistrement de paramétrage 200;Link status different from setting in parameter data record 200;
+10024;Vitesse de transmission illicite;Illegal transmission rate;
+26408;Vitesse de transmission différente des spécifications de l'enregistrement de paramétrage 3;Transmission rate different from setting in parameter data record 3;
+10152;Duplexity illicite;Illegal duplexity;
+26536;Duplexity différente des spécifications de l'enregistrement de paramétrage 3;Duplexity different from setting in parameter data record 3;
+10280;Surcharge de trames;Frame overload;
+26664;Les télégrammes rejetés dépassent le seuil spécifié dans l'enregistrement de paramétrage 2;More or less discarded frames than set as threshold value in parameter data record 2;
+9840;Transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20070405@;Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20070405@;
+26224;Aide : transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20070405@;
+9904;Pas de connexion physique au port;No physical connection on port;
+26288;Une surveillance de port a été configurée, mais il n'existe pas de connexion physique au port.
+ Causes possibles :
+ - pas de câble enfiché
+ - câble défectueux
+ - câble incorrect pour paramètres de port fixes
+ - appareil partenaire désactivé;Port monitoring was configured, there is however no physical connection on the port.
+ Possible causes:
+ - No cable plugged in
+ - Cable defective
+ - Wrong cable with fixed port settings
+ - Partner device turned off;
+9905;Erreur pour "Support de transmission/Duplex";Error with "Transfer medium/duplex";
+26289;"Support de transmission / Duplex" a été configuré ; la sélection de port déterminée par Autonegotiation ne correspond pas à la configuration.
+ Causes possibles :
+ - le partenaire fonctionne avec une présélection fixe de port
+ - le partenaire ne prend pas ;"Transfer medium / duplex" was configured; the current port setting resulting from autonegotiation does not match the configured setting.
+ Possible causes:
+ - The partner is operating with a fixed but different port setting
+ - The partner does not support ;
+9906;Erreur lors du test de longueur de câble;Error in cable length check;
+26290;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ - La longueur de câble spécifiée ne peut pas être testée, car le partenaire ne prend pas en charge la mesure de longueur de câble.
+
+ Solution : modifier la configuration ou rac;Possible causes:
+ - The detected cable length is longer than the configured length
+ - The configured cable length cannot be checked because the partner does not support measurement of the cable length.
+
+ Remedy: Adapt the configuration or shorten the cable;
+9968;Erreur partenaire; @5W%t#A02A-SCALANCE_X200-20070405@;Remote mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+26352;Aide : erreur partenaire; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Remote mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10032;Partenaire incorrect;Wrong partner;
+26416;Une connexion de port a été configurée, un autre partenaire a été déterminé pour le port.
+Solutions :
+ - modifier le câblage de la connexion de port
+ - écrire le nom du partenaire dans la connexion de port;A port interconnection was configured but a different partner was detected at the port.
+Remedies:
+ - Adapt the cabling of the configured port interconnection
+ - Adopt the device name of the partner in the port interconnection;
+10033;Port partenaire incorrect;Wrong partner port;
+26417;Une connexion de port a été configurée, un autre port partenaire a été déterminée pour le port.
+
+ Solutions :
+ - modifier le câblage de la connexion de port configurée
+ - modifier la connexion de port dans la configuration;A port interconnection was configured but a different partner port was detected at the port.
+
+ Remedy:
+ - Adapt the cabling of the configured port interconnection
+ - Adapt the port interconnection in the configuration;
+10034;IRT (Top Performance) impossible sur ce port;IRT (top performance) not possible at this port;
+26418;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port partenaire empêchent IRT (solution : voir autres diagnostics, remédier d'abord à ceux-ci)
+ - port partenaire configuré incorrect pour le mode IRT, c-à-d. configuration manquan;Possible causes:
+ - Other communications errors on this or on the partner port are preventing IRT (remedy: refer to other diagnostic information, eliminate these problems first)
+ - Partner port is not correctly configured for IRT mode, i.e. bad or old conf;
+10035;Incohérence pour "Support de transmission / Duplex";Inconsistency in "transmission medium / duplex";
+26419;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pour le port ne sont pas compatibles avec celles sélectionnées pour le port partenaire.
+ Causes possibles :
+ - Le partenaire fonctionne avec des options fixes prédéfinies différen;"Transmission medium/duplex" was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner is operating with fixed but different port settings
+ - Media converter, hub or non PNIO compliant de;
+10036;Incohérence de la configuration MRP / du câblage;Inconsistent MRP configuration / wiring;
+26420;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du port partenaire.
+ Causes possibles :
+ - les ports ne sont pas correctement connectés; un port anneau est connecté à un port non anneau
+ - le partenaire n'a pas de configuratio;MRP domain was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The ports are incorrectly connected; a ring port was connected to a non-ring port
+ - The partner has no or an unsuitable configura;
+10037;Le voisin n'a pas pu être détecté;The neighbor could not be identified;
+26421;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté pour le port.
+ Causes possibles :
+ - appareil non conforme PN-IO connecté à ce port
+ - connexion de port configurée, mais aucun appareil connecté ou appareil partenaire désact;A port interconnection was configured but a single partner was not detected at the port.
+ Possible causes:
+ - Non PNIO compliant device connected to this port
+ - Port interconnection configured but no device connected or partner device turned off, cable de;
+10038;Incohérence de la configuration MRRT;Inconsistent MRRT configuration;
+26422;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont pas compatibles avec celles du port partenaire.
+ Causes possibles :
+ - Le partenaire n'a pas de configuration ou a une configuration incompatible
+ - Le partenaire ne prend pas;The MRRT feature was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner has no or an unsuitable configuration
+ - The partner does not support the MRRT feature;
+10039;Différence à la détermination de longueur de câble;Difference in cable length measurement;
+26423;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont déterminé des longueurs de câble différentes de @2D%1d@ ns. Des causes possibles sont :
+ - Utilisation du convertisseur de supports de transmission
+ - Appareil non conforme à PN-I;"Transmission medium / Duplex" was configured. The two partners have cable lengths that differ by @2D%1d@ ns. Possible causes may be:
+ - Use of media converter
+ - Non PN-IO conform device connected to this port
+
+ Remedy: Adapt configuration and select "Aut;
+10048;Nom de domaine Sync utilisé plusieurs fois;Sync domain name used more than once;
+26432;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solution : modifier la configuration
+- séparer plusieurs domaines Sync par des fins de Boundaries (recommandation de principe pour limiter la propagation des télégrammes Multicastfr;Two sync domains with the same name were configured in the Ethernet subnet.
+Remedy: Adapt the configuration
+- Separate multiple sync domains with end of the sync domain boundaries (this is a basic recommendation to limit the propagation of the multicast fr;
+10096;Erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X200-20070405@;Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+26480;Aide : erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10160;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;Redundancy manager cannot adopt the configured role;
+26544;Signifie que le gestionnaire de redondance configuré remplit le rôle de client et qu'un gestionnaire de redondance ayant une plus haute priorité assume le rôle de gestionnaire et surveille l'anneau.
+Solution : Configurez pour tous les appareils ne devant p;Indicates that the configured redundancy manager adopts the role of client, another higher-priority redundancy manager has taken over the role of manager and is monitoring the ring.
+Remedy: Configure the client role on all devices that are not intended to ;
+10161;Anneau ouvert;Ring opened;
+26545;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus garantie.
+Causes possibles :
+ - un câble de liaison entre les deux ports anneau est défectueux.
+ Solution : remplacer le câble anneau défectueux;Indicates that the ring has been interrupted. Redundancy is no longer effective.
+Possible causes:
+ - A connecting cable between ring ports is defective.
+ Remedy: Replace defective ring cable;
+10162;Redondance RT plus garantie;RT redundancy not effective;
+26546;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles :
+ - une ou plusieurs stations dans l'anneau prennent en charge la redondance NRT mais pas la redondance RT de l'anneau
+ - une ou plusieurs stations prennent en charge la redon;Indicates that the ring is not closed for RT communication. Possible causes:
+ - There are one or more stations in the ring that support NRT ring redundancy but not RT redundancy
+ - One or more stations support RT redundancy however they were not enabled.
+ ;
+10163;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;There is more than one redundancy manager in the ring;
+26547;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance dans l'anneau. L'état de l'anneau est instable.
+Causes possibles :
+ au sein de l'anneau se trouve un appareil prenant en charge le rôle de gestionnaire de redondance et des appa;Indicates that more than one device in the ring adopts the redundancy manager role. The ring status is unstable.
+Possible causes:
+ There is a device in the ring that only supports the redundancy manager role along with devices with automatic manager/client;
+10224;Perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20070405@;Sync mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+26608;Aide : perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Sync mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10288;L'esclave Sync ne sera pas synchronisé;Sync slave will not be synchronized;
+26672;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - le maître Sync n'est pas disponible (solution : activer le maître Sync, contrôler le câble)
+ - entre le maître Sync et cette station se trouvent des appareils ne prenant pas en;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The sync master is not available (Remedy: Turn on sync master, check cable)
+ - there are devices that are not sync-compliant between the sync master and this station (Remedy: Adapt;
+10291;Station non synchrone;Station not synchronized;
+26675;La synchronisation se trouve hors de la plage de tolérance ; le signal de référence ne possède pas la précision requise.
+Causes possibles :
+ - la station se synchronise de nouveau; ceci est un état temporaire
+ - le signal de référence perd sa précision req;Synchronization is outside the range of tolerance; the reference signal is not accurate enough.
+Possible causes:
+ - Station resynchronizes itself; this is a temporary status
+ - The reference signal loses its required accuracy on the transmission path (reme;
+10352;Erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20070405@;Isochrone mode mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+26736;Aide : erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Isochrone mode mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10480;Erreur Multicast CR; @5W%t#A02A-SCALANCE_X200-20070405@;Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+26864;Aide : Erreur CR Multicast; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10608;réservé; @5W%t#A02A-SCALANCE_X200-20070405@;Reserved; @5W%t#A02A-SCALANCE_X200-20070405@;
+26992;Aide : réservée; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Reserved; @5W%t#A02A-SCALANCE_X200-20070405@;
+10736;Erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20070405@;Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+27120;Aide : erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10800;Réserve système FO critique;FO link power margin critical;
+27184;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nettoyer ou remplacer le câblage FO;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or replace the FO cabling immediately;
+10864;Erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20070405@;Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+27248;Aide : erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+10928;Paquets de données rejetés pour surcharge;Data packets discarded due to overload;
+27312;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temporaire de ressources.
+Causes possibles :
+ - réservation de largeur de bande pour IRT et charge supplémentaire NRT (solution : réserver une largeur de bande moins grande)
+ - reg;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possible causes:
+ - High bandwidth reservation for IRT and additional NRT load (Remedy: reduce bandwidth reservation)
+ - Bundling of small communication load from various sources on o;
+10992;Erreur d'horloge; @5W%t#A02A-SCALANCE_X200-20070405@;Time mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+27376;Aide : erreur de temporisation; @5W%t#A02A-SCALANCE_X200-20070405@;Help: Time mismatch; @5W%t#A02A-SCALANCE_X200-20070405@;
+12032;Pas d'alimentation redondante;No redundant PS;
+28416;Alarme arrivante en l'absence d'alimentation redondante;Alarm entering state when there is no redundant PS;
+12034;C-PLUG introuvable;C-PLUG not found;
+28418;Alarme arrivante en l'absence de C-PLUG;Alarm entering state when no C-PLUG was inserted;
+12036;C-PLUG défectueux;C-PLUG defective;
+28420;Alarme arrivante lorsque le C-PLUG est défectueux;Alarm entering state when C-PLUG is defective;
+12038;Le C-PLUG est incorrect;wrong C-PLUG;
+28422;Alarme apparaissante si aucun C-PLUG n'a incorrect;Incoming alarm when wrong C-PLUG is plugged in;
+10504;;;
+26888;;;
+10632;Court-circuit;Short circuit;
+27016;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+10760;Sous-tension;Low voltage;
+27144;Contrôlez l'alimentation en tension.;Verify the power supply.;
+10888;Surtension;Overvoltage;
+27272;Contrôlez l'alimentation en tension.;Verify the power supply.;
+11016;Surcharge;Overload;
+27400;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+11144;Surchauffe;Overtemperature;
+27528;Contrôlez les caractéristiques techniques des composants liés.;Check the technical specifications of the connected components.;
+11272;Rupture de fil;Wire break;
+27656;Contrôlez l'état des câbles de liaison.;Check the status of the connection lines.;
+11400;Limite supérieure dépassée;High limit exceeded;
+27784;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+11528;Limite inférieure sous-dépassée;Low limit exceeded;
+27912;Contrôlez les caractéristiques techniques des composants liés ou le paramétrage.;Check the technical specifications of the  connected components and the configuration.;
+11656;Erreur;Error;
+28040;;;
+11784;Simulation active;Simulation active;
+28168;;;
+11912;réservé;Reserved;
+28296;;;
+12040;réservé;Reserved;
+28424;;;
+12168;réservé;Reserved;
+28552;;;
+12296;réservé;Reserved;
+28680;;;
+12424;Paramètre manquant;Parameter missing;
+28808;;;
+12552;Erreur de paramétrage;Parameter assignment error;
+28936;Cause : paramètres de module incorrects. Solution : vérifiez et corrigez les paramètres. Rechargez ensuite les paramètres.;Cause: Bad module parameter. Remedy: Check and correct parameter. Then reload.;
+12680;Absence de tension capteur ou de charge;Power supply fault;
+29064;Cause : absence de tension d'alimentation. Solution : vérifiez le câblage ou branchez l'alimentation.;Cause: No power supply. Remedy: Check wiring or turn on power supply.;
+12808;Fusible defectueux;Fuse blown / open;
+29192;Cause : surcharge. Solution : supprimez la cause de la surcharge. Remplacez ensuite le fusible.;Cause: Overload. Remedy: Remove cause of overload. The replace fuse.;
+12936;Emplacement non accessible;Slot cannot be addressed;
+29320;Cause : erreur de communication à cause multiple. Solution : dépend de la cause.;Cause: Communication error with various possible causes. Remedy: Depends on cause.;
+13064;Défaut à la masse;Ground fault;
+29448;Cause : dépassement de la tension mode commun ou rupture du câble M. Solution : vérifiez et corrigez le câblage.;Cause: Common mode voltage exceeded or M cable disconnected. Remedy: Check wiring and correct.;
+13192;Erreur de voie de référence;Reference point list;
+29576;Cause : erreur de voie de référence. Solution : voir le manuel.;Cause: Error on reference channel. Remedy: See manual.;
+13320;Alarme de processus perdue;Process event lost / sampling error;
+29704;Cause : alarme de processus. Solution : modifiez le traitement de l'alarme par la CPU ou modifiez le paramétrage du module.;Cause: Hardware interrupt. Remedy: Change interrupt handling of the CPU or change parameter assignment of  module.;
+13448;Avertissement actionneur;Threshold warning;
+29832;Cause : actionneur signale un dépassement d'une valeur limite. Solution : vérifiez la compatibilité du module et de l'actionneur.;Cause: Actuator signaling a limit value violation. Remedy: Check interaction of module and actuator.;
+13576;Coupure actionneur;Output disabled;
+29960;Cause : problème d'actionneur détecté. Solution : supprimez la cause du problème.;Cause: Problem detected on actuator. Remedy: Find and eliminate cause.;
+13704;Arrêt de sécurité;Safety event;
+30088;Cause : erreur de voie détectée. Solution : vérifiez la voie et supprimez l'erreur.;Cause: Error detected on channel. Remedy: Check channel and correct problem..;
+13832;Défaut externe;External fault;
+30216;Cause : Erreur de capteur/actionneur détectée. Solution : remplacez le capteur/actionneur ou vérifiez le câblage.;Cause: Problem detected on sensor/actuator. Remedy: Replace sensor/actuator or check wiring.;
+13960;Défaut non spécifié;Unidentified error;
+30344;Cause : ne peut être spécifiée. Solution : voir le manuel.;Cause: Cannot be specified in greater detail. Remedy: See manual.;
+14088;réservé;Reserved;
+30472;;;
+14216;Erreur 1 dans actionneur / capteur;Fault 1 in actuator/sensor;
+30600;;;
+14344;Erreur 2 dans actionneur / capteur;Fault 2 in actuator/sensor;
+30728;;;
+14472;Erreur temporaire;Temporary error;
+30856;;;
+10576;Linkup illicite;Illegal linkup;
+26960;Etat de connexion différent des spécifications de l'enregistrement de paramétrage 200;Link status different from setting in parameter data record 200;
+10704;Linkdown illicite;Illegal linkdown;
+27088;Etat de connexion différent des spécifications de l'enregistrement de paramétrage 200;Link status different from setting in parameter data record 200;
+10832;Vitesse de transmission illicite;Illegal transmission rate;
+27216;Vitesse de transmission différente des spécifications de l'enregistrement de paramétrage 3;Transmission rate different from setting in parameter data record 3;
+10960;Duplexity illicite;Illegal duplexity;
+27344;Duplexity différente des spécifications de l'enregistrement de paramétrage 3;Duplexity different from setting in parameter data record 3;
+11088;Surcharge de trames;Frame overload;
+27472;Les télégrammes rejetés dépassent le seuil spécifié dans l'enregistrement de paramétrage 2;More or less discarded frames than set as threshold value in parameter data record 2;
+10648;Transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20090303@;Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20090303@;
+27032;Aide : transmission de données impossible; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Data transmission impossible; @5W%t#A02A-SCALANCE_X200-20090303@;
+10712;Pas de connexion physique au port;No physical connection on port;
+27096;Une surveillance de port a été configurée, mais il n'existe pas de connexion physique au port.
+ Causes possibles :
+ - pas de câble enfiché
+ - câble défectueux
+ - câble incorrect pour paramètres de port fixes
+ - appareil partenaire désactivé;Port monitoring was configured, there is however no physical connection on the port.
+ Possible causes:
+ - No cable plugged in
+ - Cable defective
+ - Wrong cable with fixed port settings
+ - Partner device turned off;
+10713;Erreur pour "Support de transmission/Duplex";Error with "Transfer medium/duplex";
+27097;"Support de transmission / Duplex" a été configuré ; la sélection de port déterminée par Autonegotiation ne correspond pas à la configuration.
+ Causes possibles :
+ - le partenaire fonctionne avec une présélection fixe de port
+ - le partenaire ne prend pas ;"Transfer medium / duplex" was configured; the current port setting resulting from autonegotiation does not match the configured setting.
+ Possible causes:
+ - The partner is operating with a fixed but different port setting
+ - The partner does not support ;
+10714;Erreur lors du test de longueur de câble;Error in cable length check;
+27098;Causes possibles :
+ - La longueur de câble déterminée dépasse celle configurée
+ - La longueur de câble spécifiée ne peut pas être testée, car le partenaire ne prend pas en charge la mesure de longueur de câble.
+
+ Solution : modifier la configuration ou rac;Possible causes:
+ - The detected cable length is longer than the configured length
+ - The configured cable length cannot be checked because the partner does not support measurement of the cable length.
+
+ Remedy: Adapt the configuration or shorten the cable;
+10776;Erreur partenaire; @5W%t#A02A-SCALANCE_X200-20090303@;Remote mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27160;Aide : erreur partenaire; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Remote mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+10840;Partenaire incorrect;Wrong partner;
+27224;Une connexion de port a été configurée, un autre partenaire a été déterminé pour le port.
+Solutions :
+ - modifier le câblage de la connexion de port
+ - écrire le nom du partenaire dans la connexion de port;A port interconnection was configured but a different partner was detected at the port.
+Remedies:
+ - Adapt the cabling of the configured port interconnection
+ - Adopt the device name of the partner in the port interconnection;
+10841;Port partenaire incorrect;Wrong partner port;
+27225;Une connexion de port a été configurée, un autre port partenaire a été déterminée pour le port.
+
+ Solutions :
+ - modifier le câblage de la connexion de port configurée
+ - modifier la connexion de port dans la configuration;A port interconnection was configured but a different partner port was detected at the port.
+
+ Remedy:
+ - Adapt the cabling of the configured port interconnection
+ - Adapt the port interconnection in the configuration;
+10842;IRT (Top Performance) impossible sur ce port;IRT (top performance) not possible at this port;
+27226;Causes possibles :
+ - Autres erreurs de communication sur ce port ou sur le port partenaire empêchent IRT (solution : voir autres diagnostics, remédier d'abord à ceux-ci)
+ - port partenaire configuré incorrect pour le mode IRT, c-à-d. configuration manquan;Possible causes:
+ - Other communications errors on this or on the partner port are preventing IRT (remedy: refer to other diagnostic information, eliminate these problems first)
+ - Partner port is not correctly configured for IRT mode, i.e. bad or old conf;
+10843;Incohérence pour "Support de transmission / Duplex";Inconsistency in "transmission medium / duplex";
+27227;"Support de transmission/Duplex" a été configuré ; les options sélectionnées pour le port ne sont pas compatibles avec celles sélectionnées pour le port partenaire.
+ Causes possibles :
+ - Le partenaire fonctionne avec des options fixes prédéfinies différen;"Transmission medium/duplex" was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner is operating with fixed but different port settings
+ - Media converter, hub or non PNIO compliant de;
+10844;Incohérence de la configuration MRP / du câblage;Inconsistent MRP configuration / wiring;
+27228;Domaine MRP configuré ; la sélection locale du port ne correspond pas à celle du port partenaire.
+ Causes possibles :
+ - les ports ne sont pas correctement connectés; un port anneau est connecté à un port non anneau
+ - le partenaire n'a pas de configuratio;MRP domain was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The ports are incorrectly connected; a ring port was connected to a non-ring port
+ - The partner has no or an unsuitable configura;
+10845;Le voisin n'a pas pu être détecté;The neighbor could not be identified;
+27229;Une connexion de port a été configurée, un partenaire précis n'a pas été détecté pour le port.
+ Causes possibles :
+ - appareil non conforme PN-IO connecté à ce port
+ - connexion de port configurée, mais aucun appareil connecté ou appareil partenaire désact;A port interconnection was configured but a single partner was not detected at the port.
+ Possible causes:
+ - Non PNIO compliant device connected to this port
+ - Port interconnection configured but no device connected or partner device turned off, cable de;
+10846;Incohérence de la configuration MRRT;Inconsistent MRRT configuration;
+27230;L'attribut MRRT  a été configuré; les options sélectionnées pour le port ne sont pas compatibles avec celles du port partenaire.
+ Causes possibles :
+ - Le partenaire n'a pas de configuration ou a une configuration incompatible
+ - Le partenaire ne prend pas;The MRRT feature was configured; the local setting of the port does not match the setting of the partner port.
+ Possible causes:
+ - The partner has no or an unsuitable configuration
+ - The partner does not support the MRRT feature;
+10847;Différence à la détermination de longueur de câble;Difference in cable length measurement;
+27231;"Support de transmission / Duplex" a été configuré. Les deux partenaires ont déterminé des longueurs de câble différentes de @2D%1d@ ns. Des causes possibles sont :
+ - Utilisation du convertisseur de supports de transmission
+ - Appareil non conforme à PN-I;"Transmission medium / Duplex" was configured. The two partners have cable lengths that differ by @2D%1d@ ns. Possible causes may be:
+ - Use of media converter
+ - Non PN-IO conform device connected to this port
+
+ Remedy: Adapt configuration and select "Aut;
+10856;Nom de domaine Sync utilisé plusieurs fois;Sync domain name used more than once;
+27240;Deux domaines Sync de même nom ont été configurés dans le réseau Ethernet.
+Solution : modifier la configuration
+- séparer plusieurs domaines Sync par des fins de Boundaries (recommandation de principe pour limiter la propagation des télégrammes Multicastfr;Two sync domains with the same name were configured in the Ethernet subnet.
+Remedy: Adapt the configuration
+- Separate multiple sync domains with end of the sync domain boundaries (this is a basic recommendation to limit the propagation of the multicast fr;
+10904;Erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X200-20090303@;Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27288;Aide : erreur de redondance de supports de transmission; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Media redundancy mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+10968;Le gestionnaire de redondance ne peut pas assumer le rôle configuré.;Redundancy manager cannot adopt the configured role;
+27352;Signifie que le gestionnaire de redondance configuré remplit le rôle de client et qu'un gestionnaire de redondance ayant une plus haute priorité assume le rôle de gestionnaire et surveille l'anneau.
+Solution : Configurez pour tous les appareils ne devant p;Indicates that the configured redundancy manager adopts the role of client, another higher-priority redundancy manager has taken over the role of manager and is monitoring the ring.
+Remedy: Configure the client role on all devices that are not intended to ;
+10969;Anneau ouvert;Ring opened;
+27353;Indique que l'anneau est interrompu unilatéralement. La redondance n'est plus garantie.
+Causes possibles :
+ - un câble de liaison entre les deux ports anneau est défectueux.
+ Solution : remplacer le câble anneau défectueux;Indicates that the ring has been interrupted. Redundancy is no longer effective.
+Possible causes:
+ - A connecting cable between ring ports is defective.
+ Remedy: Replace defective ring cable;
+10970;Redondance RT plus garantie;RT redundancy not effective;
+27354;Indique que l'anneau n'est pas fermé pour la communication RT. Causes possibles :
+ - une ou plusieurs stations dans l'anneau prennent en charge la redondance NRT mais pas la redondance RT de l'anneau
+ - une ou plusieurs stations prennent en charge la redon;Indicates that the ring is not closed for RT communication. Possible causes:
+ - There are one or more stations in the ring that support NRT ring redundancy but not RT redundancy
+ - One or more stations support RT redundancy however they were not enabled.
+ ;
+10971;Il existe plusieurs gestionnaires de redondance au sein de l'anneau;There is more than one redundancy manager in the ring;
+27355;Indique que plusieurs appareils assument le rôle de gestionnaire de redondance dans l'anneau. L'état de l'anneau est instable.
+Causes possibles :
+ au sein de l'anneau se trouve un appareil prenant en charge le rôle de gestionnaire de redondance et des appa;Indicates that more than one device in the ring adopts the redundancy manager role. The ring status is unstable.
+Possible causes:
+ There is a device in the ring that only supports the redundancy manager role along with devices with automatic manager/client;
+11032;Perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20090303@;Sync mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27416;Aide : perte de synchronisation; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Sync mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+11096;L'esclave Sync ne sera pas synchronisé;Sync slave will not be synchronized;
+27480;La station est un esclave Sync et n'est pas synchronisée.
+Causes possibles :
+ - le maître Sync n'est pas disponible (solution : activer le maître Sync, contrôler le câble)
+ - entre le maître Sync et cette station se trouvent des appareils ne prenant pas en;The station is a sync slave and it is not synchronized.
+Possible causes:
+ - The sync master is not available (Remedy: Turn on sync master, check cable)
+ - there are devices that are not sync-compliant between the sync master and this station (Remedy: Adapt;
+11099;Station non synchrone;Station not synchronized;
+27483;La synchronisation se trouve hors de la plage de tolérance ; le signal de référence ne possède pas la précision requise.
+Causes possibles :
+ - la station se synchronise de nouveau; ceci est un état temporaire
+ - le signal de référence perd sa précision req;Synchronization is outside the range of tolerance; the reference signal is not accurate enough.
+Possible causes:
+ - Station resynchronizes itself; this is a temporary status
+ - The reference signal loses its required accuracy on the transmission path (reme;
+11160;Erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20090303@;Isochrone mode mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27544;Aide : erreur de synchronisme d'horloge; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Isochrone mode mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+11288;Erreur Multicast CR; @5W%t#A02A-SCALANCE_X200-20090303@;Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27672;Aide : Erreur CR Multicast; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Multicast CR mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+11416;réservé; @5W%t#A02A-SCALANCE_X200-20090303@;Reserved; @5W%t#A02A-SCALANCE_X200-20090303@;
+27800;Aide : réservée; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Reserved; @5W%t#A02A-SCALANCE_X200-20090303@;
+11544;Erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20090303@;Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+27928;Aide : erreur fibre optique; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Fiber optics mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+11608;Réserve système FO critique;FO link power margin critical;
+27992;La réserve système FO se trouve en -dessous du seuil @2D%1d@ dB 
+Solution : nettoyer ou remplacer le câblage FO;The FO link power margin is below the @2D%1d@ dB threshold
+Remedy: Clean or replace the FO cabling immediately;
+11672;Erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20090303@;Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+28056;Aide : erreur de fonctionnement du composant réseau; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Network component function mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+11736;Paquets de données rejetés pour surcharge;Data packets discarded due to overload;
+28120;@2D%1d@ paquets de données au minimum ont été rejetés en raison d'un manque temporaire de ressources.
+Causes possibles :
+ - réservation de largeur de bande pour IRT et charge supplémentaire NRT (solution : réserver une largeur de bande moins grande)
+ - reg;At least @2D%1d@ data packets were discarded due to a lack of resources.
+Possible causes:
+ - High bandwidth reservation for IRT and additional NRT load (Remedy: reduce bandwidth reservation)
+ - Bundling of small communication load from various sources on o;
+11800;Erreur d'horloge; @5W%t#A02A-SCALANCE_X200-20090303@;Time mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+28184;Aide : erreur de temporisation; @5W%t#A02A-SCALANCE_X200-20090303@;Help: Time mismatch; @5W%t#A02A-SCALANCE_X200-20090303@;
+12840;Pas d'alimentation redondante;No redundant PS;
+29224;Alarme arrivante en l'absence d'alimentation redondante;Alarm entering state when there is no redundant PS;
+12842;C-PLUG introuvable;C-PLUG not found;
+29226;Alarme arrivante en l'absence de C-PLUG;Alarm entering state when no C-PLUG was inserted;
+12844;C-PLUG défectueux;C-PLUG defective;
+29228;Alarme arrivante lorsque le C-PLUG est défectueux;Alarm entering state when C-PLUG is defective;
+12846;Le C-PLUG est incorrect;wrong C-PLUG;
+29230;Alarme apparaissante si aucun C-PLUG n'a incorrect;Incoming alarm when wrong C-PLUG is plugged in;

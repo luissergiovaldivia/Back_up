@@ -1,0 +1,218 @@
+<EcranUser>
+  <GroupeDC>36490_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - Operador B1136499" Line="2" AlignY="Auto" Height="Full" Width="200" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Operador B11</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <VoyantMulti Name="1 - Indicador multicolor" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto">
+      <StatusVM>
+        <Status Color="-16711936">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">ACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="B11MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B11MINHIB">B11MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">INACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B11MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B11MINHIB">B11MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Button Name="2 - Modificar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modificar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B11DINHIB1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B11DINHIB1">B11DINHIB1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="3 - Validar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B11VINHIB">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B11VINHIB">B11VINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B11ACONF">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B11ACONF">B11ACONF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="1 - GESTION DE LA SECURIDAD OPERADORES36492" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">GESTION DE LA SECURIDAD OPERADORES</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Para la marcha automatica y poner una pancarta de &quot;Pupitre fuera de servicio&quot; sobre los pupitres inhibidos" Color="-12582848" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Para la marcha automatica y poner una pancarta de "Pupitre fuera de servicio" sobre los pupitres inhibidos</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - Apoyar en &quot;Modificar&quot; y en &quot;Vaildar&quot; para cambiar el estado de las seguridades operador" Color="-12582848" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Apoyar en "Modificar" y en "Vaildar" para cambiar el estado de las seguridades operador</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Cadre Name="2 - Operador B1236515" Line="2" AlignY="Auto" Height="Full" Width="200" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Operador B12</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <VoyantMulti Name="1 - Indicador multicolor" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto">
+      <StatusVM>
+        <Status Color="-16711936">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">ACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="B12MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B12MINHIB">B12MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">INACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B12MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B12MINHIB">B12MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Button Name="2 - Modificar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modificar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B12DINHIB1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B12DINHIB1">B12DINHIB1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="3 - Validar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B12VINHIB">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B12VINHIB">B12VINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B12ACONF">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B12ACONF">B12ACONF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="3 - Operador B1336531" Line="2" AlignY="Auto" Height="Full" Width="200" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Operador B13</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <VoyantMulti Name="1 - Indicador multicolor" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto">
+      <StatusVM>
+        <Status Color="-16711936">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">ACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="B13MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B13MINHIB">B13MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">INACTIVO</Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B13MINHIB">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B13MINHIB">B13MINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Button Name="2 - Modificar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modificar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B13DINHIB1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B13DINHIB1">B13DINHIB1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="3 - Validar" Row="1" Height="Auto" Width="150" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B13VINHIB">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B13VINHIB">B13VINHIB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B13ACONF">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B13ACONF">B13ACONF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Listes />
+</EcranUser>

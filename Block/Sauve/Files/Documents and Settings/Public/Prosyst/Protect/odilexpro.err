@@ -1,0 +1,58 @@
+
+
+Windows IP Configuration
+
+
+
+        Host Name . . . . . . . . . . . . : RENAULT-96B0936
+
+        Primary Dns Suffix  . . . . . . . : 
+
+        Node Type . . . . . . . . . . . . : Unknown
+
+        IP Routing Enabled. . . . . . . . : No
+
+        WINS Proxy Enabled. . . . . . . . : No
+
+
+
+Ethernet adapter Level 1 IHM-SAVE:
+
+
+
+        Connection-specific DNS Suffix  . : 
+
+        Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+
+        Physical Address. . . . . . . . . : 00-0E-8C-C6-BA-68
+
+        Dhcp Enabled. . . . . . . . . . . : No
+
+        IP Address. . . . . . . . . . . . : 172.25.212.2
+
+        Subnet Mask . . . . . . . . . . . : 255.255.252.0
+
+        Default Gateway . . . . . . . . . : 
+
+
+
+Ethernet adapter Level 2:
+
+
+
+        Connection-specific DNS Suffix  . : 
+
+        Description . . . . . . . . . . . : Intel(R) 82577LM Gigabit Network Connection
+
+        Physical Address. . . . . . . . . : 00-0E-8C-C5-55-DF
+
+        Dhcp Enabled. . . . . . . . . . . : Yes
+
+        Autoconfiguration Enabled . . . . : Yes
+
+        Autoconfiguration IP Address. . . : 169.254.146.3
+
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+
+        Default Gateway . . . . . . . . . : 
+

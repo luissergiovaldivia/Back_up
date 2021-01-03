@@ -1,0 +1,29 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Plateau_DefDjm</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Plateau_DefThpv</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Plateau_DefDjfr</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Plateau_DefTemps</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Plateau_DefPos</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Plateau_DefCames</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>Plateau_DefSurcav</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>Plateau_DefSurcre</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

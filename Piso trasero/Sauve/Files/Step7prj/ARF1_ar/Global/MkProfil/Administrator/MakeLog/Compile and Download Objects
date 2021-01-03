@@ -1,0 +1,25 @@
+
+Date: 01/08/2013  time: 09:18:01 AM
+Compile:
+B_RF\MOP\Configuration
+-> Object was compiled without errors
+
+
+Date: 01/08/2013  time: 09:18:03 AM
+Compile:
+B_RF\MOP\OPC Server\Liaisons
+-> Object was compiled without errors
+
+
+Date: 01/08/2013  time: 09:18:57 AM
+Download:
+B_RF\MOP\Configuration
+-> Error occurred downloading the object
+
+
+
+Date: 01/08/2013  time: 09:19:16 AM
+Download:
+B_RF\MOP\OPC Server\Liaisons
+-> Object was downloaded without errors
+

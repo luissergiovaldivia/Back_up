@@ -1,0 +1,32 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>BF_KIT_COD_DEF_1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>BF_KIT_COD_DEF_2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>BF_KIT_COD_DEF_4</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>BF_KIT_COD_DEF_16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>BF_KIT_COD_DEF_32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>BF_KIT_COD_DEF_64</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>BF_KIT_COD_DEF_128</Text>
+      </Doc>
+      <Doc Num="4096">
+         <Text>BF_KIT_COD_DEF_4096</Text>
+      </Doc>
+      <Doc Num="8192">
+         <Text>BF_KIT_COD_DEF_8192</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

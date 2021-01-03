@@ -1,0 +1,27 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12/>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>def_intrusion</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>def_mat1</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>def_mat2</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>def_caint1</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>def_caint2</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>def_dpas1</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>def_dpas2</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

@@ -1,0 +1,1696 @@
+<EcranUser>
+  <GroupeDC>24393_VarEcEx</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="Auto" AlignX="None">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="SpecificData:\Images\Cadre24393_es.png">
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="None" ValHauteurAuto="25" BackGroundImage="" />
+    </Rows>
+    <Text Name="64 - Locator 1 R" Color="-16776961" Row="None" Height="19" Width="75" PosX="14" PosY="207">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Locator 1 R</Expression>
+      </Text>
+    </Text>
+    <Text Name="11 - Locator 1 L" Color="-16776961" Row="None" Height="19" Width="75" PosX="14" PosY="5">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Locator 1 L</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="3 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="60" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos1">Z1B0.B0LXLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="4 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="80" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos2">Z1B0.B0LXLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="5 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="100" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos3">Z1B0.B0LXLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="6 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="120" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos4">Z1B0.B0LXLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="110 - X52 - X67" Color="-65536" Row="None" Height="21" Width="65" PosX="228" PosY="81">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="7 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="140" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos5">Z1B0.B0LXLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="8 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="86" PosY="160" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.C_RPos.Pos6">Z1B0.B0LXLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="111 - X52 - X67" Color="-65536" Row="None" Height="21" Width="65" PosX="23" PosY="282">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Text Name="113 - X52 - X67" Color="-65536" Row="None" Height="22" Width="68" PosX="227" PosY="282">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="9 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="59" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.MF_DP.MF_S.IA">Z1B0.B0LXLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="103 - EJE Y" Color="-16777216" Row="None" Height="19" Width="75" PosX="162" PosY="225">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE Y</Expression>
+      </Text>
+    </Text>
+    <Text Name="23 - EJE Y" Color="-16777216" Row="None" Height="19" Width="75" PosX="159" PosY="24">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE Y</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="10 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="90" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.MF_DP.MF_S.IR">Z1B0.B0LXLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="12 - EJE X" Color="-16777216" Row="None" Height="19" Width="75" PosX="55" PosY="24">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE X</Expression>
+      </Text>
+    </Text>
+    <Text Name="104 - EJE X" Color="-16777216" Row="None" Height="19" Width="75" PosX="14" PosY="225">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE X</Expression>
+      </Text>
+    </Text>
+    <Text Name="13 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="160" PosY="60">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="15 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="59" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos1">Z1B0.B0LYLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="16 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="79" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos2">Z1B0.B0LYLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="17 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="99" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos3">Z1B0.B0LYLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="18 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="119" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos4">Z1B0.B0LYLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="19 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="139" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos5">Z1B0.B0LYLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="20 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="190" PosY="159" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.C_RPos.Pos6">Z1B0.B0LYLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="21 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="163" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.MF_DP.MF_S.IA">Z1B0.B0LYLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="22 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="194" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.MF_DP.MF_S.IR">Z1B0.B0LYLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="24 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="264" PosY="61">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Message Name="25 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="211" PosY="81">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos2">Z1B0.B0LYLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="26 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="211" PosY="101">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos3">Z1B0.B0LYLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="27 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="211" PosY="60">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos1">Z1B0.B0LYLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="28 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="212" PosY="119">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos4">Z1B0.B0LYLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="29 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="212" PosY="141">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos5">Z1B0.B0LYLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="30 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="212" PosY="159">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.T_RPos.Pos6">Z1B0.B0LYLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="32 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="107" PosY="61">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos1">Z1B0.B0LXLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="33 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="107" PosY="81">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos2">Z1B0.B0LXLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="34 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="107" PosY="101">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos3">Z1B0.B0LXLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="35 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="108" PosY="120">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos4">Z1B0.B0LXLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="36 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="108" PosY="141">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos5">Z1B0.B0LXLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="37 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="108" PosY="160">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.T_RPos.Pos6">Z1B0.B0LXLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Voyant Name="39 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="59" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos1">Z1B0.B0LZLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="40 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="79" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos2">Z1B0.B0LZLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="41 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="99" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos3">Z1B0.B0LZLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="42 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="56" PosY="59">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="43 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="119" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos4">Z1B0.B0LZLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="44 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="139" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos5">Z1B0.B0LZLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="45 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="159" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.C_RPos.Pos6">Z1B0.B0LZLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="46 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="266" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.MF_DP.MF_S.IA">Z1B0.B0LZLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="47 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="297" PosY="183" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.MF_DP.MF_S.IR">Z1B0.B0LZLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="48 - EJE Z" Color="-16777216" Row="None" Height="19" Width="75" PosX="262" PosY="24">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE Z</Expression>
+      </Text>
+    </Text>
+    <Message Name="49 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="60">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos1">Z1B0.B0LZLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="50 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="81">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos2">Z1B0.B0LZLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="51 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="101">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos3">Z1B0.B0LZLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="52 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="119">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos4">Z1B0.B0LZLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="53 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="141">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos5">Z1B0.B0LZLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="54 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="159">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.T_RPos.Pos6">Z1B0.B0LZLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Voyant Name="56 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="260" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos1">Z1B0.B0RXLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="57 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="280" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos2">Z1B0.B0RXLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="58 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="300" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos3">Z1B0.B0RXLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="59 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="320" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos4">Z1B0.B0RXLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="60 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="340" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos5">Z1B0.B0RXLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="61 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="90" PosY="360" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.C_RPos.Pos6">Z1B0.B0RXLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="62 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="63" PosY="383" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.MF_DP.MF_S.IA">Z1B0.B0RXLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="63 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="94" PosY="383" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.MF_DP.MF_S.IR">Z1B0.B0RXLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="65 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="59" PosY="261">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="66 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="260" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos1">Z1B0.B0RYLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="67 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="280" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos2">Z1B0.B0RYLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="68 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="300" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos3">Z1B0.B0RYLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="69 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="320" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos4">Z1B0.B0RYLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="70 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="340" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos5">Z1B0.B0RYLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="71 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="193" PosY="360" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.C_RPos.Pos6">Z1B0.B0RYLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="72 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="166" PosY="384" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.MF_DP.MF_S.IA">Z1B0.B0RYLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="73 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="197" PosY="384" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.MF_DP.MF_S.IR">Z1B0.B0RYLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Message Name="74 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="214" PosY="261">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos1">Z1B0.B0RYLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="75 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="214" PosY="282">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos2">Z1B0.B0RYLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="76 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="214" PosY="302">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos3">Z1B0.B0RYLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="77 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="215" PosY="320">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos4">Z1B0.B0RYLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="78 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="215" PosY="342">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos5">Z1B0.B0RYLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="79 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="215" PosY="360">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.T_RPos.Pos6">Z1B0.B0RYLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="80 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="111" PosY="261">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos1">Z1B0.B0RXLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="81 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="111" PosY="281">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos2">Z1B0.B0RXLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="82 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="111" PosY="301">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos3">Z1B0.B0RXLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="83 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="112" PosY="320">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos4">Z1B0.B0RXLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="84 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="112" PosY="341">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos5">Z1B0.B0RXLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="85 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="112" PosY="360">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.T_RPos.Pos6">Z1B0.B0RXLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Voyant Name="86 - 1" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="260" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos1">Z1B0.B0RZLOCATOR.C_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="87 - 2" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="280" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos2">Z1B0.B0RZLOCATOR.C_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="88 - 3" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="300" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos3">Z1B0.B0RZLOCATOR.C_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="89 - 4" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="320" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos4">Z1B0.B0RZLOCATOR.C_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="90 - 5" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="340" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">5</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos5">Z1B0.B0RZLOCATOR.C_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="91 - 6" Color="-16711936" Row="None" Height="20" Width="21" PosX="293" PosY="360" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">6</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.C_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.C_RPos.Pos6">Z1B0.B0RZLOCATOR.C_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="92 - Av" Color="-256" Row="None" Height="19" Width="29" PosX="266" PosY="384" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Av</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.MF_DP.MF_S.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.MF_DP.MF_S.IA">Z1B0.B0RZLOCATOR.MF_DP.MF_S.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="93 - Re" Color="-16711936" Row="None" Height="19" Width="29" PosX="297" PosY="384" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Re</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.MF_DP.MF_S.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.MF_DP.MF_S.IR">Z1B0.B0RZLOCATOR.MF_DP.MF_S.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Message Name="94 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="261">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos1">Z1B0.B0RZLOCATOR.T_RPos.Pos1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="95 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="282">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos2">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos2">Z1B0.B0RZLOCATOR.T_RPos.Pos2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="96 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="314" PosY="302">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos3">Z1B0.B0RZLOCATOR.T_RPos.Pos3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="97 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="320">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos4">Z1B0.B0RZLOCATOR.T_RPos.Pos4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="98 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="342">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos5">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos5">Z1B0.B0RZLOCATOR.T_RPos.Pos5&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="99 - &lt;" Color="-65536" Row="None" Height="20" Width="14" PosX="315" PosY="360">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">&lt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.T_RPos.Pos6">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.T_RPos.Pos6">Z1B0.B0RZLOCATOR.T_RPos.Pos6&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Text Name="102 - EJE Z" Color="-16777216" Row="None" Height="19" Width="75" PosX="262" PosY="225">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">EJE Z</Expression>
+      </Text>
+    </Text>
+    <Text Name="105 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="163" PosY="261">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Text Name="106 - L38" Color="-65536" Row="None" Height="19" Width="30" PosX="261" PosY="263">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38</Expression>
+      </Text>
+    </Text>
+    <Text Name="107 - LOCATOR B0" Color="-65536" Row="None" Height="31" Width="106" PosX="648" PosY="13">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">LOCATOR B0</Expression>
+      </Text>
+    </Text>
+    <Text Name="108 - X52 - X67" Color="-65536" Row="None" Height="18" Width="72" PosX="19" PosY="82">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Text Name="109 - X52 - X67" Color="-65536" Row="None" Height="19" Width="67" PosX="124" PosY="81">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Text Name="112 - X52 - X67" Color="-65536" Row="None" Height="16" Width="63" PosX="129" PosY="282">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="114 - RE" Color="-16711936" Row="None" Height="38" Width="38" PosX="452" PosY="100" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">RE</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B01PL3.MF.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B01PL3.MF.IR">Z1B0.B01PL3.MF.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="115 - AV" Color="-16711936" Row="None" Height="40" Width="39" PosX="452" PosY="147" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">AV</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B01PL3.MF.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B01PL3.MF.IA">Z1B0.B01PL3.MF.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="116 - RE" Color="-16711936" Row="None" Height="38" Width="38" PosX="497" PosY="294" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">RE</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B01PL4.MF.IR">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B01PL4.MF.IR">Z1B0.B01PL4.MF.IR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="117 - AV" Color="-16711936" Row="None" Height="38" Width="38" PosX="497" PosY="338" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">AV</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B01PL4.MF.IA">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B01PL4.MF.IA">Z1B0.B01PL4.MF.IA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Message Name="118 - PL3" Color="-65536" Row="None" Height="25" Width="100" PosX="421" PosY="43">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">PL3</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="119 - PL4" Color="-65536" Row="None" Height="25" Width="100" PosX="464" PosY="235">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">PL4</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="120 - X52 - X67 --&gt;" Color="-65536" Row="None" Height="19" Width="94" PosX="352" PosY="114">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67 --&gt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="121 - X52 - X67 --&gt;" Color="-65536" Row="None" Height="26" Width="97" PosX="386" PosY="347">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X52 - X67 --&gt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="122 - L38--&gt;" Color="-65536" Row="None" Height="25" Width="62" PosX="363" PosY="152">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38--&gt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="123 - L38--&gt;" Color="-65536" Row="None" Height="25" Width="62" PosX="418" PosY="300">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L38--&gt;</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Voyant Name="124 - B01DAPL41" Color="-16711936" Row="None" Height="20" Width="98" PosX="421" PosY="386" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DAPL41</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DAPL41">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DAPL41">B01DAPL41&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="125 - B01DAPL42" Color="-16711936" Row="None" Height="21" Width="94" PosX="524" PosY="384" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DAPL42</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DAPL42">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DAPL42">B01DAPL42&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="126 - B01DRPL41" Color="-16711936" Row="None" Height="20" Width="98" PosX="411" PosY="264" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DRPL41</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DRPL41">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DRPL41">B01DRPL41&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="127 - B01DRPL42" Color="-16711936" Row="None" Height="20" Width="98" PosX="516" PosY="265" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DRPL42</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DRPL42">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DRPL42">B01DRPL42&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="128 - B01DAPL31" Color="-16711936" Row="None" Height="20" Width="98" PosX="371" PosY="196" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DAPL31</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DAPL31">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DAPL31">B01DAPL31&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="129 - B01DAPL32" Color="-16711936" Row="None" Height="20" Width="98" PosX="476" PosY="196" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DAPL32</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DAPL32">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DAPL32">B01DAPL32&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="130 - B01DRPL31" Color="-16711936" Row="None" Height="20" Width="98" PosX="372" PosY="75" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DRPL31</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DRPL31">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DRPL31">B01DRPL31&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="131 - B01DRPL32" Color="-16711936" Row="None" Height="20" Width="98" PosX="476" PosY="76" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B01DRPL32</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01DRPL32">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01DRPL32">B01DRPL32&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Message Name="132 - ORD" Color="-16776961" Row="None" Height="25" Width="62" PosX="624" PosY="265">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ORD</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Message Name="133 - ORD" Color="-16776961" Row="None" Height="25" Width="62" PosX="603" PosY="78">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ORD</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Message>
+    <Voyant Name="135 - v" Color="-16711936" Row="None" Height="30" Width="35" PosX="637" PosY="289" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">v</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01ERPL4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01ERPL4">B01ERPL4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="134 - ^" Color="-16711936" Row="None" Height="30" Width="35" PosX="638" PosY="330" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">^</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01EAPL4">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01EAPL4">B01EAPL4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="136 - v" Color="-16711936" Row="None" Height="30" Width="35" PosX="614" PosY="104" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">v</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01EAPL3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01EAPL3">B01EAPL3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="137 - ^" Color="-16711936" Row="None" Height="30" Width="35" PosX="615" PosY="150" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">^</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B01ERPL3">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B01ERPL3">B01ERPL3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="138 - B0RLS108" Color="-16711936" Row="None" Height="15" Width="50" PosX="197" PosY="406" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B0RLS108</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0RLS108">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0RLS108">B0RLS108&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="139 - B0RLS107" Color="-16711936" Row="None" Height="15" Width="50" PosX="145" PosY="406" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B0RLS107</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0RLS107">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0RLS107">B0RLS107&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="31 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="280" PosY="39" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LZLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LZLOCATOR.Drum_fsh">Z1B0.B0LZLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="1 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="74" PosY="40" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LXLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LXLOCATOR.Drum_fsh">Z1B0.B0LXLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="14 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="177" PosY="39" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0LYLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0LYLOCATOR.Drum_fsh">Z1B0.B0LYLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="101 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="280" PosY="240" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RZLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RZLOCATOR.Drum_fsh">Z1B0.B0RZLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="100 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="180" PosY="240" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RYLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RYLOCATOR.Drum_fsh">Z1B0.B0RYLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="38 - Dr OK" Color="-16711681" Row="None" Height="17" Width="40" PosX="78" PosY="240" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Dr OK</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.B0RXLOCATOR.Drum_fsh">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1B0.B0RXLOCATOR.Drum_fsh">Z1B0.B0RXLOCATOR.Drum_fsh&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+  </Cadre>
+  <Listes />
+</EcranUser>

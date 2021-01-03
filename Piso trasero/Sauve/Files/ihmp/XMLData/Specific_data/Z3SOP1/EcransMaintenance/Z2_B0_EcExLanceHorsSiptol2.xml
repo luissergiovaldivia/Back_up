@@ -1,0 +1,204 @@
+<EcranLanceHorsSiptol2>
+  <GroupeDC>45492_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="35" AlignX="Auto" />
+    <Line ID="1" Height="100" AlignX="Auto" />
+    <Line ID="2" Height="100" AlignX="Auto" />
+    <Line ID="3" Height="80" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="1 - PGF X67 - LANCEMENT HORS SIPTOL A03282" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">PGF X67 - LANZAMIENTO FUERA SIPTOL B0</Expression>
+    </Title>
+  </Cadre>
+  <Cadre Name="1 - Renseigner les définitions process (voir règles interface API-SIPTOL)3284" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Informar las definiciones procesos (ver ajustes interfaz API-SIPTOL)</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="5" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="6" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="7" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="8" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="9" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="10" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+    </Rows>
+    <Text Name="1 - DP10" Color="-16777216" Row="10" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP10" />
+    <Text Name="1 - DP06" Color="-16777216" Row="6" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP06" />
+    <Text Name="1 - DP02" Color="-16777216" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP02" />
+    <Text Name="1 - DP03" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP03" />
+    <Text Name="1 - DP01" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP01" />
+    <Text Name="1 - DP09" Color="-16777216" Row="9" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP09" />
+    <Text Name="1 - DP05" Color="-16777216" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP05" />
+    <Text Name="1 - DP04" Color="-16777216" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP04" />
+    <Text Name="1 - DP08" Color="-16777216" Row="8" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP08" />
+    <Text Name="1 - DP07" Color="-16777216" Row="7" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="DP07" />
+    <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[1]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[1]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[2]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[2]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="6" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[6]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[6]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[4]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[4]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[5]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[5]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="10" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[10]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[10]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="9" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[9]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[9]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="8" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[8]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[8]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[3]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[3]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="7" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[7]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELDP[7]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+  </Cadre>
+  <Cadre Name="1 - Renseigner les attentes opérateurs (voir règles interface API-SIPTOL)3326" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Informar las esperas operadores (ver ajustes interfaz API-SIPTOL)</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="5" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="6" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="7" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="8" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="9" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+      <Row ID="10" Width="Auto" AlignY="Auto" ValHauteurAuto="25" />
+    </Rows>
+    <Text Name="1 - AT10" Color="-16777216" Row="10" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT10" />
+    <Text Name="1 - AT06" Color="-16777216" Row="6" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT06" />
+    <Text Name="1 - AT02" Color="-16777216" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT02" />
+    <Text Name="1 - AT03" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT03" />
+    <Text Name="1 - AT01" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT01" />
+    <Text Name="1 - AT09" Color="-16777216" Row="9" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT09" />
+    <Text Name="1 - AT05" Color="-16777216" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT05" />
+    <Text Name="1 - AT04" Color="-16777216" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT04" />
+    <Text Name="1 - AT08" Color="-16777216" Row="8" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT08" />
+    <Text Name="1 - AT07" Color="-16777216" Row="7" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="AT07" />
+    <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[1]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[1]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[2]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[2]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="6" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[6]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[6]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[4]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[4]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="None" Max="None">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[5]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[5]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="10" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[10]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[10]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="9" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[9]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[9]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="8" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[8]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[8]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[3]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[3]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+    <WriteVal Row="7" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-32768" Max="32767">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[7]">Z2B0L.B0_LANCEMENT.PILOT.IHMSELAO[7]&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </WriteVal>
+  </Cadre>
+  <Cadre Name="1 - Confirmer choix déf. process / attentes op3368" Line="3" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Confirmar elección def. proceso / esperas op</Expression>
+    </Title>
+    <Button Name="1 - Confirmer" Row="None" Height="25" Width="100" PosX="130" PosY="30" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Confirmar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="" NumBit="-1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2B0L.B0_LANCEMENT.PILOT.IhmSelValDPAO">Z2B0L.B0_LANCEMENT.PILOT.IhmSelValDPAO&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="" NumBit="-1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="2 - Retour écran lancement hors siptol3460" Line="3" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Regreso a pantalla lanzamiento fuera de siptol</Expression>
+    </Title>
+    <ButtonNav Name="1 - Retour" Row="None" Height="25" Width="100" PosX="130" PosY="30" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Retorno</Expression>
+      </Text>
+      <ClickNav CodeEcran="Z2_B0_EcExLanceHorsSiptol1" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="" NumBit="-1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+</EcranLanceHorsSiptol2>

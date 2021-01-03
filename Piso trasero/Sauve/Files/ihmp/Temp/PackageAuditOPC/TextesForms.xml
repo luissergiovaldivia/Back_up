@@ -1,0 +1,33 @@
+<Forms>
+   <Form Name="Form1" Text="Outil d'audit Cohérence Collecteur de données / Serveur OPC / SMPLOC V2.1">
+      <Labels>
+         <Label Name="lbNbreItemsOPC" Text="Items OPC :"/>
+         <Label Name="lbNbreItemsColDo" Text="Items Collecteur de données :"/>
+         <Label Name="lbNbreItemsSmploc" Text="Items Smploc :"/>
+         <Label Name="lbNbreItemsDiff" Text="Ecart OPC/Collecteur de données :"/>
+         <Label Name="lbOPC" Text="Serveur OPC"/>
+         <Label Name="lbColDo" Text="Collecteur de données"/>
+         <Label Name="lbNbreItemsDiffSmploc" Text="Ecart OPC/Predispo Smploc :"/>
+         <Label Name="lbFeuilleExcel" Text="Nom Feuille Excel de prédispo"/>
+         <Label Name="GrpOPC" Text="Serveur OPC"/>
+         <Label Name="GrpColdo" Text="Collecteur de données"/>
+         <Label Name="GrpSmploc" Text="SMPLOC"/>
+         <Label Name="GrpEcart" Text="Ecarts OPC/Collecteur de données et OPC/SMPLOC"/>
+      </Labels>
+      <Buttons>
+         <Button Name="button1" Text="Connexion OPC"/>
+         <Button Name="PB_Browser" Text="Parcourir Serveur OPC"/>
+         <Button Name="PB_Diff" Text="Calcul Ecarts"/>
+         <Button Name="PB_Export" Text="Export fichiers .CSV"/>
+         <Button Name="PB_Fin" Text="FIN"/>
+         <Button Name="PB_ChargementPredisSmploc" Text="Chargement Predispo SMPLOC"/>
+         <Button Name="PB_GO" Text="GO!"/>
+      </Buttons>
+      <Messages>
+         <Message Name="PBCreerInstanceServerOPC" Text="Impossible de créer une instance du serveur"/>
+         <Message Name="ConnexionOK" Text="Connexion OK"/>
+         <Message Name="ConnexionNOK" Text="Connexion HS"/>
+         <Message Name="MsgSaisieNomFeuilleExcel" Text="Saisir le nom de la feuille Excel"/>
+      </Messages>
+   </Form>
+</Forms>

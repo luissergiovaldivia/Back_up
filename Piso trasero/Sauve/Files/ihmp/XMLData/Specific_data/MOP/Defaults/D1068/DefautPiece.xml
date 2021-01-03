@@ -1,0 +1,131 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DefautPiece>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">B0 CL10</Expression>
+    </Text>
+    <Image>SpecificData:\Images\B0_sensores.gif</Image>
+  </DefautPiece>
+  <TypesPieces>
+    <TypePiece NumPiece="5">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X672A</Expression>
+      </Text>
+      <Condition Operator="Eq" Value="5" NumBit="-1" Description="Z2B0.S2B0DIV">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z2B0.S2B0DIV">Z2B0.S2B0DIV&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </TypePiece>
+    <TypePiece NumPiece="6">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">X675A</Expression>
+      </Text>
+      <Condition Operator="Eq" Value="6" NumBit="-1" Description="Z2B0.S2B0DIV">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z2B0.S2B0DIV">Z2B0.S2B0DIV&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </TypePiece>
+  </TypesPieces>
+  <CapteursPieces>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B0DPP1</Expression>
+      </Etiquette>
+      <EtatAttendu>
+        <TypePiece Valeur="0">5</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP1">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP1">B0DPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+        <TypePiece Valeur="1">6</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP1">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP1">B0DPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+      </EtatAttendu>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP1">B0DPP1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B0DPP2</Expression>
+      </Etiquette>
+      <EtatAttendu>
+        <TypePiece Valeur="0">5</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP2">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP2">B0DPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+        <TypePiece Valeur="1">6</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP2">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP2">B0DPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+      </EtatAttendu>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP2">B0DPP2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+    <CapteurPiece>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">B0DPP3</Expression>
+      </Etiquette>
+      <EtatAttendu>
+        <TypePiece Valeur="1">5</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP3">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP3">B0DPP3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+        <TypePiece Valeur="1">6</TypePiece>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP3">
+          <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP3">B0DPP3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+        </Condition>
+      </EtatAttendu>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DPP3">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="B0DPP3">B0DPP3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </CapteurPiece>
+  </CapteursPieces>
+  <Labels>
+    <Label>
+      <Nom>LBL_TitreCapteur</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Sensores</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatActuel</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado actual :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitreEtatAttendu</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado esperado :</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitrePgCR</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pagina Causas/Remedios</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>Msg_Actif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Activo</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_Inactif</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Inactivo</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">REPARACIÓN</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IServerTraca</name>
+    </assembly>
+    <members>
+        <member name="T:Renault.ServerTraca.EventTrace">
+            <summary>
+            Description de l'interface du server .NET Remoting
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Renault.ServerTraca.IServerTraca">
+            <summary>
+            Interface du server .NET Remoting
+            </summary>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.StartServer">
+            <summary>
+            Démarrage du serveur
+            </summary>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.StopServer">
+            <summary>
+            Arrêt du serveur
+            </summary>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.ExtractPeriod(System.DateTime,System.DateTime)">
+            <summary>
+            Méthode concaténant toutes les fichiers de traca inclus dans la période sélectionnées
+            </summary>
+            <param name="StartDate">debut de la période</param>
+            <param name="StopDate">fin de la période</param>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.Period">
+            <summary>
+            Méthode renvoyant toutes les dates de créations des fichiers de traca
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.Polling">
+            <summary>
+            Méthode appellée pour la mise à jour et le test des condition de déclenchement des groupes
+            </summary>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.FreqPolling">
+            <summary>
+            Méthode de demande de la fréquence de polling
+            </summary>
+            <returns>fréquence de polling</returns>
+        </member>
+        <member name="M:Renault.ServerTraca.IServerTraca.EtatServer">
+            <summary>
+            Méthode de demande de l'état du serveur
+            </summary>
+            <returns>Etat du serveur</returns>
+        </member>
+        <member name="E:Renault.ServerTraca.IServerTraca.OnTrace">
+            <summary>
+            Evénement signalant des log
+            </summary>
+        </member>
+    </members>
+</doc>

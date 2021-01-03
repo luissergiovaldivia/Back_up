@@ -1,0 +1,87 @@
+#========================
+# Interface configuration
+#========================
+pushd interface
+
+reset all
+
+
+popd
+# End of interface configuration
+
+#========================
+# Interface configuration
+#========================
+pushd interface ipv6
+
+uninstall
+
+
+popd
+# End of interface configuration
+
+
+
+# ----------------------------------
+# ISATAP Configuration
+# ----------------------------------
+pushd interface ipv6 isatap
+
+
+
+popd
+# End of ISATAP configuration
+
+
+
+# ----------------------------------
+# 6to4 Configuration
+# ----------------------------------
+pushd interface ipv6 6to4
+
+reset
+
+
+
+popd
+# End of 6to4 configuration
+
+#========================
+# Port Proxy configuration
+#========================
+pushd interface portproxy
+
+reset
+
+
+popd
+# End of Port Proxy configuration
+
+
+
+# ---------------------------------- 
+# Interface IP Configuration         
+# ---------------------------------- 
+pushd interface ip
+
+
+# Interface IP Configuration for "Level 1 IHM-SAVE"
+
+set address name="Level 1 IHM-SAVE" source=static addr=172.25.212.2 mask=255.255.252.0
+set dns name="Level 1 IHM-SAVE" source=static addr=none register=PRIMARY
+set wins name="Level 1 IHM-SAVE" source=static addr=none
+
+# Interface IP Configuration for "Level 2"
+
+set address name="Level 2" source=static addr=10.229.177.52 mask=255.255.255.0
+set address name="Level 2" gateway=10.229.177.254 gwmetric=0
+set dns name="Level 2" source=static addr=138.21.161.1 register=PRIMARY
+add dns name="Level 2" addr=138.21.128.1 index=2
+set wins name="Level 2" source=static addr=138.21.161.220
+add wins name="Level 2" addr=138.21.161.222 index=2
+
+
+popd
+# End of interface IP configuration
+
+

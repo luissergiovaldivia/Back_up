@@ -1,0 +1,151 @@
+----------------
+Common_data_V200
+----------------
+
+. Version site pilote X62
+
+----------------
+Common_data_V201
+----------------
+. Version initiale projet X62
+
+----------------
+Common_data_V202
+----------------
+. Suppression répertoires "AppelMaintenance" et "Common_sheet"
+. Ajout "DefautButee_conv2", "DefautDatabase1", "DefautG120", "DefautG120D", "DefautIhmmut", "DefautMb_Butee", "DefautMb_chaine1", "DefautMouvpl2m", "DefautMouvpl4m","DefautRobot", "DefautTab_pas", "DefautTab_Stock2". 
+
+----------------
+Common_data_V203
+----------------
+. Ajout "DefautTabAvalSC", "DefautTabAvalAC".
+. Mise à jour "DefautG120" et "DefautG120D".
+
+----------------
+Common_data_V204
+----------------
+. Mise à jour page HTML "DefautTab_pas".
+. Mise à jour page HTML "DefautTabAvalAC".
+. Mise à jour page HTML "DefautTabAvalSC".
+. Ajout pages de diagnostic Robot.
+. Mise à jour "DefautG120D".
+. Ajout "DefautTabAvalNissan".
+. Ajout page diagnostic réseau Niv1.
+
+----------------
+Common_data_V205
+----------------
+. Correction pb affichage G120D (erreur dans nom des pages)
+. Ajout "DefautElevateur"
+
+----------------
+Common_data_V206
+----------------
+. Modification "DefautTabAvalNISSAN" pour compatibilité avec BF1664 et BF1896.
+. Ajout traductions anglaises (DefautG120D et DefautTabAvalNissan).
+
+----------------
+Common_data_V011
+----------------
+. Modification numérotation cohérente avec "odil_data" (affichage 0.11 dans MajFtp pour version 2.0.11 odil_data)
+. Mise à jour "DefautG120D".
+
+----------------
+Common_data_V109
+----------------
+. Remplacement Database1 par Database3.
+. Ajout DefautCodeProcess, DefautConfMachine, DefautLancement.
+. Ajout DefautPnPn_Mesg.
+
+----------------
+Common_data_V112
+----------------
+. Ajout BF_IHMCR1, BF_IHMCRM1, BF_IHMAIR1 pour Scube V2.
+
+----------------
+Common_data_V113
+----------------
+. Ajout BF_IHMCAME_ROBOT1 pour Scube V2.
+. Intégration diagnostic BF PMS.
+
+----------------
+Common_data_V114
+----------------
+. Ajout BF_S120.
+
+----------------
+Common_data_V115
+----------------
+. Ajout pages de diag en anglais sur BF_PnPn
+. Ajout BF_SIPM_MEC, BF_SIPM_SUIV
+. Correction problème affichage diagnostic G120D
+. Ajout code 2048 sur Defaut Elevateur
+. Correction DefautCodeMachine
+. Correction DefautCRM
+. Correction DefautRF300
+. Intégration du russe
+. Mise a jour BF_SEQ_MAP
+. Mise à jour DefautConfMachine et DefautCodeProcess
+. Ajout BF_GEN_DEV, BF_VISS_BOSCH, BF_KIT, BF_LOG
+
+----------------
+Common_data_V116
+----------------
+. Ajout traductions en slovène.
+
+----------------
+Common_data_V117
+----------------
+. Ajout Manut_2PosH
+. Ajout pages de diag en Français sur BF ELEVAT (inclus codedef = 16384) (sauf codedef = 512)
+. Correction DefautBoucleSecu.
+
+----------------
+Common_data_V118
+----------------
+. Mise à jour DefautBoucleSecu
+. Ajout DefautRobotABB
+. Ajout DefautBF_NC_LOCATOR
+. Ajout DefautBF_DP_LOCATOR
+. Modification DefautBF_IHMCR1 (Code 04)
+. Modication DefautG120D (Code 128)
+
+----------------
+Common_data_V119
+----------------
+. Corrections erreurs
+
+----------------
+Common_data_V120
+----------------
+. Ajout BF_TRANS-VECT
+. Ajout BF_VISION_ISRA
+
+----------------
+Common_data_V121
+----------------
+. Ajout DefautZoneRsec1 pour Schneider
+. Ajout DefautBF_ELEVAT2
+. ajout DefautBF_MANUT_2POSH2
+. Ajout DefautBF_Tab_Aval_AC2
+. Ajout DefautBF_TAB_PAS2
+. Ajout DefautBF_Tab_Aval_SC2
+. Ajout DefautBF_MULTIPOS2
+. Ajout traductions en portugais.
+. Ajout traduction slovène de BF_MULTIPOS, BF_MULTIPOS2, BF_TABPAS2, BF_MANUT2POSH2
+
+----------------
+Common_data_V122
+----------------
+. Ajout diagnostic espagnol BF_NC_LOCATOR
+. Intégration du chinois (extension .zh-CN.htm)
+. Mise à jour BF_VISION_ISRA
+. Ajout DefautDFB_Elevat
+. Ajout DefautDFB_TAB_PAS2
+. Ajout DefautAGV (Pour test)
+. Mise à jour DefautBF_TAB_PAS2
+
+----------------
+Common_data_V123
+----------------
+. Ajout diagnostic anglais: BF_Elevat2, BF_MANUT_2POSH2, BF_MULTIPOS2, DefautBF_TAB_PAS2

@@ -1,0 +1,15 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12/>
+   <DocsWord34>
+      <Doc Num="16">
+         <Text>BF_PnPn_Mesg_COD_DEF_16</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>BF_PnPn_Mesg_COD_DEF_64</Text>
+      </Doc>
+      <Doc Num="2048">
+         <Text>BF_PnPn_Mesg_COD_DEF_2048</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

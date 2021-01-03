@@ -1,0 +1,563 @@
+FUNCTION_BLOCK "1_A01_PREHENSEUR"
+TITLE =PREHENSEUR
+VERSION : 0.1
+
+
+VAR
+  S1A01DIV : INT ;	//A01 - DIVERSITY / DIVERSITE
+  A01SUIVI : "BF_TCY_SUIV";	//Z1: A01 - MONITORING / FB GESTION DU SUIVI DU TEMP DE CYCLE A01
+  ST1 : INT ;	//Z1: MONITORING A01 - THRESHOLD T1 / SEUIL TEMP T1
+  ST2 : INT ;	//Z1: MONITORING A01 - THRESHOLD T2 / SEUIL TEMP T2
+  S1A01TCP : INT ;	//Z1: MONITORING A01 - OWN CYCLE TIME / TEMP DE CYCLE PROPRE
+  S1A01TCT : INT ;	//Z1: MONITORING A01 - TOTAL CYCLE TIME / TEMP DE CYCLE TOTAL
+  S1A01NCY : INT ;	//Z1: MONITORING A01 - CYCLE NUMBER / NUMERO DE CYCLE DE TRAVAIL
+  A01SUCT : BOOL ;	//Z1: MONITORING A01 - SUSPENSION COUNTING CYCLE TIME / SUSPENSION COMPTAGE TEMP
+  A01NVCT : BOOL ;	//Z1: MONITORING A01 - NO VALIDATION COUNTING CYCLE TIME / NON VALIDATION COMPTAG
+  S1A01DT2 : BOOL ;	//Z1: MONITORING A01 - CYCLE TIME OUT / DEPASSEMENT TEMPS T2
+  S1A01DTC : BOOL ;	//Z1: MONITORING A01 - CYCLE TIME OVERRUN / DEPASSEMENT TEMPS DE CYCLE
+  A01X1SUCT : BOOL ;	//Z1: AUX1 SUSPENSION COUNTING CYCLE TIME / CONDITION SUSPENSION COMPTAGE TEMP
+  A01X2SUCT : BOOL ;	//Z1: AUX2 SUSPENSION COUNTING CYCLE TIME / CONDITION SUSPENSION COMPTAGE TEMP
+  A01X3SUCT : BOOL ;	//Z1: AUX3 SUSPENSION COUNTING CYCLE TIME / CONDITION SUSPENSION COMPTAGE TEMP
+  A01X1NVCT : BOOL ;	//Z1: AUX1 NO VALIDATION COUNTING CYCLE TIME / NON VALIDATION COMPTAGE TEMP
+  A01X2NVCT : BOOL ;	//Z1: AUX2 NO VALIDATION COUNTING CYCLE TIME / NON VALIDATION COMPTAGE TEMP
+  A01X3NVCT : BOOL ;	//Z1: AUX3 NO VALIDATION COUNTING CYCLE TIME / NON VALIDATION COMPTAGE TEMP
+  H0D_TF_TP_A01 : "BF_TF_TP";	//A01 - TRANSFER PART WORD: D0D -> A01 / TRANSFERT TABLE PIECE D0D -> A01
+  B0_TF_TP_A01 : "BF_TF_TP";	//A01 - TRANSFER PART WORD: B0 -> A01 / TRANSFERT TABLE PIECE B0 -> A01
+  A01RETVAL : INT ;	//A01 - RETURN VALUE FOR SFC20 / MOT POUBELLE POUR LA FONCTION SFC20
+  A01TDFPC : "TON";	//A01 - PART PRESENT FAULT TIMER / TEMPORISATION DEFAUT PIECE
+  S1A01DPIEC : BOOL ;	//A01 - PART FAULT / DEFAUT PIECE
+  A01SR1 : "BF_MOUV2P1";	//TYPE_ELEMENT SR1
+  S1A01DSR1 : BOOL ;	//SR1 MOVEMENT FAULT / DEFAUT MOUVEMENT SR1
+  A01SR2 : "BF_MOUV2P1";	//TYPE_ELEMENT SR2
+  S1A01DSR2 : BOOL ;	//SR2 MOVEMENT FAULT / DEFAUT MOUVEMENT SR2
+  A01SR3 : "BF_MOUV2P1";	//TYPE_ELEMENT SR3
+  S1A01DSR3 : BOOL ;	//SR3 MOVEMENT FAULT / DEFAUT MOUVEMENT SR3
+  NUM_MVT : INT ;	//A01 - MOVEMENT NUMBER / NUMERO DE MOUVEMENT SELECTIONNE
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              HARDWARE HMI                                 **
+//*******************************************************************************
+//*ODIL_ID:3336_309*
+//
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                           SAFETY PROGRAM HMI                              **
+//*******************************************************************************
+//*ODIL_ID:3336_312*
+//
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              MONITORING / SUIVI                           **
+//*******************************************************************************
+//*ODIL_ID:3336_216*
+//
+NETWORK
+TITLE =MONITORING RESET DIVERSITY
+//RAZ MOT DIVERSITE POUR LE SUIVI SMPLOC
+//*ODIL_ID:3336_217*
+//
+      UN    "IIT".A01.MP.MPP; 
+      SPBNB _001; 
+      L     0; 
+      T     #S1A01DIV; 
+_001: NOP   0; 
+NETWORK
+TITLE =MONITORING DIVERSITY
+//VALEUR MOT DIVERSITE POUR SMP
+//*ODIL_ID:3336_218*
+//
+      U     "IIT".A01.MP.MPP; 
+      SPBNB _002; 
+      L     1; 
+      T     #S1A01DIV; 
+_002: NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                          PART TABLE MANAGEMENT                            **
+//*******************************************************************************
+//*ODIL_ID:3336_18*
+//
+NETWORK
+TITLE =TRANSFER PART TABLE: H0D -> A01
+//TRANSFERT DE LA TABLE PIECE H0D VERS A01
+//*ODIL_ID:4732_20*
+//
+      U     "PERSO"; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #H0D_TF_TP_A01 (
+           Val                      := L      0.0,
+           nBit1                    := 1,
+           nBit2                    := 5,
+           Orig                     := "IIT".H0D,
+           Dest                     := "IIT".A01);
+
+      NOP   0; 
+NETWORK
+TITLE =TRANSFER PART TABLE: B0 -> A01
+//TRANSFERT DE LA TABLE PIECE B0 VERS A01
+//*ODIL_ID:1827_20*
+//
+      U     "IIT".B0.MS.MSP; 
+      UN    "IIT".A01.MS.MSP; 
+      U     "IIT".B0.MP.MPT; 
+      U     "Z1G".A01.CMA; 
+      U     "Z1G".A0.ECHG_B0.PP; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #B0_TF_TP_A01 (
+           Val                      := L      0.0,
+           nBit1                    := 1,
+           nBit2                    := 5);
+
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                             PART MEMORY                                   **
+//*******************************************************************************
+//*ODIL_ID:3336_55*
+//
+NETWORK
+TITLE =PART PRESENCE MEMORY
+//MEMOIRE PIECE PRESENTE
+//*ODIL_ID:5029_58*
+//
+      U     "IIT".A01.MS.MSP; 
+      =     "IIT".A01.MP.MPP; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                       IPP INFORMATION / IPP AU POSTE                      **
+//*******************************************************************************
+//*ODIL_ID:3336_81*
+//
+NETWORK
+TITLE =AUXILLIARY PRESENT PART INFORMATION / AUXILIAIRES INFORMATION PI
+
+      U     "A01DPP"; 
+      =     "Z1G".A01.XIPP[1]; 
+NETWORK
+TITLE =PRESENT PART INFORMATION
+//INFORMATION PIECE PRESENTE
+//*ODIL_ID:3336_82*
+//
+      U     "IIT".A01.MP.MPP; 
+      U     "Z1G".A01.XIPP[1]; 
+      =     "Z1G".A01.IPP; 
+NETWORK
+TITLE =PART ABSENCE INFORMATION (NO PART DETECT)
+//INFORMATION ABSENCE PIECE (AUCUN DETECTEURS PIECE ACTIF)
+//*ODIL_ID:3336_83*
+//
+      UN    "A01DPP"; 
+      =     "Z1G".A01.IAP; 
+NETWORK
+TITLE =ABSENT PART INFORMATION (NO PART DETECT + NO PART PRESENT MEMOR)
+//INFORMATION PIECE ABSENTE (PAS DE DETECTEUR PIECE ACTIF + MEMOIRE PIECE
+//PRESENTE A ZERO)
+//*ODIL_ID:3336_84*
+//
+      U     "Z1G".A01.IAP; 
+      UN    "IIT".A01.MP.MPP; 
+      =     "Z1G".A01.IPA; 
+NETWORK
+TITLE =MONITORING: PART PRESENT FAULT TIMER
+//SUIVI: TEMPORISATION DEFAUT PRESENCE PIECE
+//*ODIL_ID:3336_85*
+//
+      U     "Z1G".LIEN_PUP.Z_mauto; 
+      UN    "Z1G".A01.IPP; 
+      UN    "Z1G".A01.IPA; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #A01TDFPC (
+           IN                       := L      0.0,
+           PT                       := T#2S);
+
+      NOP   0; 
+NETWORK
+TITLE =MONITORING: PART PRESENT FAULT
+//SUIVI: DEFAUT PRESENCE PIECE
+//*ODIL_ID:3336_86*
+//
+      U     #A01TDFPC.Q; 
+      S     #S1A01DPIEC; 
+      U(    ; 
+      O     "Z1G".A01.IPP; 
+      O     "Z1G".A01.IPA; 
+      )     ; 
+      R     #S1A01DPIEC; 
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                        STAGE END OF WORK MEMORY                           **
+//*******************************************************************************
+//*ODIL_ID:3336_170*
+//
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                                MOVEMENTS                                  **
+//*******************************************************************************
+//*ODIL_ID:3336_178*
+//
+NETWORK
+TITLE =MOVEMENT NUMBER
+//NUMERO DE MOUVEMENT SELECTIONNE EN IHM
+//*ODIL_ID:3336_179*
+//
+      U     "Z1G".LIEN_PUP.Z_manup; 
+
+      U     "Z1G".IHM1PM; 
+      UN    "Z1G".PUP1DC; 
+
+
+      U(    ; 
+      L     "Z1G".NUM_PAGE; 
+      L     104; 
+      ==I   ; 
+      )     ; 
+      =     L      0.0; 
+      U     L      0.0; 
+      SPBNB _003; 
+      L     "Z1G".NUM_MVT; 
+      T     #NUM_MVT; 
+_003: NOP   0; 
+      U     L      0.0; 
+      NOT   ; 
+      SPBNB _004; 
+      L     -1; 
+      T     #NUM_MVT; 
+_004: NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         SR1                                   **
+//*******************************************************************************
+//*ODIL_ID:1789_0*
+//
+NETWORK
+TITLE =ADVANCE MECHANICAL SAFETY
+//SECURITE MECANIQUE AVANCE
+//*ODIL_ID:1789_1*
+//
+      U     "BA1"; 
+      =     #A01SR1.MF.SA; 
+NETWORK
+TITLE =ADVANCE AUTORIZATION
+//AUTORISATION AVANCE
+//*ODIL_ID:1789_2*
+//
+      O     "Z1G".A01.IPP; 
+      O     ; 
+      U     "Z1G".A01.XIPP[1]; 
+      UN    "Z1G".B0.ECHG_A0.ARD; 
+      UN    "Z1G".C0C.ECHG_A0.AR; 
+      =     #A01SR1.MF.AA; 
+NETWORK
+TITLE =ADVANCE INFORMATION
+//INFORMATION AVANCE
+//*ODIL_ID:1789_3*
+//
+      U     "A01DFSR1"; 
+      UN    "A01DOSR1"; 
+      =     #A01SR1.MF.IA; 
+NETWORK
+TITLE =RETURN MECHANICAL SAFETY
+//SECURITE MECANIQUE RECUL
+//*ODIL_ID:1789_4*
+//
+      U     "BA1"; 
+      =     #A01SR1.MF.SR; 
+NETWORK
+TITLE =RETURN AUTORIZATION
+//AUTORISATION RECUL
+//*ODIL_ID:1789_5*
+//
+      O     "Z1G".A01.IPA; 
+      O     "Z1G".A0.ECHG_B0.PD; 
+      O     "Z1G".A0.ECHG_C0C.PD; 
+      =     #A01SR1.MF.AR; 
+NETWORK
+TITLE =RETURN INFORMATION
+//INFORMATION RECUL
+//*ODIL_ID:1789_6*
+//
+      UN    "A01DFSR1"; 
+      U     "A01DOSR1"; 
+      =     #A01SR1.MF.IR; 
+NETWORK
+TITLE =MANUAL MOVEMENT SELECTION
+//SELECTION MOUVEMENT MANUEL
+//*ODIL_ID:1789_7*
+//
+      L     #NUM_MVT; 
+      L     2; 
+      ==I   ; 
+      =     #A01SR1.MF.SL; 
+NETWORK
+TITLE =MOVEMENT CONTROL
+//GESTION MOUVEMENT
+//*ODIL_ID:1789_8*
+//
+      U     "TSM".Z1FZ_SECU_OK; 
+      =     L      0.0; 
+      BLD   103; 
+
+      U     "Z1BMA1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.1; 
+      BLD   103; 
+
+      U     "Z1BMR1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.2; 
+      BLD   103; 
+      CALL #A01SR1 (
+           Com                      := L      0.0,
+           Bamv                     := L      0.1,
+           Brmv                     := L      0.2,
+           Lien_pup                 := "Z1G".LIEN_PUP,
+           Oamv                     := "A01EFSR1",
+           Ormv                     := "A01EOSR1",
+           Def                      := #S1A01DSR1,
+           Mvec                     := "Z1G".MVEC,
+           Tref                     := "Z1T".A01.SR1_TREF);
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         SR2                                   **
+//*******************************************************************************
+//*ODIL_ID:5364_0*
+//
+NETWORK
+TITLE =ADVANCE MECHANICAL SAFETY
+//SECURITE MECANIQUE AVANCE
+//*ODIL_ID:5364_1*
+//
+      U     "BA1"; 
+      =     #A01SR2.MF.SA; 
+NETWORK
+TITLE =ADVANCE AUTORIZATION
+//AUTORISATION AVANCE
+//*ODIL_ID:5364_2*
+//
+      O     "Z1G".A01.IPP; 
+      O     ; 
+      U     "Z1G".A01.XIPP[1]; 
+      UN    "Z1G".B0.ECHG_A0.ARD; 
+      UN    "Z1G".C0C.ECHG_A0.AR; 
+      =     #A01SR2.MF.AA; 
+NETWORK
+TITLE =ADVANCE INFORMATION
+//INFORMATION AVANCE
+//*ODIL_ID:5364_3*
+//
+      U     "A01DFSR2"; 
+      UN    "A01DOSR2"; 
+      =     #A01SR2.MF.IA; 
+NETWORK
+TITLE =RETURN MECHANICAL SAFETY
+//SECURITE MECANIQUE RECUL
+//*ODIL_ID:5364_4*
+//
+      U     "BA1"; 
+      =     #A01SR2.MF.SR; 
+NETWORK
+TITLE =RETURN AUTORIZATION
+//AUTORISATION RECUL
+//*ODIL_ID:5364_5*
+//
+      O     "Z1G".A01.IPA; 
+      O     "Z1G".A0.ECHG_B0.PD; 
+      O     "Z1G".A0.ECHG_C0C.PD; 
+      =     #A01SR2.MF.AR; 
+NETWORK
+TITLE =RETURN INFORMATION
+//INFORMATION RECUL
+//*ODIL_ID:5364_6*
+//
+      UN    "A01DFSR2"; 
+      U     "A01DOSR2"; 
+      =     #A01SR2.MF.IR; 
+NETWORK
+TITLE =MANUAL MOVEMENT SELECTION
+//SELECTION MOUVEMENT MANUEL
+//*ODIL_ID:5364_7*
+//
+      L     #NUM_MVT; 
+      L     3; 
+      ==I   ; 
+      =     #A01SR2.MF.SL; 
+NETWORK
+TITLE =MOVEMENT CONTROL
+//GESTION MOUVEMENT
+//*ODIL_ID:5364_8*
+//
+      U     "TSM".Z1FZ_SECU_OK; 
+      =     L      0.0; 
+      BLD   103; 
+
+      U     "Z1BMA1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.1; 
+      BLD   103; 
+
+      U     "Z1BMR1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.2; 
+      BLD   103; 
+      CALL #A01SR2 (
+           Com                      := L      0.0,
+           Bamv                     := L      0.1,
+           Brmv                     := L      0.2,
+           Lien_pup                 := "Z1G".LIEN_PUP,
+           Oamv                     := "A01EFSR2",
+           Ormv                     := "A01EOSR2",
+           Def                      := #S1A01DSR2,
+           Mvec                     := "Z1G".MVEC,
+           Tref                     := "Z1T".A01.SR2_TREF);
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         SR3                                   **
+//*******************************************************************************
+//*ODIL_ID:5522_0*
+//
+NETWORK
+TITLE =ADVANCE MECHANICAL SAFETY
+//SECURITE MECANIQUE AVANCE
+//*ODIL_ID:5522_1*
+//
+      U     "BA1"; 
+      =     #A01SR3.MF.SA; 
+NETWORK
+TITLE =ADVANCE AUTORIZATION
+//AUTORISATION AVANCE
+//*ODIL_ID:5522_2*
+//
+      O     "Z1G".A01.IPP; 
+      O     ; 
+      U     "Z1G".A01.XIPP[1]; 
+      UN    "Z1G".B0.ECHG_A0.ARD; 
+      UN    "Z1G".C0C.ECHG_A0.AR; 
+      =     #A01SR3.MF.AA; 
+NETWORK
+TITLE =ADVANCE INFORMATION
+//INFORMATION AVANCE
+//*ODIL_ID:5522_3*
+//
+      U     "A01DFSR3"; 
+      UN    "A01DOSR3"; 
+      =     #A01SR3.MF.IA; 
+NETWORK
+TITLE =RETURN MECHANICAL SAFETY
+//SECURITE MECANIQUE RECUL
+//*ODIL_ID:5522_4*
+//
+      U     "BA1"; 
+      =     #A01SR3.MF.SR; 
+NETWORK
+TITLE =RETURN AUTORIZATION
+//AUTORISATION RECUL
+//*ODIL_ID:5522_5*
+//
+      O     "Z1G".A01.IPA; 
+      O     "Z1G".A0.ECHG_B0.PD; 
+      O     "Z1G".A0.ECHG_C0C.PD; 
+      =     #A01SR3.MF.AR; 
+NETWORK
+TITLE =RETURN INFORMATION
+//INFORMATION RECUL
+//*ODIL_ID:5522_6*
+//
+      UN    "A01DFSR3"; 
+      U     "A01DOSR3"; 
+      =     #A01SR3.MF.IR; 
+NETWORK
+TITLE =MANUAL MOVEMENT SELECTION
+//SELECTION MOUVEMENT MANUEL
+//*ODIL_ID:5522_7*
+//
+      L     #NUM_MVT; 
+      L     4; 
+      ==I   ; 
+      =     #A01SR3.MF.SL; 
+NETWORK
+TITLE =MOVEMENT CONTROL
+//GESTION MOUVEMENT
+//*ODIL_ID:5522_8*
+//
+      U     "TSM".Z1FZ_SECU_OK; 
+      =     L      0.0; 
+      BLD   103; 
+
+      U     "Z1BMA1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.1; 
+      BLD   103; 
+
+      U     "Z1BMR1"; 
+      U     "Z1G".IHM1PM; 
+
+
+      =     L      0.2; 
+      BLD   103; 
+      CALL #A01SR3 (
+           Com                      := L      0.0,
+           Bamv                     := L      0.1,
+           Brmv                     := L      0.2,
+           Lien_pup                 := "Z1G".LIEN_PUP,
+           Oamv                     := "A01EFSR3",
+           Ormv                     := "A01EOSR3",
+           Def                      := #S1A01DSR3,
+           Mvec                     := "Z1G".MVEC,
+           Tref                     := "Z1T".A01.SR3_TREF);
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         TOOL MECANICAL CONDITIONS                         **
+//*******************************************************************************
+//*ODIL_ID:3336_180*
+//
+NETWORK
+TITLE =MACHINE IN ADVANCE POSITION
+//CONDITIONS MACHINE AVANCEE
+//*ODIL_ID:3336_181*
+//
+      U     #A01SR1.MF.IA; 
+      U     #A01SR2.MF.IA; 
+      U     #A01SR3.MF.IA; 
+      =     "Z1G".A01.CMA; 
+NETWORK
+TITLE =MACHINE IN RETURN POSITION
+//CONDITIONS MACHINE RECULEE
+//*ODIL_ID:3336_182*
+//
+      U     #A01SR1.MF.IR; 
+      U     #A01SR2.MF.IR; 
+      U     #A01SR3.MF.IR; 
+      =     "Z1G".A01.CMR; 
+END_FUNCTION_BLOCK
+

@@ -1,0 +1,8 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC ItemOpc="Z1B0.B0LOCATOR R.Diag.CodeDef" Source="Source SimaticNet Diag.API Siemens 1">Z1B0.B0LOCATOR R.Diag.CodeDef&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+</Root_Element>

@@ -1,0 +1,50 @@
+﻿<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord34>
+    <Doc Num="1">
+      <Text>BF_VISION_ISRA1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>BF_VISION_ISRA2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>BF_VISION_ISRA4</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>BF_VISION_ISRA8</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>BF_VISION_ISRA16</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>BF_VISION_ISRA32</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>BF_VISION_ISRA64</Text>
+    </Doc>
+    <Doc Num="128">
+      <Text>BF_VISION_ISRA128</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>BF_VISION_ISRA256</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>BF_VISION_ISRA512</Text>
+    </Doc>
+    <Doc Num="1024">
+      <Text>BF_VISION_ISRA1024</Text>
+    </Doc>
+    <Doc Num="2048">
+      <Text>BF_VISION_ISRA2048</Text>
+    </Doc>
+    <Doc Num="4096">
+      <Text>BF_VISION_ISRA4096</Text>
+    </Doc>
+    <Doc Num="8192">
+      <Text>BF_VISION_ISRA8192</Text>
+    </Doc>
+    <Doc Num="16384">
+      <Text>BF_VISION_ISRA16384</Text>
+    </Doc>
+  </DocsWord34>
+</Root_Element>

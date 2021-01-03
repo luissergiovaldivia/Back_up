@@ -1,0 +1,255 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <Mouvement>
+    <Nom ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Serrage F</Expression>
+    </Nom>
+    <LocalisationFine>
+      <ImagePath>SpecificData:\Images\C02_SRF.gif</ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+  </Mouvement>
+  <ActionneursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Avance</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02EESRF</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02EESRF">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02EESRF">C02EESRF&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursAvance>
+  <ActionneursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Retroceso</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02EDSRF</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02EDSRF">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02EDSRF">C02EDSRF&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursRecul>
+  <CapteursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Avance</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF1">C02DESRF1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF2">C02DESRF2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF3</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF3">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF3">C02DESRF3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF4</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF4">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF4">C02DESRF4&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF5</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF5">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF5">C02DESRF5&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF6</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF6">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF6">C02DESRF6&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DESRF7</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DESRF7">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DESRF7">C02DESRF7&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursAvance>
+  <CapteursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Retroceso</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF1">C02DDSRF1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF2">C02DDSRF2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF3</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF3">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF3">C02DDSRF3&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF4</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF4">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF4">C02DDSRF4&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF5</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF5">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF5">C02DDSRF5&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF6</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF6">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF6">C02DDSRF6&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">C02DDSRF7</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C02DDSRF7">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="C02DDSRF7">C02DDSRF7&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursRecul>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Características del movimiento en defecto </Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroSens</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">El movimiento es comandado en el sentido</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroCapteurs</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">El autómata detecta el movimiento en las posiciones siguientes</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Lien</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Haga clic en el enlace AZUL, para localizar el componente</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Avance</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">AVANCE</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Recul</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">RETROCESO</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_NomMvtTitre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Nombre del movimiento</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>MsgNoDepannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Ninguna solución de reparación encontrada</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_BALISE_ABSENTE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">La baliza &lt;{0}&gt; no está presente en el fichero &lt;{1}&gt;.</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_ERROR_FILE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Problemas en el fichero &lt;{0}&gt;</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Reparación</Expression>
+      </text>
+    </Button>
+    <Button>
+      <Nom>BTN_Localisation</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Localización</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

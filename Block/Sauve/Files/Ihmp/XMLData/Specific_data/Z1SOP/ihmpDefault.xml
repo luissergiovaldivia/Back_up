@@ -1,0 +1,3785 @@
+<IhmpActiveXDefault>
+  <GroupeDC>MessagesZ1SOP</GroupeDC>
+  <IhmpDefaults>
+    <IhmpDefault Id="DCol">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto detectado por el Colector</Expression>
+      </Text>
+      <Condition Operator="BitTrue">
+        <VariableDC Source="VariablesInternes" Role="DefCollecteur">DefautCollecteur.VariablesInternes</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>EcranDefautCollecteur</Command>
+        </Localisation>
+        <Details Type="Empty">
+          <Command />
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Command />
+          </Action>
+          <Action Type="Empty">
+            <Command />
+          </Action>
+          <Action Type="Empty">
+            <Command />
+          </Action>
+          <Action Type="Empty">
+            <Command />
+          </Action>
+          <Action Type="Empty">
+            <Command />
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1047">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defectored, estación: Z1SOP</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="2" NumBit="-1" Description="[Z1SOP]&amp;statepathval()">
+        <VariableDC Source="S7_SNMP" ItemOpc="[Z1SOP]&amp;statepathval()">[Z1SOP]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautRzoNiv1</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1048">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defectored, estación: A0AFF1</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="2" NumBit="-1" Description="[A0AFF1]&amp;statepathval()">
+        <VariableDC Source="S7_SNMP" ItemOpc="[A0AFF1]&amp;statepathval()">[A0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautRzoNiv1</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1049">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defectored, estación: B0AFF1</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="2" NumBit="-1" Description="[B0AFF1]&amp;statepathval()">
+        <VariableDC Source="S7_SNMP" ItemOpc="[B0AFF1]&amp;statepathval()">[B0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautRzoNiv1</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1050">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defectored, estación: C0AFF1</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="2" NumBit="-1" Description="[C0AFF1]&amp;statepathval()">
+        <VariableDC Source="S7_SNMP" ItemOpc="[C0AFF1]&amp;statepathval()">[C0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautRzoNiv1</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1051">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defectored, estación: D0AFF1</Expression>
+      </Text>
+      <Condition Operator="Neq" Value="2" NumBit="-1" Description="[D0AFF1]&amp;statepathval()">
+        <VariableDC Source="S7_SNMP" ItemOpc="[D0AFF1]&amp;statepathval()">[D0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautRzoNiv1</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1017">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 Def. detección pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.S1D0DPIEC">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0.S1D0DPIEC">Z1D0.S1D0DPIEC&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagDefautPiece</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1039">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 Def. movimiento SR2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.S1D0dSR2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0.S1D0dSR2">Z1D0.S1D0dSR2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1038">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 Def. movimiento PL1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.S1D0dPL1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0.S1D0dPL1">Z1D0.S1D0dPL1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1040">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 PGF 01.05 Petición de inyección pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0R.S1D0Rdi">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0R.S1D0Rdi">Z1D0R.S1D0Rdi&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1054">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 PGF 01.05 Def. respuesta calculador</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0R.S1D0Rdrcal">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0R.S1D0Rdrcal">Z1D0R.S1D0Rdrcal&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1055">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 PGF 01.05 discordancia recalaje</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0R.S1D0RDI">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0R.S1D0RDI">Z1D0R.S1D0RDI&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D0.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1044">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D1 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D1.S1D1dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D1.S1D1dbpvop">Z1D1.S1D1dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D1.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1000">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Def. salvaguarda base de datos (PCMCIA)</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I02.S1Dfsbd">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I02.S1Dfsbd">I02.S1Dfsbd&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1001">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Def. restitución base de datos (PCMCIA)</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I02.S1Dfrbd">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I02.S1Dfrbd">I02.S1Dfrbd&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1002">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Def. autómata</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.S1dfapi">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I01.S1dfapi">I01.S1dfapi&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1003">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Def. Bus PROFINET</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.S1dfbus">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I01.S1dfbus">I01.S1dfbus&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautProfinet</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1004">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Alarma PROFINET</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.S1Defqual">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I01.S1Defqual">I01.S1Defqual&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DiagDefautProfinet</Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1006">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Modo de seguridad desactivado</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F_GLOBDB.MODE">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="F_GLOBDB.MODE">F_GLOBDB.MODE&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1005">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ILOT: Def. relé de control de masa</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.S1dcrm">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="I01.S1dcrm">I01.S1dcrm&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Ecran">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">Mantenimiento</Expression>
+            </Text>
+            <Command>DefautBF_IHMCRM134</Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1007">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Zona bloqueada por SMPLOC</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihmmes3">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihmmes3">Z1.Z1MODES.Diag.Ihmmes3&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1008">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Def. común seguridad AU</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.S1Z1ZBDCAU">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.S1Z1ZBDCAU">Z1.S1Z1ZBDCAU&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Ecran">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">Mantenimiento</Expression>
+            </Text>
+            <Command>DefautBF_IHMCR134</Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1009">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Def. común seguridad ES</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.S1Z1ZBDCES">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.S1Z1ZBDCES">Z1.S1Z1ZBDCES&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Ecran">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">Mantenimiento</Expression>
+            </Text>
+            <Command>DefautBF_IHMCR134</Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1010">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Def. Carta de seguridad</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.S1Z1ZBDCSEC">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.S1Z1ZBDCSEC">Z1.S1Z1ZBDCSEC&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>DefautCarteSecu</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1042">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Def. Comunicación Pupitre Z1SOP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihm2dc">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihm2dc">Z1.Z1MODES.Diag.Ihm2dc&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1SOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1041">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Def. Comunicación Pupitre MOP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihm1dc">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihm1dc">Z1.Z1MODES.Diag.Ihm1dc&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1045">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D2 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D2.S1D2dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D2.S1D2dbpvop">Z1D2.S1D2dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D2.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1043">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B2 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B2.S1B2dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B2.S1B2dbpvop">Z1B2.S1B2dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B2.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1037">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B1 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B1.S1B1dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B1.S1B1dbpvop">Z1B1.S1B1dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B1.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1026">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. detección pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0DPIEC">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0DPIEC">Z1B0.S1B0DPIEC&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagDefautPiece</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1027">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento GSW</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dGSW">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dGSW">Z1B0.S1B0dGSW&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1028">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento EJ</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dEJ">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dEJ">Z1B0.S1B0dEJ&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1029">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento CL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dCL">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dCL">Z1B0.S1B0dCL&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1030">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento OGS</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dOGS">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dOGS">Z1B0.S1B0dOGS&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1031">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento OGL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dOGL">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dOGL">Z1B0.S1B0dOGL&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1032">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento GL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dGL">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dGL">Z1B0.S1B0dGL&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1033">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento 1SR1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B01DSR1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B01DSR1">Z1B0.S1B01DSR1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1034">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento MC1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dMC1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dMC1">Z1B0.S1B0dMC1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1035">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento MC2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B0dMC2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B0dMC2">Z1B0.S1B0dMC2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1036">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: B0 Def. movimiento 1SR2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B0.S1B01DSR2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B0.S1B01DSR2">Z1B0.S1B01DSR2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1025">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A2 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A2.S1A2dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A2.S1A2dbpvop">Z1A2.S1A2dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A2.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1024">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A1 Def. BP validación operador mantenido</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A1.S1A1dbpvop">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A1.S1A1dbpvop">Z1A1.S1A1dbpvop&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A1.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1016">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: C0 Def. detección pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0.S1C0DPIEC">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1C0.S1C0DPIEC">Z1C0.S1C0DPIEC&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\C0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagDefautPiece</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1012">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. detección pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0DPIEC">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0DPIEC">Z1A0.S1A0DPIEC&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagDefautPiece</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1011">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: PGF xx.00 Def. respuesta calculador</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.S1A0Ldrcal">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0L.S1A0Ldrcal">Z1A0L.S1A0Ldrcal&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Empty">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Command>
+          </Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1013">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento GSW</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dGSW">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dGSW">Z1A0.S1A0dGSW&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A1_A0_GSW.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1014">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento EJ</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dEJ">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dEJ">Z1A0.S1A0dEJ&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1015">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento CL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dCL">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dCL">Z1A0.S1A0dCL&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1018">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento GSH1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dGSH1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dGSH1">Z1A0.S1A0dGSH1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1019">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento GSH2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dGSH2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dGSH2">Z1A0.S1A0dGSH2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1020">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento GL1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dGL1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dGL1">Z1A0.S1A0dGL1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1021">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento GL2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dGL2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dGL2">Z1A0.S1A0dGL2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1022">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento MC1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dMC1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dMC1">Z1A0.S1A0dMC1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <IhmpDefault Id="D1023">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Def. movimiento MC2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0dMC2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0dMC2">Z1A0.S1A0dMC2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A0.gif</Picture>
+        </Localisation>
+        <Details Type="Ecran">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Mas detalles</Expression>
+          </Text>
+          <Command>DiagMouv2p</Command>
+        </Details>
+        <DefMaintenance>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+          <Action Type="Empty">
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="es-ES">
+              </Expression>
+            </Text>
+            <Command>
+            </Command>
+          </Action>
+        </DefMaintenance>
+      </ScreenHelp>
+    </IhmpDefault>
+    <Presence>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2def">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2def">Z1.Z1MODES.Pilot.ihm2def&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Presence>
+    <!-- Bouton acquitter -->
+    <BoutonAcquitter Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">RAZ Defectos</Expression>
+      </Text>
+      <ClickDown>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihmadf">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihmadf">Z1.Z1MODES.Pilot.ihmadf&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </ClickDown>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2def">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2def">Z1.Z1MODES.Pilot.ihm2def&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </BoutonAcquitter>
+  </IhmpDefaults>
+  <IhmpRestarts>
+    <IhmpRestart Id="R5005">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto D1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D1.S1D1aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D1.S1D1aio">Z1D1.S1D1aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1508">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre D1</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="D1BAU1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="D1BAU1">D1BAU1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R4500">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Enganchar la Zona y después rearmar</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.Ihmsneng">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.Ihmsneng">Z1.Z1MODES.Pilot.Ihmsneng&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R4501">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Documentar SMPLOC</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.S1ddo">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.S1ddo">Z1.S1ddo&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1_armoire.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5000">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Pulsar pulsador MARCHE CYCLE</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihmmes2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihmmes2">Z1.Z1MODES.Diag.Ihmmes2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1506">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar Parada de Emergencia del Pupitre Z1SOP</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z1BAU1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1BAU1">Z1BAU1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1SOP.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1001">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Corregir y quitar defecto(s)</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.Ihm2def">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.Ihm2def">Z1.Z1MODES.Pilot.Ihm2def&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1SOP.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1507">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Seleccionar el modo AUTO en el pupitre  Z1SOP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Attauto2">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Attauto2">Z1.Z1MODES.Diag.Attauto2&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\Z1SOP.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1504">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar Parada de Emergencia del Pupitre MOP</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="BAUI1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="BAUI1">BAUI1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1505">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Seleccionar el modo AUTO en el pupitre  MOP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Attauto1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Attauto1">Z1.Z1MODES.Diag.Attauto1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\MOP.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5006">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto D2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D2.S1D2aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D2.S1D2aio">Z1D2.S1D2aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1509">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre D2</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="D2BAU1">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="D2BAU1">D2BAU1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\D2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5004">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto B2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B2.S1B2aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B2.S1B2aio">Z1B2.S1B2aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1503">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre B2</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="B2BAU11">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="B2BAU11">B2BAU11&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5003">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto B1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1B1.S1B1aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1B1.S1B1aio">Z1B1.S1B1aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1502">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre B1</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="B1BAU11">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="B1BAU11">B1BAU11&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\B1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5002">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto A2</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A2.S1A2aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A2.S1A2aio">Z1A2.S1A2aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1501">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre A2</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="A2BAU11">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="A2BAU11">A2BAU11&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A2_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R5001">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Espera validación operador puesto A1</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A1.S1A1aio">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A1.S1A1aio">Z1A1.S1A1aio&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <IhmpRestart Id="R1500">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Desenclavar la parada de emergencia en el pupitre A1</Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="A1BAU11">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="A1BAU11">A1BAU11&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>-6</Command>
+          <Picture>SpecificData:\Images\A1_pupitre.gif</Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpRestart>
+    <Presence>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2cns">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2cns">Z1.Z1MODES.Pilot.ihm2cns&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Presence>
+  </IhmpRestarts>
+  <IhmpInfos>
+    <IhmpInfo Id="I1009">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: D0 Saturación</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.S1D0ais">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1D0.S1D0ais">Z1D0.S1D0ais&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+    <IhmpInfo Id="I1000">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Modo aprendizaje en curso</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihmapc">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihmapc">Z1.Z1MODES.Diag.Ihmapc&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+    <IhmpInfo Id="I1001">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: Modo deverminage en curso</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Diag.Ihmzmdv">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1.Z1MODES.Diag.Ihmzmdv">Z1.Z1MODES.Diag.Ihmzmdv&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+    <IhmpInfo Id="I1010">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: PGF xx.00 Espera proposición pieza SIPTOL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0L.S1A0Latcal">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0L.S1A0Latcal">Z1A0L.S1A0Latcal&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+    <IhmpInfo Id="I1008">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Z1: A0 Desactivación</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.S1A0aim">
+        <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z1A0.S1A0aim">Z1A0.S1A0aim&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Empty">
+          <Command> </Command>
+          <Picture>
+          </Picture>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+    <Presence>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1.Z1MODES.Pilot.ihm2inf">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1.Z1MODES.Pilot.ihm2inf">Z1.Z1MODES.Pilot.ihm2inf&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Presence>
+    <IhmpInfo Id="DIHMP">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto detectado por IHMP</Expression>
+      </Text>
+      <Condition Operator="BitTrue">
+        <VariableDC Source="VariablesInternes" Role="DefIHMP">DefautIHMP Z1SOP.VariablesInternes</VariableDC>
+      </Condition>
+      <ScreenHelp>
+        <Localisation Type="Ecran">
+          <Command>EcranDiagIhmp</Command>
+        </Localisation>
+      </ScreenHelp>
+    </IhmpInfo>
+  </IhmpInfos>
+</IhmpActiveXDefault>

@@ -1,0 +1,17 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z3L0L.L0_Lancement.Diag.Codedef">Z3L0L.L0_Lancement.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+  <Valeurs>
+    <Valeur>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Código secundario del defecto</Expression>
+      </Text>
+      <Name>sscode</Name>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z3L0L.L0_Lancement.Diag.IhmInfo">Z3L0L.L0_Lancement.Diag.IhmInfo&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Valeur>
+  </Valeurs>
+</Root_Element>

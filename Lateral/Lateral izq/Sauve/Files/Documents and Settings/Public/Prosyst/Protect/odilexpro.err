@@ -1,0 +1,58 @@
+
+
+Windows IP Configuration
+
+
+
+        Host Name . . . . . . . . . . . . : RENAULT-6DD76C2
+
+        Primary Dns Suffix  . . . . . . . : 
+
+        Node Type . . . . . . . . . . . . : Unknown
+
+        IP Routing Enabled. . . . . . . . : No
+
+        WINS Proxy Enabled. . . . . . . . : No
+
+
+
+Ethernet adapter Level 1 IHM-SAVE:
+
+
+
+        Connection-specific DNS Suffix  . : 
+
+        Description . . . . . . . . . . . : Intel(R) 82574L Gigabit Network Connection
+
+        Physical Address. . . . . . . . . : 00-1B-1B-C0-8D-43
+
+        Dhcp Enabled. . . . . . . . . . . : No
+
+        IP Address. . . . . . . . . . . . : 172.25.212.2
+
+        Subnet Mask . . . . . . . . . . . : 255.255.252.0
+
+        Default Gateway . . . . . . . . . : 
+
+
+
+Ethernet adapter Level 2:
+
+
+
+        Connection-specific DNS Suffix  . : 
+
+        Description . . . . . . . . . . . : Intel(R) 82577LM Gigabit Network Connection
+
+        Physical Address. . . . . . . . . : 00-1B-1B-C0-6C-3E
+
+        Dhcp Enabled. . . . . . . . . . . : Yes
+
+        Autoconfiguration Enabled . . . . : Yes
+
+        Autoconfiguration IP Address. . . : 169.254.3.175
+
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+
+        Default Gateway . . . . . . . . . : 
+

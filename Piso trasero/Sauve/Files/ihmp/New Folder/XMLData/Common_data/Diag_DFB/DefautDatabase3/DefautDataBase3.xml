@@ -1,0 +1,20 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Database1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Database2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Database4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Database8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Database16</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

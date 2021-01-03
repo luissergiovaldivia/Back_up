@@ -1,0 +1,1386 @@
+FUNCTION_BLOCK "BF_G120DS_V2"
+TITLE =BF_G120D_S_V2
+//***************************************************************************
+//*                           FB "G120DS_V2"                                  *
+//*   ASSURE le PILOTAGE des FONCTIONS VARIATEUR de Manutention Standard    *
+//*      INSURE the ORDER of the DRIVE FUNCTIONS of Standard Handling       *
+//***************************************************************************
+//ATTENTION La BF necessite au minimum:
+//- une version de starter V4.1.2
+//- l'utilisation des scripts variateur en V2
+//- Une CPU 319F en version 3.2 mini et Step7 manager en version 5.5
+//- une mise en oeuvre des BFS de type Safety_V2 (BFS_BSECTR1, BFS_CR1) 
+//
+//WARNING this BF requires a minimal of 
+//- starter in V4.1.2 
+//- the use of drive scripts in V2
+//- an CPU 319F in minimal version 3.2 of firmeware and Step7 manager in 5.5 
+//version 
+//- the implementation and using of Safety_V2 BFS type (BFS_BSECTR1, BFS_CR1)
+//
+//( In English further below)
+//DESCRIPTION:
+//************
+//   - gestion de la fonction variateur G120D RENAULT
+//   - gere 1 axe asservi avec les fonctionnements suivant :
+//       Mode 0 = Frequence fixe et commande TOR par bus 
+//       Mode 1 = Consigne de frequence et commande TOR par bus
+//       Mode 2 = Frequence fixe, commande TOR par bus et pre coupure dans le     
+//       variateur
+//  - gere un deuxieme axe en option en pilotage TOR :
+//   Le coffret variateur G120D permet de raccorder 2 detecteurs de positions. 
+//   Il y jusqu'a 4 ordres de mouvements possibles suivant les contraintes 
+//mecaniques de l'installation.
+//
+//MISE EN OEUVRE :
+//***************  
+//Pour plus de details voir la documentation Word
+//
+// - configuration logiciel minimum : 
+//STEP 7 V5.5
+//S7 Distributed SAFETY V5.4 SP3
+//SIMATIC DRIVE ES BASIC V5.4 SP2
+//STARTER V4.1.2
+//SIMATIC WINCC FLEXIBLE 2005 SP1 HF7
+// 
+//- Scripts moteur pour STARTER :
+//   Mode 0 =  script 0_V2
+//   Mode 1 =  script 1_V2
+//   Mode 2 standard = script 2_V2
+//
+//Pour plus de renseignement voir votre charger d'affaire automatisme
+//
+// - Relais de ligne :
+//  ce BF doit etre Associe au bloc SAFETY BFS_BSECTR1 ou BFS BSEC1 et BFS_CR1
+//  pour assurer la gestion des relais de lignes :
+//  RLV ( Relais de ligne Variateur) AXE1
+//  RL (Relais de ligne) AXE2
+//
+// - Selection des vitesses :
+//Cette fonction n'est valable que pour les MODES 0 et 2 de l'Axe1.
+//Les entrees Pilotage BIT1VIT et BIT2VIT permettent de selectionner jusqu'a 3 
+//Vitesses sur le variateur pour l'axe 1
+//L'utilisation des deux bool a Zero n'est pas preconisee.
+//
+//                              *Pilotage.BIT2VIT  * Pilotage.BIT1VIT
+//****************************************************************************
+//Vistesse 2 (exemple Grande vitesse)   *1        *   1
+//****************************************************************************
+//Vitesse  1 (exemple petite Vitesse)   *1        *   0
+//****************************************************************************
+//Vitesse pour Mouvement en Mode Manuel *0        *   1
+//
+//
+//CODES des DEFAUTS:
+//***********
+//   Valeur associee a la sortie diag.codedef :
+//1 = Defaut Frequence mini maxi
+//2 =  Defaut RLV
+//4  = Defaut Frein
+//8 = Defaut RL
+//16 = Defaut relais thermique
+//32 = Defaut de parametrage temps de retombee trop long
+//64 = Defaut pilotage variateur
+//128= Defaut variateur non pret 
+//256 = Alarme RLV
+//512 = Alarme RL
+//1024 = Defaut entrainement
+//2048 = Defaut disjoncteur
+//4096 = Option selection Amont /Aval Rearment
+//8192 = Defaut Variateur Indisponible
+//16384 = Frequence Hors plage 
+//
+//
+//************************** ENGLISH INFORMATION  ****************************
+//
+//DESCRIPTION :
+//**************
+//- Management and Order of the RENAULT Drive G120D  function
+//- Manages 1 axis controlled with the following functionings :
+//       Mode 0 = fixed Frequency and command (orders) TOR by bus
+//       Mode 1 = Setting of frequency and command (order) TOR by bus
+//       Mode 2 = fixed Frequency, command (order) TOR by bus and Pre-cutout in   
+// 
+//    Drive (Variator)
+//- Manage a second axis with TOR command in option.
+//- G120D drive box allows to link 2 sensors of positions
+//- It to has 4 orders of possible movements following the mechanical stresses of 
+//the installation.
+//
+//OPERATING :
+//************
+//For more details see the Word Documentation
+//- Minimum software configuration: 
+//STEP 7 V5.5
+//S7 Distributed SAFETY V5.4 SP3
+//SIMATIC DRIVE ES BASIC V5.4 SP2
+//STARTER V4.1.2
+//SIMATIC WINCC FLEXIBLE 2005 SP1 HF7
+//
+//- Motor scripts for STARTER :
+//   Mode 0 =  script 0_V2
+//   Mode 1 =  script 1_V2
+//   Mode 2 standard = script 2_V2
+//
+//For more information contact your Automatism Business charging (CAMI RENAULT)
+//
+//- Lines relays
+//This Bf must be associated to the safety BF , BFS_BSECTR1 or BFS_BSEC1 and 
+//BFS_CR1 to insure the management and order off the lines relays :
+//RLV ( Drive line relay) Axis 1
+//RL (Line relay) Axis 2
+//
+//- Speeds Selection :
+//This function can be used only for Axis 1 in MODE 0 or MODE 2
+//Pilotage.BIT1VIT and BIT2VIT input allow to select up to 3 speeds on the Drive 
+//for the axis 1
+//The use both bool in Zero is  no recommended
+//
+//                                *Pilotage.BIT2VIT  * Pilotage.BIT1VIT
+//****************************************************************************
+//Speed 2 ( High speed example)   *1                 *   1
+//****************************************************************************
+//Spped 1  ( Low speed example)   *1                 *   0
+//****************************************************************************
+//Speed for Manual movements      *0                 *   1
+//
+//FAULT CODE :
+//*************
+//Values of Diag.codedef output :
+//
+//1 = Min./max. Frequency Fault
+//2 = Line relay Drive fault
+//4 = Brake fault
+//8 = Line relay fault
+//16 = Thermal relay fault
+//32 = Fall time too long setting fault
+//64 = Drive Order running Fault
+//128 = Drive not ready fault
+//256 = Drive Line relay alarm
+//512 = RL (line relay) alarm
+//1024 = Drive fault
+//2048 = Circuit-breaker fault
+//4096 = Option Selection upstream /downstream Reset
+//8192 = Drive Unavailable Fault
+//16384 = Frequency Outside Range 
+//
+//***************************** _ODIL_ID_ **********************************
+//NB Reseaux BF 1er Version / Network Number in 1ft version : 60
+//Dernier ID mis en oeuvre / Last ID implemented : 1853_61
+//Liste des ID supprimes (Num de reseau seul) / ID deleted list ( only network
+//number)  : sans objet
+{ S7_language := '12(1) French (France)  21.01.2015  11:18:10' }
+AUTHOR : SIEMENS
+FAMILY : RENAULT
+NAME : FONC_VAR
+VERSION : 1.3
+
+
+VAR_INPUT
+  ET200S_IO_adress : INT ;	//Byte Address of ET200S (in HWconfig)/ Adresse de l'octet de l'ET200S (HWconfig)
+  G120D_IO_adress : INT ;	//Start Address space of Drive / debut plage Adresse du variateur (HWconfig)
+  x_RLV : POINTER ;	//Bit of instance location BESECTR1/Bit de localisation de l'instance BESECTR1
+  x_CR : POINTER ;	//Bit of instance location CR/Bit de localisation de l'instance CR
+  x_RL : POINTER ;	//Bit of instance location RL /Bit de localisation de l'instance RL
+  Pilotage : STRUCT 	//Drive and Second axis Control /Pilotage du Var et du 2eme Axe
+   AXE2 : BOOL ;	//2nd axis option / Option 2° axe
+   AV1 : BOOL ;	//Advance movement stop to sensor Number 1 / Avance arret sur capteur 1
+   AV2 : BOOL ;	//Advance movement stop to sensor Number 2 / Avance arret sur capteur 1
+   AR1 : BOOL ;	//Return movement stop to sensor Number 1 / Recul arret sur capteur 1
+   AR2 : BOOL ;	//Return movement stop to sensor Number 2 / Recul arret sur capteur 2
+   OSAAM_AV : BOOL ;	//Option Select. Stop zone upstream downstrea/Option select arret zone Amont aval
+   OAV : BOOL ;	//Advance Order / Ordre avance
+   OAR : BOOL ;	//Return Order / Ordre recul
+   BIT1VIT : BOOL ;	//1st speed selection bool / 1° Bit de selection vitesse
+   BIT2VIT : BOOL ;	//2nd speed selection bool / 2° Bit de selection vitesse
+   FFR1 : BOOL ;	//Brake forcing axis1 (Horizontal)/ Forcage frein axe1(Mvt horizontaux seulement)
+   INIBH : BOOL ;	//Disabling pre-cutout in mode 2 / Inhibition de la precoupure en mode 2
+   CSG_FREQ : INT ;	//G120D speed settings / Consigne de vitesse G120D
+   C_MAX : INT  := 100;	//Torque restriction / Limitation de couple
+   MODE : INT ;	//Control Mode / Mode de pilotage
+  END_STRUCT ;	
+  Iadf : BOOL ;	//Fault Reset / Acquitement defauts
+END_VAR
+VAR_OUTPUT
+  F_AR : BOOL ;	//Drive line relay power cut with Resetting Info/Info. de coupure RLV avec rearm.
+  Fonc_var_OK : BOOL ;	//Drive function OK /Fonction variateur OK
+  Torque_limit_active : BOOL ;	//Torque limit effect / Limite de couple atteinte
+  Def : BOOL ;	//Fault / Defaut
+  Ala : BOOL ;	//Alarm / Alarme
+  Diag : STRUCT 	//Diagnostics Structure / Structure de diagnostic
+   Def : BOOL ;	//General fault bool for IHMP /Bit de defaut general pour IHMP
+   Ala : BOOL ;	//Alarm bool for IHMP / Bit d'alarme pour IHMP
+   Numliste : INT  := 57;	//IHMP list number = 57 / N° de liste IHMP = 57
+   Codedef : INT ;	//Fault code /Code de defaut
+   ZSW1 : STRUCT 	//Drive Word status 1 / Mot d'etat 1 variateur 
+    Deviation_setp_act_value : BOOL ;	//Setting / Measurement differnce / Ecart consigne / mesure
+    PZD_control : BOOL ;	//PZD control /commande PZD
+    f_act_same_p1082 : BOOL ;	//f_act(Actual frequency) >= p1082 (f_max)
+    W_Motor_current_limit : BOOL ;	//Warning: Motor current limit / Alarm : limite courant/couple du moteur
+    Motor_holding_brake_act : BOOL ;	//Motor Brake open / Frein moteur ouvert
+    Motor_overload : BOOL ;	//Motor overload / Surcharge moteur
+    Motor_runs_right : BOOL ;	//Motor runs right / Moteur fonctionne correctement
+    Inverter_overload : BOOL ;	//Inverter overload /surcharge variateur
+    Drive_ready : BOOL ;	//Drive ready /entrainement (variateur) pret
+    Drive_ready_to_run : BOOL ;	//Drive ready to run /entrainement (variateur) pret a fonctionner
+    Drive_running : BOOL ;	//Drive is running /entrainement (variateur)en fonctionnement
+    Drive_fault_active : BOOL ;	//Drive fault active / Defaut entrainement actif
+    OFF2_aktive : BOOL ;	//OFF2 is active /OFF2 Actif
+    OFF3_aktive : BOOL ;	//OFF3 is active /OFF3 Actif
+    ON_inhibit_active : BOOL ;	//ON inhibit is active /Blocage d'enclemchement actif
+    Drive_warning_active : BOOL ;	//Drive warning is active /Alarme d'entrainement active
+   END_STRUCT ;	
+   Actual_frequency : INT ;	//Actual frequency /Frequence en cours(-100.0 +100.0 Hz) (r021)
+   Actual_current : INT ;	//Actual current / Courent en coure
+   Status_binary_inputs : STRUCT 	//Drive Status binary inputs /Etat entree variateur (r722)
+    Res_Bit_8 : BOOL ;	//Reserved / reserve
+    Res_Bit_9 : BOOL ;	//Reserved / reserve
+    Res_Bit_10 : BOOL ;	//Reserved / reserve
+    Res_Bit_11 : BOOL ;	//Reserved / reserve
+    Res_Bit_12 : BOOL ;	//Reserved / reserve
+    Res_Bit_13 : BOOL ;	//Reserved / reserve
+    Res_Bit_14 : BOOL ;	//Reserved / reserve
+    Res_Bit_15 : BOOL ;	//Reserved / reserve
+    DCGVA1 : BOOL ;	//Digital Input 0 /Entree 0
+    DAA1 : BOOL ;	//Digital Input 1 /Entree 1
+    DCGVR1 : BOOL ;	//Digital Input 2 /Entree 2
+    DAR1 : BOOL ;	//Digital Input 3 /Entree 3
+    DI_4 : BOOL ;	//Digital Input 4 /Entree 4
+    DI_5 : BOOL ;	//Digital Input 5 /Entree 5
+    Res_Bit_6 : BOOL ;	//Reserved / reserve
+    Res_Bit_7 : BOOL ;	//Reserved / reserve
+   END_STRUCT ;	
+   Drive_alarm_number : INT ;	//Drive alarm number /Numero d'alarme en cours variateur (r2132)
+   Drive_error_number : INT ;	//Drive fault number /Numero de defaut variateur (r2131)
+   Process_G120D : STRUCT 	//Status Word 2 ZSW2 / mot d'etat 2 ZSW2
+    Vdc_act_bigger_p2172 : BOOL ;	//Reserve Vdc_act (r0026) > p2172 / Reserve
+    Ramping_finished : BOOL ;	//Ramping finished /Rampe terminee / Hoch-/Rücklauf ist beendet
+    PID_min : BOOL ;	//PID output r2294 == p2292 (PID min)/Sortie PID r2294 == p2292 (PID min) 
+    PID_max : BOOL ;	//PID output r2294 == p2291 (PID max)/Sortie PID r2294 == p2291 (PID max)
+    res_ZSW2_Bit12 : BOOL ;	//spare / reserve
+    res_ZSW2_Bit13 : BOOL ;	//spare / reserve
+    res_ZSW2_Bit14 : BOOL ;	//Download Parameter set 0 from AOP/Telecharger le jeu de param0 depuis OAP 
+    res_ZSW2_Bit15 : BOOL ;	//Download Parameter set 1 from AOP/Telecharger le jeu de param1 depuis OAP 
+    DC_brake_active : BOOL ;	//Reserve DC_brake_active /Reserve /DC Bremse aktiv
+    f_act_bigger_p2167 : BOOL ;	//Actual frequency > p2167 (f_off)/Frequence mesuree > P2167 (f_off)
+    f_act_bigger_p1080 : BOOL ;	//Actual frequency > p1080 (f_min)/Frequence mesuree > P1080 (f_min)
+    i_act_bigger_p2170 : BOOL ;	//Actual current(r0027) >= p2170 / Mesure de courant >= P2170
+    f_act_bigger_p2155 : BOOL ;	//Actual frequency > p2155 (f_1) /Frequence mesuree > P2155 (f_1)
+    f_act_slaller_p21551 : BOOL ;	//Actual frequency <= p2155 (f_1) /Frequence mesuree <= P2155 (f_1)
+    f_act_bigger_setpoint : BOOL ;	//Actual frequency >= setpoint(f_csg) / Frequence mesuree >= consigne (f_csg)
+    Vdc_act_smaller_p2172 : BOOL ;	//Reserve, Actual Vdc (r0026) < p2172 / Vdc mesuree (r0026) < P2172
+   END_STRUCT ;	
+   Stat2Ctrl : STRUCT 	//Motor status word 2 / Mot d'etat 2 Moteur
+    Upper_torque_limit_activ : BOOL ;	//Upper torque limit activated / Limite de couple sup. active
+    Lower_torque_limit_activ : BOOL ;	//Lower torque limit activated / Limite de couple inf. active
+    Droop_active : BOOL ;	//Droop actived / statisme actif
+    Bit11 : BOOL ;	//spare / reserve
+    Bit12 : BOOL ;	//spare / reserve
+    Bit13 : BOOL ;	//spare / reserve
+    Bit14 : BOOL ;	//spare / reserve
+    DDS_change_active : BOOL ;	//DDS change activated / Changement DDS actif
+    Vf_control_enabled : BOOL ;	//V/F control activated / Commande V/F activee
+    SLVC_enabled : BOOL ;	//SLVC activated / SLVC activee
+    Torque_control_enabled : BOOL ;	//Torqu regulation activated / regulation du couple activee
+    Bit03 : BOOL ;	//spare / reserve
+    Bit04 : BOOL ;	//spare / reserve
+    Stop_Icomp_speed_contr : BOOL ;	//stop "i-comp" speed regulation / Arret regulation de viettes "i-comp"
+    Set_Icomp_speed_contr : BOOL ;	//set "i-comp" speed regulation / Regler regulation de vitesse "i-comp"
+    Bit07 : BOOL ;	//spare / reserve
+   END_STRUCT ;	
+   STW1 : STRUCT 	//Drive control word 1 / Mot de commande 1 Variateur
+    JOG_right : BOOL ;	//JOG to right / JOG a droite
+    JOG_left : BOOL ;	//JOG to left / JOG a gauche
+    Control_from_PLC : BOOL ;	//Control from PLC /Commande par API
+    Reverse : BOOL ;	//Reverse (setting) / inversion (consigne)
+    res_STW1_Bit12 : BOOL ;	//spare / reserve
+    MOP_up : BOOL ;	//Motor driven potentiometer increased /Potentiometre motorise augmenter
+    MOP_down : BOOL ;	//Motor driven potentiometer decreased /Potentiometre motorise diminuer
+    CDS_Bit0 : BOOL ;	//CDS_bit0 (manual/auto) / CDS_bit0 (manuel/auto)
+    ON_OFF1 : BOOL ;	//ON/OFF /Marche/arret
+    OFF2 : BOOL ;	//OFF2 (Electrical stop) / Arret electrique
+    OFF3 : BOOL ;	//OFF3 (Fast stop) /Arret rapide
+    Pulse_enable : BOOL ;	//Pulse released /Impulssion faite
+    RFG_enable : BOOL ;	//Peak generation activated / Activation generation rampe
+    RFG_start : BOOL ;	//Peak generation started / Demarage generation rampe
+    Setpoint_enable : BOOL ;	//Setpoint enable /liberation de la consigne
+    Fault_acknowledge : BOOL ;	//Fault reset /Acquittement defaut
+   END_STRUCT ;	
+   Frequency_set : INT ;	//Dive Frequency set /Consigne de frequance VAR [-100,0 ... 100,0%]
+   Torque_set : INT ;	//Drive current Torque set /consigne de courant (couple) VAR (0,0 ... 100,0%)
+   STW2 : STRUCT 	//Drive control word 2 / Mot de commande 2 Variateur
+    Enable_PID : BOOL ;	//PID activated / PID active
+    Enable_DC_brake : BOOL ;	//Enable DC brake (Reserved)/reserve frein
+    res_STW2_Bit10 : BOOL ;	//spare / reserve
+    Enable_droop : BOOL ;	//Droop activated /Statisme active
+    Torque_control : BOOL ;	//Torque control /Regulation de couple
+    External_fault_1 : BOOL ;	//External fault 1 /defaut externe 1
+    res_STW2_Bit14 : BOOL ;	//spare / reserve
+    CDS_Bit1 : BOOL ;	//Command data set bit 1 /
+    FF_Bit0 : BOOL ;	//Fixed frequency bool 0 /frequence fixe bit 0
+    FF_Bit1 : BOOL ;	//Fixed frequency bool 1 /frequence fixe bit 1
+    FF_Bit2 : BOOL ;	//Fixed frequency bool 2 /frequence fixe bit 2
+    FF_Bit3 : BOOL ;	//Fixed frequency bool 3 /frequence fixe bit 3
+    DDS_Bit0 : BOOL ;	//Set of drive setting bool 0 / jeu de parametre d'entrainement bit0
+    DDS_Bit1 : BOOL ;	//Set of drive setting bool 1 / jeu de parametre d'entrainement bit1
+    res_STW2_Bit6 : BOOL ;	//spare / reserve
+    res_STW2_Bit7 : BOOL ;	//spare / reserve
+   END_STRUCT ;	
+   ET200S_IN : STRUCT 	//ET200S Inputs / Entrees ET200S
+    Q1OK : BOOL ;	//Circuit-breaker return / retour disjoncteur
+    RLVK1 : BOOL ;	//Drive lien relay return / retour RLV
+    RFRK2 : BOOL ;	//Braking relay return / retour RFR
+    OEM1 : BOOL ;	//Free OEM1 / Libre OEM1
+    OEM2 : BOOL ;	//Free OEM2 / Libre OEM2
+    OEM3 : BOOL ;	//Free OEM3 / Libre OEM3
+    OEM4 : BOOL ;	//Free OEM4 / Libre OEM4
+    RTH : BOOL ;	//Thermal relay retun / retour RTH
+    SPARE : BOOL ;	//Free / libre
+    RL : BOOL ;	//Line relay return / retour RL
+    AXIS2_LS1 : BOOL ;	//End of stroke 1 axis 2 / Fin de course 1 axe2
+    AXIS2_LS2 : BOOL ;	//End of stroke 2 axis 2 / Fin de course 2 axe2
+   END_STRUCT ;	
+   ET200S_OUT : STRUCT 	//ET200S outputs / Sorties ET200S
+    RA21 : BOOL ;	//Advance Axis 2 stop sensor 1 / Axe2 Avance arret capteur 1
+    RA22 : BOOL ;	//Advance Axis 2 stop sensor 2 / Axe2 Avance arret capteur 2
+    RR22 : BOOL ;	//Return Axis 2 stop sensor2 / Axe2 recul arret capteur 2
+    RR21 : BOOL ;	//Return Axis 2 stop sensor1 / Axe2 recul arret capteur 1
+    SPARE4 : BOOL ;	//Free / libre
+    SPARE5 : BOOL ;	//Free / libre
+    SPARE6 : BOOL ;	//Free / libre
+    SPARE7 : BOOL ;	//Free / libre
+   END_STRUCT ;	
+   IhmDefPara1 : BOOL ;	//Setting fault 1 : safety_time max>2s/ Defaut de parametrage 1 :Tps_secu max> 2s
+   IhmDefMinMax : BOOL ;	//Frequency threshold fault /Defaut seuils de frequence
+   IhmDefFreq : BOOL ;	//Frequency out of range fault / Defaut frequence hors plage
+   IhmVarindisp : BOOL ;	//Drive unavailable / variateur indisponible
+   IhmDefRl : BOOL ;	//Line relay Fault / Defaut RL
+   IhmAlaRl : BOOL ;	//Line relay Alarm / Alarme a la montee du relais de ligne variateur
+   IhmDefVar : BOOL ;	//Drive Fault / Defaut variateur
+   IhmDefRlv : BOOL ;	//Drive line relay Fault / Defaut RLV
+   IhmAlaRlv : BOOL ;	//Drive line relay Fault / Alarme a la montee du relais de ligne variateur
+   IhmDeffrein : BOOL ;	//Brake relay fautl (RFR) / Defaut relais de frein (RFR)
+   IhmDefFBpilotage : BOOL ;	//FB Control drive order running Fault/ Defaut controle pilotage du var
+   IhmDefCRpilotage : BOOL ;	//Safety Control drive order running fault/defaut du ctrl pilotage du var du safe
+   IhmDefVarReady : BOOL ;	//drive not ready fault/defaut variateur non pret
+  END_STRUCT ;	
+  F_CmdDrive : BOOL ;	//drive order for Safety info /Info. pilotage variateur pour safety
+END_VAR
+VAR
+  F_max : INT  := 1000;	//Maxi Frequency / Frequence maxi
+  F_min : INT ;	//Nin Frequency / Frequence mini
+  T_RFR : "TON";	//Brake relay timer / Tempo Relais frein
+  Ala_rl : BOOL ;	//Line relay alarm / Alarme RL
+  T_OAVR : "TON";	//control Feedback drive order timer / Tempo controle pilotage Variateur 
+  Def_rlv : BOOL ;	//Driver line relay Fault / Defaut RLV
+  Ala_rlv : BOOL ;	//Driver line relay alarm / Alarme RLV
+  Def_rl : BOOL ;	//Line relay fault / defaut RL
+  T_Def_Drive_Ready : "TON";	//Temporizador filtrado defecto Drive Ready
+END_VAR
+VAR_TEMP
+  SavAR2 : DINT ;	
+  BSECTR : STRUCT 	///!\ Safety Inputs information / entrees  des information de Securite
+   DSecu : BOOL ;	//Safety dependence/Dependance securite
+   Cci : BOOL ;	//Immediate cut-off conditions/Conditions coupure immediate
+   CSecu0 : BOOL ;	//Feedbacks check without control/Controle Retours sans pilotage
+   CSecu1 : BOOL ;	//Feedbacks check with control/Controle Retours avec Pilotage
+   Iadf : BOOL ;	//Fault reset/Annulation defaut
+   Ir : BOOL ;	//Function control on/Rearmement fonction
+   Tps_secu : TIME ;	//Relay deactivating time(Max.=2s)/Temps de retombee du relais (Maxi 2s
+   DO_F : BOOL ;	//F-DO output control/Commande sortie F-DO
+   Secu : BOOL ;	//Similar with DO-F/Identique a DO_F
+   Secu_OK : BOOL ;	//Safety loop correct/Boucle de securite valide
+   Def : BOOL ;	//Discrepancy fault in the deactivation/Defaut de discordance a la desactivation
+  END_STRUCT ;	
+  STAT_X_RLV : STRUCT 	
+   x : BOOL ;	//Bit of instance location/Bit de localisation de l'instance
+   IHMDef : BOOL ;	//Discrepancy fault in the deactivation/Defaut de discordance a la desactivation
+   IHMAla : BOOL ;	//Discrepancy fault in the activation/Def de discordance a l'activation (Ala)
+   xSecu : BOOL ;	//Auxiliary bit/Bit auxiliaire
+   M_ala : BOOL ;	//Alarm memory/Memoire alarme
+  END_STRUCT ;	
+  STAT_X_CR : STRUCT 	
+   x : BOOL ;	//Bit of instance location/Bit de localisation de l'instance
+   IHMDef : BOOL ;	//Discrepancy fault in the deactivation/Defaut de discordance a la desactivation
+   IHMAla : BOOL ;	//Discrepancy fault in the activation/Def de discordance a l'activation (Ala)
+   xSecu : BOOL ;	//Auxiliary bit/Bit auxiliaire
+   M_ala : BOOL ;	//Alarm memory/Memoire alarme
+  END_STRUCT ;	
+  InRL : STRUCT 	//Line relay inputs information / Entrees information relais de ligne
+   DSecu : BOOL ;	//Conditions with control on/Conditions avec rearmement
+   CSecu0 : BOOL ;	//Feedbacks check without control/Controle Retours sans pilotage
+   CSecu1 : BOOL ;	//Feedbacks check with control/Controle Retours avec Pilotage
+   Iadf : BOOL ;	//Fault reset/Annulation defaut
+   Ir : BOOL ;	//Function control on/Rearmement fonction
+  END_STRUCT ;	
+  STAT_X_RL : STRUCT 	
+   x : BOOL ;	//Bit of instance location/Bit de localisation de l'instance
+   IHMDef : BOOL ;	//Discrepancy fault in the deactivation/Defaut de discordance a la desactivation
+   IHMAla : BOOL ;	//Discrepancy fault in the activation/Def de discordance a l'activation (Ala)
+   xSecu : BOOL ;	//Auxiliary bit/Bit auxiliaire
+   M_ala : BOOL ;	//Alarm memory/Memoire alarme
+  END_STRUCT ;	
+  Akt_Frequenz : WORD ;	//Actual frequency on G120D / Frequence en cours sur G120D
+  MS_Ready_to_run : BOOL ;	//Motor starter ready to run 
+  F_Tps_secu : TIME ;	//Safety time of driver line relay used / F tps de secu maintien RLV papametre
+  F_Rlv_Sc : BOOL ;	//Sum of Cxx Drive line relay inputs / Somme des entres Cxx RLV
+  F_Rlv : BOOL ;	//Safety, Drive line relay Status /  F etat commande RLV
+  F_Rl_Sc : BOOL ;	//Sum of Cxx line relay inputs / Somme des entres Cxx RL
+  CSecu0 : BOOL ;	//Feedbacks check without control/Controle Retours sans pilotage
+  F_Rl : BOOL ;	//Safety, line relay Status /  F etat commande RL
+  Df_para1 : BOOL ;	//Parameter1 fault / Defaut de parametrage1 : temps de retombee du relais(2s max)
+  Df_MinMax : BOOL ;	//Min/Max Frequency Fault / Defaut frequence Mini/ maxi
+  Df_Freq : BOOL ;	//Frequency out of range / Frequence hors plage
+  Freq_OK : BOOL ;	//Frequency OK / Frequence OK
+  Brake_command : BOOL ;	//Brake command / Commde de frein
+  on_off_forward : BOOL ;	//forward order of drive /commande Marche avant du variateur 
+  on_off_rev : BOOL ;	//reverse order of drive / commande Marche arriere du variateur
+  Def_Cr : BOOL ;	//control BFS_CR drive running fault/ defaut FBS_CR controle pilotage Var 
+  DBNR : INT ;	
+END_VAR
+BEGIN
+NETWORK
+TITLE =G120DS_V2
+////==============================================================================
+//                                      G120DS_V2
+////==============================================================================
+//*ODIL_ID:1853_1*
+//
+
+
+NETWORK
+TITLE =Initialisation BFSBSECTR
+//*ODIL_ID:1853_2*
+      TAR2  #SavAR2; 
+//------- Initialisation BFSTR
+      LAR1  AR2; 
+      L     P##x_RLV; 
+      +AR1  ; 
+
+      L     DIW [AR1,P#0.0]; //!\POINTER: Data Block Number pointer de la variable x_RLV interface d'entree de la BF
+      T     #DBNR; 
+      AUF   DB [#DBNR]; //Instance data block number of the F-Function Block
+
+      L     DID [AR1,P#2.0]; //!\POINTER: Area - Address + 2 par rapport au numero de bloc 
+      LAR2  ; 
+      L     L#-64; //!\ Decalage de 8 octets ( 8*n)
+      +AR2  ; 
+
+      LAR1  P##BSECTR; //instance 
+//---------- 
+      L     DBW [AR2,P#0.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#0.0]; //!\ Structure InTr
+      L     DBD [AR2,P#2.0]; //Instance data of the F-Function Block 
+      T     LD [AR1,P#2.0]; //!\ Structure Tps_secu
+      L     DBW [AR2,P#6.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#6.0]; //!\ Structure outTr
+      L     DBW [AR2,P#8.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#8.0]; //!\ Structure STAT_X_RLV
+//-------
+      LAR2  #SavAR2; 
+
+NETWORK
+TITLE =Initialisation CR
+//------- Initialisation STAT CR
+//*ODIL_ID:1853_3*
+//
+      LAR1  AR2; 
+      L     P##x_CR; 
+      +AR1  ; 
+
+      L     DIW [AR1,P#0.0]; //!\POINTER: Data Block Number pointer de la variable x_CR interface d'entree de la BF
+      T     #DBNR; 
+      AUF   DB [#DBNR]; //Instance data block number of the F-Function Block
+
+      L     DID [AR1,P#2.0]; //!\POINTER: Area - Address + 2 par rapport au numero de bloc 
+      LAR2  ; 
+
+      LAR1  P##STAT_X_CR; //instance 
+//-------
+      L     DBW [AR2,P#0.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#0.0]; //!\ Structure STAT_X_CR
+//-------
+      LAR2  #SavAR2; 
+
+NETWORK
+TITLE =Lecture et mise a disposition des informations F pour le diag
+//Reading and provision of Safety information for diag
+//*ODIL_ID:1853_4*
+//
+      U     #BSECTR.DSecu; 
+      U     #BSECTR.Cci; 
+      =     #F_Rlv_Sc; 
+
+      U     #BSECTR.Secu; // Pilotage RLV _ RLV order
+      =     #F_Rlv; 
+
+      L     #BSECTR.Tps_secu; // Temps de maintien RLV _ RLV Dwell time
+      T     #F_Tps_secu; 
+
+NETWORK
+TITLE =Lecture du Diag de FBS_CR pour le controle du pilotage du Var
+//Diag reading from FBS_CR for the drive Order control
+//*ODIL_ID:1853_5*
+//
+      U     #STAT_X_CR.IHMDef; 
+      =     #Def_Cr; 
+
+NETWORK
+TITLE =Defaut a la retombee
+//Fault on the fallout
+//*ODIL_ID:1853_6*
+//
+      U     #STAT_X_RLV.IHMDef; 
+      UN    #F_Rlv; 
+      UN    #Diag.ET200S_IN.RLVK1; 
+      O     ; 
+      U     #Def_rlv; 
+      UN    #Iadf; 
+      =     #Def_rlv; 
+NETWORK
+TITLE =Alarme a la montee
+//Alarm on up
+//*ODIL_ID:1853_7*
+//
+      U     #STAT_X_RLV.IHMAla; 
+      U     #F_Rlv; 
+      U     #Diag.ET200S_IN.RLVK1; 
+      =     #Ala_rlv; 
+NETWORK
+TITLE =PARAMETRAGE DU TEMPS DE RETOMBEE DU RELAIS HORS LIMITES
+//( 2 sec MAXI )
+//Si le temps est superieur au temps maxi, celui-ci est considere comme nul
+//
+//PARAMETER SETTING OF the TIME OF FALLOUT OF the RELAY EXCEPT LIMITS
+//(maxi 2 sec)
+//If the time is upper than time maxi, this one is considere as 0
+//*ODIL_ID:1853_8*
+//
+      L     #F_Tps_secu; 
+      L     T#2S; 
+      >I    ; 
+      =     #Df_para1; 
+NETWORK
+TITLE =Chargement des Mots d'etats
+//Load status words
+//*ODIL_ID:1853_9*
+//
+      LAR1  AR2; //Multi Instance
+      L     P##Diag; 
+      +AR1  ; 
+//===============================================================================
+      L     #G120D_IO_adress; //Adresse module G120D _ Modul adress G120D
+      SLD   3; 
+      LAR2  ; 
+//=============================================================================== 
+      L     EW [AR2,P#0.0]; 
+      T     DIW [AR1,P#6.0]; // -> ZSW1
+//=============================================================================== 
+      L     EW [AR2,P#6.0]; 
+      T     DIW [AR1,P#12.0]; //  -> Status DI / -> Status DI
+//===============================================================================  
+      L     EW [AR2,P#8.0]; 
+      T     DIW [AR1,P#14.0]; // -> Numero alarme / -> Alarm number
+//===============================================================================  
+      L     EW [AR2,P#10.0]; 
+      T     DIW [AR1,P#16.0]; // -> Numero defaut /-> fault number
+//=============================================================================== 
+      L     EW [AR2,P#12.0]; 
+      T     DIW [AR1,P#18.0]; // -> ZSW2
+//===============================================================================  
+      L     EW [AR2,P#14.0]; 
+      T     DIW [AR1,P#20.0]; // -> Stat 2 Ctrl
+//===============================================================================  
+      L     EW [AR2,P#2.0]; 
+      T     #Akt_Frequenz; //Frequence mesuree / Actual Frequency
+//-------------------------------------------------------------------------------
+      SRW   12; 
+      L     W#16#8; 
+      <=I   ; // pos. frequency ?
+      L     #Akt_Frequenz; 
+      SPB   Ipos; // Oui -> Saut a Ipos / Yes -> jump to Ipos
+//-------------------------------------------------------------------------------
+      NEGI  ; // Non -> Frequence neg. / No -> neg. frequency
+      DTR   ; 
+      L     1.638400e+001; // Conversion en % / conver to %
+      /R    ; 
+      RND   ; 
+      NEGI  ; 
+      SPA   F_A; 
+//-------------------------------------------------------------------------------
+Ipos: DTR   ; 
+      L     1.638400e+001; // Conversion en % / conver to %
+      /R    ; 
+      RND   ; 
+F_A:  T     DIW [AR1,P#8.0]; // #Diag.Actual_frequency -> Frequence en x.x% / -> Freqency in x.x%   
+//===============================================================================          
+      L     EW [AR2,P#4.0]; 
+      DTR   ; 
+      L     2.338800e+001; // Conversion en % / conver to %
+      /R    ; 
+      RND   ; 
+      T     DIW [AR1,P#10.0]; // #Diag.Actual_current -> Courant / ->  Current
+//===============================================================================  
+      LAR2  #SavAR2; //Restauration de AR2
+
+NETWORK
+TITLE =Lecture entrees ET200S
+//Reading ET200S input
+//*ODIL_ID:1853_10*
+//
+      LAR1  AR2; //Multi Instance
+      L     P##Diag; 
+      +AR1  ; 
+//===============================================================================
+      L     #ET200S_IO_adress; // Modul adress ET200S
+      SLD   3; 
+      LAR2  ; 
+//=============================================================================== 
+      L     EB [AR2,P#0.0]; 
+      T     DIB [AR1,P#30.0]; // ET200S_IN                //modif
+//===============================================================================  
+      LAR2  #SavAR2; //Restauration de AR2
+
+NETWORK
+TITLE =invertion STWx.x
+//Set inverter STWx.x
+//*ODIL_ID:1853_11*
+//
+      SET   ; 
+      =     #Diag.STW1.Control_from_PLC; 
+      =     #Diag.STW1.OFF3; 
+      =     #Diag.STW1.RFG_enable; 
+      =     #Diag.STW1.RFG_start; 
+      =     #Diag.STW1.Pulse_enable; 
+      =     #Diag.STW1.Setpoint_enable; 
+//===============================================================================  
+NETWORK
+TITLE =Limites de frequence OK
+//Frequency limits OK
+//*ODIL_ID:1853_12*
+//
+      O(    ; 
+      L     #F_max; 
+      L     1000; 
+      >D    ; 
+      )     ; 
+      O(    ; 
+      L     #F_min; 
+      L     B#16#0; 
+      <D    ; 
+      )     ; 
+      O(    ; 
+      L     #F_max; 
+      L     #F_min; 
+      <D    ; 
+      )     ; 
+      =     #Df_MinMax; 
+NETWORK
+TITLE =Frequence hors plage
+//Frequency out of range
+//*ODIL_ID:1853_13*
+//
+      O(    ; 
+      L     #Pilotage.CSG_FREQ; 
+      L     #F_max; 
+      >D    ; 
+      )     ; 
+      O(    ; 
+      L     #Pilotage.CSG_FREQ; 
+      L     #F_min; 
+      <D    ; 
+      )     ; 
+      =     #Df_Freq; 
+NETWORK
+TITLE =Frequence OK
+//Frequency OK
+//*ODIL_ID:1853_14*
+//
+      U(    ; 
+      L     #Pilotage.MODE; 
+      L     1; 
+      ==I   ; 
+      )     ; 
+      UN    #Df_MinMax; 
+      UN    #Df_Freq; 
+      =     #Freq_OK; 
+NETWORK
+TITLE =Consigne de frequence et de couple
+//Frequency and torque setpoint
+//*ODIL_ID:1853_15*
+//
+      L     #Pilotage.CSG_FREQ; 
+      DTR   ; 
+      L     1.638400e+001; 
+      *R    ; 
+      RND   ; 
+      T     #Diag.Frequency_set; // -> Consigne frequence pour G120D /-> Frequency Setpoint for G120D 
+//===============================================================================
+      L     #Pilotage.C_MAX; 
+      DTR   ; 
+      L     1.638400e+001; 
+      *R    ; 
+      RND   ; 
+      T     #Diag.Torque_set; // -> consigne de couple pour G120D /-> Torque Setpoint for G120D 
+//===============================================================================      
+NETWORK
+TITLE =Ordre de marche
+//Running Order
+//*ODIL_ID:1853_16*
+//
+      U     #Diag.STW1.OFF2; 
+      U     #Diag.ZSW1.Drive_ready; 
+      UN    #Def; 
+      U     #F_Rlv_Sc; 
+      U     #Pilotage.OSAAM_AV; 
+      U(    ; 
+      O     #Freq_OK; 
+      O(    ; 
+      L     #Pilotage.MODE; 
+      L     1; 
+      <>I   ; 
+      )     ; 
+      )     ; 
+      =     L     32.0; 
+      U     L     32.0; 
+      U     #Pilotage.OAV; 
+      UN    #Pilotage.OAR; 
+      =     #on_off_forward; 
+      U     L     32.0; 
+      U     #Pilotage.OAR; 
+      UN    #Pilotage.OAV; 
+      =     #on_off_rev; 
+NETWORK
+TITLE =ON/OFF 2
+//*ODIL_ID:1853_17*
+//
+      U     #Diag.ET200S_IN.Q1OK; 
+      UN    #Diag.ET200S_IN.RLVK1; 
+      =     #Diag.STW1.OFF2; 
+NETWORK
+TITLE =Commande Ordre d'avance 
+//Forward Order for drive
+//*ODIL_ID:1853_18*
+//
+      U     #on_off_forward; 
+      =     #Diag.STW1.ON_OFF1; 
+NETWORK
+TITLE =commande Ordre de recul
+//reverse Order for Drive
+//*ODIL_ID:1853_19*
+//
+      U     #on_off_rev; 
+      =     #Diag.STW1.Reverse; 
+NETWORK
+TITLE =Fonction inhibition de la precoupure
+//Disabling pre-cutout function
+//*ODIL_ID:1853_20*
+//
+      U     #Pilotage.INIBH; 
+      =     #Diag.STW1.CDS_Bit0; 
+NETWORK
+TITLE =Comamde de Frein
+//Brake command
+//*ODIL_ID:1853_21*
+//
+      U     #Pilotage.FFR1; 
+      UN    #Diag.STW1.ON_OFF1; 
+      =     #Diag.STW2.CDS_Bit1; 
+NETWORK
+TITLE =Bit de vitesses fixes
+//Bool of fixed speeds
+//*ODIL_ID:1853_22*
+//
+      L     #Pilotage.MODE; 
+      L     1; 
+      <>I   ; 
+      =     L     32.0; 
+      U     L     32.0; 
+      U     #Pilotage.BIT1VIT; 
+      =     #Diag.STW2.FF_Bit0; 
+      U     L     32.0; 
+      U     #Pilotage.BIT2VIT; 
+      =     #Diag.STW2.FF_Bit1; 
+NETWORK
+TITLE =Commande de Frein
+//Brake command
+//*ODIL_ID:1853_23*
+//
+      U(    ; 
+      O     #Diag.ZSW1.Motor_holding_brake_act; 
+      O     #Pilotage.FFR1; 
+      )     ; 
+      UN    #Diag.IhmDeffrein; 
+      =     #Brake_command; 
+NETWORK
+TITLE =Controle coherence commande et etat RFR
+//Coherence Order and status of RFR (Brake relay) Check
+//*ODIL_ID:1853_24*
+//
+      U(    ; 
+      U     #Brake_command; 
+      U     #Diag.ET200S_IN.RFRK2; 
+      O     ; 
+      UN    #Brake_command; 
+      UN    #Diag.ET200S_IN.RFRK2; 
+      )     ; 
+      =     L     32.0; 
+      BLD   103; 
+      CALL #T_RFR (
+           IN                       := L     32.0,
+           PT                       := T#300MS);
+
+      NOP   0; 
+NETWORK
+TITLE =Commande drive pour programme safety
+//Drive Order for safety control with feedback brake relay
+//*ODIL_ID:1853_25*
+//
+      O     #on_off_forward; 
+      O     #on_off_rev; 
+      O     #Pilotage.FFR1; 
+      O     ; 
+      U(    ; 
+      O     #F_CmdDrive; 
+      O     ; 
+      UN    #Diag.ZSW1.PZD_control; 
+      U     #Diag.ZSW1.Drive_running; 
+      )     ; 
+      U     #Brake_command; 
+      =     #F_CmdDrive; 
+NETWORK
+TITLE =controle retour fonctionnement var / pilotage AV/AR
+//Control forward / reverse Feedback drive order
+//*ODIL_ID:1853_26*
+//
+      UN    #on_off_forward; 
+      UN    #on_off_rev; 
+      U     #Diag.ZSW1.Drive_running; 
+      U     #Diag.ZSW1.PZD_control; 
+      =     L     32.0; 
+      BLD   103; 
+      CALL #T_OAVR (
+           IN                       := L     32.0,
+           PT                       := T#300MS);
+
+      NOP   0; 
+NETWORK
+TITLE =Limite de couple atteinte
+//Reached limit of Torque
+//*ODIL_ID:1853_27*
+//
+      U     #Diag.Stat2Ctrl.Upper_torque_limit_activ; 
+      =     #Torque_limit_active; 
+NETWORK
+TITLE =Acquittement defaut
+//Fault Reset
+//*ODIL_ID:1853_28*
+//
+      U     #Iadf; 
+      =     #Diag.STW1.Fault_acknowledge; 
+NETWORK
+TITLE =Envois mot de Controle
+//Send control words
+//*ODIL_ID:1853_29*
+//
+      LAR1  AR2; //Multi Instance
+      L     P##Diag; 
+      +AR1  ; 
+//===============================================================================
+      L     #G120D_IO_adress; // adresse Module G120D / Modul adress G120D
+      SLD   3; 
+      LAR2  ; 
+//===============================================================================
+      L     DIW [AR1,P#22.0]; //!\ Offset de STW1 dans Diag
+      T     AW [AR2,P#0.0]; // Envois STW1 / Send STW1
+//===============================================================================
+      L     DIW [AR1,P#24.0]; //!\ Offset de Frequency_set dans Diag
+      T     AW [AR2,P#2.0]; // Envois consigne Frequenc / Send frequency setpoint  
+//===============================================================================
+      L     DIW [AR1,P#26.0]; //!\ Offset de Torque_set dans Diag
+      T     AW [AR2,P#4.0]; // Envois consigne de couple  
+//===============================================================================
+      L     DIW [AR1,P#28.0]; //!\ Offset de STW2 dans Diag
+      T     AW [AR2,P#6.0]; // Envois STW2 / Send STW2
+//===============================================================================
+      LAR2  #SavAR2; //Restauration de AR2
+
+NETWORK
+TITLE =Demarrage Moteur
+//==============================================================================
+//                            MOTOR STARTER
+//==============================================================================
+//*ODIL_ID:1853_30*
+//
+      UN    #Pilotage.AXE2; 
+      R     #Def_rl; 
+      R     #Ala_rl; 
+      R     #Diag.ET200S_OUT.RA22; 
+      R     #Diag.ET200S_OUT.RR21; 
+      R     #Diag.ET200S_OUT.RR22; 
+      R     #Diag.ET200S_OUT.RA21; 
+NETWORK
+TITLE =saut si 2ieme axe n'est pas gere
+//Jump if second axis is not used
+//*ODIL_ID:1853_31*
+//
+      UN    #Pilotage.AXE2; 
+      SPB   NoMS; 
+NETWORK
+TITLE =Lecture et mise a disposition des informations F pour le diag
+//Reading and provision of safety information for Diag
+//*ODIL_ID:1853_32*
+//
+//------- Initialisation BFSTR
+      LAR1  AR2; 
+      L     P##x_RL; 
+      +AR1  ; 
+
+      L     DIW [AR1,P#0.0]; //!\POINTER: Data Block Number pointer de la variable x_RL interface d'entree de la BF
+      T     #DBNR; 
+      AUF   DB [#DBNR]; //Instance data block number of the F-Function Block
+
+      L     DID [AR1,P#2.0]; //!\POINTER: Area - Address + 2 par rapport au numero de bloc 
+      LAR2  ; 
+      L     L#-32; //!\ Decalage de 4 octets ( 8*n)
+      +AR2  ; 
+
+      LAR1  P##InRL; //instance 
+//---------- 
+      L     DBW [AR2,P#0.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#0.0]; //!\ Structure inRL
+      L     DBW [AR2,P#4.0]; //Instance data of the F-Function Block 
+      T     LW [AR1,P#2.0]; //!\ Structure Stat_X_Rl
+//-------
+      LAR2  #SavAR2; 
+
+      U     #InRL.DSecu; // Pilotage RL / Order RL
+      =     #F_Rl; 
+
+NETWORK
+TITLE =Defaut a la retombee
+//Fault at the fallout
+//*ODIL_ID:1853_33*
+//
+      U     #STAT_X_RL.IHMDef; 
+      UN    #F_Rl; 
+      UN    #Diag.ET200S_IN.RL; 
+      O     ; 
+      U     #Def_rl; 
+      UN    #Iadf; 
+      =     #Def_rl; 
+NETWORK
+TITLE =Alarme a la montee
+//Alarm on up
+//*ODIL_ID:1853_34*
+//
+      U     #STAT_X_RL.IHMAla; 
+      U     #F_Rl; 
+      U     #Diag.ET200S_IN.RL; 
+      =     #Ala_rl; 
+NETWORK
+TITLE =Lecture entrees MS
+//Reading MS inputs
+//*ODIL_ID:1853_35*
+//
+      LAR1  AR2; //Multi Instance
+      L     P##Diag; 
+      +AR1  ; 
+//===============================================================================
+      L     #ET200S_IO_adress; // Adresse module / Modul adress MS
+      SLD   3; 
+      LAR2  ; 
+      L     EB [AR2,P#1.0]; 
+      T     DIB [AR1,P#31.0]; // -> Entrees MS / -> MS_Inputs
+//===============================================================================  
+      LAR2  #SavAR2; //Restauration de AR2
+
+NETWORK
+TITLE =Demarrage moteur pret a fonctionner
+//Motor starter ready to run
+//*ODIL_ID:1853_36*
+//
+      U     #Diag.ET200S_IN.Q1OK; 
+      UN    #Diag.ET200S_IN.RL; 
+      UN    #Diag.ET200S_IN.RTH; 
+      U     #Pilotage.OSAAM_AV; 
+      UN    #Def_rl; 
+      U     #F_Rl; 
+      =     #MS_Ready_to_run; 
+NETWORK
+TITLE =Sorties Axe 2
+//Axis 2 outputs
+//*ODIL_ID:1853_37*
+//
+      U     #MS_Ready_to_run; 
+      =     L     32.0; 
+      U     L     32.0; 
+      U     #Pilotage.AV2; 
+      UN    #Pilotage.AR1; 
+      UN    #Pilotage.AR2; 
+      UN    #Diag.ET200S_IN.AXIS2_LS2; 
+      =     #Diag.ET200S_OUT.RA22; 
+      U     L     32.0; 
+      U     #Pilotage.AR1; 
+      UN    #Pilotage.AV1; 
+      UN    #Pilotage.AV2; 
+      UN    #Diag.ET200S_IN.AXIS2_LS1; 
+      =     #Diag.ET200S_OUT.RR21; 
+      U     L     32.0; 
+      U     #Pilotage.AV1; 
+      UN    #Pilotage.AR1; 
+      UN    #Pilotage.AR2; 
+      UN    #Diag.ET200S_IN.AXIS2_LS1; 
+      =     #Diag.ET200S_OUT.RA21; 
+      U     L     32.0; 
+      U     #Pilotage.AR2; 
+      UN    #Pilotage.AV1; 
+      UN    #Pilotage.AV2; 
+      UN    #Diag.ET200S_IN.AXIS2_LS2; 
+      =     #Diag.ET200S_OUT.RR22; 
+NETWORK
+TITLE =Ecriture sorties MS
+//Writing MS output
+//*ODIL_ID:1853_38*
+//
+      LAR1  AR2; //Multi Instance
+      L     P##Diag; 
+      +AR1  ; 
+//===============================================================================
+      L     #ET200S_IO_adress; // Adresse module / Modul adress MS
+      SLD   3; 
+      LAR2  ; 
+      L     DIB [AR1,P#32.0]; 
+      T     AB [AR2,P#0.0]; // -> MS_Outputs
+//===============================================================================  
+      LAR2  #SavAR2; //Restauration de AR2
+NETWORK
+TITLE =DIAGNOSTIQUE
+//==============================================================================
+//                                 DIAGNOSTIC
+//==============================================================================
+//*ODIL_ID:1853_39*
+//
+
+
+NETWORK
+TITLE =Defaut seuils de frequence
+//Frequency Threshold Fault
+//*ODIL_ID:1853_40*
+//
+NoMS: U     #Df_MinMax; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      =     #Diag.IhmDefMinMax; 
+      U     L     32.0; 
+      SPBNB _001; 
+      L     1; 
+      T     #Diag.Codedef; 
+_001: NOP   0; 
+NETWORK
+TITLE =Defaut frequence hors plage
+//Frequency out of range Faullt
+//*ODIL_ID:1853_41*
+//
+      U     #Df_Freq; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      =     #Diag.IhmDefFreq; 
+      U     L     32.0; 
+      SPBNB _002; 
+      L     16384; 
+      T     #Diag.Codedef; 
+_002: NOP   0; 
+NETWORK
+TITLE =Variateur indisponible
+//Driver Unavailable
+//*ODIL_ID:1853_42*
+//
+      UN    #Diag.ZSW1.PZD_control; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      =     #Diag.IhmVarindisp; 
+      U     L     32.0; 
+      SPBNB _003; 
+      L     8192; 
+      T     #Diag.Codedef; 
+_003: NOP   0; 
+NETWORK
+TITLE =Option selection amont aval
+//Selection downstream upstream option
+//*ODIL_ID:1853_43*
+//
+      UN    #Pilotage.OSAAM_AV; 
+      SPBNB _004; 
+      L     4096; 
+      T     #Diag.Codedef; 
+_004: NOP   0; 
+NETWORK
+TITLE =Defaut variateur
+//Drive fault
+//*ODIL_ID:1853_44*
+//
+      U     #Diag.ZSW1.Drive_fault_active; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefVar; 
+      U     L     32.0; 
+      SPBNB _005; 
+      L     1024; 
+      T     #Diag.Codedef; 
+_005: NOP   0; 
+NETWORK
+TITLE =Alarme RL
+//RL (Line relay) Alarm
+//*ODIL_ID:1853_45*
+//
+      U     #Ala_rl; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmAlaRl; 
+      U     L     32.0; 
+      SPBNB _006; 
+      L     512; 
+      T     #Diag.Codedef; 
+_006: NOP   0; 
+NETWORK
+TITLE =Alarme RLV
+//RLV (Drive line relay) Alarm
+//*ODIL_ID:1853_46*
+//
+      U     #Ala_rlv; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmAlaRlv; 
+      U     L     32.0; 
+      SPBNB _007; 
+      L     256; 
+      T     #Diag.Codedef; 
+_007: NOP   0; 
+NETWORK
+TITLE =defaut var non pret
+//Drive not ready fault
+//*ODIL_ID:1853_61*
+//
+      U     #Diag.ZSW1.PZD_control; 
+      U     #F_Rlv_Sc; 
+      UN    #Diag.ZSW1.Drive_ready; 
+      =     L     32.0; 
+      BLD   103; 
+      CALL #T_Def_Drive_Ready (
+           IN                       := L     32.0,
+           PT                       := T#10S,
+           Q                        := #Diag.IhmDefVarReady);
+
+      NOP   0; 
+NETWORK
+TITLE =defaut var non pret
+//Drive not ready fault
+//*ODIL_ID:1853_61*
+//
+      U     #T_Def_Drive_Ready.Q; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefVarReady; 
+      U     L     32.0; 
+      SPBNB _008; 
+      L     128; 
+      T     #Diag.Codedef; 
+_008: NOP   0; 
+NETWORK
+TITLE =Defaut controle coherence pilotage Variateur
+//control orders running Fault
+//*ODIL_ID:1853_47*
+//
+      U     #T_OAVR.Q; 
+      UN    #Diag.IhmDeffrein; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefFBpilotage; 
+      U     L     32.0; 
+      SPBNB _009; 
+      L     64; 
+      T     #Diag.Codedef; 
+_009: NOP   0; 
+NETWORK
+TITLE =Defaut controle coherence pilotage Variateur
+//control orders running Fault
+//*ODIL_ID:1853_48*
+//
+      U     #Def_Cr; 
+      UN    #Diag.IhmDeffrein; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefCRpilotage; 
+      U     L     32.0; 
+      SPBNB _00a; 
+      L     64; 
+      T     #Diag.Codedef; 
+_00a: NOP   0; 
+NETWORK
+TITLE =Defaut parametrage temps de retombee RLV
+//Fallout time parameter of RLV Fault
+//*ODIL_ID:1853_49*
+//
+      U     #Df_para1; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      =     #Diag.IhmDefPara1; 
+      U     L     32.0; 
+      SPBNB _00b; 
+      L     32; 
+      T     #Diag.Codedef; 
+_00b: NOP   0; 
+NETWORK
+TITLE =Defaut RFR
+//Brake relay Fault
+//*ODIL_ID:1853_50*
+//
+      U     #T_RFR.Q; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDeffrein; 
+      U     L     32.0; 
+      SPBNB _00c; 
+      L     4; 
+      T     #Diag.Codedef; 
+_00c: NOP   0; 
+NETWORK
+TITLE =Defaut RL
+//RL (Line Relay) Fault
+//*ODIL_ID:1853_51*
+//
+      U     #Def_rl; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefRl; 
+      U     L     32.0; 
+      SPBNB _00d; 
+      L     8; 
+      T     #Diag.Codedef; 
+_00d: NOP   0; 
+NETWORK
+TITLE =Defaut RLV
+//RLV (Drive line relay) Fault
+//*ODIL_ID:1853_52*
+//
+      U     #Def_rlv; 
+      =     L     32.0; 
+      U     L     32.0; 
+      BLD   102; 
+      S     #Diag.IhmDefRlv; 
+      U     L     32.0; 
+      SPBNB _00e; 
+      L     2; 
+      T     #Diag.Codedef; 
+_00e: NOP   0; 
+NETWORK
+TITLE =Defaut relais thermique
+//Thermal relay fault
+//*ODIL_ID:1853_53*
+//
+      U     #Diag.ET200S_IN.RTH; 
+      SPBNB _00f; 
+      L     16; 
+      T     #Diag.Codedef; 
+_00f: NOP   0; 
+NETWORK
+TITLE =Defaut disjoncteur
+//Circuit-breaker fault
+//*ODIL_ID:1853_54*
+//
+      UN    #Diag.ET200S_IN.Q1OK; 
+      SPBNB _010; 
+      L     2048; 
+      T     #Diag.Codedef; 
+_010: NOP   0; 
+NETWORK
+TITLE =Annulation defaut
+//Fault Reset
+//*ODIL_ID:1853_55*
+//
+      U     #Iadf; 
+      SPBNB _011; 
+      L     0; 
+      T     #Diag.Codedef; 
+_011: NOP   0; 
+NETWORK
+TITLE =Defaut
+//Fault
+//*ODIL_ID:1853_56*
+//
+      L     #Diag.Codedef; 
+      L     B#16#0; 
+      <>D   ; 
+      =     #Def; 
+      =     #Diag.Def; 
+NETWORK
+TITLE =RAZ DES MOTS DE DIAGNOSTIC
+//Diagnotic information Reset
+//*ODIL_ID:1853_57*
+//
+      UN    #Def; 
+      SPBN  NoDe; 
+
+      SET   ; 
+      R     #Diag.IhmDefVar; 
+      R     #Diag.IhmAlaRl; 
+      R     #Diag.IhmAlaRlv; 
+      R     #Diag.IhmDeffrein; 
+      R     #Diag.IhmDefRl; 
+      R     #Diag.IhmDefRlv; 
+      R     #Diag.IhmDefCRpilotage; 
+      R     #Diag.IhmDefFBpilotage; 
+      R     #Diag.IhmDefVarReady; 
+
+
+NoDe: NOP   0; 
+NETWORK
+TITLE =Alarme
+//Alarm
+//*ODIL_ID:1853_58*
+//
+      O     #Diag.ZSW1.Drive_warning_active; 
+      ON    #Diag.ZSW1.W_Motor_current_limit; 
+      =     #Ala; 
+      =     #Diag.Ala; 
+NETWORK
+TITLE =Fonction variateur OK
+//Drive function OK
+//*ODIL_ID:1853_59*
+//
+      U     #Diag.ZSW1.Drive_ready; 
+      UN    #Def; 
+      =     #Fonc_var_OK; 
+NETWORK
+TITLE =Ecriture sortie F_AR
+//Writing F-AR outputs
+//*ODIL_ID:1853_60*
+//
+      U     #Diag.ET200S_IN.Q1OK; 
+      UN    #Def_rlv; 
+      UN    #Diag.IhmDefFBpilotage; 
+      UN    #Diag.IhmDeffrein; 
+      UN    #Diag.ZSW1.Drive_fault_active; 
+      U     #Diag.ZSW1.Inverter_overload; 
+      U     #Diag.ZSW1.Motor_overload; 
+      U(    ; 
+      UN    #Def_rl; 
+      UN    #Diag.ET200S_IN.RTH; 
+      ON    #Pilotage.AXE2; 
+      )     ; 
+      =     #F_AR; 
+END_FUNCTION_BLOCK
+

@@ -1,0 +1,720 @@
+<EcranUser>
+  <GroupeDC>37488_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="35" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="1" Height="210" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="190" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - DECISION OPERARIO37605" Line="2" AlignY="Auto" Height="Full" Width="170" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">DECISION OPERARIO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Button Name="1 - Validation Pieza A Salir" Row="1" Height="26" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validation Pieza A Salir</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.IhmpBPpas">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.IhmpBPpas">Z1G.IhmpBPpas&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Button Name="2 - Validacion Pieza Mala" Row="1" Height="26" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validacion Pieza Mala</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.IhmBPpm">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.IhmBPpm">Z1C0R.IhmBPpm&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <ButtonNav Name="3 - Pantalla Décisiones" Row="1" Height="26" Width="Auto" PosX="Auto" PosY="Auto" Pwd="60256">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pantalla Décisiones</Expression>
+      </Text>
+      <ClickNav CodeEcran="28194_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="4 - Pantalla de análisis" Row="1" Height="26" Width="Auto" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pantalla de análisis</Expression>
+      </Text>
+      <ClickNav CodeEcran="38191_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <Button Name="5 - Llamada Siptol" Row="1" Height="26" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Llamada Siptol</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.PILOT.Ihmdoapos">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.PILOT.Ihmdoapos">Z1C0R.C0_RECALAGE.PILOT.Ihmdoapos&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="1 - PGF 07.05 - RECALAGE SIPTOL37603" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">PGF 07.05 - RECALAGE SIPTOL</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="1 - ESTADO RECALAGE37490" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">ESTADO RECALAGE</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - Fabricacion sin pieza" Color="-16711681" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Fabricacion sin pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.DIAG.Ihmfspfsip">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Ihmfspfsip">Z1C0R.C0_RECALAGE.DIAG.Ihmfspfsip&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="2 - Présencia = Espera" Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Présencia = Espera</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.DIAG.IhmPfbam">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.IhmPfbam">Z1C0R.C0_RECALAGE.DIAG.IhmPfbam&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - Discordancia !" Color="-65536" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Discordancia !</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.DIAG.IhmPfmam">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.IhmPfmam">Z1C0R.C0_RECALAGE.DIAG.IhmPfmam&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="4 - Injeccion" Color="-256" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Injeccion</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.DIAG.Ihmdinjsip">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Ihmdinjsip">Z1C0R.C0_RECALAGE.DIAG.Ihmdinjsip&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="5 - Salida" Color="-256" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Salida</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.DIAG.Ihmdsortsip">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Ihmdsortsip">Z1C0R.C0_RECALAGE.DIAG.Ihmdsortsip&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+  </Cadre>
+  <Cadre Name="2 - ESTADOS CICLO37625" Line="2" AlignY="Auto" Height="Full" Width="320" PosX="175" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">ESTADOS CICLO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Estados del ciclo" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estados del ciclo</Expression>
+      </Text>
+    </Text>
+    <TextList Name="2 - Visualizador de lista" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Infocyop1">Z1C0R.C0_RECALAGE.DIAG.Infocyop1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Infocyop1" />
+    </TextList>
+    <TextList Name="3 - Visualizador de lista" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Infocyop2">Z1C0R.C0_RECALAGE.DIAG.Infocyop2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Infocyop2" />
+    </TextList>
+    <Text Name="4 - Causa de salida finale" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Causa de salida finale</Expression>
+      </Text>
+    </Text>
+    <TextList Name="5 - Visualizador de lista" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.IHMNCSP">Z1C0R.IHMNCSP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Csfi" />
+    </TextList>
+  </Cadre>
+  <Cadre Name="2 - INFOS RECALAGE37507" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="195" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">INFOS RECALAGE</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="80" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.FILM">Z1C0R.TAB_FILM.FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="1 - Film" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Film</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.NORDRE">Z1C0R.TAB_FILM.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="2 - Norden" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Norden</Expression>
+      </Text>
+    </Text>
+    <TextList Name="3 - Visualizador de lista" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.DIV1">Z1C0R.TAB_FILM.DIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Diversidad" />
+    </TextList>
+    <Text Name="3 - Div1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div1</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.DIV2">Z1C0R.TAB_FILM.DIV2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="4 - Div2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div2</Expression>
+      </Text>
+    </Text>
+    <Text Name="5 - Div3" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div3</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.DIV3">Z1C0R.TAB_FILM.DIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="6 - Div4" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div4</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_FILM.DIV4">Z1C0R.TAB_FILM.DIV4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="3 - INFOS PIEZA - MTG C0x37540" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="395" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">INFOS PIEZA - MTG C0x</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="80" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.FILM">Z1C0R.TAB_PIEZA.FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="1 - Film" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Film</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.NORDRE">Z1C0R.TAB_PIEZA.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="2 - Norden" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Norden</Expression>
+      </Text>
+    </Text>
+    <TextList Name="3 - Visualizador de lista" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.DIV1">Z1C0R.TAB_PIEZA.DIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Diversidad" />
+    </TextList>
+    <Text Name="3 - Div1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div1</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.DIV2">Z1C0R.TAB_PIEZA.DIV2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="4 - Div2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div2</Expression>
+      </Text>
+    </Text>
+    <Text Name="5 - Div3" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div3</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.DIV3">Z1C0R.TAB_PIEZA.DIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="6 - Div4" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Div4</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.TAB_PIEZA.DIV4">Z1C0R.TAB_PIEZA.DIV4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="4 - VALIDACION OPERARIO37573" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="595" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">VALIDACION OPERARIO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Top" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="50" AlignY="Top" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Salida Pieza" Color="-16777216" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Salida Pieza</Expression>
+      </Text>
+    </Text>
+    <VoyantMulti Name="1 - Indicador multicolor" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto">
+      <StatusVM>
+        <Status Color="">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="128" NumBit="-1" Description="Z1G.MVPAS">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.MVPAS">Z1G.MVPAS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.MVPAS">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.MVPAS">Z1G.MVPAS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <VoyantMulti Name="2 - Indicador multicolor" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto">
+      <StatusVM>
+        <Status Color="">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="128" NumBit="-1" Description="Z1C0R.C0_RECALAGE.Rout_api.Raretam">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.Rout_api.Raretam">Z1C0R.C0_RECALAGE.Rout_api.Raretam&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.Rout_api.Raretam">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.Rout_api.Raretam">Z1C0R.C0_RECALAGE.Rout_api.Raretam&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0_RECALAGE.Rout_api.Raretrb">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.Rout_api.Raretrb">Z1C0R.C0_RECALAGE.Rout_api.Raretrb&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Text Name="2 - Pieza Mala" Color="-16777216" Row="1" Height="Auto" Width="100" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pieza Mala</Expression>
+      </Text>
+    </Text>
+    <VoyantMulti Name="3 - Indicador multicolor" Row="2" Height="Auto" Width="Auto" PosX="Right" PosY="Auto">
+      <StatusVM>
+        <Status Color="">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="128" NumBit="-1" Description="Z1C0R.C0RMINY">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0RMINY">Z1C0R.C0RMINY&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1C0R.C0RMINY">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0RMINY">Z1C0R.C0RMINY&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Text Name="3 - Pieza Inyectada" Color="-16777216" Row="1" Height="Auto" Width="125" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pieza Inyectada</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Cadre Name="5 - ESTADO DEL DIALOGO37640" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="500" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">ESTADO DEL DIALOGO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="80" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Ihmval_cal">Z1C0R.C0_RECALAGE.DIAG.Ihmval_cal&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="1 - Val_cal" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Val_cal</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - Val_api" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Val_api</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.Ihmval_api">Z1C0R.C0_RECALAGE.DIAG.Ihmval_api&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="3 - Etat_flux" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Etat_flux</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.IhmEtflux">Z1C0R.C0_RECALAGE.DIAG.IhmEtflux&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <TextList Name="4 - Visualizador de lista" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1C0R.C0_RECALAGE.DIAG.IHMETATDIAL">Z1C0R.C0_RECALAGE.DIAG.IHMETATDIAL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Etat_dial" />
+    </TextList>
+    <Text Name="4 - Etat_dial" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Etat_dial</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Listes>
+    <Liste Id="Etat_dial" />
+    <Liste Id="Csfi">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Stock sustitution</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">MPR</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Control geométrico</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Solo unidad</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="5">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">MAP</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="6">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">CKD</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="7">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Control destructivo</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id7" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Substitution pieza buena</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id8" Value="9">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Substitution pieza malo</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id9" Value="10">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Pieza malo</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id10" Value="11">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">DISCORDANCIA</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="Infocyop1">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">En espera de orden</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Demanda inyección Siptol</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Retirer pieza tiroir E/S</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">DISCORDANCIA</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="5">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Inyección imposible</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="6">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Sustitución imposible</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="7">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Diversidad desconocida</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="Infocyop2">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Inyección en curso</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Inyección rechazada</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Pieza flux normal</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Llamada Siptol en curso</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="5">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Sortie pieza sur discordance</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="6">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Réintroduction pieza sur discordance</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="7">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Manque pieza sur discordance</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id7" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Manque pieza sur sortie unit seul</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id8" Value="9">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Manque pieza sur sortie siptol</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id9" Value="10">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Salida Siptol en curso</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="Diversidad">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">L52</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">B52</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">B52 CROSS</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">L38</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+  </Listes>
+</EcranUser>

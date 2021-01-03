@@ -1,0 +1,26 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Conf_Machine1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Conf_Machine2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Conf_Machine4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Conf_Machine8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Conf_Machine16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Conf_Machine32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>Conf_Machine64</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

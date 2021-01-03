@@ -1,0 +1,91 @@
+<SommaireSiptol>
+  <GroupeDC>VarSommaire</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="Auto" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="Cadre_1" SuffixeTitle="" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="Auto" PosY="Auto" Autoscroll="True">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Códigos de processo / Critérios de diversidade</Expression>
+    </Title>
+    <Table LineHeight="23">
+      <Columns>
+        <Column AlignX="Auto" Color="" Width="360">
+          <Controls>
+            <ButtonNav Height="23" Width="200" Name="BTN_799" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="A0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="A0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_7016" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="B0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="B0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_3830" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="C0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="C0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_834" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="D0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="D0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_3753" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="E0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="E0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_6915" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="F0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="F0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_5274" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="G0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="G0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_6541" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="H0">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="H0_EcMaSiptolCodes" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+            <ButtonNav Height="23" Width="200" Name="BTN_1573" Toggle="false" PosX="Auto" Row="0" PosY="Auto" Text="Ilot">
+              <ClickNav TypeEcran="EcransMaintenance" CodeEcran="ILOT_EcMaSiptolCodesIlot" />
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ButtonNav>
+          </Controls>
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+</SommaireSiptol>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>RobotABB1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>RobotABB2</Text>
+    </Doc>
+    <Doc Num="7">
+      <Text>RobotABB7</Text>
+    </Doc>
+    <Doc Num="10">
+      <Text>RobotABB10</Text>
+    </Doc>
+    <Doc Num="11">
+      <Text>RobotABB11</Text>
+    </Doc>
+    <Doc Num="12">
+      <Text>RobotABB12</Text>
+    </Doc>
+    <Doc Num="13">
+      <Text>RobotABB13</Text>
+    </Doc>
+    <Doc Num="15">
+      <Text>RobotABB15</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>RobotABB16</Text>
+    </Doc>
+    <Doc Num="20">
+      <Text>RobotABB20</Text>
+    </Doc>
+    <Doc Num="21">
+      <Text>RobotABB21</Text>
+    </Doc>
+    <Doc Num="22">
+      <Text>RobotABB22</Text>
+    </Doc>
+    <Doc Num="23">
+      <Text>RobotABB23</Text>
+    </Doc>
+    <Doc Num="24">
+      <Text>RobotABB24</Text>
+    </Doc>
+    <Doc Num="40">
+      <Text>RobotABB40</Text>
+    </Doc>
+    <Doc Num="50">
+      <Text>RobotABB50</Text>
+    </Doc>
+    <Doc Num="51">
+      <Text>RobotABB51</Text>
+    </Doc>
+    <Doc Num="52">
+      <Text>RobotABB52</Text>
+    </Doc>
+    <Doc Num="53">
+      <Text>RobotABB53</Text>
+    </Doc>
+    <Doc Num="54">
+      <Text>RobotABB54</Text>
+    </Doc>
+    <Doc Num="55">
+      <Text>RobotABB55</Text>
+    </Doc>
+    <Doc Num="56">
+      <Text>RobotABB56</Text>
+    </Doc>
+    <Doc Num="57">
+      <Text>RobotABB57</Text>
+    </Doc>
+    <Doc Num="58">
+      <Text>RobotABB58</Text>
+    </Doc>
+    <Doc Num="59">
+      <Text>RobotABB59</Text>
+    </Doc>
+    <Doc Num="60">
+      <Text>RobotABB60</Text>
+    </Doc>
+    <Doc Num="61">
+      <Text>RobotABB61</Text>
+    </Doc>
+    <Doc Num="62">
+      <Text>RobotABB62</Text>
+    </Doc>
+    <Doc Num="63">
+      <Text>RobotABB63</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>RobotABB64</Text>
+    </Doc>
+    <Doc Num="65">
+      <Text>RobotABB65</Text>
+    </Doc>
+    <Doc Num="66">
+      <Text>RobotABB66</Text>
+    </Doc>
+    <Doc Num="71">
+      <Text>RobotABB71</Text>
+    </Doc>
+    <Doc Num="72">
+      <Text>RobotABB72</Text>
+    </Doc>
+    <Doc Num="73">
+      <Text>RobotABB73</Text>
+    </Doc>
+    <Doc Num="74">
+      <Text>RobotABB74</Text>
+    </Doc>
+    <Doc Num="75">
+      <Text>RobotABB75</Text>
+    </Doc>
+    <Doc Num="76">
+      <Text>RobotABB76</Text>
+    </Doc>
+    <Doc Num="77">
+      <Text>RobotABB77</Text>
+    </Doc>
+    <Doc Num="78">
+      <Text>RobotABB78</Text>
+    </Doc>
+    <Doc Num="79">
+      <Text>RobotABB79</Text>
+    </Doc>
+    <Doc Num="80">
+      <Text>RobotABB80</Text>
+    </Doc>
+    <Doc Num="81">
+      <Text>RobotABB81</Text>
+    </Doc>
+    <Doc Num="82">
+      <Text>RobotABB82</Text>
+    </Doc>
+    <Doc Num="83">
+      <Text>RobotABB83</Text>
+    </Doc>
+    <Doc Num="84">
+      <Text>RobotABB84</Text>
+    </Doc>
+    <Doc Num="85">
+      <Text>RobotABB85</Text>
+    </Doc>
+    <Doc Num="86">
+      <Text>RobotABB86</Text>
+    </Doc>
+    <Doc Num="100">
+      <Text>RobotABB100</Text>
+    </Doc>
+    <Doc Num="153">
+      <Text>RobotABB153</Text>
+    </Doc>
+    <Doc Num="154">
+      <Text>RobotABB154</Text>
+    </Doc>
+    <Doc Num="155">
+      <Text>RobotABB155</Text>
+    </Doc>
+    <Doc Num="156">
+      <Text>RobotABB156</Text>
+    </Doc>
+    <Doc Num="157">
+      <Text>RobotABB157</Text>
+    </Doc>
+    <Doc Num="158">
+      <Text>RobotABB158</Text>
+    </Doc>
+    <Doc Num="162">
+      <Text>RobotABB162</Text>
+    </Doc>
+    <Doc Num="163">
+      <Text>RobotABB163</Text>
+    </Doc>
+    <Doc Num="165">
+      <Text>RobotABB165</Text>
+    </Doc>
+    <Doc Num="166">
+      <Text>RobotABB166</Text>
+    </Doc>
+    <Doc Num="167">
+      <Text>RobotABB167</Text>
+    </Doc>
+    <Doc Num="168">
+      <Text>RobotABB168</Text>
+    </Doc>
+    <Doc Num="1001">
+      <Text>RobotABB1001</Text>
+    </Doc>
+    <Doc Num="1002">
+      <Text>RobotABB1002</Text>
+    </Doc>
+    <Doc Num="1003">
+      <Text>RobotABB1003</Text>
+    </Doc>
+    <Doc Num="1004">
+      <Text>RobotABB1004</Text>
+    </Doc>
+    <Doc Num="1005">
+      <Text>RobotABB1005</Text>
+    </Doc>
+    <Doc Num="1006">
+      <Text>RobotABB1006</Text>
+    </Doc>
+    <Doc Num="1007">
+      <Text>RobotABB1007</Text>
+    </Doc>
+    <Doc Num="1008">
+      <Text>RobotABB1008</Text>
+    </Doc>
+    <Doc Num="1009">
+      <Text>RobotABB1009</Text>
+    </Doc>
+    <Doc Num="1010">
+      <Text>RobotABB1010</Text>
+    </Doc>
+    <Doc Num="1011">
+      <Text>RobotABB1011</Text>
+    </Doc>
+    <Doc Num="1012">
+      <Text>RobotABB1012</Text>
+    </Doc>
+    <Doc Num="1013">
+      <Text>RobotABB1013</Text>
+    </Doc>
+    <Doc Num="1014">
+      <Text>RobotABB1014</Text>
+    </Doc>
+    <Doc Num="1015">
+      <Text>RobotABB1015</Text>
+    </Doc>
+    <Doc Num="1016">
+      <Text>RobotABB1016</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

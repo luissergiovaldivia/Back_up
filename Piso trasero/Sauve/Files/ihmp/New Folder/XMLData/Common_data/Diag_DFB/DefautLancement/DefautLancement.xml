@@ -1,0 +1,23 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>Lancement1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Lancement2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Lancement4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Lancement8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Lancement16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Lancement32</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

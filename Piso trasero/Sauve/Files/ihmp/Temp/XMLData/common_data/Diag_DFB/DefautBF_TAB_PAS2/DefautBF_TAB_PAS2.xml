@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>Tab_Pas1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>Tab_Pas2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>Tab_Pas4</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>Tab_Pas8</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>Tab_Pas16</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>Tab_Pas32</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>Tab_Pas64</Text>
+    </Doc>
+    <Doc Num="128">
+      <Text>Tab_Pas128</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>Tab_Pas256</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>Tab_Pas512</Text>
+    </Doc>
+    <Doc Num="1024">
+      <Text>Tab_Pas1024</Text>
+    </Doc>
+    <Doc Num="2048">
+      <Text>Tab_Pas2048</Text>
+    </Doc>
+    <Doc Num="4096">
+      <Text>Tab_Pas4096</Text>
+    </Doc>
+    <Doc Num="8192">
+      <Text>Tab_Pas8192</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

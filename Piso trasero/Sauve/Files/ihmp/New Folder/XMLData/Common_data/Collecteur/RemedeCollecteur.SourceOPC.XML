@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Collecteur>
+  <AddItemError ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Vérifier que le serveur OPC est bien lancé sur le MOP.
+      2) Refaire un export avec ODIL.
+    </Expression>
+  </AddItemError>
+  <AddItemFail ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Refaire un export ODIL.
+      2) Mettre le serveur OPC à jour avec le programme automate.
+      3) Vérifier si les données saisies dans ODIL sont cohérentes avec les données du programme automate.
+    </Expression>
+  </AddItemFail>
+  <ServeurRPCnonDispo ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Le serveur RPC n'est pas disponible</Expression>
+  </ServeurRPCnonDispo>
+  <GroupActiveException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">L'activation du groupe OPC a échoué, appelez la maintenance.</Expression>
+  </GroupActiveException>
+  <ReadCOMException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Refaire un export avec ODIL
+      2) Mettre le serveur OPC à jour avec le programme automate.
+      3) Vérifier si les données saisies dans ODIL sont cohérentes avec les données du programme automate.
+    </Expression>
+  </ReadCOMException>
+  <ReadException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Vérifier que le serveur OPC est bien lancé sur le MOP.
+      2) Refaire un export avec ODIL.
+    </Expression>
+  </ReadException>
+  <ReadBadQuality ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      La qualité n'est pas bonne, appelez la maintenance.
+    </Expression>
+  </ReadBadQuality>
+  <ReadFail ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Echec de lecture appelez la maintenance</Expression>
+  </ReadFail>
+  <WriteFail ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Echec d'écriture appelez la maintenance</Expression>
+  </WriteFail>
+  <WriteException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Exception dans l'écriture, appelez la maintenance.</Expression>
+  </WriteException>
+  <AddGroupException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Exception lors de l'ajout du groupe appelez la maintenance</Expression>
+  </AddGroupException>
+  <RemoveException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Exception lors de la destruction du groupe, appelez la maintenance</Expression>
+  </RemoveException>
+  <ConnectExceptionOPCNotFound ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Refaire un export avec ODIL.
+      2) Installer le serveur OPC requis sur le MOP.
+    </Expression>
+  </ConnectExceptionOPCNotFound>
+  <ConnectExceptionNoConnection ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Refaire un export avec ODIL
+      2) Allumer le PC distant possédant le serveur OPC.
+    </Expression>
+  </ConnectExceptionNoConnection>
+  <ConnectException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Une exception s'est produit lors de la connexion, appelez la maintenance.</Expression>
+  </ConnectException>
+  <ConnectCOMException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Une exception COM s'est produit lors de la connexion, appelez la maintenance.</Expression>
+  </ConnectCOMException>
+  <DisconnectException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">Une exception s'est produite lors de la déconnexion, appelez la maintenance.</Expression>
+  </DisconnectException>
+</Collecteur>

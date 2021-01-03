@@ -1,0 +1,2661 @@
+<EcranUser>
+  <GroupeDC>18114_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="35" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - Mesa A018118" Line="2" AlignY="Auto" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Mesa A0</Expression>
+    </Title>
+    <Rows />
+    <Table LineHeight="20">
+      <Columns>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - MPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0.MP.MPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0.MP.MPP">IIT.A0.MP.MPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="2 - MOD A0" Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MOD A0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="3 - L52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">L52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.TYP_VEH.L52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.TYP_VEH.L52">Z1G.A0.TYP_VEH.L52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="4 - B52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.TYP_VEH.B52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.TYP_VEH.B52">Z1G.A0.TYP_VEH.B52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="5 - B52 CROSS" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52 CROSS</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.TYP_VEH.BCROSS">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.TYP_VEH.BCROSS">Z1G.A0.TYP_VEH.BCROSS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CAMBIO LOC" Color="-16711936" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CAMBIO LOC</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A0_TYPE CHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A0_TYPE CHANGE">A0_TYPE CHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - A1_LOCCHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A1_LOCCHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A1_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A1_LOCCHANGE">A1_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - A2_LOCCHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A2_LOCCHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A2_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A2_LOCCHANGE">A2_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - A0_LOCCHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A0_LOCCHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A0_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A0_LOCCHANGE">A0_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="14 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="2 - MOD SIP" Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MOD SIP</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="3 - L52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">L52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.SIP_DIV.L52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0.SIP_DIV.L52">Z1A0.SIP_DIV.L52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="4 - B52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.SIP_DIV.B52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0.SIP_DIV.B52">Z1A0.SIP_DIV.B52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="5 - B52 CROSS" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52 CROSS</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1A0.SIP_DIV.B52CROSS">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0.SIP_DIV.B52CROSS">Z1A0.SIP_DIV.B52CROSS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CMR1" Color="-16711936" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR1</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.CMR1">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.CMR1">Z1G.A0.CMR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - A1_MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A1_MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.A1.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.A1.MFT2">IIT.A0_TT.A1.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - A2_MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A2_MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.A2.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.A2.MFT2">IIT.A0_TT.A2.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.MFT.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.MFT.MFT2">IIT.A0_TT.MFT.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - CMA3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.CMA3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.CMA3">Z1G.A0.CMA3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - A1_MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A1_MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.A1.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.A1.MFT3">IIT.A0_TT.A1.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - A2_MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A2_MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.A2.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.A2.MFT3">IIT.A0_TT.A2.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="14 - MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0_TT.MFT.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0_TT.MFT.MFT3">IIT.A0_TT.MFT.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="15 - MPT" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPT</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.A0.MP.MPT">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.A0.MP.MPT">IIT.A0.MP.MPT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="16 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - IPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.IPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.IPP">Z1G.A0.IPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="2 - IPA" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPA</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.IPA">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.IPA">Z1G.A0.IPA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - IAP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IAP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.IAP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.IAP">Z1G.A0.IAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Text Name="1 - CRU A0" Color="-12582848" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CRU A0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="2 - A0DCZA" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A0DCZA</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A0DCZA">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A0DCZA">A0DCZA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - A0DCZB" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">A0DCZB</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="A0DCZB">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="A0DCZB">A0DCZB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CMR" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.CMR">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.CMR">Z1G.A0.CMR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - CMR1" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR1</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.CMR1">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.CMR1">Z1G.A0.CMR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - CMA3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.A0.CMA3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.A0.CMA3">Z1G.A0.CMA3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+  <Cadre Name="1 - Memoria de trabajo &amp; condicion de Herramienta18116" Line="1" AlignY="Auto" Height="20" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Memoria de trabajo &amp; condicion de Herramienta</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="2 - Mesa B018301" Line="2" AlignY="Auto" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Mesa B0</Expression>
+    </Title>
+    <Rows />
+    <Table LineHeight="20">
+      <Columns>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - MPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0.MP.MPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0.MP.MPP">IIT.B0.MP.MPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="2 - MOD B0" Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MOD B0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="3 - L52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">L52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.TYP_VEH.L52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.TYP_VEH.L52">Z1G.B0.TYP_VEH.L52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="4 - B52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.TYP_VEH.B52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.TYP_VEH.B52">Z1G.B0.TYP_VEH.B52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="5 - B52 CROSS" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52 CROSS</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.TYP_VEH.BCROSS">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.TYP_VEH.BCROSS">Z1G.B0.TYP_VEH.BCROSS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0_TYPE CHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0_TYPE CHANGE">B0_TYPE CHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - B0_CHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B0_CHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0_LOCCHANGE">B0_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - B1_CHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B1_CHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B1_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B1_LOCCHANGE">B1_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - B2_CHANGE" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B2_CHANGE</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B2_LOCCHANGE">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B2_LOCCHANGE">B2_LOCCHANGE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="14 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="2 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="3 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="4 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - B1_MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B1_MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B1.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B1.MFT2">IIT.B0_TT.B1.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - B2_MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B2_MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B2.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B2.MFT2">IIT.B0_TT.B2.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.MFT.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.MFT.MFT2">IIT.B0_TT.MFT.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - B1_MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B1_MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B1.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B1.MFT3">IIT.B0_TT.B1.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - B2_MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B2_MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B2.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B2.MFT3">IIT.B0_TT.B2.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - MFT3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.MFT.MFT3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.MFT.MFT3">IIT.B0_TT.MFT.MFT3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="14 - B1_MPT4" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B1_MPT4</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B1.MFT4">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B1.MFT4">IIT.B0_TT.B1.MFT4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="15 - B2_MFT4" Color="-16711936" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B2_MFT4</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.B2.MFT4">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.B2.MFT4">IIT.B0_TT.B2.MFT4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="16 - MPT4" Color="-16711936" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPT4</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0_TT.MFT.MFT4">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0_TT.MFT.MFT4">IIT.B0_TT.MFT.MFT4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="17 - MPT" Color="-16711872" Row="None" Height="25" Width="100" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPT</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.B0.MP.MPT">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.B0.MP.MPT">IIT.B0.MP.MPT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - IPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.IPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.IPP">Z1G.B0.IPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="2 - IPA" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPA</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.IPA">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.IPA">Z1G.B0.IPA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - IAP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IAP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.IAP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.IAP">Z1G.B0.IAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - scaner" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">scaner</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Scaner_cortado">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Scaner_cortado">Scaner_cortado&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Text Name="1 - CRU B0" Color="-12582848" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CRU B0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="2 - B0DCZB" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B0DCZB</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DCZB">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0DCZB">B0DCZB&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - B0DCZC" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B0DCZC</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="B0DCZC">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="B0DCZC">B0DCZC&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CMR" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.CMR">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.CMR">Z1G.B0.CMR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - CMR1" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR1</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.CMR1">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.CMR1">Z1G.B0.CMR1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - CMA" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.CMA">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.CMA">Z1G.B0.CMA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - CMA3" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA3</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.CMA3">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.CMA3">Z1G.B0.CMA3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - CMA4" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA4</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.B0.CMA4">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.B0.CMA4">Z1G.B0.CMA4&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+  <Cadre Name="3 - Mesa D018640" Line="2" AlignY="Auto" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Mesa D0</Expression>
+    </Title>
+    <Rows />
+    <Table LineHeight="20">
+      <Columns>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - MPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0.MP.MPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0.MP.MPP">IIT.D0.MP.MPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="2 - MOD D0" Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MOD D0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="3 - L52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">L52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.TYP_VEH.L52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.TYP_VEH.L52">Z1G.D0.TYP_VEH.L52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="4 - B52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.TYP_VEH.B52">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.TYP_VEH.B52">Z1G.D0.TYP_VEH.B52&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="5 - B52 CROSS" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">B52 CROSS</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.TYP_VEH.BCROSS">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.TYP_VEH.BCROSS">Z1G.D0.TYP_VEH.BCROSS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 -    " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">   </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Text Name="1 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="2 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="3 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="4 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - MFT1" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT1</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0_TT.MFT.MFT1">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0_TT.MFT.MFT1">IIT.D0_TT.MFT.MFT1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - MFT2" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MFT2</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0_TT.MFT.MFT2">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0_TT.MFT.MFT2">IIT.D0_TT.MFT.MFT2&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 -  " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="14 - MPT" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">MPT</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0.MP.MPT">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0.MP.MPT">IIT.D0.MP.MPT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16776961" Row="None" Height="25" Width="100" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Voyant Name="1 - IPP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.IPP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.IPP">Z1G.D0.IPP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="2 - IPA" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IPA</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.IPA">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.IPA">Z1G.D0.IPA&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - IAP" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">IAP</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.IAP">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.IAP">Z1G.D0.IAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="ba0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="ba0">ba0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 -  " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 -  " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="true" Pwd="60256">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+        <Column Width="60" AlignX="Auto" Color="">
+          <Controls>
+            <Text Name="1 - CRU C0" Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CRU C0</Expression>
+              </Text>
+            </Text>
+            <Voyant Name="2 - C0DCZC" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">C0DCZC</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C0DCZC">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="C0DCZC">C0DCZC&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="3 - C0DCZD" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">C0DCZD</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="C0DCZD">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="C0DCZD">C0DCZD&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="4 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="5 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="6 -  " Color="-16776961" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Voyant Name="7 - CMA1_X52" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMA1_X52</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.CMA1">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.CMA1">Z1G.D0.CMA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="8 - CMR" Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">CMR</Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1G.D0.CMR">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.D0.CMR">Z1G.D0.CMR&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="9 -  " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="10 -  " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="11 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="12 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Voyant Name="13 - " Color="-16711936" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0" Toggle="false" Pwd="">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">
+                </Expression>
+              </Text>
+              <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA0">
+                <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+              </Condition>
+              <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "1"</Expression>
+              </TextToggleTrue>
+              <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzar a "0"</Expression>
+              </TextToggleFalse>
+              <TextToggle ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES">Forzado de un bit</Expression>
+              </TextToggle>
+            </Voyant>
+            <Text Name="14 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="15 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="16 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+            <Text Name="17 -  " Color="-16777216" Row="None" Height="Auto" Width="Auto" PosX="Auto" PosY="0">
+              <Text ExpressionIhmpMultilangue="Interne">
+                <Expression Culture="es-ES"> </Expression>
+              </Text>
+            </Text>
+          </Controls>
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+  <Listes />
+</EcranUser>

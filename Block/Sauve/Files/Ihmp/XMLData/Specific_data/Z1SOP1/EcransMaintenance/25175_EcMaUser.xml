@@ -1,0 +1,135 @@
+<EcranUser>
+  <GroupeDC>25175_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="200" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="4" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - 25195" Line="4" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">
+      </Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="50" AlignY="Auto" ValHauteurAuto="50" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="200" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="500" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - " Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="M_Val_B0">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="M_Val_B0">M_Val_B0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="2 - La validacion puede realizarse indistintamente en cualquiera de los dos pupitres" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">La validacion puede realizarse indistintamente en cualquiera de los dos pupitres</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - VALIDACIÓN ÚNICA:" Color="-16777216" Row="2" Height="25" Width="150" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">VALIDACIÓN ÚNICA:</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Cadre Name="1 - 25183" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">
+      </Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="50" AlignY="Auto" ValHauteurAuto="50" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="200" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="400" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - " Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">
+        </Expression>
+      </Text>
+      <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="M_Val_B0">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="M_Val_B0">M_Val_B0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="2 - La validacion debe realizarse en ambos pupitres" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">La validacion debe realizarse en ambos pupitres</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - DOBLE VALIDACIÓN:" Color="-16777216" Row="2" Height="25" Width="150" PosX="Left" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">DOBLE VALIDACIÓN:</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Cadre Name="1 - Montaje B025177" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Montaje B0</Expression>
+    </Title>
+    <Rows />
+    <Button Name="1 - CAMBIO SEGURIDAD OPERADOR" Row="None" Height="120" Width="120" PosX="300" PosY="50" Toggle="true">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CAMBIO SEGURIDAD OPERADOR</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="M_Val_B0">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="M_Val_B0">M_Val_B0&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Listes />
+</EcranUser>

@@ -1,0 +1,35 @@
+<IhmpHeader>
+  <GroupeDC>Voyants</GroupeDC>
+  <IhmpLight Index="0" Color="-65536">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Defeito a tratar</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Pilot.ihm1def">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.ihm1def">Z2.Z2MODES.Pilot.ihm1def&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="1" Color="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Mensagem a ler</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Pilot.ihm1cns">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.ihm1cns">Z2.Z2MODES.Pilot.ihm1cns&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="2" Color="-65281">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Informação a ler</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Pilot.ihm1inf">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.ihm1inf">Z2.Z2MODES.Pilot.ihm1inf&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+  <IhmpLight Index="3" Color="-256">
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Modo especifico</Expression>
+    </Text>
+    <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.Ihmmes1">
+      <VariableDC Source="Source SimaticNet Message.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.Ihmmes1">Z2.Z2MODES.Diag.Ihmmes1&lt;&lt;Source&gt;&gt;Source SimaticNet Message.API Siemens 1</VariableDC>
+    </Condition>
+  </IhmpLight>
+</IhmpHeader>

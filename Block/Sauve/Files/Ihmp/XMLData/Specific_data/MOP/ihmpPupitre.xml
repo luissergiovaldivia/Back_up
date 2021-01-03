@@ -1,0 +1,6 @@
+<ihmpPupitre>
+  <GroupeDC>Pupitres</GroupeDC>
+  <Pupitre>
+    <VariableDC Source="DossierIPPupitre" FileName="MOP.txt">MOP</VariableDC>
+  </Pupitre>
+</ihmpPupitre>

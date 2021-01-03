@@ -1,0 +1,98 @@
+<Collecteur>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurFile" Assembly="SourceFile.dll" FolderPath="C:\Ihmp\Temp\Commentaires Ihmp" Name="FichiersCommentaires" Id="FichiersCommentaires">
+    <TypeAccess>ReadWrite</TypeAccess>
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+    <!--ReadOnly, ReadWrite-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurFile" Assembly="SourceFile.dll" FolderPath="C:\Ihmp\Temp\IP" Name="DossierIPPupitre" Id="DossierIPPupitre">
+    <TypeAccess>ReadWrite</TypeAccess>
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+    <!--ReadOnly, ReadWrite-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurVar" Assembly="SourceFile.dll" Name="VariablesInternes" Id="VariablesInternes">
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurVar" Assembly="SourceFile.dll" Name="VarLoc" Id="VarLoc">
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurFile" Assembly="SourceFile.dll" Name="FichiersSIPTOL" Id="FichiersSIPTOL" FolderPath="C:\Ihmp\SIPTOL">
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+    <TypeAccess>ReadWrite</TypeAccess>
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceFile.ServeurFile" Assembly="SourceFile.dll" Name="FichiersTexte" Id="FichiersTexte" FolderPath="C:\Ihmp\FichiersTexte">
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceFile.XML</RemedeFile>
+    <TypeAccess>ReadWrite</TypeAccess>
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="S7_SNMP" Id="S7_SNMP">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>SNMP:</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet Autre.API Siemens 1" Id="Source SimaticNet Autre.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>READ_CACHE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet Message.API Siemens 1" Id="Source SimaticNet Message.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet MDM.API Siemens 1" Id="Source SimaticNet MDM.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet EcransExploitation.API Siemens 1" Id="Source SimaticNet EcransExploitation.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet CmdManu.API Siemens 1" Id="Source SimaticNet CmdManu.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet Diag.API Siemens 1" Id="Source SimaticNet Diag.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+  <SourceDC ClassName="Prosyst.Collecteur.SourceOpc.ServeurOpc" Assembly="SourceOpc.dll" Name="Source SimaticNet WinCC.API Siemens 1" Id="Source SimaticNet WinCC.API Siemens 1">
+    <ServerName>OPC.SimaticNet</ServerName>
+    <OpcPathway>API.CPU.</OpcPathway>
+    <UpdateRate>500</UpdateRate>
+    <!--ms-->
+    <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.SourceOPC.XML</RemedeFile>
+    <TypeRead>ADVISE</TypeRead>
+    <!--READ_CACHE, READ_DEVICE, ADVISE-->
+  </SourceDC>
+</Collecteur>

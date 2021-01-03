@@ -1,0 +1,24 @@
+#Ceci est un fichier de configuration SQL*Net g�n�r� par SQL*Net Easy Configuration.
+#Attention : ne modifiez pas ce fichier vous-m�me.
+#Si vous le faites, SQL*Net Easy Configuration risque de ne pas fonctionner correctement.
+      
+SMT99.world = 
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+        (ADDRESS =
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 10.187.12.69)
+          (Port = 1521)
+        )
+        (ADDRESS =
+          (COMMUNITY = tcp.world)
+          (PROTOCOL = TCP)
+          (Host = 10.187.12.69)
+          (Port = 1526)
+        )
+    )
+    (CONNECT_DATA = (SID = SMP99T)
+    )
+  )
+

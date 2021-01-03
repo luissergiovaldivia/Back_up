@@ -1,0 +1,582 @@
+<EcranCodesProcessIlot>
+  <GroupeDC>1573_VarSiptol</GroupeDC>
+  <Load>
+    <Actions>
+      <Action Value="0" Id="0_1">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_1">TEMP_STR_1&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="1" Id="0_1">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CP">CDIV.ZCF.ILOT.CF1.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_2">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_2">TEMP_STR_2&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="2" Id="0_2">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CP">CDIV.ZCF.ILOT.CF2.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_3">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_3">TEMP_STR_3&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="3" Id="0_3">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CP">CDIV.ZCF.ILOT.CF3.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_4">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_4">TEMP_STR_4&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="4" Id="0_4">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CP">CDIV.ZCF.ILOT.CF4.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_5">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_5">TEMP_STR_5&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="5" Id="0_5">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CP">CDIV.ZCF.ILOT.CF5.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_6">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_6">TEMP_STR_6&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="6" Id="0_6">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CP">CDIV.ZCF.ILOT.CF6.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+      <Action Value="0" Id="0_7">
+        <VariableDC Source="VarLoc" ItemOpc="TEMP_STR_7">TEMP_STR_7&lt;&lt;Source&gt;&gt;VarLoc</VariableDC>
+      </Action>
+      <Action Value="7" Id="0_7">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CP">CDIV.ZCF.ILOT.CF7.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Action>
+    </Actions>
+    <AlgoIO>
+      <Algo Assembly="ClassTraitementsSIPTOL" ClassName="ClassTraitementsSIPTOL.ChargementConfigSIPTOL">
+        <Args>
+          <Arg>
+            <VariableDC Source="FichiersSIPTOL" FileName="ILOT_SiptolCodes.txt">ILOT_SiptolCodes&lt;&lt;Source&gt;&gt;FichiersSIPTOL</VariableDC>
+          </Arg>
+        </Args>
+        <Results>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[1]">CDIV.ZCF.ILOT.CF1.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[1]">CDIV.ZCF.ILOT.CF2.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[1]">CDIV.ZCF.ILOT.CF3.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[1]">CDIV.ZCF.ILOT.CF4.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[1]">CDIV.ZCF.ILOT.CF5.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[1]">CDIV.ZCF.ILOT.CF6.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[1]">CDIV.ZCF.ILOT.CF7.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[2]">CDIV.ZCF.ILOT.CF1.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[2]">CDIV.ZCF.ILOT.CF2.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[2]">CDIV.ZCF.ILOT.CF3.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[2]">CDIV.ZCF.ILOT.CF4.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[2]">CDIV.ZCF.ILOT.CF5.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[2]">CDIV.ZCF.ILOT.CF6.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[2]">CDIV.ZCF.ILOT.CF7.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[3]">CDIV.ZCF.ILOT.CF1.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[3]">CDIV.ZCF.ILOT.CF2.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[3]">CDIV.ZCF.ILOT.CF3.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[3]">CDIV.ZCF.ILOT.CF4.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[3]">CDIV.ZCF.ILOT.CF5.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[3]">CDIV.ZCF.ILOT.CF6.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+          <Result>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[3]">CDIV.ZCF.ILOT.CF7.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Result>
+        </Results>
+        <ErrorMessages>
+          <ErrorMessage>
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="fr-FR">Erreur Load</Expression>
+            </Text>
+          </ErrorMessage>
+        </ErrorMessages>
+      </Algo>
+    </AlgoIO>
+    <Enable>
+      <Condition Operator="BitTrue" NumBit="-1">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Condition>
+    </Enable>
+  </Load>
+  <Closing>
+    <AlgoIO>
+      <Algo Assembly="ClassTraitementsSIPTOL" ClassName="ClassTraitementsSIPTOL.SauvegardeConfigSIPTOL">
+        <Args>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[1]">CDIV.ZCF.ILOT.CF1.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[1]">CDIV.ZCF.ILOT.CF2.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[1]">CDIV.ZCF.ILOT.CF3.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[1]">CDIV.ZCF.ILOT.CF4.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[1]">CDIV.ZCF.ILOT.CF5.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[1]">CDIV.ZCF.ILOT.CF6.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[1]">CDIV.ZCF.ILOT.CF7.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[2]">CDIV.ZCF.ILOT.CF1.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[2]">CDIV.ZCF.ILOT.CF2.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[2]">CDIV.ZCF.ILOT.CF3.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[2]">CDIV.ZCF.ILOT.CF4.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[2]">CDIV.ZCF.ILOT.CF5.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[2]">CDIV.ZCF.ILOT.CF6.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[2]">CDIV.ZCF.ILOT.CF7.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[3]">CDIV.ZCF.ILOT.CF1.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[3]">CDIV.ZCF.ILOT.CF2.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[3]">CDIV.ZCF.ILOT.CF3.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[3]">CDIV.ZCF.ILOT.CF4.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[3]">CDIV.ZCF.ILOT.CF5.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[3]">CDIV.ZCF.ILOT.CF6.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+          <Arg>
+            <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[3]">CDIV.ZCF.ILOT.CF7.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+          </Arg>
+        </Args>
+        <Results>
+          <Result>
+            <VariableDC Source="FichiersSIPTOL" FileName="ILOT_SiptolCodes.txt">ILOT_SiptolCodes&lt;&lt;Source&gt;&gt;FichiersSIPTOL</VariableDC>
+          </Result>
+        </Results>
+        <ErrorMessages>
+          <ErrorMessage>
+            <Text ExpressionIhmpMultilangue="Interne">
+              <Expression Culture="fr-FR">Erreur Closing</Expression>
+            </Text>
+          </ErrorMessage>
+        </ErrorMessages>
+      </Algo>
+    </AlgoIO>
+    <Enable>
+      <Condition Operator="BitTrue" NumBit="-1">
+        <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+      </Condition>
+    </Enable>
+  </Closing>
+  <Lines>
+    <Line ID="1" Height="30" AlignX="Auto" />
+    <Line ID="3" Height="Auto" AlignX="Auto" />
+    <Line ID="4" Height="70" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="Cadre_1" SuffixeTitle="" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="Auto" PosY="Auto">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">1 - Declarar el código proceso e introducir los criterios de diversidad - ILOT</Expression>
+    </Title>
+  </Cadre>
+  <Cadre Name="Cadre_3" SuffixeTitle="" Line="3" AlignY="Auto" Height="Full" Width="Auto" PosX="Auto" PosY="Auto" Autoscroll="True" Text="">
+    <Table LineHeight="28">
+      <Columns>
+        <Column Width="100" Color="" AlignX="Auto">
+          <Controls>
+            <Text Name="TXT_2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="Libellé" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="ALL TYPES" Name="TXT_DIV1" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="L52" Name="TXT_DIV2" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="B52" Name="TXT_DIV3" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="B52CROSS" Name="TXT_DIV4" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="L52BAN" Name="TXT_DIV5" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="X672A" Name="TXT_DIV6" Color="-16777216" />
+            <Text Row="1" Height="28" Width="100" PosX="0" PosY="0" Text="X675A" Name="TXT_DIV7" Color="-16777216" />
+          </Controls>
+          <!--Commentaire-->
+        </Column>
+        <Column Width="50" Color="" AlignX="Auto">
+          <Controls>
+            <Text Name="TXT_1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="CP" />
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CP">CDIV.ZCF.ILOT.CF1.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CP">CDIV.ZCF.ILOT.CF2.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CP">CDIV.ZCF.ILOT.CF3.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CP">CDIV.ZCF.ILOT.CF4.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CP">CDIV.ZCF.ILOT.CF5.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CP">CDIV.ZCF.ILOT.CF6.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+            <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CP">CDIV.ZCF.ILOT.CF7.CP&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA0">BA0&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </ReadVal>
+          </Controls>
+          <!--Code process-->
+        </Column>
+        <Column Width="50" Color="" AlignX="Auto">
+          <Controls>
+            <Text Name="TXT_3" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="Famille" />
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[1]">CDIV.ZCF.ILOT.CF1.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[1]">CDIV.ZCF.ILOT.CF2.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[1]">CDIV.ZCF.ILOT.CF3.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[1]">CDIV.ZCF.ILOT.CF4.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[1]">CDIV.ZCF.ILOT.CF5.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[1]">CDIV.ZCF.ILOT.CF6.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[1]">CDIV.ZCF.ILOT.CF7.CDIV[1]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+          </Controls>
+          <!--Famille-->
+        </Column>
+        <Column Width="50" Color="" AlignX="Auto">
+          <Controls>
+            <Text Name="TXT_4" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="Phase" />
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[2]">CDIV.ZCF.ILOT.CF1.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[2]">CDIV.ZCF.ILOT.CF2.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[2]">CDIV.ZCF.ILOT.CF3.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[2]">CDIV.ZCF.ILOT.CF4.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[2]">CDIV.ZCF.ILOT.CF5.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[2]">CDIV.ZCF.ILOT.CF6.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[2]">CDIV.ZCF.ILOT.CF7.CDIV[2]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+          </Controls>
+          <!--Phase-->
+        </Column>
+        <Column Width="50" Color="" AlignX="Auto">
+          <Controls>
+            <Text Name="TXT_5" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Text="Modèle" />
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF1.CDIV[3]">CDIV.ZCF.ILOT.CF1.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF2.CDIV[3]">CDIV.ZCF.ILOT.CF2.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF3.CDIV[3]">CDIV.ZCF.ILOT.CF3.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF4.CDIV[3]">CDIV.ZCF.ILOT.CF4.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF5.CDIV[3]">CDIV.ZCF.ILOT.CF5.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF6.CDIV[3]">CDIV.ZCF.ILOT.CF6.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+            <WriteVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Min="-1" Max="32767">
+              <Animation>
+                <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="CDIV.ZCF.ILOT.CF7.CDIV[3]">CDIV.ZCF.ILOT.CF7.CDIV[3]&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+              </Animation>
+              <Enable>
+                <Condition Operator="BitTrue" NumBit="-1">
+                  <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+                </Condition>
+              </Enable>
+            </WriteVal>
+          </Controls>
+          <!--Modele-->
+        </Column>
+      </Columns>
+    </Table>
+  </Cadre>
+  <Cadre Name="Cadre_4" SuffixeTitle=" " Line="4" AlignY="Auto" Height="Full" Width="Auto" PosX="Auto" PosY="Auto">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">2 - Validar la selección</Expression>
+    </Title>
+    <Rows>
+      <Row ID="0" Width="Auto" AlignY="Auto" ValHauteurAuto="30" />
+    </Rows>
+    <ButtonNav Height="25" Width="100" Name="BTN_Valider" Toggle="True" PosX="Auto" Row="0" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Validar</Expression>
+      </Text>
+      <ClickNav TypeEcran="EcransMaintenance" CodeEcran="EcMaSiptolSommaire" />
+      <Enable>
+        <Condition Operator="BitTrue" NumBit="-1">
+          <VariableDC Source="Source SimaticNet EcransExploitation.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet EcransExploitation.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+  <Listes>
+    <Liste Id="ListeCP">
+      <MessageListe Id="MES_0" Value="0" Text="0" />
+      <MessageListe Id="MES_1" Value="1" Text="1" />
+      <MessageListe Id="MES_2" Value="2" Text="2" />
+    </Liste>
+  </Listes>
+</EcranCodesProcessIlot>

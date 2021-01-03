@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12 />
+  <DocsWord34>
+    <Doc Num="0">
+      <Text>RF300code0</Text>
+    </Doc>
+    <Doc Num="1">
+      <Text>RF300code1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>RF300code2</Text>
+    </Doc>
+    <Doc Num="3">
+      <Text>RF300code3</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>RF300code4</Text>
+    </Doc>
+    <Doc Num="5">
+      <Text>RF300code5</Text>
+    </Doc>
+    <Doc Num="6">
+      <Text>RF300code6</Text>
+    </Doc>
+    <Doc Num="7">
+      <Text>RF300code7</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>RF300code8</Text>
+    </Doc>
+    <Doc Num="9">
+      <Text>RF300code9</Text>
+    </Doc>
+    <Doc Num="10">
+      <Text>RF300code10</Text>
+    </Doc>
+    <Doc Num="11">
+      <Text>RF300code11</Text>
+    </Doc>
+    <Doc Num="12">
+      <Text>RF300code12</Text>
+    </Doc>
+    <Doc Num="13">
+      <Text>RF300code13</Text>
+    </Doc>
+    <Doc Num="14">
+      <Text>RF300code14</Text>
+    </Doc>
+    <Doc Num="15">
+      <Text>RF300code15</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>RF300code16</Text>
+    </Doc>
+    <Doc Num="17">
+      <Text>RF300code17</Text>
+    </Doc>
+    <Doc Num="18">
+      <Text>RF300code18</Text>
+    </Doc>
+  </DocsWord34>
+</Root_Element>

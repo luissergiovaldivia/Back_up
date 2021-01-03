@@ -1,0 +1,48 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12/>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>G120D_codef1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>G120D_codef2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>G120D_codef4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>G120D_codef8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>G120D_codef16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>G120D_codef32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>G120D_codef64</Text>
+      </Doc>
+      <Doc Num="256">
+         <Text>G120D_codef256</Text>
+      </Doc>
+      <Doc Num="512">
+         <Text>G120D_codef512</Text>
+      </Doc>
+      <Doc Num="1024">
+         <Text>G120D_codef1024</Text>
+      </Doc>
+      <Doc Num="2048">
+         <Text>G120D_codef2048</Text>
+      </Doc>
+      <Doc Num="4096">
+         <Text>G120D_codef4096</Text>
+      </Doc>
+      <Doc Num="8192">
+         <Text>G120D_codef8192</Text>
+      </Doc>
+      <Doc Num="16384">
+         <Text>G120D_codef16384</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

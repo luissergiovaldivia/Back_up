@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<DNS_CONFIGURATION>
+	<DNSSuffix>
+		<DNSDomainSuffixSearchOrder Name="Cba.renault.ar"> </DNSDomainSuffixSearchOrder>
+		<DNSDomainSuffixSearchOrder Name="Renault.ar"> </DNSDomainSuffixSearchOrder>
+		<DNSDomainSuffixSearchOrder Name="Renault.br"> </DNSDomainSuffixSearchOrder>
+		<DNSDomainSuffixSearchOrder Name="Renault.fr"> </DNSDomainSuffixSearchOrder>
+	</DNSSuffix>
+	<NETWORK_CARD_LIST>
+		<NETWORK_CARD IPAddress="172.25.212.2" CardName="[00000008] Intel(R) 82574L Gigabit Network Connection">
+			<DNS DomainDNSRegistrationEnabled="0" FullDNSRegistrationEnabled="1" DNSEnabledForWINSResolution="0" DNSHostName="RENAULT-6DD76C2" DNSDomain="Is Null">
+			</DNS>
+		</NETWORK_CARD>
+		<NETWORK_CARD IPAddress="10.229.177.55" CardName="[00000010] Intel(R) 82577LM Gigabit Network Connection">
+			<DNS DomainDNSRegistrationEnabled="0" FullDNSRegistrationEnabled="1" DNSEnabledForWINSResolution="0" DNSHostName="RENAULT-6DD76C2" DNSDomain="Is Null">
+				<DNSServerSearchOrder Address="138.21.161.1"> </DNSServerSearchOrder>
+				<DNSServerSearchOrder Address="138.21.128.1"> </DNSServerSearchOrder>
+			</DNS>
+		</NETWORK_CARD>
+	</NETWORK_CARD_LIST>
+</DNS_CONFIGURATION>

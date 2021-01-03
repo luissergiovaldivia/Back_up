@@ -1,0 +1,163 @@
+<EcranUser>
+  <GroupeDC>58291_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="40" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - CONTADOR X5258295" Line="2" AlignY="None" Height="360" Width="250" PosX="0" PosY="30" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">CONTADOR X52</Expression>
+    </Title>
+    <Rows />
+    <Text Name="1 - L52-B52-B52" Color="-16777216" Row="None" Height="40" Width="120" PosX="Left" PosY="50">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L52-B52-B52</Expression>
+      </Text>
+    </Text>
+    <Text Name="2 - CROSS:20" Color="-16777216" Row="None" Height="35" Width="120" PosX="Auto" PosY="75">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">CROSS:20</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="None" Height="40" Width="100" PosX="140" PosY="50" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SC_CC1-2-3">SC_CC1-2-3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Button Name="4 - FORZAR FT TUCKER" Row="None" Height="40" Width="100" PosX="Right" PosY="140" Toggle="true">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FORZAR FT TUCKER</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="5 - ACTIVO" Color="-16711936" Row="None" Height="40" Width="100" PosX="140" PosY="140" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ACTIVO</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="6 - L52BAN:18" Color="-16777216" Row="None" Height="40" Width="120" PosX="Left" PosY="220">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">L52BAN:18</Expression>
+      </Text>
+    </Text>
+    <Button Name="7 - FORZAR FT TUCKER" Row="None" Height="40" Width="100" PosX="Right" PosY="280" Toggle="true">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FORZAR FT TUCKER</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="8 - ACTIVO" Color="-16711936" Row="None" Height="40" Width="100" PosX="140" PosY="280" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ACTIVO</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <ReadVal Row="None" Height="40" Width="100" PosX="140" PosY="220" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SC_CC1-2-3">SC_CC1-2-3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="1 - Z1H0 - CONTADOR DE TUCKER X52- X6758294" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Z1H0 - CONTADOR DE TUCKER X52- X67</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="2 - CONTADOR X6758326" Line="2" AlignY="None" Height="360" Width="250" PosX="0" PosY="30" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">CONTADOR X67</Expression>
+    </Title>
+    <Rows />
+    <ReadVal Row="None" Height="40" Width="100" PosX="140" PosY="50" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SC_CC1-2-3">SC_CC1-2-3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Button Name="4 - FORZAR FT TUCKER" Row="None" Height="40" Width="100" PosX="Right" PosY="140" Toggle="true">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FORZAR FT TUCKER</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="5 - ACTIVO" Color="-16711936" Row="None" Height="40" Width="100" PosX="140" PosY="140" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">ACTIVO</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="MTCT">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="MTCT">MTCT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="6 - K67-F67" Color="-16777216" Row="None" Height="40" Width="120" PosX="Left" PosY="50">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">K67-F67</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Listes />
+</EcranUser>

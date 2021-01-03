@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>Manut_2PosH1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>Manut_2PosH2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>Manut_2PosH4</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>Manut_2PosH8</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>Manut_2PosH16</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>Manut_2PosH32</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

@@ -1,0 +1,26 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12>
+      <Doc Num="1">
+         <Text>Tab_Pas1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>Tab_Pas2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Tab_Pas3</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Tab_Pas4</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Tab_Pas5</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Tab_Pas6</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>Tab_Pas7</Text>
+      </Doc>
+   </DocsWord12>
+</Root_Element>

@@ -1,0 +1,23 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <TypeCR Id="0" />
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1">Z3.Z3CRM.Diag.Def&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="1">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1">Z3.Z3CRM.Diag.IHMCrcrm&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="2">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1">Z3.Z3CRM.Diag.IHMPrcrm&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto Control de Buena Conexión</Expression>
+      </text>
+    </Label>
+  </Labels>
+</Root_Element>

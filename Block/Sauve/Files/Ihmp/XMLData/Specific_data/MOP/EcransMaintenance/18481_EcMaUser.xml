@@ -1,0 +1,388 @@
+<EcranUser>
+  <GroupeDC>18481_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - Ginche D023618" Line="1" AlignY="Auto" Height="Full" Width="200" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Ginche D0</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Top" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - Detector Guinche" Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Detector Guinche</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="D0DPG">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="D0DPG">D0DPG&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="2 - MSP" Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="true" Pwd="60256">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MSP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0_GUINCHE.MS.MSP">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0_GUINCHE.MS.MSP">IIT.D0_GUINCHE.MS.MSP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - MSERFID" Color="-16711936" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="true" Pwd="60256">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MSERFID</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.D0_GUINCHE.MS.MSERFID">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.D0_GUINCHE.MS.MSERFID">IIT.D0_GUINCHE.MS.MSERFID&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+  </Cadre>
+  <Cadre Name="2 - Escritura de identificacion en mesa D018561" Line="1" AlignY="Auto" Height="Full" Width="350" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Escritura de identificacion en mesa D0</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="None" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Modo invalido" Color="-16777216" Row="1" Height="Auto" Width="120" PosX="0" PosY="45">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modo invalido</Expression>
+      </Text>
+    </Text>
+    <Voyant Name="2 - Val" Color="-16711808" Row="1" Height="Auto" Width="50" PosX="125" PosY="45" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Val</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Diag.Val">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.Val">Z1D0.D0_EcrRF300.Diag.Val&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="3 - Ok" Color="-16711808" Row="1" Height="Auto" Width="50" PosX="180" PosY="45" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Ok</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Diag.OK">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.OK">Z1D0.D0_EcrRF300.Diag.OK&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Voyant Name="4 - TAG" Color="-16711808" Row="1" Height="Auto" Width="100" PosX="235" PosY="45" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">TAG</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Diag.Tag">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.Tag">Z1D0.D0_EcrRF300.Diag.Tag&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Forzado de un bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Text Name="5 - Contador de transacciones" Color="-16777216" Row="1" Height="Auto" Width="230" PosX="0" PosY="90">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Contador de transacciones</Expression>
+      </Text>
+    </Text>
+    <Text Name="6 - Correcto" Color="-16777216" Row="1" Height="Auto" Width="100" PosX="0" PosY="120">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Correcto</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="100" PosX="105" PosY="120" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.CmdCnt">Z1D0.D0_EcrRF300.Diag.CmdCnt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="8 - Equivocado" Color="-16777216" Row="1" Height="Auto" Width="100" PosX="0" PosY="150">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Equivocado</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="100" PosX="105" PosY="150" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.ErrCnt">Z1D0.D0_EcrRF300.Diag.ErrCnt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="10 - Estado" Color="-16777216" Row="1" Height="Auto" Width="120" PosX="0" PosY="5">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado</Expression>
+      </Text>
+    </Text>
+    <VoyantMulti Name="11 - Indicador multicolor" Row="1" Height="Auto" Width="210" PosX="125" PosY="5">
+      <StatusVM>
+        <Status Color="-65536">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Con Defecto</Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Diag.Def">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.Def">Z1D0.D0_EcrRF300.Diag.Def&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+        <Status Color="-16711808">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="es-ES">Sin Defecto</Expression>
+          </Text>
+          <Condition Operator="BitFalse" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Diag.Def">
+            <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.Def">Z1D0.D0_EcrRF300.Diag.Def&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+          </Condition>
+        </Status>
+      </StatusVM>
+    </VoyantMulti>
+    <Button Name="14 - Puesta a cero del contador" Row="1" Height="90" Width="100" PosX="240" PosY="90" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Puesta a cero del contador</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Pilot.ClearCnt">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Pilot.ClearCnt">Z1D0.D0_EcrRF300.Pilot.ClearCnt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Text Name="15 - Tiempo de transaccion (Second)" Color="-16777216" Row="1" Height="Auto" Width="230" PosX="0" PosY="190">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Tiempo de transaccion (Second)</Expression>
+      </Text>
+    </Text>
+    <Text Name="16 - Minimo" Color="-16777216" Row="1" Height="Auto" Width="35" PosX="0" PosY="220">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Minimo</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="60" PosX="40" PosY="220" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.MinCmdDur">Z1D0.D0_EcrRF300.Diag.MinCmdDur&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="18 - Ultimo" Color="-16777216" Row="1" Height="Auto" Width="60" PosX="105" PosY="220">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Ultimo</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="60" PosX="170" PosY="220" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.CmdDur">Z1D0.D0_EcrRF300.Diag.CmdDur&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="20 - Maximo" Color="-16777216" Row="1" Height="Auto" Width="35" PosX="0" PosY="250">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Maximo</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="60" PosX="40" PosY="250" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.MaxCmdDur">Z1D0.D0_EcrRF300.Diag.MaxCmdDur&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="22 - Tiempo excedido" Color="-16777216" Row="1" Height="Auto" Width="65" PosX="105" PosY="250">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Tiempo excedido</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="60" PosX="170" PosY="250" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.CmdTimeOut">Z1D0.D0_EcrRF300.Diag.CmdTimeOut&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Button Name="24 - Puesta a cero del temporizador" Row="1" Height="90" Width="100" PosX="240" PosY="190" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Puesta a cero del temporizador</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1D0.D0_EcrRF300.Pilot.ClearCnt">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Pilot.ClearCnt">Z1D0.D0_EcrRF300.Pilot.ClearCnt&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Text Name="25 - Codigo de falla" Color="-16777216" Row="1" Height="Auto" Width="100" PosX="0" PosY="290">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Codigo de falla</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="30" PosX="102" PosY="290" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.CodeDef">Z1D0.D0_EcrRF300.Diag.CodeDef&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="27 - Info adicional (HEX)" Color="-16777216" Row="1" Height="Auto" Width="160" PosX="140" PosY="290">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Info adicional (HEX)</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="40" PosX="302" PosY="290" Format="HEX">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.AddInf">Z1D0.D0_EcrRF300.Diag.AddInf&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <TextList Name="29 - Visualizador de lista" Row="1" Height="40" Width="Auto" PosX="Auto" PosY="320">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1D0.D0_EcrRF300.Diag.CodeDef">Z1D0.D0_EcrRF300.Diag.CodeDef&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Code erreur" />
+    </TextList>
+    <Text Name="30 - Lea Info adicional y consulte la documentacion (SFC14)" Color="-16777216" Row="1" Height="50" Width="Auto" PosX="Auto" PosY="350">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Lea Info adicional y consulte la documentacion (SFC14)</Expression>
+      </Text>
+    </Text>
+  </Cadre>
+  <Listes>
+    <Liste Id="Code erreur">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Numero de canal incorrecto</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Error de acceso</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Valor incorrecto de "Modo"</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Numero incorrecto de DB</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="5">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Longitud nula de datos</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="6">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Bloque de dato demasiado pequeño para la solicitud</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="7">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Bloque de datos protegido contra escritura</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id7" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Perdida del Tag durante un control estatico</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id8" Value="9">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Error durate la copia de datos</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id9" Value="10">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Error durante el envio de datos a ASM</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id10" Value="11">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Error durante la copia de datos </Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id11" Value="12">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Dato recibido no esperado</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id12" Value="13">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Error durante el control de procesamiento por ASM</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id13" Value="14">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">No hay respuesta desde ASM</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id14" Value="15">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Tiempo excedido de disparo durante un control estatico</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id15" Value="16">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">No hay enlace con la antena </Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id16" Value="17">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">The "Val" input is dropped-out before the end of the contract</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id17" Value="18">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">sobrepaso del tiempo de espera durante la inicializ.</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+  </Listes>
+</EcranUser>

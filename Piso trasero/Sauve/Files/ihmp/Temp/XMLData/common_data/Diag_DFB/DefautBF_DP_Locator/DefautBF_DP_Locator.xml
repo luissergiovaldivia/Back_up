@@ -1,0 +1,59 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>locator_Defpara</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>locator_Defdet1drX</Text>
+      </Doc>
+      <Doc Num="3">
+         <Text>locator_Defdet2drX</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>locator_Defdet3drX</Text>
+      </Doc>
+      <Doc Num="5">
+         <Text>locator_Defdet1drY</Text>
+      </Doc>
+      <Doc Num="6">
+         <Text>locator_Defdet2drY</Text>
+      </Doc>
+      <Doc Num="7">
+         <Text>locator_Defdet3drY</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>locator_Defdet1drZ</Text>
+      </Doc>
+      <Doc Num="9">
+         <Text>locator_Defdet2drZ</Text>
+      </Doc>
+      <Doc Num="10">
+         <Text>locator_Defdet3drZ</Text>
+      </Doc>
+      <Doc Num="11">
+         <Text>locator_Defair1</Text>
+      </Doc>
+      <Doc Num="12">
+         <Text>locator_Defair2</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>locator_DefTps_SLX</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>locator_Defpdet_SLX</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>locator_DefTps_SLY</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>locator_Defpdet_SLY</Text>
+      </Doc>
+      <Doc Num="256">
+         <Text>locator_DefTps_SLZ</Text>
+      </Doc>
+      <Doc Num="512">
+         <Text>locator_Defpdet_SLZ</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

@@ -1,0 +1,176 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <Mouvement>
+    <Nom ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">SERRAGE D</Expression>
+    </Nom>
+    <LocalisationFine>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+      <ImagePath>
+      </ImagePath>
+    </LocalisationFine>
+  </Mouvement>
+  <ActionneursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Avanço</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0EASRD</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0EASRD">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0EASRD">F0EASRD&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursAvance>
+  <ActionneursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Recuo</Expression>
+    </Text>
+    <Actionneur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0ERSRD</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0ERSRD">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0ERSRD">F0ERSRD&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Actionneur>
+  </ActionneursRecul>
+  <CapteursAvance>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Avanço</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0DASRD1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0DASRD1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0DASRD1">F0DASRD1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0DASRD2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0DASRD2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0DASRD2">F0DASRD2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursAvance>
+  <CapteursRecul>
+    <Text ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Recuo</Expression>
+    </Text>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0DRSRD1</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0DRSRD1">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0DRSRD1">F0DRSRD1&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+    <Capteur>
+      <Etiquette ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">F0DRSRD2</Expression>
+      </Etiquette>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="F0DRSRD2">
+        <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="F0DRSRD2">F0DRSRD2&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+      </Condition>
+    </Capteur>
+  </CapteursRecul>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Características do movimento em Falha</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroSens</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">O movimento é comandado na direção</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_IntroCapteurs</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">O CLP detectou o movimento das seguintes posições</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Lien</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Clique sobre o link em azul, para localizar o componente</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Avance</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">AVANÇO</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_Recul</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">RECUO</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_NomMvtTitre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Nome do movimento</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Messages>
+    <Message>
+      <Nom>MsgNoDepannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Nenhuma solução de manutenção encontrada!</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_BALISE_ABSENTE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">A etiqueta &lt;{0}&gt; não está presente no arquivo &lt;{1}&gt;.</Expression>
+      </text>
+    </Message>
+    <Message>
+      <Nom>Msg_ERROR_FILE</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Problema no arquivo &lt;{0}&gt;</Expression>
+      </text>
+    </Message>
+  </Messages>
+  <Buttons>
+    <Button>
+      <Nom>BTN_Depannage</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">manutenção</Expression>
+      </text>
+    </Button>
+    <Button>
+      <Nom>BTN_Localisation</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">localização</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

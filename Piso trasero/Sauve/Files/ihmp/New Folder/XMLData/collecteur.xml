@@ -1,0 +1,10 @@
+<Collecteur>
+  <NameInstallation>ARF1</NameInstallation>
+  <SettingsFile>C:\Ihmp\Temp\Collecteur\Collecteur.settings</SettingsFile>
+  <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.XML</RemedeFile>
+  <Remoting TcpChannel="1234" />
+  <Pupitres>
+    <Pupitre>MOP</Pupitre>
+    <Pupitre>Z2SOP1</Pupitre>
+  </Pupitres>
+</Collecteur>

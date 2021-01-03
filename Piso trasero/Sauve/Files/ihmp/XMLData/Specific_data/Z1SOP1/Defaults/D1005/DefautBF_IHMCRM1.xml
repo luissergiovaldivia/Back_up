@@ -1,0 +1,16 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="I01.I01CRM.Diag.CodeDef">I01.I01CRM.Diag.CodeDef&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto Control de Buena Conexión</Expression>
+      </text>
+    </Label>
+  </Labels>
+</Root_Element>

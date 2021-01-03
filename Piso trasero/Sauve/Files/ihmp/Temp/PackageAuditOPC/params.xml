@@ -1,0 +1,8 @@
+<Root_Element>
+   <AdrIP>127.0.0.1</AdrIP>
+   <RootIHMP>\\127.0.0.1\IHMP\XmlData\</RootIHMP>
+   <RootExport>c:\temp</RootExport>
+   <PathLog>C:\temp\log</PathLog>
+   <Prefixe>MonAPI!</Prefixe>
+   <NomFeuilleExcel>Toto</NomFeuilleExcel>
+</Root_Element>

@@ -1,0 +1,11 @@
+<Collecteur>
+  <NameInstallation>[Mnemo]</NameInstallation>
+  <SettingsFile>C:\Ihmp\Temp\Collecteur\Collecteur.settings</SettingsFile>
+  <RemedeFile>XmlData:\Common_data\Collecteur\RemedeCollecteur.XML</RemedeFile>
+  <Remoting TcpChannel="1234" />
+  <Pupitres>
+    <Pupitre>Z1SOP2</Pupitre>
+    <Pupitre>MOP</Pupitre>
+    <Pupitre>Z3SOP1</Pupitre>
+  </Pupitres>
+</Collecteur>

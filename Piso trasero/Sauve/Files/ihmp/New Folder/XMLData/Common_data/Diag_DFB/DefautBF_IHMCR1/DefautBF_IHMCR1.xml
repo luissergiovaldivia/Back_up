@@ -1,0 +1,23 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord34>
+      <Doc Num="2">
+         <Text>Code02</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>Code04</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>Code08</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>Code16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>Code32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>Code64</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

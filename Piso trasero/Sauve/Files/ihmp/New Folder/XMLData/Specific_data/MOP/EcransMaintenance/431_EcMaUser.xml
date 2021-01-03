@@ -1,0 +1,390 @@
+<EcranUser>
+  <GroupeDC>431_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="40" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="200" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="3" Height="100" AlignX="Left">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="4" Height="Auto" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - CONF. SAÍDA DE PEÇA7907" Line="3" AlignY="Auto" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">CONF. SAÍDA DE PEÇA</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="40" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Button Name="1 - CONFIRMA SAÍDA" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">CONFIRMA SAÍDA</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0.H0_IHM_CPS">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0.H0_IHM_CPS">Z2H0.H0_IHM_CPS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="IIT.H0.MGEST.MPSTC">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="IIT.H0.MGEST.MPSTC">IIT.H0.MGEST.MPSTC&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="1 - 580" Line="4" AlignY="Bottom" Height="60" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">
+      </Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <ButtonNav Name="1 - Tela de Ajuste H0" Row="1" Height="40" Width="200" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Tela de Ajuste H0</Expression>
+      </Text>
+      <ClickNav CodeEcran="H0_EcranNewRecalage" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+    <ButtonNav Name="2 - Tela de Análise H0" Row="2" Height="40" Width="200" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Tela de Análise H0</Expression>
+      </Text>
+      <ClickNav CodeEcran="H0_EcranNewRecalageAnalyse" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+  <Cadre Name="1 - PGF 03.47 - RECALAGE POSTO H0 - ARF1461" Line="1" AlignY="Top" Height="20" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">PGF 03.47 - RECALAGE POSTO H0 - ARF1</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="1 - DISCORDÂNCIA464" Line="2" AlignY="Top" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">DISCORDÂNCIA</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmAtdint">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmAtdint">Z2H0R.H0_RECALAGE.Diag.IhmAtdint&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="1 - Reintro Peça" Row="1" Height="40" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Reintro Peça</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdointd">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdointd">Z2H0R.H0_RECALAGE.Pilot.Ihmdointd&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="2 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmAtdpm">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmAtdpm">Z2H0R.H0_RECALAGE.Diag.IhmAtdpm&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="2 - Falta Peça" Row="1" Height="40" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Falta Peça</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdomanqd">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdomanqd">Z2H0R.H0_RECALAGE.Pilot.Ihmdomanqd&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="3 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmAtdsp">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmAtdsp">Z2H0R.H0_RECALAGE.Diag.IhmAtdsp&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="3 - Saída Peça" Row="1" Height="40" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Saída Peça</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdosortd">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdosortd">Z2H0R.H0_RECALAGE.Pilot.Ihmdosortd&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="2 - INTRODUÇÃO516" Line="2" AlignY="Top" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">INTRODUÇÃO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmAtvinj">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmAtvinj">Z2H0R.H0_RECALAGE.Diag.IhmAtvinj&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="1 - Validar Intro" Row="1" Height="40" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Validar Intro</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdovinj">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdovinj">Z2H0R.H0_RECALAGE.Pilot.Ihmdovinj&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="2 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmAtrinj">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmAtrinj">Z2H0R.H0_RECALAGE.Diag.IhmAtrinj&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="2 - Recusar Intro" Row="1" Height="40" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Recusar Intro</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdorinj">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdorinj">Z2H0R.H0_RECALAGE.Pilot.Ihmdorinj&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Cadre Name="2 - RAZ MEMORIA DECISAO RECALAGE 2327" Line="3" AlignY="Auto" Height="Full" Width="300" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">RAZ MEMORIA DECISAO RECALAGE </Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <ButtonNav Name="1 - RAZ MEMORIA DECISAO RECALAGE " Row="1" Height="40" Width="Auto" PosX="Auto" PosY="Auto" Pwd="65940">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">RAZ MEMORIA DECISAO RECALAGE </Expression>
+      </Text>
+      <ClickNav CodeEcran="1359_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+  <Cadre Name="3 - SUBSTITUIÇÃO530" Line="2" AlignY="Top" Height="Full" Width="250" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">SUBSTITUIÇÃO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Voyant Name="1 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmVsubb">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmVsubb">Z2H0R.H0_RECALAGE.Diag.IhmVsubb&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="1 - Substituir Peça Boa" Row="1" Height="60" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Substituir Peça Boa</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdosubb">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdosubb">Z2H0R.H0_RECALAGE.Pilot.Ihmdosubb&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <Voyant Name="2 - " Color="-16711936" Row="2" Height="30" Width="50" PosX="Auto" PosY="Auto" Toggle="false" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">
+        </Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Diag.IhmVsubl">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Diag.IhmVsubl">Z2H0R.H0_RECALAGE.Diag.IhmVsubl&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+      <TextToggleTrue ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "1"</Expression>
+      </TextToggleTrue>
+      <TextToggleFalse ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar a "0"</Expression>
+      </TextToggleFalse>
+      <TextToggle ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Forçar bit</Expression>
+      </TextToggle>
+    </Voyant>
+    <Button Name="2 - Substituir Peça Ruim" Row="1" Height="60" Width="Auto" PosX="Right" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Substituir Peça Ruim</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2H0R.H0_RECALAGE.Pilot.Ihmdosubl">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z2H0R.H0_RECALAGE.Pilot.Ihmdosubl">Z2H0R.H0_RECALAGE.Pilot.Ihmdosubl&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+  </Cadre>
+  <Listes />
+</EcranUser>

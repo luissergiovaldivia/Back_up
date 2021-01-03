@@ -1,0 +1,39 @@
+<Root_Element>
+   <GroupeDC>Diagnostic</GroupeDC>
+   <DocsWord12/>
+   <DocsWord34>
+      <Doc Num="1">
+         <Text>MOVIPRO_codef1</Text>
+      </Doc>
+      <Doc Num="2">
+         <Text>MOVIPRO_codef2</Text>
+      </Doc>
+      <Doc Num="4">
+         <Text>MOVIPRO_codef4</Text>
+      </Doc>
+      <Doc Num="8">
+         <Text>MOVIPRO_codef8</Text>
+      </Doc>
+      <Doc Num="16">
+         <Text>MOVIPRO_codef16</Text>
+      </Doc>
+      <Doc Num="32">
+         <Text>MOVIPRO_codef32</Text>
+      </Doc>
+      <Doc Num="64">
+         <Text>MOVIPRO_codef64</Text>
+      </Doc>
+      <Doc Num="128">
+         <Text>MOVIPRO_codef128</Text>
+      </Doc>
+      <Doc Num="256">
+         <Text>MOVIPRO_codef256</Text>
+      </Doc>
+      <Doc Num="512">
+         <Text>MOVIPRO_codef512</Text>
+      </Doc>
+      <Doc Num="1024">
+         <Text>MOVIPRO_codef1024</Text>
+      </Doc>
+   </DocsWord34>
+</Root_Element>

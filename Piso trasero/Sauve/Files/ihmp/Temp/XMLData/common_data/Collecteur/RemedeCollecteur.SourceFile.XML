@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Collecteur>
+  <IOException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">1) Refaire un export avec ODIL</Expression>
+  </IOException>
+  <UnauthorizedAccessException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">
+      1) Refaire un export avec ODIL
+      2) Vérifier que les droits requis sur le répertoire sont bien alloués
+    </Expression>
+  </UnauthorizedAccessException>
+  <FileNotFoundException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">1) Refaire un export avec ODIL</Expression>
+  </FileNotFoundException>
+  <DirectoryNotFoundException ExpressionIhmpMultilangue="Interne">
+    <Expression Culture="FR">1) Refaire un export avec ODIL</Expression>
+  </DirectoryNotFoundException>
+</Collecteur>

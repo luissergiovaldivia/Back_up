@@ -1,0 +1,21 @@
+<EcranDiversite>
+  <GroupeDC>3770_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="1" Height="Auto" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="Cadre1" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" AutoScroll="True">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Diversidades</Expression>
+    </Title>
+    <Rows>
+      <Row ID="0" Width="Auto" AlignY="Top" ValHauteurAuto="18" />
+    </Rows>
+    <Text Text="1 = TOUS TYPES" Name="Texte1" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="2 = L52" Name="Texte2" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="3 = B52" Name="Texte3" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="4 = B52CROSS" Name="Texte4" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="5 = L52BAN" Name="Texte5" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="6 = X672A" Name="Texte6" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+    <Text Text="7 = X675A" Name="Texte7" Height="Auto" Width="Auto" PosX="Left" PosY="Auto" Row="0" Color="-16777216" />
+  </Cadre>
+</EcranDiversite>

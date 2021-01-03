@@ -1,0 +1,249 @@
+<ModeDeMarche>
+  <GroupeDC>GRPMdmZ2SOP1</GroupeDC>
+  <Function>
+    <Name ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="pt-BR">Z2</Expression>
+    </Name>
+    <Container>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Modos de padata Z2</Expression>
+      </Text>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">Parada de fim de produção</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="I01.ILOT.Pilot.Ihmafj">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="I01.ILOT.Pilot.Ihmafj">I01.ILOT.Pilot.Ihmafj&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="BA1">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.ILOT.Diag.Ihmvafj">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="I01.ILOT.Diag.Ihmvafj">I01.ILOT.Diag.Ihmvafj&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+    </Container>
+    <Container>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Teste de lampada Z2</Expression>
+      </Text>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="true">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">Teste</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="I01.ILOT.Pilot.Ihmtl">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="I01.ILOT.Pilot.Ihmtl">I01.ILOT.Pilot.Ihmtl&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="BA1">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-1">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="I01.ILOT.Pilot.Ihmtl">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="I01.ILOT.Pilot.Ihmtl">I01.ILOT.Pilot.Ihmtl&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+    </Container>
+    <Container>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Modo de funcionamento Z2</Expression>
+      </Text>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">MANU</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="Eq" Value="1" NumBit="-1" Description="Z2.Z2MODES.Pilot.Ihm1SelMDM">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.Ihm1SelMDM">Z2.Z2MODES.Pilot.Ihm1SelMDM&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="Neq" Value="1" NumBit="-1" Description="Z2.Z2MODES.Pilot.Ihm1SelMDM">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.Ihm1SelMDM">Z2.Z2MODES.Pilot.Ihm1SelMDM&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_vmanup">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_vmanup">Z2.Z2MODES.Diag.IhmZ_vmanup&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">AUTO</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="Eq" Value="2" NumBit="-1" Description="Z2.Z2MODES.Pilot.Ihm1SelMDM">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.Ihm1SelMDM">Z2.Z2MODES.Pilot.Ihm1SelMDM&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="Neq" Value="2" NumBit="-1" Description="Z2.Z2MODES.Pilot.Ihm1SelMDM">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.Ihm1SelMDM">Z2.Z2MODES.Pilot.Ihm1SelMDM&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_vmauto">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_vmauto">Z2.Z2MODES.Diag.IhmZ_vmauto&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+    </Container>
+    <Container>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Modo de funcionamento Z2</Expression>
+      </Text>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">Normal</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="Eq" Value="1" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="Neq" Value="1" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-16711936">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_vmnorm">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_vmnorm">Z2.Z2MODES.Diag.IhmZ_vmnorm&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">Esvaziamento</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="Eq" Value="2" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="Neq" Value="2" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_vmvid">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_vmvid">Z2.Z2MODES.Diag.IhmZ_vmvid&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="false">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">Parada de gripper vazio</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="Eq" Value="3" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="Neq" Value="3" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSelMDF">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSelMDF">Z2.Z2MODES.Pilot.IhmSelMDF&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Diag.IhmZ_vmapv">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Diag.IhmZ_vmapv">Z2.Z2MODES.Diag.IhmZ_vmapv&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+    </Container>
+    <Container>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="pt-BR">Monitoramento Z2</Expression>
+      </Text>
+      <Line Height="36">
+        <Button Height="35" Width="100" Toggle="true">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">ES/HS</Expression>
+          </Text>
+          <!--Toggle = true mouseDown et mouseUp modifient l'éta du bouton-->
+          <ClickDown>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSneng">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSneng">Z2.Z2MODES.Pilot.IhmSneng&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </ClickDown>
+          <Enable>
+            <Condition Operator="BitTrue" Value="" NumBit="-1" Description="BA1">
+              <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+            </Condition>
+          </Enable>
+        </Button>
+        <Voyant Height="35" Width="100" Color="-256">
+          <Text ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="pt-BR">
+            </Expression>
+          </Text>
+          <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z2.Z2MODES.Pilot.IhmSneng">
+            <VariableDC Source="Source SimaticNet MDM.API Siemens 1" ItemOpc="Z2.Z2MODES.Pilot.IhmSneng">Z2.Z2MODES.Pilot.IhmSneng&lt;&lt;Source&gt;&gt;Source SimaticNet MDM.API Siemens 1</VariableDC>
+          </Condition>
+        </Voyant>
+      </Line>
+    </Container>
+  </Function>
+</ModeDeMarche>

@@ -1,0 +1,8 @@
+<Root>
+  <Resolutions>
+    <Resolution Scale="1.28" Width="1024" Height="768">Ecran 4/3</Resolution>
+    <Resolution Scale="1.3" Width="1280" Height="800">Ecran TC</Resolution>
+    <Resolution Scale="1.3" Width="1366" Height="768">16/9 Schneider</Resolution>
+    <Resolution Scale="1.8" Width="1680" Height="1050">Ecran DEV</Resolution>
+  </Resolutions>
+</Root>

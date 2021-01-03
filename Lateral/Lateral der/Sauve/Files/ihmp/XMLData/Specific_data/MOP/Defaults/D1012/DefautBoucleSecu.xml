@@ -1,0 +1,43 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <TypeBoucle Id="1">
+    <!--0: AU, 1:ES, 2:FZ, 3:ESTR, 4:AIR,5:RLV,6:SOP-->
+  </TypeBoucle>
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.Def" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.Def&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="1">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoPfro" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoPfro&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="2">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoPc24" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoPc24&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="3">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoPk" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoPk&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="4">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoCfro" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoCfro&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="5">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoCc24" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoCc24&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="6">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoCk0" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoCk0&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="7">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.InfoSecu" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.InfoSecu&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+    <Diag Id="8">
+      <VariableDC ItemOpc="Z1.Z1ES.Diag.IhmSecuok" Source="Source SimaticNet Diag.API Siemens 1">Z1.Z1ES.Diag.IhmSecuok&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Defecto de Bucle de Seguridad</Expression>
+      </text>
+    </Label>
+  </Labels>
+</Root_Element>

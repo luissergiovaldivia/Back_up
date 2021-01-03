@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Collecteur>
+   <DefautIHMP ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Defaut détecté par IHMP</Expression>
+      <Expression Culture="es">defecto detectado per IHMP</Expression>
+      <Expression Culture="en">Defect detected by IHMP</Expression>
+   </DefautIHMP>
+   <DefautCollecteur ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Defaut détecté par le Collecteur</Expression>
+      <Expression Culture="es">defecto detectado per el Collector</Expression>
+      <Expression Culture="en">Defect detected by the Collector</Expression>
+   </DefautCollecteur>
+   <AideAuRedemarrage ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Aide au redemarrage</Expression>
+      <Expression Culture="en">Helps with the restarting</Expression>
+   </AideAuRedemarrage>
+   <ModesDeMarche ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Modes de marche</Expression>
+      <Expression Culture="en">Running modes</Expression>
+   </ModesDeMarche>
+   <CommandesManuelles ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Commandes manuelles</Expression>
+      <Expression Culture="es">Comandos manual</Expression>
+      <Expression Culture="en">Hand drive operations</Expression>
+   </CommandesManuelles>
+   <SynoptiqueIlot ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Synoptique îlot</Expression>
+      <Expression Culture="en">Facility synoptic</Expression>
+   </SynoptiqueIlot>
+   <ExploitationMaintenance ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Exploitation Maintenance</Expression>
+      <Expression Culture="en">Exploitation Maintenance</Expression>
+   </ExploitationMaintenance>
+   <Procedures ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Procedures</Expression>
+      <Expression Culture="en">Procedures</Expression>
+   </Procedures>
+   <Ilot ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="FR">Ilot</Expression>
+      <Expression Culture="es">Isla</Expression>
+      <Expression Culture="en">Facility</Expression>
+   </Ilot>
+</Collecteur>

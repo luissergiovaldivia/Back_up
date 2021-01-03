@@ -1,0 +1,24 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <VariablesDiag>
+    <Diag Id="0">
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z1D0.D0_ecrRF300.Diag.Codedef">Z1D0.D0_ecrRF300.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Diag>
+  </VariablesDiag>
+  <Valeurs>
+    <Valeur>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Código principal del defecto</Expression>
+      </Text>
+      <Name>code_def_RF300</Name>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z1D0.D0_ecrRF300.Diag.Codedef">Z1D0.D0_ecrRF300.Diag.Codedef&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Valeur>
+    <Valeur>
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Código secundario del defecto</Expression>
+      </Text>
+      <Name>sscode_def_RF300</Name>
+      <VariableDC Source="Source SimaticNet Diag.API Siemens 1" ItemOpc="Z1D0.D0_ecrRF300.Diag.AddInf">Z1D0.D0_ecrRF300.Diag.AddInf&lt;&lt;Source&gt;&gt;Source SimaticNet Diag.API Siemens 1</VariableDC>
+    </Valeur>
+  </Valeurs>
+</Root_Element>

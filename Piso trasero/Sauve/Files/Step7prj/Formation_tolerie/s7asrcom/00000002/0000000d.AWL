@@ -1,0 +1,621 @@
+FUNCTION_BLOCK "1_C0C_CHGT_MEUBLE"
+TITLE =CHGT_MEUBLE
+VERSION : 0.1
+
+
+VAR
+  S1C0CDIV : INT ;	//C0C - DIVERSITY / DIVERSITE
+  Z1CPTPIECE : "BF_CPT_PIECE";	//Z1 - ZONE PART COUNTER / COMPTEUR PIECES ZONE
+  PRO : INT ;	//Z1 - PART PRODUCTION COUNTER VALUE / VALEUR COMPTEUR PRODUCTION ZONE
+  A01_TF_TP_C0C : "BF_TF_TP";	//C0C - TRANSFER PART WORD: A01 -> C0C / TRANSFERT TABLE PIECE A01 -> C0C
+  C0C_ECRRF300 : "BF_IDENT";	//C0C RFID WRITING / ECRITURE RFID
+  C0C_LECRF300 : "BF_IDENT";	//C0C RFID READING / LECTURE RFID
+  S1C0CDLRFID : BOOL ;	//C0C RFID READING FAULT / DEFAUT LECTURE RFID
+  S1C0CDERFID : BOOL ;	//C0C RFID WRITING FAULT / DEFAUT ECRITURE RFID
+  C0CIDENTLOCK : BYTE ;	//C0C RFID SYNCHRONISATION / SYNCHRO PLOT IDENT
+  C0CRETVAL : INT ;	//C0C - RETURN VALUE FOR SFC20 / MOT POUBELLE POUR LA FONCTION SFC20
+  C0CTDFPC : "TON";	//C0C - PART PRESENT FAULT TIMER / TEMPORISATION DEFAUT PIECE
+  S1C0CDPIEC : BOOL ;	//C0C - PART FAULT / DEFAUT PIECE
+  NUM_MVT : INT ;	//C0C - MOVEMENT NUMBER / NUMERO DE MOUVEMENT SELECTIONNE
+  C0C_BUTEE1 : "BF_MB_BUTEE1";	//C0C - STOPPER 1 MANAGEMENT / GESTION DE LA BUTEE 1
+  S1C0CAIM : BOOL ;	//C0C - MISSING SUPPLY / MANQUE APPRO
+  S1C0CDB1 : BOOL ;	//C0C - STOPPER 1 FAULT / DEFAUT BUTEE 1
+  S1C0CB1MDG : BOOL ;	//C0C - STOPPER 1 DEGRADED MODE / MARCHE DEGRADEE BUTEE 1
+  C0CX1COABB1 : BOOL ;	//C0C - STOPPER1 OPENING ORDER AUXILIARY / AUX COMMANDE OUVERTURE BUTEE1
+  C0CB1ISA : BOOL ;	//C0C - STOPPER 1 ABSENT SUPPORT INFORMATION / INFO SUPPORT ABSENT BUTEE 1
+  C0CB1ISP : BOOL ;	//C0C - STOPPER 1 PRESENT SUPPORT INFORMATION / INFO SUPPORT PRESENT BUTEE 1
+  S1C0CDVCH : BOOL ;	//C0C - LOADING CURVE FAULT / DEFAUT VIRAGE AU CHARGEMENT
+  C0C_BUTEE2 : "BF_MB_BUTEE1";	//C0C - STOPPER 2 MANAGEMENT / GESTION DE LA BUTEE 2
+  S1C0CDB2 : BOOL ;	//C0C - STOPPER 2 FAULT / DEFAUT BUTEE 2
+  S1C0CB2MDG : BOOL ;	//C0C - STOPPER 2 DEGRADED MODE / MARCHE DEGRADEE BUTEE 2
+  C0C_2_BVP : BOOL ;	//C0C - STOPPER 2 EMPTY AND READY / BUTEE 2 VIDE ET PRETE
+  C0CX1COABB2 : BOOL ;	//C0C STOPPER2 OPENING ORDER AUXILIARY / AUX COMMANDE OUVERTURE BUTEE2
+  C0CB2ISA : BOOL ;	//C0C - STOPPER 2 ABSENT SUPPORT INFORMATION / INFO SUPPORT ABSENT BUTEE 2
+  C0CB2ISP : BOOL ;	//C0C - STOPPER 2 PRESENT SUPPORT INFORMATION / INFO SUPPORT PRESENT BUTEE 2
+  C0CTCASAT : "TON";	
+  TCA : TIME ;	//C0C -RATE TIME ZONE / TEMPS DE CADENCE ZONE
+  S1C0CAIS : BOOL ;	//C0C - MONITORING - OVERLOAD / INFO SATURATION ZONE
+END_VAR
+BEGIN
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              HARDWARE HMI                                 **
+//*******************************************************************************
+//*ODIL_ID:6488_309*
+//
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                           SAFETY PROGRAM HMI                              **
+//*******************************************************************************
+//*ODIL_ID:6488_312*
+//
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                              MONITORING / SUIVI                           **
+//*******************************************************************************
+//*ODIL_ID:6488_216*
+//
+NETWORK
+TITLE =MONITORING RESET DIVERSITY
+//RAZ MOT DIVERSITE POUR LE SUIVI SMPLOC
+//*ODIL_ID:6488_217*
+//
+      UN    "IIT".C0C.MP.MPP; 
+      SPBNB _001; 
+      L     0; 
+      T     #S1C0CDIV; 
+_001: NOP   0; 
+NETWORK
+TITLE =MONITORING DIVERSITY
+//VALEUR MOT DIVERSITE POUR SMP
+//*ODIL_ID:6488_218*
+//
+      U     "IIT".C0C.MP.MPP; 
+      SPBNB _002; 
+      L     1; 
+      T     #S1C0CDIV; 
+_002: NOP   0; 
+NETWORK
+TITLE =RATE TIME ZONE
+//TEMPS DE CADENCE ZONE
+//
+      L     "Z1G".TCA; 
+      T     #TCA; 
+      NOP   0; 
+NETWORK
+TITLE =RATE TIME ZONE TIMER
+//TEMPORISATION TEMPS DE CADENCE ZONE
+//
+      U     "IIT".A01.MP.MPP; 
+      UN    "Z1G".C0C.ECHG_A0.AD; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #C0CTCASAT (
+           IN                       := L      0.0,
+           PT                       := T#10S,
+           Q                        := #S1C0CAIS);
+
+
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                           PRODUCTION COUNTER                              **
+//*******************************************************************************
+//*ODIL_ID:6488_227*
+//
+NETWORK
+TITLE =ZONE PART COUNTER
+//COMPTEUR PIECES ZONE
+//*ODIL_ID:6488_228*
+//
+      UN    "Z1G".RAZ; 
+      =     L      0.0; 
+      BLD   103; 
+      U     "Z1G".LIEN_PUP.Z_mauto; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "IIT".C0C.MP.MPT; 
+      =     L      0.2; 
+      BLD   103; 
+      CALL #Z1CPTPIECE (
+           Raz_cpt                  := L      0.0,
+           Preselec                 := 32767,
+           Autcompt                 := L      0.1,
+           Comptage                 := L      0.2,
+           Val_cour                 := #PRO);
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                          PART TABLE MANAGEMENT                            **
+//*******************************************************************************
+//*ODIL_ID:6488_18*
+//
+NETWORK
+TITLE =TRANSFER PART TABLE: A01 -> C0C
+//TRANSFERT DE LA TABLE PIECE A01 VERS C0C
+//*ODIL_ID:3336_20*
+//
+      U     "IIT".A01.MS.MSP; 
+      UN    "IIT".C0C.MS.MSP; 
+      U     "Z1G".A0.ECHG_C0C.PD; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #A01_TF_TP_C0C (
+           Val                      := L      0.0,
+           nBit1                    := 1,
+           nBit2                    := 5,
+           Orig                     := "IIT".A01,
+           Dest                     := "IIT".C0C);
+
+      NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                             PART MEMORY                                   **
+//*******************************************************************************
+//*ODIL_ID:6488_55*
+//
+NETWORK
+TITLE =PART PRESENCE MEMORY
+//MEMOIRE PIECE PRESENTE
+//*ODIL_ID:6488_58*
+//
+      U     "IIT".C0C.MS.MSP; 
+      =     "IIT".C0C.MP.MPP; 
+NETWORK
+TITLE =RESET PART TABLE
+//RAZ TABLE PIECE
+//*ODIL_ID:4732_1008*
+//
+      U     "IIS".C0C_2.MSE; 
+      UN    "Z1G".C0C.IDVM; 
+      SPBNB _003; 
+      CALL "FILL" (
+           BVAL                     := "IG".VALEUR0,
+           RET_VAL                  := #C0CRETVAL,
+           BLK                      := "IIT".C0C);
+_003: NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                   PLOT LECTURE RFID / READING RFID LABEL                  **
+//*******************************************************************************
+//*ODIL_ID:6488_2000*
+//
+NETWORK
+TITLE =READING AUTHORIZATION OF RFID LABEL
+//AUTORISATION DE LA LECTURE ETIQUETTE RFID
+//*ODIL_ID:6488_2001*
+//
+      U     "IIS".C0C_2.MSP; 
+      UN    "IIT".C0C.MP.MPP; 
+      UN    "Z1G".C0C.IDVM; 
+      UN    "IIS".C0C_2.MSLRFID; 
+      UN    #S1C0CDLRFID; 
+      UN    "Z1G".MDV; 
+      =     #C0C_LECRF300.Val; 
+NETWORK
+TITLE =RF300 READING
+//LECTURE RF300
+//*ODIL_ID:6488_2002*
+//
+      U     "IADF"; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "BA0"; 
+      SPBNB _004; 
+      CALL #C0C_LECRF300 (
+           ASMAddr                  := 446,
+           ASMChannel               := 1,
+           Module                   := 0,
+           Reset                    := L      0.1,
+           Mode                     := 1,
+           Address                  := 3,
+           Len                      := 97,
+           DBNR                     := 93,
+           Offset                   := 6,
+           Def                      := #S1C0CDLRFID,
+           Lock                     := #C0CIDENTLOCK);
+_004: NOP   0; 
+NETWORK
+TITLE =SUPPORT MEMORY READING RFID LABEL OK
+//MEMOIRE SUPPORT LECTURE RFID OK
+//*ODIL_ID:6488_2003*
+//
+      O     #C0C_LECRF300.Ok; 
+      O     #C0C_LECRF300.Val; 
+      S     "IIS".C0C_2.MSLRFID; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                        WRITING RFID / ECRITURE RFID                       **
+//*******************************************************************************
+//*ODIL_ID:6488_2007*
+//
+NETWORK
+TITLE =RFID WRITING REQUEST
+//AUTORISATION D'ECRITURE RFID
+//*ODIL_ID:6488_2009*
+//
+      U     "IIS".C0C_2.MSP; 
+      U     "IIS".C0C_2.MSLRFID; 
+      UN    "IIS".C0C_2.MSERFID; 
+      UN    #S1C0CDERFID; 
+      UN    "Z1G".C0C.IDVM; 
+      =     #C0C_ECRRF300.Val; 
+NETWORK
+TITLE =WRITING RFID RF300
+//ECRITURE ETIQUETTE RFID
+//*ODIL_ID:6488_2010*
+//
+      U     "IADF"; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "BA0"; 
+      SPBNB _005; 
+      CALL #C0C_ECRRF300 (
+           ASMAddr                  := 446,
+           ASMChannel               := 1,
+           Module                   := 0,
+           Reset                    := L      0.1,
+           Mode                     := 2,
+           Address                  := 3,
+           Len                      := 97,
+           DBNR                     := 93,
+           Offset                   := 6,
+           Def                      := #S1C0CDERFID,
+           Lock                     := #C0CIDENTLOCK);
+_005: NOP   0; 
+NETWORK
+TITLE =RFID WRITING SUPPORT MEMORY OK
+//MEMOIRE SUPPORT ECRITURE RFID OK
+//*ODIL_ID:6488_2011*
+//
+      O     #C0C_ECRRF300.Ok; 
+      O     #C0C_ECRRF300.Val; 
+      S     "IIS".C0C_2.MSERFID; 
+NETWORK
+TITLE =RESET MOT SUPPORT
+//RAZ MOT SUPPORT
+      UN    "IIS".C0C_2.MSP; 
+      UN    "IIS".C0C_2.MSE; 
+      SPBNB _006; 
+      CALL "FILL" (
+           BVAL                     := "IG".VALEUR0,
+           RET_VAL                  := #C0CRETVAL,
+           BLK                      := "IIS".C0C_2);
+_006: NOP   0; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                       IPP INFORMATION / IPP AU POSTE                      **
+//*******************************************************************************
+//*ODIL_ID:6488_81*
+//
+NETWORK
+TITLE =AUXILIARY PRESENT PART INFORMATION 1 IN STAGE
+//AUXILLIAIRE INFORMATION PIECE PRESENTE AU POSTE
+//"PERSO": HAD STAGE SENSOR FOR DIVERSITY 1
+//*ODIL_ID:4593_91*
+//
+      UN    "Z1G".C0C.MDV; 
+      U     "C0DPP1B2"; 
+      UN    "C0DPP2B2"; 
+      O     ; 
+      U     "Z1G".C0C.MDV; 
+      U     "Z1G".C0C.IAP; 
+      =     "Z1G".C0C.XIPP[1]; 
+NETWORK
+TITLE =PRESENCE PART INFORMATION TYPE 1
+//INFORMATION PIECE PRESENTE TYPE 1
+//"PERSO": REPLACE IN2 VALUE WITH CORRECT PROCESS CODE ACCORDING TO THE
+//CORRESPONDING VEHICULE
+//*ODIL_ID:4593_111*
+//
+      U     "Z1G".C0C.XIPP[1]; 
+      U     "IIT".C0C.MP.MPP; 
+      =     "Z1G".C0C.IPP1; 
+NETWORK
+TITLE =AUXILIARY PRESENT PART INFORMATION 2 IN STAGE
+//AUXILLIAIRE INFORMATION PIECE PRESENTE AU POSTE
+//"PERSO": HAD STAGE SENSOR FOR DIVERSITY 2
+//*ODIL_ID:4683_92*
+//
+      UN    "Z1G".C0C.MDV; 
+      U     "C0DPP2B2"; 
+      UN    "C0DPP1B2"; 
+      O     ; 
+      U     "Z1G".C0C.MDV; 
+      U     "Z1G".C0C.IAP; 
+      =     "Z1G".C0C.XIPP[2]; 
+NETWORK
+TITLE =PRESENCE PART INFORMATION TYPE 2
+//INFORMATION PIECE PRESENTE TYPE 2
+//"PERSO": REPLACE IN2 VALUE WITH CORRECT PROCESS CODE ACCORDING TO THE
+//CORRESPONDING VEHICULE
+//*ODIL_ID:4683_112*
+//
+      U     "IIT".C0C.MP.MPP; 
+      U     "Z1G".C0C.XIPP[2]; 
+      =     "Z1G".C0C.IPP2; 
+NETWORK
+TITLE =PRESENT PART INFORMATION
+//INFORMATION PIECE PRESENTE
+//*ODIL_ID:6488_82*
+//
+      O     "Z1G".C0C.IPP1; 
+      O     "Z1G".C0C.IPP2; 
+      =     "Z1G".C0C.IPP; 
+NETWORK
+TITLE =PART ABSENCE INFORMATION (NO PART DETECT)
+//INFORMATION ABSENCE PIECE (AUCUN DETECTEURS PIECE ACTIF)
+//*ODIL_ID:6488_83*
+//
+      UN    "C0DPP1B2"; 
+      UN    "C0DPP2B2"; 
+      =     "Z1G".C0C.IAP; 
+NETWORK
+TITLE =ABSENT PART INFORMATION (NO PART DETECT + NO PART PRESENT MEMOR)
+//INFORMATION PIECE ABSENTE (PAS DE DETECTEUR PIECE ACTIF + MEMOIRE PIECE
+//PRESENTE A ZERO)
+//*ODIL_ID:6488_84*
+//
+      U     "Z1G".C0C.IAP; 
+      UN    "IIT".C0C.MP.MPP; 
+      =     "Z1G".C0C.IPA; 
+NETWORK
+TITLE =MONITORING: PART PRESENT FAULT TIMER
+//SUIVI: TEMPORISATION DEFAUT PRESENCE PIECE
+//*ODIL_ID:6488_85*
+//
+      U     "Z1G".LIEN_PUP.Z_mauto; 
+      UN    "Z1G".C0C.IPP; 
+      UN    "Z1G".C0C.IPA; 
+      =     L      0.0; 
+      BLD   103; 
+      CALL #C0CTDFPC (
+           IN                       := L      0.0,
+           PT                       := T#2S);
+
+      NOP   0; 
+NETWORK
+TITLE =MONITORING: PART PRESENT FAULT
+//SUIVI: DEFAUT PRESENCE PIECE
+//*ODIL_ID:6488_86*
+//
+      U     #C0CTDFPC.Q; 
+      S     #S1C0CDPIEC; 
+      U(    ; 
+      O     "Z1G".C0C.IPP; 
+      O     "Z1G".C0C.IPA; 
+      )     ; 
+      R     #S1C0CDPIEC; 
+      NOP   0; 
+NETWORK
+TITLE =
+//******************************************************************************
+//**                               EXCHANGES ROBOT A0                      **
+//******************************************************************************
+//*ODIL_ID:1779_190_A0*
+//
+NETWORK
+TITLE =WORK AUTHORIZATION 1
+//AUTORISATION DE TRAVAIL 1
+//*ODIL_ID:1779_19A0*
+//
+      UN    "IIT".C0C.MP.MPP; 
+      U     "IIS".C0C_2.MSP; 
+      UN    "Z1G".C0C.IPP; 
+      UN    "Z1G".A0.ECHG_C0C.PD; 
+      =     "Z1G".C0C.ECHG_A0.AD; 
+NETWORK
+TITLE =WORK MOVE AWAY AUTHORIZATION 1
+//AUTORISATION RECUL TRAVAIL 1
+//*ODIL_ID:1779_20A0*
+//
+      U     "IIT".C0C.MP.MPP; 
+      U     "Z1G".C0C.IPP; 
+      U     "Z1G".A01.CMR; 
+      UN    "Z1G".A0.ECHG_C0C.SA; 
+      =     "Z1G".C0C.ECHG_A0.AR; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                        STAGE END OF WORK MEMORY                           **
+//*******************************************************************************
+//*ODIL_ID:6488_170*
+//
+NETWORK
+TITLE =PART COMPLETE MEMORY
+//MEMOIRE PIECE TRAVAILLEE
+//*ODIL_ID:6488_177*
+//
+      U     "IIT".C0C_TT.MFT.MFT1; 
+      U     "IIT".C0C_TT.MFT.MFT2; 
+      U     "PERSO"; 
+      S     "IIT".C0C.MP.MPT; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                            STOPPER 1 / BUTEE 1                            **
+//*******************************************************************************
+//*ODIL_ID:6488_1026*
+//
+NETWORK
+TITLE =STOPPER OPENING ORDER AUXILIARY 1
+//AUXILIAIRE 1 COMMANDE D'OUVERTURE BUTEE
+//*ODIL_ID:6488_1027*
+//
+      UN    "Z1G".MDV; 
+      U     "IIS".C0C_1.MSP; 
+      UN    "IIS".C0C_1.MSE; 
+      UN    "IIS".C0C_2.MSP; 
+      UN    "IIS".C0C_2.MSE; 
+      U     "Z1G".A0.ECHG_C0C.SA; 
+      =     #C0CX1COABB1; 
+NETWORK
+TITLE =STOPPER  MANAGEMENT
+//GESTION DE LA BUTEE
+//*ODIL_ID:6488_1028*
+//
+      U     "TSM".Z1AU_SECU_OK; 
+      =     L      0.0; 
+      BLD   103; 
+      U     #C0CX1COABB1; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "C0CDSPB1"; 
+      =     L      0.2; 
+      BLD   103; 
+      U     "C0CDFB1"; 
+      =     L      0.3; 
+      BLD   103; 
+      U     "C0CDOB1"; 
+      =     L      0.4; 
+      BLD   103; 
+      U     "BA1LIEN"; 
+      =     L      0.5; 
+      BLD   103; 
+      U     "IIS".C0C_2.MSP; 
+      =     L      0.6; 
+      BLD   103; 
+      U     #C0C_2_BVP; 
+      =     L      0.7; 
+      BLD   103; 
+      CALL #C0C_BUTEE1 (
+           Com                      := L      0.0,
+           Caob                     := L      0.1,
+           Dsp                      := L      0.2,
+           Dfb                      := L      0.3,
+           Dob                      := L      0.4,
+           Msea                     := L      0.5,
+           Cev                      := L      0.6,
+           Bvvp                     := L      0.7,
+           MSP                      := "IIS".C0C_1,
+           POS_MSE                  := 1,
+           Eob                      := "C0CEOB1",
+           efb                      := "C0CEFB1",
+           Isp                      := #C0CB1ISP,
+           Isa                      := #C0CB1ISA);
+
+      NOP   0; 
+NETWORK
+TITLE =MONITORING : DEGRADED MODE
+//SUIVI : MARCHE DEGRADEE
+//*ODIL_ID:6488_1029*
+//
+      U     #C0C_BUTEE1.Def; 
+      UN    #S1C0CDB1; 
+      =     #S1C0CB1MDG; 
+NETWORK
+TITLE =MONITORING : STOPPER FAULT
+//SUIVI : DEFAUT BUTEE
+//*ODIL_ID:6488_1030*
+//
+      U     #C0C_BUTEE1.Def; 
+      U     #S1C0CAIM; 
+      =     #S1C0CDB1; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                            STOPPER 2 / BUTEE 2                            **
+//*******************************************************************************
+//
+NETWORK
+TITLE =STOPPER OPENING ORDER AUXILIARY 1
+//AUXILIAIRE 1 COMMANDE D'OUVERTURE BUTEE
+//*ODIL_ID:6488_1031*
+//
+      U(    ; 
+      U     "Z1G".C0C.IPP; 
+      U     "IIS".C0C_2.MSP; 
+      U     "IIS".C0C_2.MSERFID; 
+      O     ; 
+      U     "Z1G".C0C.IAP; 
+      U     "Z1G".C0C.MDV; 
+      )     ; 
+      U     "Z1G".A0.ECHG_C0C.SA; 
+      =     #C0CX1COABB2; 
+NETWORK
+TITLE =STOPPER  MANAGEMENT
+//GESTION DE LA BUTEE
+//*ODIL_ID:6488_1032*
+//
+      U     "TSM".Z1AU_SECU_OK; 
+      =     L      0.0; 
+      BLD   103; 
+      U     #C0CX1COABB2; 
+      =     L      0.1; 
+      BLD   103; 
+      U     "C0CDSPB2"; 
+      =     L      0.2; 
+      BLD   103; 
+      U     "C0CDFB2"; 
+      =     L      0.3; 
+      BLD   103; 
+      U     "C0CDOB2"; 
+      =     L      0.4; 
+      BLD   103; 
+      U     "IIS".C0C_1.MSE; 
+      =     L      0.5; 
+      BLD   103; 
+      U     "C0CDDZB2"; 
+      =     L      0.6; 
+      BLD   103; 
+      U     "BA1"; 
+      =     L      0.7; 
+      BLD   103; 
+      CALL #C0C_BUTEE2 (
+           Com                      := L      0.0,
+           Caob                     := L      0.1,
+           Dsp                      := L      0.2,
+           Dfb                      := L      0.3,
+           Dob                      := L      0.4,
+           Msea                     := L      0.5,
+           Cev                      := L      0.6,
+           Bvvp                     := L      0.7,
+           MSP                      := "IIS".C0C_2,
+           POS_MSE                  := 1,
+           Eob                      := "C0CEOB2",
+           efb                      := "C0CEFB2",
+           Isp                      := #C0CB2ISP,
+           Isa                      := #C0CB2ISA);
+
+      NOP   0; 
+NETWORK
+TITLE =STOPPER 2 : EMPTY AND READY
+//BUTEE 2 : VIDE ET PRETE
+//*ODIL_ID:6488_1033*
+//
+      U     #C0C_BUTEE2.Bvp; 
+      =     #C0C_2_BVP; 
+NETWORK
+TITLE =MONITORING : DEGRADED MODE
+//SUIVI : MARCHE DEGRADEE
+//*ODIL_ID:6488_1034*
+//
+      U     #C0C_BUTEE2.Def; 
+      UN    #S1C0CDB2; 
+      =     #S1C0CB2MDG; 
+NETWORK
+TITLE =MONITORING : STOPPER 2 FAULT
+//SUIVI : DEFAUT BUTEE 2
+//*ODIL_ID:6488_1035*
+//
+      U     #C0C_BUTEE2.Def; 
+      U     #S1C0CAIM; 
+      =     #S1C0CDB2; 
+NETWORK
+TITLE =
+//*******************************************************************************
+//**                         TOOL MECANICAL CONDITIONS                         **
+//*******************************************************************************
+//*ODIL_ID:6488_180*
+//
+END_FUNCTION_BLOCK
+

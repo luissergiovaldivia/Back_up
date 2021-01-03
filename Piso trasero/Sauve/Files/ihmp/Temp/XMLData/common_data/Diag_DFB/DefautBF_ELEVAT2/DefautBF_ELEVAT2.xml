@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>Elevateur1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>Elevateur2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>Elevateur3</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>Elevateur4</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>Elevateur5</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>Elevateur6</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>Elevateur7</Text>
+    </Doc>
+    <Doc Num="128">
+      <Text>Elevateur8</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>Elevateur9</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>Elevateur10</Text>
+    </Doc>
+    <Doc Num="1024">
+      <Text>Elevateur11</Text>
+    </Doc>
+    <Doc Num="2048">
+      <Text>Elevateur12</Text>
+    </Doc>
+    <Doc Num="16384">
+      <Text>Elevateur13</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

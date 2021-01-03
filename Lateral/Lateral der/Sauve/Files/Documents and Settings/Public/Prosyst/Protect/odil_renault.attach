@@ -1,0 +1,8 @@
+<Licence Code="EC-69-24-FD-1E-17-C4-BC">
+  <Feature Nom="odil_renault" Version="2.0" TypeAttachement="mac" TypeVerification="ou">
+    <Attachement>001B1B815FBA#001B1B818A9D#</Attachement>
+    <OptionsTiers>
+      <AvecVisio />
+    </OptionsTiers>
+  </Feature>
+</Licence>

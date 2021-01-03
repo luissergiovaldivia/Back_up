@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>BF_MULTIPOS1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>BF_MULTIPOS2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>BF_MULTIPOS4</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>BF_MULTIPOS8</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>BF_MULTIPOS16</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>BF_MULTIPOS32</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>BF_MULTIPOS64</Text>
+    </Doc>
+    <Doc Num="128">
+      <Text>BF_MULTIPOS128</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>BF_MULTIPOS256</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>BF_MULTIPOS512</Text>
+    </Doc>
+    <Doc Num="1024">
+      <Text>BF_MULTIPOS1024</Text>
+    </Doc>
+    <Doc Num="8192">
+      <Text>BF_MULTIPOS8192</Text>
+    </Doc>
+    <Doc Num="16384">
+      <Text>BF_MULTIPOS16384</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

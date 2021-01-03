@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <DocsWord12>
+    <Doc Num="1">
+      <Text>Elevat1</Text>
+    </Doc>
+    <Doc Num="2">
+      <Text>Elevat2</Text>
+    </Doc>
+    <Doc Num="4">
+      <Text>Elevat3</Text>
+    </Doc>
+    <Doc Num="8">
+      <Text>Elevat4</Text>
+    </Doc>
+    <Doc Num="16">
+      <Text>Elevat5</Text>
+    </Doc>
+    <Doc Num="32">
+      <Text>Elevat6</Text>
+    </Doc>
+    <Doc Num="64">
+      <Text>Elevat7</Text>
+    </Doc>
+    <Doc Num="128">
+      <Text>Elevat8</Text>
+    </Doc>
+    <Doc Num="256">
+      <Text>Elevat9</Text>
+    </Doc>
+    <Doc Num="512">
+      <Text>Elevat10</Text>
+    </Doc>
+    <Doc Num="1024">
+      <Text>Elevat11</Text>
+    </Doc>
+    <Doc Num="2048">
+      <Text>Elevat12</Text>
+    </Doc>
+  </DocsWord12>
+</Root_Element>

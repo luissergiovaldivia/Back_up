@@ -1,0 +1,511 @@
+<EcranUser>
+  <GroupeDC>35282_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="35" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="1" Height="270" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+    <Line ID="2" Height="80" AlignX="Auto">
+      <!--Auto ou Valeur-->
+      <!--Auto : Justifie, Right, Left, None-->
+    </Line>
+  </Lines>
+  <Cadre Name="1 - ESTADO DEL DIALOGO SIPTOL35498" Line="2" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="20" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">ESTADO DEL DIALOGO SIPTOL</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="5" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="6" Width="Auto" AlignY="Auto" ValHauteurAuto="30" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - Val_api" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Val_api</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.VALAPI">SIP1.H0R_VISU.VALAPI&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="3 - Val_cal" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Val_cal</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.VALCAL">SIP1.H0R_VISU.VALCAL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Button Name="5 - Refrescar" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Toggle="false">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Refrescar</Expression>
+      </Text>
+      <Click>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="Z1H0V.IHMTRAFRAI">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1H0V.IHMTRAFRAI">Z1H0V.IHMTRAFRAI&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Click>
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </Button>
+    <ButtonNav Name="6 - Pantalla Principal" Row="6" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Pwd="">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pantalla Principal</Expression>
+      </Text>
+      <ClickNav CodeEcran="35618_EcMaUser" TypeEcran="EcransMaintenance" />
+      <Enable>
+        <Condition Operator="BitTrue" Value="0" NumBit="-1" Description="BA1">
+          <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="BA1">BA1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+        </Condition>
+      </Enable>
+    </ButtonNav>
+  </Cadre>
+  <Cadre Name="1 - PGF 03.45 - ANALISIS RECALAGE SIPTOL35284" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">PGF 03.45 - ANALISIS RECALAGE SIPTOL</Expression>
+    </Title>
+    <Rows />
+  </Cadre>
+  <Cadre Name="2 - FILM35286" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="42" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">FILM</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="35" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="5" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - FILM" Color="-16777216" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FILM</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 -    " Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">   </Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - NORDEN" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">NORDEN</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - MODELO" Color="-16777216" Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MODELO</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - FAMILIA" Color="-16777216" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FAMILIA</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP2_MODELE">SIP1.H0R_VISU.PP2_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP2_NORDRE">SIP1.H0R_VISU.PP2_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP2_FAMILLE">SIP1.H0R_VISU.PP2_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP2_FILM">SIP1.H0R_VISU.PP2_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="2 - N-2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N-2</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP1_NORDRE">SIP1.H0R_VISU.PP1_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP1_FAMILLE">SIP1.H0R_VISU.PP1_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP1_MODELE">SIP1.H0R_VISU.PP1_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PP1_FILM">SIP1.H0R_VISU.PP1_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="3 - N-1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N-1</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PAF_FAMILLE">SIP1.H0R_VISU.PAF_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PAF_FILM">SIP1.H0R_VISU.PAF_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PAF_NORDRE">SIP1.H0R_VISU.PAF_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PAF_MODELE">SIP1.H0R_VISU.PAF_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="4 - N" Color="-16776961" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS1_FILM">SIP1.H0R_VISU.PS1_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS1_FAMILLE">SIP1.H0R_VISU.PS1_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS1_MODELE">SIP1.H0R_VISU.PS1_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="5 - N+1" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N+1</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS1_NORDRE">SIP1.H0R_VISU.PS1_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS2_MODELE">SIP1.H0R_VISU.PS2_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS2_FAMILLE">SIP1.H0R_VISU.PS2_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS2_NORDRE">SIP1.H0R_VISU.PS2_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS2_FILM">SIP1.H0R_VISU.PS2_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="6 - N+2" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N+2</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS3_FAMILLE">SIP1.H0R_VISU.PS3_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS3_NORDRE">SIP1.H0R_VISU.PS3_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS3_MODELE">SIP1.H0R_VISU.PS3_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="7 - N+3" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N+3</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS3_FILM">SIP1.H0R_VISU.PS3_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS4_NORDRE">SIP1.H0R_VISU.PS4_NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <Text Name="8 - N+4" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">N+4</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS4_FILM">SIP1.H0R_VISU.PS4_FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS4_FAMILLE">SIP1.H0R_VISU.PS4_FAMILLE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="5" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.H0R_VISU.PS4_MODELE">SIP1.H0R_VISU.PS4_MODELE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="3 - FLUJO35400" Line="1" AlignY="Auto" Height="Full" Width="Auto" PosX="408" PosY="0" Autoscroll="False" BackGroundImage="">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">FLUJO</Expression>
+    </Title>
+    <Rows>
+      <Row ID="1" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="2" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="3" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+      <Row ID="4" Width="Auto" AlignY="Auto" ValHauteurAuto="25" BackGroundImage="">
+        <!--Auto ou Valeur-->
+        <!--Auto : Justifie, Right, Left, None-->
+      </Row>
+    </Rows>
+    <Text Name="1 - MODELO" Color="-16777216" Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">MODELO</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - NORDEN" Color="-16777216" Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">NORDEN</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - FAMILIA" Color="-16777216" Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FAMILIA</Expression>
+      </Text>
+    </Text>
+    <Text Name="1 - FILM" Color="-16777216" Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">FILM</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA2.NFILM">Z1G.H0VISU.PIEZA_PASADA2.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA2.NORDRE">Z1G.H0VISU.PIEZA_PASADA2.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA2.CDIV1">Z1G.H0VISU.PIEZA_PASADA2.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA2.CDIV3">Z1G.H0VISU.PIEZA_PASADA2.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA1.NORDRE">Z1G.H0VISU.PIEZA_PASADA1.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA1.CDIV1">Z1G.H0VISU.PIEZA_PASADA1.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA1.NFILM">Z1G.H0VISU.PIEZA_PASADA1.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_PASADA1.CDIV3">Z1G.H0VISU.PIEZA_PASADA1.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_ENCURSO.NFILM">Z1G.H0VISU.PIEZA_ENCURSO.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_ENCURSO.CDIV3">Z1G.H0VISU.PIEZA_ENCURSO.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_ENCURSO.NORDRE">Z1G.H0VISU.PIEZA_ENCURSO.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_ENCURSO.CDIV1">Z1G.H0VISU.PIEZA_ENCURSO.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA1.CDIV1">Z1G.H0VISU.PIEZA_SEGUIENTA1.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA1.NFILM">Z1G.H0VISU.PIEZA_SEGUIENTA1.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA1.CDIV3">Z1G.H0VISU.PIEZA_SEGUIENTA1.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA1.NORDRE">Z1G.H0VISU.PIEZA_SEGUIENTA1.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA2.CDIV3">Z1G.H0VISU.PIEZA_SEGUIENTA2.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA2.CDIV1">Z1G.H0VISU.PIEZA_SEGUIENTA2.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA2.NORDRE">Z1G.H0VISU.PIEZA_SEGUIENTA2.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA2.NFILM">Z1G.H0VISU.PIEZA_SEGUIENTA2.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA3.NORDRE">Z1G.H0VISU.PIEZA_SEGUIENTA3.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA3.NFILM">Z1G.H0VISU.PIEZA_SEGUIENTA3.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA3.CDIV3">Z1G.H0VISU.PIEZA_SEGUIENTA3.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA3.CDIV1">Z1G.H0VISU.PIEZA_SEGUIENTA3.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="4" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA4.CDIV3">Z1G.H0VISU.PIEZA_SEGUIENTA4.CDIV3&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="1" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA4.NFILM">Z1G.H0VISU.PIEZA_SEGUIENTA4.NFILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="2" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA4.NORDRE">Z1G.H0VISU.PIEZA_SEGUIENTA4.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="3" Height="Auto" Width="Auto" PosX="Auto" PosY="Auto" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1G.H0VISU.PIEZA_SEGUIENTA4.CDIV1">Z1G.H0VISU.PIEZA_SEGUIENTA4.CDIV1&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Listes />
+</EcranUser>

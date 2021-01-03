@@ -1,0 +1,107 @@
+<Root_Element>
+  <GroupeDC>Diagnostic</GroupeDC>
+  <PagesWinCC>
+    <PageWinCC Code="1234">
+      <VariableDC ItemOpc="DB_IHM_WINCC.Num_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Num_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </PageWinCC>
+    <SetAvPlanPageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Pilot.ihmavplan" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Pilot.ihmavplan&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </SetAvPlanPageWinCC>
+    <EnablePageWinCC>
+      <VariableDC ItemOpc="DB_IHM_WINCC.Val_Page" Source="Source SimaticNet WinCC.API Siemens 1">DB_IHM_WINCC.Val_Page&lt;&lt;Source&gt;&gt;Source SimaticNet WinCC.API Siemens 1</VariableDC>
+    </EnablePageWinCC>
+  </PagesWinCC>
+  <Switchs>
+    <Switch>
+      <Id>PUI-SW1</Id>
+      <IdSwParent>none</IdSwParent>
+      <!--none (sw du PUI),ou Id -->
+      <Image>SpecificData:\Images\MOP.gif</Image>
+    </Switch>
+    <Switch>
+      <Id>Z1ZB</Id>
+      <IdSwParent>PUI-SW1</IdSwParent>
+      <!--none (sw du PUI),ou Id -->
+      <Image>SpecificData:\Images\Z1ZB.gif</Image>
+    </Switch>
+    <Switch>
+      <Id>Z2ZB</Id>
+      <IdSwParent>PUI-SW1</IdSwParent>
+      <!--none (sw du PUI),ou Id -->
+      <Image>
+      </Image>
+    </Switch>
+  </Switchs>
+  <Stations>
+    <Station>
+      <Id>A0AFF1</Id>
+      <IdSwParent>Z1ZB</IdSwParent>
+      <Image>SpecificData:\Images\A0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[A0AFF1]&amp;statepathval()">[A0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>D0AFF1</Id>
+      <IdSwParent>Z1ZB</IdSwParent>
+      <Image>SpecificData:\Images\D0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[D0AFF1]&amp;statepathval()">[D0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>F0AFF1</Id>
+      <IdSwParent>Z1ZB</IdSwParent>
+      <Image>SpecificData:\Images\F0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[F0AFF1]&amp;statepathval()">[F0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>B0AFF1</Id>
+      <IdSwParent>Z2ZB</IdSwParent>
+      <Image>SpecificData:\Images\B0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[B0AFF1]&amp;statepathval()">[B0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>C0AFF1</Id>
+      <IdSwParent>Z2ZB</IdSwParent>
+      <Image>SpecificData:\Images\C0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[C0AFF1]&amp;statepathval()">[C0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>E0AFF1</Id>
+      <IdSwParent>Z2ZB</IdSwParent>
+      <Image>SpecificData:\Images\E0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[E0AFF1]&amp;statepathval()">[E0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>J0AFF1</Id>
+      <IdSwParent>Z2ZB</IdSwParent>
+      <Image>SpecificData:\Images\J0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[J0AFF1]&amp;statepathval()">[J0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+    <Station>
+      <Id>G0AFF1</Id>
+      <IdSwParent>Z2ZB</IdSwParent>
+      <Image>SpecificData:\Images\G0AFF1.gif</Image>
+      <VariableDC Source="S7_SNMP" ItemOpc="[G0AFF1]&amp;statepathval()">[G0AFF1]&amp;statepathval()&lt;&lt;Source&gt;&gt;S7_SNMP</VariableDC>
+    </Station>
+  </Stations>
+  <Labels>
+    <Label>
+      <Nom>LBL_Titre</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Diagnóstico red Nivel 1</Expression>
+      </text>
+    </Label>
+    <Label>
+      <Nom>LBL_TitrePgCR</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Pantalla Causas Remedios</Expression>
+      </text>
+    </Label>
+  </Labels>
+  <Buttons>
+    <Button>
+      <Nom>BTN_CR</Nom>
+      <text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Mas detalles</Expression>
+      </text>
+    </Button>
+  </Buttons>
+</Root_Element>

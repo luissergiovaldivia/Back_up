@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root_Element>
+   <Pages>
+      <Page Id="1">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun arrêt d'urgence de zone</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun parada de emergencia de la zona</Expression>
+            <Expression Culture="ro-R0">Defect dublu canal pe comun oprire de urgenta de zona</Expression>
+            <Expression Culture="tr-TR">Acil Durdurma hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate ne commande pas le contacteur Z*KAU alors que le contrôle du commun Z*CCAU est présent OU l'automate a vu une coupure sur le canal soft (ZBAU) n'ayant pas entrainée de coupure du contrôle du commun Z*CCAU. L'entrée de diagnostic (Z*IFAUZ) est à 1.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata no pilota el contactor Z*KAU mientras que el contol del comun Z*CCAU esta presente. O el automata ha visto un corte en el canal soft (ZBAU) que no ha desencadenado un corte del control del comun Z*CCAU.la entrada de diagnostico</Expression>
+            <Expression Culture="ro-R0">In momentul producerii defectului, AP-ul nu da comanda contactorului Z*KAU, chiar daca controlul comunului Z*CCAU este prezent, SAU AP-ul a inregistrat o intrerupere pe canalul soft (ZBAU) care nu a fost insotita de o intrerupere a controlului comunului Z*CCAU. Intrarea de diagnostic (Z*IFAUZ) este in 1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat  Z*KAU kontaktörünü pilote etmez iken Z*CCAU ortak ucu kontrolü 1    VEYA   Otomat soft kanal (ZBAU) üzerinde Z*CCAU'yu düsürmeyen bir kesilme algiladi.Z*IFAUZ diagnostik inputu 1 degerinde</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="2">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun arrêt d'urgence de zone</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun parada de emergencia de la zona</Expression>
+            <Expression Culture="ro-R0">Defect dublu canal pe comun oprire de urgenta de zona</Expression>
+            <Expression Culture="tr-TR">Acil Durdurma hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du canal soft (Z*BAU) n'ayant pas entrainée de coupure du contrôle du commun Z*CCAU. L'entrée de diagnostic (Z*IFAUZ) est à 0.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del canal soft (Z*BAU) que no ha desencadenado el corte del control del comun Z*CCAU. la entrada de diagnostico (Z*IFAUZ) esta a 0</Expression>
+            <Expression Culture="ro-R0">In momentul producerii defectului AP-ul a sesizat o intrerupere a canalului soft (Z*BAU), care nu a fost insotita de o intrerupere a controlului comunului Z*CCAU. Intrarea de diagnostic(Z*IFAUZ) este in 0</Expression>
+            <Expression Culture="tr-TR">Hata aninda Otomat soft kanal (ZBAU) üzerinde Z*CCAU'yu düsürmeyen bir kesilme algiladi.Z*IFAUZ diagnostik inputu 0 degerinde</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="3">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun arrêt d'urgence de zone</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun de parada de emergencia de la zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu  canal pe comunul oprire de urgenta al zonei</Expression>
+            <Expression Culture="tr-TR">Acil Durdurma hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a commandé la coupure du contacteur Z*KAU et il n'y a pas de retour de cette coupure.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata a pilotado el corte del contactor Z*KAU y no hay retorno de este corte</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului, AP-ul a comandat o intrerupere a contactorului Z*KAU si nu a existat confirmarea  acestei intreruperi.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat Z*KAU kontaktörünü düsürme (=0) komutunu verdi ama bu kesilmenin geri dönüs bilgisi olusmadi.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="4">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun arrêt d'urgence de zone</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun de parada de emergencia de la zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comunul oprire de urgenta al zonei</Expression>
+            <Expression Culture="tr-TR">Acil Durdurma hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun  Z*CCAU alors qu'il ne l'avait pas commandée, ou l'automate commande le contacteur Z*KAU et n'a pas de retour du contrôle du commun Z*CCAU. L'entrée de diagnostic (Z*IFAUZ) est à 1.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del control del comun Z*CCAU y el no le habia pilotado, o el automata pilota el contactor Z*KAU y no hay retorno del control del comun Z*CCAU. la entrada de diagnostico (Z*IFAUZ) esta a 1</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului, AP-ul a sesizat o intrerupere  a controlului comunului Z*CCAU chiar daca  nu a fost comandata, SAU AP-ul a comandat contactorul Z*KAU si nu a existat confirmarea controlului comunului de securitate. Intrarea de diagnostic (Z*IFAUZ) este in  1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda kumanda etmedigi halde Z*CCAU ortak ucunda kesilme algiladi  VEYA   Otomat Z*KAU kontaktörünü kumanda ediyor fakat Z*CCAU ortak ucunu kontrol eden input bilgisi  gelmiyor.Z*IFAU 1 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="5">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun arrêt d'urgence de zone</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun de parada emergencia de la zona</Expression>
+            <Expression Culture="ro-RO"> Defect dublu canal pe comun oprire de urgenta de zona </Expression>
+            <Expression Culture="tr-TR">Acil Durdurma hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun Z*CCAU  alors qu'il ne l'avait pas commandée, ou l'automate commande le contacteur Z*KAU  et n'a pas de retour du contrôle du commun de sécurité. L'entrée de diagnostic (Z*IFAUZ) est à 0.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del control del comun Z*CCAU y el no le habia pilotado, o el automata pilota el contactor Z*KAU y no hay retorno del control del comun de seguridad. La entrada de diagnostico (Z*IFAUZ)esta  a 0.</Expression>
+            <Expression Culture="ro-RO"> In momentul producerii defectului AP-ul a sesizat o intrerupere a controlului comunului Z*CCAU chiar daca nu a fost comandata, SAU AP-ul a comandat contactorul Z*KAU si nu a existat confirmarea controlului comunului de securitate . Intrarea de diagnostic (Z*IFAUZ) este in 0.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat kumanda etmedigi halde Z*CCAU hattinda kopukluk algiladi    VEYA   Otomat Z*KAU kontaktörüne kumanda veriyor fakat emniyet hattindan input bilgisi gelmiyor.Diagnostik girisi (Z*IFAUZ) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="6">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun  en service</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe Comun En Service</Expression>
+            <Expression Culture="tr-TR">MES (Servise Alma) hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate ne commande pas le contacteur Z*KMS alors que le contrôle du commun Z*CCES est présent OU l'automate a vu une coupure sur le canal soft n'ayant pas entrainée de coupure du contrôle du commun Z*CCES. L'entrée de diagnostic (Z*IFMS) est à 1.</Expression>
+            <Expression Culture="es-ES">en el momento del defecto, el automata no pilota el contactor Z*KMS mientras que el control del comun Z*CCES esta presente. O</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului AP-ul nu comanda contactorul Z*KMS, chiar daca controlul  comunului  Z*CCES este prezent SAU AP-ul a inregistrat o intrerupere pe canalul soft care nu a fost insotita de o intrerupere a controlului comunului Z*CCES. Intrarea de diagnostic (Z*IFMS) este in 1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat Z*KFZ kontaktörüne kumanda vermiyor iken Z*CCES hatti aktifti   VEYA     otomat soft kanalda kesilme algiladi fakat bu kesilme Z*CCES hattini düsürmedi.Diagnostik girisi (Z*IFMS) 1 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="7">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun  en service</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe Comun En Service</Expression>
+            <Expression Culture="tr-TR">MES (Servise Alma) hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du canal soft n'ayant pas entrainée de coupure du contrôle du commun Z*CCES . L'entrée de diagnostic (Z*IFMS) est à 0.</Expression>
+            <Expression Culture="es-ES"> En el momento del defecto, el automata ha visto un corte del canal soft que no ha desencadenado un corte del control del commun Z*CCES. La entrada de diagnostico (Z*IFMS) esta a 0</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului AP-ul a inregistrat o intrerupere a canalului soft care nu a fost insotita de o intrerupere a controlului comunului Z*CCES.Intrarea de diagnostic (Z*IFMS) 
+este in  0.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat soft kanalda kesilme algiladi bu kesilme Z*CCES hattini düsürmedi.Diagnostik girisi (Z*IFMS) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="8">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun en service</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comunul en service</Expression>
+            <Expression Culture="tr-TR">MES (Servise Alma) hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a commandé la coupure du contacteur Z*KMS et il n'y a pas de retour de cette coupure.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto el corte del contactor Z*KMS y no hay retorno de este corte</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului AP-ul a comandat intreruperea contactorului Z*KMS si nu a existat confirmarea  acestei intreruperi</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat Z*KMS kontaktörüne kesme kumandasi verdi  ve bu kesilmenin dönüs bilgisi gelmiyor.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="9">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun en service</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en comun en servicio</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun en service</Expression>
+            <Expression Culture="tr-TR">MES (Servise Alma) hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun Z*CCES alors qu'il ne l'avait pas commandée, OU l'automate commande le contacteur Z*KMS et n'a pas de retour du contrôle du commun Z*CCES. L'entrée de diagnostic (Z*IFMS) est à 1.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del control del comun Z*CCES y el no lo habia pilotado, O el automata pilota el contactorZ*KMS y no hay retorno del control del comun Z*CCES. La entrada de diagnostico (Z*IFMS)esta a 1</Expression>
+            <Expression Culture="ro-RO">In momentul defectului AP-ul a detectat o intrerupere a controlului de comun Z*CCES chiar daca nu a fost comandata, SAU AP-ul comanda contactorul Z*KMS si nu are confirmare a controlului comun de securitate Z*CCES. Intrarea de diagnostic (Z*IFMS) este la  1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat kumanda etmedigi halde Z*CCES hattinda kopukluk algiladi    VEYA   Otomat Z*KMS kontaktörüne kumanda veriyor fakat emniyet hattindan input bilgisi gelmiyor.Diagnostik girisi (Z*IFMS) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="10">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun  en service</Expression>
+            <Expression Culture="es-ES">defecto doble canal en el comun en servicio</Expression>
+            <Expression Culture="ro-RO">Défaut double canal sur commun  en service</Expression>
+            <Expression Culture="tr-TR">MES (Servise Alma) hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun Z*CCES alors qu'il ne l'avait pas commandée, OU l'automate commande le contacteur Z*KMS et n'a pas de retour du contrôle du commun de sécurité. L'entrée de diagnostic (Z*IFMS) est à 0.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, e automata ha visto un corte del comun Z*CCES y el no lo habia pilotado, O el automata pilota el contactor Z*KMS y no tiene retorno del control del comun de seguridad. La entrada de diagnostico (Z*IFMS) esta a 0;</Expression>
+            <Expression Culture="ro-RO">In momentul defectului AP-ul a detectat o intrerupere a controlului de comun Z*CCES chiar daca nu a fost comandata, SAU AP-ul comanda contactorul Z*KMS si nu are confirmare a controlului comun de securitate. Intrarea de diagnostic (Z*IFMS) este la 0.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat kumanda etmedigi halde Z*CCES hattinda kopukluk algiladi    VEYA   Otomat Z*KMS kontaktörüne kumanda veriyor fakat emniyet hattindan input bilgisi gelmiyor.Diagnostik girisi (Z*IFMS) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="11">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun  en service temporisé</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio temporizado</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comunul en service temporizat</Expression>
+            <Expression Culture="tr-TR">Zamanlanmis MES hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, pas de commun *ES alors que le contrôle du commun Z*CCESTR est présent.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, no esta el comun *ES mientras que el comun Z*CCESTR esta presente </Expression>
+            <Expression Culture="ro-RO">In momentul defectului, nu avem comun *ES, in timp ce controlul comunului Z*CCESTR este prezent.</Expression>
+            <Expression Culture="tr-TR">Hata aninda kumanda edilmeyen *ES hattina ragmen Z*CCESTR inputu aktif</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="12">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun en service temporisé</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio temporizado</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun en service temporizat</Expression>
+            <Expression Culture="tr-TR">Zamanlanmis MES hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun *ES alors qu'il ne l'avait pas commandé ou la zone est en service et il n'y a pas de retour du contrôle du commun  "En Service Temporisé".</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del control del comun *ES mientras que el no lo habia pilotado o la zona esta en servicio y no hay retorno del control del comun "En servicio temporizado"</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului, AP-ul a inregistrat o intrerupere a controlului comun *ES, chiar daca nu a fost comandata, sau zona este in serviciu si nu a existat confirmarea controlului  comunului "En Service Temporisé" .</Expression>
+            <Expression Culture="tr-TR">Hata aninda kumanda etmedigi halde otomat *ES hattinda kesilme algiladi    VEYA   Zon serviste fakat   Zamanlanmis servise alma hattindan dönüs bilgisi gelmiyor.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="13">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun zone fermée</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun cierre zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun Zona Inchisa</Expression>
+            <Expression Culture="tr-TR">Zon Kapali (ZF)  hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate ne commande pas le contacteur Z*KFZ alors que le contrôle du commun Z*CCZF est présent OU l'automate a vu une coupure sur le canal soft n'ayant pas entrainée de coupure du contrôle du commun Z*CCFZ. L'ebtrée de diagnostic (Z*IFFP) est à 1.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata no pilota el contactor Z*KFZ mientras que el control del comun Z*CCZF esta presente O el automata ha visto un corte en el canal soft que no ha desencadenado corte del control del comun Z*CCFZ.</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului AP-ul nu comanda  Z*KFZ, iar controlul comun Z*CCZF este prezent SAU AP-ul a inregistrat o intrerupere pe canalul soft care nu a fost insotita de intreruperea controlului comun Z*CCFZ. Intrarea de diagnostic  (Z*IFFP) este in 1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat Z*KFZ kontaktörüne kumanda vermiyor iken Z*CCZF hatti aktifti   VEYA     otomat soft kanalda kesilme algiladi fakat bu kesilme Z*CCZF hattini düsürmedi.Diagnostik girisi (Z*IFFP) 1 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="14">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun zone fermée</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun cierre zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun Zona Inchisa</Expression>
+            <Expression Culture="tr-TR">Zon Kapali (ZF)  hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du canal soft n'ayant pas entrainée de coupure du contrôle du commun Z*CCZF. L'entrée de diagnostic (Z*IFFP) est à 0.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del canal soft que no ha desencadenado un corte del comun Z*CCZF.La entrada de diagnostico (Z*IFFP) esta a 0</Expression>
+            <Expression Culture="ro-RO"> In momentul producerii defectului,AP-ul a inregistrat o intrerupere a canalului soft care nu a fost insotita de intreruperea controlului comun Z*CCZF. Intrarea de diagnostic (Z*IFFP) este in 0.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat soft kanalda kesilme algiladi bu kesilme Z*CCZF hattini düsürmedi.Diagnostik girisi (Z*IFFP) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="15">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun zone fermée</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en comun cierre zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun Zona Inchisa </Expression>
+            <Expression Culture="tr-TR">Zon Kapali (ZF)  hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a commandé la coupure du contacteur Z*KFZ et il n'y a pas de retour de cette coupure.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha pilotado el corte del contactor Z*KFZ y no hay retorno de este corte</Expression>
+            <Expression Culture="ro-RO"> In momentul producerii defectului,AP-ul a inregistrat  intreruperea contactorului Z*KFZ si nu a existat confirmarea acestei intreruperi.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat Z*KFZ kontaktörüne kesme kumandasi verdi  ve bu kesilmenin dönüs bilgisi gelmiyor.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="16">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur sur commun zone fermée</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en comun cierre zona</Expression>
+            <Expression Culture="ro-RO"> Defect dublu canal pe comun Zona Inchisa </Expression>
+            <Expression Culture="tr-TR">Zon Kapali (ZF)  hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun Z*CCZF alors qu'il ne l'avait pas commandée, ou l'automate commande le contacteur Z*KFZ et n'a pas de retour du contrôle du commun Z*CCZF. L'entrée de diagnostic (Z*IFFP) est à 1.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del control del comun Z*CCZF mientras que el no lo habia pilotado, o el automata pilota el contactor Z*KFZ y no hay retorno del control del comun Z*CCZF. La entrada de diagnostico (Z*IFFP) esta a 1.</Expression>
+            <Expression Culture="ro-RO"> In momentul producerii defectului,AP-ul a inregistrat o intrerupere a controlului comun Z*CCZF atunci cand nu a fost comandata, SAU AP-ul comanda contactorul Z*KFZ si nu exista confirmarea controlului comun Z*CCZF. Intrarea de diagnostic (Z*IFFP) este in  1.</Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat kumanda etmedigi halde Z*CCZF hattinda kopukluk algiladi    VEYA   Otomat Z*KFZ kontaktörüne kumanda veriyor fakat Z*CCZF input bilgisi gelmiyor.Diagnostik girisi (Z*IFFP) 1 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="17">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun zone fermée</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en comun cierre zona</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun Zona Inchisa</Expression>
+            <Expression Culture="tr-TR">Zon Kapali (ZF)  hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Au moment du défaut, l'automate a vu une coupure du contrôle du commun Z*CCZF alors qu'il ne l'avait pas commandée, ou l'automate commande le contacteur Z*KFZ et n'a pas de retour du contrôle du commun Z*CCZF. L'entrée de diagnostic (Z*IFFP) est à 0.</Expression>
+            <Expression Culture="es-ES">En el momento del defecto, el automata ha visto un corte del comun Z*CCZF mientras que el no lo habia piloa</Expression>
+            <Expression Culture="ro-RO">In momentul producerii defectului, AP-ul a inregistrat o intrerupere a controlului comun Z*CCZF atunci cand nu a fost comandata, SAU AP-ul comanda contactorul Z*KFZ si nu exista confirmarea controlului comun Z*CCZF. Intrarea de diagnostic (Z*IFFP) este in 0. </Expression>
+            <Expression Culture="tr-TR">Hata aninda otomat kumanda etmedigi halde Z*CCZF hattinda kopukluk algiladi    VEYA   Otomat Z*KFZ kontaktörüne kumanda veriyor fakat Z*CCZF input bilgisi gelmiyor.Diagnostik girisi (Z*IFFP) 0 degerinde.</Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="18">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut double canal sur commun en service temporisé</Expression>
+            <Expression Culture="es-ES">Defecto doble canal en el comun en servicio temporizado</Expression>
+            <Expression Culture="ro-RO">Defect dublu canal pe comun En Service temporizat</Expression>
+            <Expression Culture="tr-TR">Zamanlanmis MES hatti üzerinde Duble kanal hatasi</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Défaut paramétrage : temps de retombée du relais hors limite.</Expression>
+            <Expression Culture="es-ES">Defecto parametrizacion:tiempo de recaida del relé ha sobrepasado el limite</Expression>
+            <Expression Culture="ro-RO">Defect de parametrare : Timp de recadere releu in afara limitelor.</Expression>
+            <Expression Culture="tr-TR">Parametraj Hatasi:Röle Düsme süresinin parametre edilen degeri limit disi </Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="19">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Anomalie sur entrée de diagnostic "Info Filerie Arrêt d'Urgence de Zone"</Expression>
+            <Expression Culture="es-ES">Anomalia en entrada de diagnostico "Info filerie Parada de emergencia de Zona"</Expression>
+            <Expression Culture="ro-RO">Anomalie pe intrarea de diagnostic "Info Filerie Oprire de Urgenta Zona"</Expression>
+            <Expression Culture="tr-TR">"Zon Acil durdurma kablaji bilgi" diagnostik girisinde anormallik</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">L'automate a vu une discordance entre l'état de l'entrée Z*IFAUZ et celui attendu, en fonction de l'état des contacts en entrée automate des organes de sécurité</Expression>
+            <Expression Culture="es-ES">El automata ha visto una discordancia entre el estado de la entrada Z*IFFAUZ y el esperado, en funcion del estado de los contactos en entrada automata de los organos de seguridad</Expression>
+            <Expression Culture="ro-RO">AP-ul a inregistrat o neconcordanta intre starea intrarii Z*IFAUZ si starea asteptata, in functie de starea contactelor elementelor de securitate conectate pe intrari AP</Expression>
+            <Expression Culture="tr-TR">Otomat,  emniyet organlarindan gelen input bilgisine göre Z*IFAUZ (acil hatti kablaj bilgisi) giris bilgisi  ile olmasi gereken bilgi arasinda uyusmazlik tespit etti. </Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="20">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Anomalie sur entrée de diagnostic "Info Filerie Mise en Service"</Expression>
+            <Expression Culture="es-ES">Anomalia en entrada de diagnostico "Info filerie Puesta en servicio" </Expression>
+            <Expression Culture="ro-RO">Anomalie pe intrarea de diagnostic "Info Filerie Mise en Service"</Expression>
+            <Expression Culture="tr-TR">"Zon Servise Alma kablaji Bilgi" diagnostik girisinde anormallik</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">L'automate a vu une discordance entre l'état de l'entrée Z*IFFMS et celui attendu, en fonction de l'état des contacts en entrée automate des organes de sécurité</Expression>
+            <Expression Culture="es-ES">El automata ha visto una discordancia entre el estado de la entrada Z*IFFMS y el esperado, en funcion del estado de los contactos en entrada automata de los organos de seguridad</Expression>
+            <Expression Culture="ro-RO"> AP-ul a inregistrat o neconcordanta intre starea intrarii  Z*IFFMS si starea asteptatata, in functie de starea contactelor elementelor de securitate conectate pe intrari AP</Expression>
+            <Expression Culture="tr-TR">Otomat,  emniyet organlarindan gelen input bilgisine göre Z*IFFMS (MES hatti kablaj bilgisi) giris bilgisi  ile olmasi gereken bilgi arasinda uyusmazlik tespit etti. </Expression>
+         </Bandeau>
+      </Page>
+      <Page Id="21">
+         <Titre ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">Anomalie sur entrée de diagnostic "Info Filerie Fermeture Portillons"</Expression>
+            <Expression Culture="es-ES">Anomalia en entrada de diagnostico "Info filerie cierre portillones"</Expression>
+            <Expression Culture="ro-RO">Anomalie pe intrarea de diagnostic "Info Filerie Inchidere Porti"</Expression>
+            <Expression Culture="tr-TR">"Kapilar Kapali kablaji Bilgi" diagnostik girisinde anormallik</Expression>
+         </Titre>
+         <Bandeau ExpressionIhmpMultilangue="Interne">
+            <Expression Culture="fr-FR">L'automate a vu une discordance entre l'état de l'entrée Z*IFFP et celui attendu, en fonction de l'état des contacts en entrée automate des organes de sécurité</Expression>
+            <Expression Culture="es-ES">El automata a visto una discordancia entre el estado de la entrada Z*IFFP y el esperado, en funcion del estado de los contactos en entrada automata de los organos de seguridad</Expression>
+            <Expression Culture="ro-RO"> AP-ul a inregistrat o neconcordanta intre starea intrarii  Z*IFFP si starea asteptatata, in functie de starea contactelor elementelor de securitate conectate pe intrari AP </Expression>
+            <Expression Culture="tr-TR">Otomat,  emniyet organlarindan gelen input bilgisine göre Z*IFFP (kapilarin kapali bilgisi) giris bilgisi  ile olmasi gereken bilgi arasinda uyusmazlik tespit etti. </Expression>
+         </Bandeau>
+      </Page>
+   </Pages>
+</Root_Element>

@@ -1,0 +1,255 @@
+<EcranLancement>
+  <GroupeDC>1798_VarEcMa</GroupeDC>
+  <Lines>
+    <Line ID="0" Height="35" AlignX="Auto" />
+    <Line ID="1" Height="200" AlignX="Auto" />
+    <Line ID="2" Height="200" AlignX="Auto" />
+  </Lines>
+  <Cadre Name="1 - PGF XX.XX - LANCEMENT SIPTOL A03522" Line="0" AlignY="Auto" Height="Full" Width="Auto" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">PGF  - LANZAMIENTO SIPTOL A0</Expression>
+    </Title>
+  </Cadre>
+  <Cadre Name="1 - SIPTOL - PIECE SUIVANTE3499" Line="2" AlignY="Auto" Height="Full" Width="225" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">SIPTOL - PIEZA SIGUIENTE</Expression>
+    </Title>
+    <Text Name="1 - Film" Color="-16777216" Row="None" Height="25" Width="120" PosX="5" PosY="60" Text="Film" />
+    <Text Name="2 - Nordre" Color="-16777216" Row="None" Height="25" Width="120" PosX="5" PosY="120" Text="Nordre" />
+    <ReadVal Row="None" Height="25" Width="80" PosX="120" PosY="60" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.FILM_PS">SIP1.A0L_ECH.FILM_PS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="80" PosX="120" PosY="120" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.NORDRE_PS">SIP1.A0L_ECH.NORDRE_PS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="1 - SIPTOL - PIECE ATTENDUE3190" Line="1" AlignY="Auto" Height="Full" Width="225" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">SIPTOL - PIEZA ESPERADA</Expression>
+    </Title>
+    <Rows />
+    <Text Name="1 - Film" Color="-16777216" Row="None" Height="25" Width="120" PosX="5" PosY="60" Text="Film" />
+    <Text Name="2 - Nordre" Color="-16777216" Row="None" Height="25" Width="120" PosX="5" PosY="120" Text="Nordre" />
+    <ReadVal Row="None" Height="25" Width="80" PosX="120" PosY="60" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.DVEH.FILM">SIP1.A0L_ECH.DVEH.FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="80" PosX="120" PosY="120" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.DVEH.NORDRE">SIP1.A0L_ECH.DVEH.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+  </Cadre>
+  <Cadre Name="2 - DIALOGUE SIPTOL3508" Line="2" AlignY="Auto" Height="Full" Width="300" PosX="468" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">Estado de diálogo Siptol</Expression>
+    </Title>
+    <Text Name="1 - Val_cal" Color="-16777216" Row="None" Height="25" Width="100" PosX="0" PosY="30" Text="Val_cal" />
+    <Text Name="2 - Val_api" Color="-16777216" Row="None" Height="25" Width="100" PosX="100" PosY="30" Text="Val_api" />
+    <Text Name="3 - Etat_flux" Color="-16777216" Row="None" Height="25" Width="100" PosX="200" PosY="30">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado del flujo</Expression>
+      </Text>
+    </Text>
+    <Text Name="4 - Etat du dialogue siptol" Color="-16777216" Row="None" Height="25" Width="180" PosX="0" PosY="120">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Estado de diálogo Siptol</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="None" Height="25" Width="80" PosX="10" PosY="60">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.VALCAL">SIP1.A0L_ECH.VALCAL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="80" PosX="110" PosY="60">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.VALAPI">SIP1.A0L_ECH.VALAPI&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="80" PosX="210" PosY="60">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ECH.ETFLUX">SIP1.A0L_ECH.ETFLUX&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <TextList Name="8 - Afficheur de liste" Row="None" Height="25" Width="280" PosX="10" PosY="150">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IHMETATDIAL">Z1A0L.A0_LANCEMENT.DIAG.IHMETATDIAL&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="Etat_dial_Mcal" />
+    </TextList>
+  </Cadre>
+  <Cadre Name="2 - INFOS LANCEMENT3524" Line="1" AlignY="Auto" Height="Full" Width="300" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">INFOS LANZAMIENTO</Expression>
+    </Title>
+    <Voyant Name="0 - Fabrication sans pièce" Color="-16711681" Row="None" Height="25" Width="200" PosX="50" PosY="25">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Fabricación sin pieza</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="" NumBit="-1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmFSP">Z1A0L.A0_LANCEMENT.DIAG.IhmFSP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Voyant>
+    <Voyant Name="1 - Mode SIPTOL" Color="-16711872" Row="None" Height="25" Width="200" PosX="50" PosY="55">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modo SIPTOL</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="" NumBit="-1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmIPOF">Z1A0L.A0_LANCEMENT.DIAG.IhmIPOF&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Voyant>
+    <Voyant Name="2 - Mode MAP" Color="-256" Row="None" Height="25" Width="200" PosX="50" PosY="85">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Modo MAP</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="" NumBit="-1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmMAP">Z1A0L.A0_LANCEMENT.DIAG.IhmMAP&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Voyant>
+    <Voyant Name="3 - Présente = Attendue" Color="-16711872" Row="None" Height="25" Width="200" PosX="50" PosY="115">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Presente=Esperado</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="" NumBit="-1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmIFC">Z1A0L.A0_LANCEMENT.DIAG.IhmIFC&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Voyant>
+    <Voyant Name="5 - Discordance !" Color="-65536" Row="None" Height="25" Width="200" PosX="50" PosY="145">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Discordancia</Expression>
+      </Text>
+      <Condition Operator="BitTrue" Value="" NumBit="-1">
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="Z1A0L.A0_LANCEMENT.DIAG.IhmPFM">Z1A0L.A0_LANCEMENT.DIAG.IhmPFM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Condition>
+    </Voyant>
+  </Cadre>
+  <Cadre Name="3 - API - PIECE ATTENDUE3470" Line="1" AlignY="Auto" Height="Full" Width="225" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">API - PIEZA ESPERADA</Expression>
+    </Title>
+    <Text Name="1 - Film" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="50" Text="Film" />
+    <Text Name="2 - Nordre" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="100" Text="Nordre" />
+    <Text Name="3 - Code diversité" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="150">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Diversidad</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="None" Height="25" Width="120" PosX="95" PosY="50" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.DVEH.FILM">SIP1.A0L_ACQ.DVEH.FILM&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="120" PosX="95" PosY="100" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.DVEH.NORDRE">SIP1.A0L_ACQ.DVEH.NORDRE&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <TextList Row="None" Height="25" Width="120" PosX="95" PosY="150" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.CP_PAF.ILOT">SIP1.A0L_ACQ.CP_PAF.ILOT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="ListeDiv" />
+    </TextList>
+  </Cadre>
+  <Cadre Name="3 - API - PIECE SUIVANTE3470" Line="2" AlignY="Auto" Height="Full" Width="225" PosX="0" PosY="0">
+    <Title ExpressionIhmpMultilangue="Interne">
+      <Expression Culture="es-ES">API - PIEZA SIGUIENTE</Expression>
+    </Title>
+    <Text Name="1 - Film" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="50" Text="Film" />
+    <Text Name="2 - Nordre" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="100" Text="Nordre" />
+    <Text Name="3 - Code diversité" Color="-16777216" Row="None" Height="25" Width="80" PosX="5" PosY="150">
+      <Text ExpressionIhmpMultilangue="Interne">
+        <Expression Culture="es-ES">Diversidad</Expression>
+      </Text>
+    </Text>
+    <ReadVal Row="None" Height="25" Width="120" PosX="95" PosY="50" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.FILM_PS">SIP1.A0L_ACQ.FILM_PS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <ReadVal Row="None" Height="25" Width="120" PosX="95" PosY="100" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.NORDRE_PS">SIP1.A0L_ACQ.NORDRE_PS&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+    </ReadVal>
+    <TextList Row="None" Height="25" Width="120" PosX="95" PosY="150" Format="DEC">
+      <Animation>
+        <VariableDC Source="Source SimaticNet Autre.API Siemens 1" ItemOpc="SIP1.A0L_ACQ.CP_PS.ILOT">SIP1.A0L_ACQ.CP_PS.ILOT&lt;&lt;Source&gt;&gt;Source SimaticNet Autre.API Siemens 1</VariableDC>
+      </Animation>
+      <MessagesListe IdListe="ListeDiv" />
+    </TextList>
+  </Cadre>
+  <Listes>
+    <Liste Id="Etat_dial_Mcal">
+      <MessageListe Id="Id0" Value="1">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Respuesta del autómata</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id1" Value="2">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Espera propuesta OF</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id2" Value="3">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Diálogo en marcha forzada</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id3" Value="4">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Diálogo en defecto de indentificación</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id4" Value="5">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Corrección de los datos autómata</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id5" Value="6">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Respuesta de Siptol</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id6" Value="7">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Petición de espera de Siptol</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id7" Value="8">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Datos erróneos para Siptol</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id8" Value="9">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">16 - Valor desconocido</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id9" Value="10">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">Diálogo no inicializado</Expression>
+        </Text>
+      </MessageListe>
+      <MessageListe Id="Id10" Value="11">
+        <Text ExpressionIhmpMultilangue="Interne">
+          <Expression Culture="es-ES">VAL CAL y VAL API no conformes</Expression>
+        </Text>
+      </MessageListe>
+    </Liste>
+    <Liste Id="ListeDiv">
+      <MessageListe Id="CBX1" Value="1" Text="TOUS TYPES" />
+      <MessageListe Id="CBX2" Value="2" Text="L52" />
+      <MessageListe Id="CBX3" Value="3" Text="B52" />
+      <MessageListe Id="CBX4" Value="4" Text="B52CROSS" />
+      <MessageListe Id="CBX5" Value="5" Text="L52BAN" />
+      <MessageListe Id="CBX6" Value="6" Text="X672A" />
+      <MessageListe Id="CBX7" Value="7" Text="X675A" />
+    </Liste>
+  </Listes>
+</EcranLancement>

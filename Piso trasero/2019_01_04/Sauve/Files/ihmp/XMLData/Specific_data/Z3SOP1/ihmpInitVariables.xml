@@ -1,0 +1,6 @@
+<InitVariables>
+  <GroupeDC>MessagesMOP</GroupeDC>
+  <VariablesInternes>
+    <VariableDC Source="VariablesInternes" ValeurInit="1">BA1.VariablesInternes</VariableDC>
+  </VariablesInternes>
+</InitVariables>
